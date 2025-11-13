@@ -1,0 +1,10 @@
+siteName: Repères ASBL
+productionUrl: https://www.reperes.be
+languages:
+  - code: fr
+    name: Français
+    customUrlPrefix:
+      prefix: ''
+    status: published
+    isCmsDefault: false
+    isWebsiteDefault: true
