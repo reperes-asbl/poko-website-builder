@@ -6,7 +6,7 @@ uuid: f0c4d5f2e36a
 localizationKey: fd2e1caad552
 name: Formations
 eleventyNavigation:
-  order: 0
+  order: 10
 ---
 # Formations
 
