@@ -1,5 +1,5 @@
 ---
-translationKey: accueil
+translationKey: index
 lang: fr
 createdAt: 2025-11-14T09:35:00.000Z
 uuid: ccc997d69664
