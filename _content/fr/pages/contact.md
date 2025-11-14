@@ -6,7 +6,7 @@ uuid: eac2f9f3a299
 localizationKey: 769cf9a71f07
 name: Contact
 eleventyNavigation:
-  order: 0
+  order: 8
 ---
 # Contactez-nous
 
