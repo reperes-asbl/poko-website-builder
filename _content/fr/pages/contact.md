@@ -5,7 +5,8 @@ createdAt: 2025-11-14T09:38:00.000Z
 uuid: eac2f9f3a299
 localizationKey: 769cf9a71f07
 name: Contact
-vars: {}
+eleventyNavigation:
+  order: 0
 ---
 # Contactez-nous
 
