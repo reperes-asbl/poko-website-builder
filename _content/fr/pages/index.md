@@ -5,8 +5,9 @@ createdAt: 2025-11-14T09:35:00.000Z
 uuid: ccc997d69664
 localizationKey: 53a97b6af84d
 name: Accueil
+vars: {}
 ---
-{% image src="/_images/reperes-asbl-logo-sans-bords-rvb-01.webp", alt="Repère formations logo" %}
+{% image src="/_images/reperes-asbl-logo-sans-bords-rvb-01.webp", alt="Repère formations logo", width="300" %}
 
 # Centre de formation à la promotion de la santé
 
