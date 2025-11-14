@@ -6,13 +6,6 @@ widthsContexts:
     max: 80rem
     prose: 50rem
 fontStacksContexts:
-  - name: main
-    body:
-      native: system-ui
-    heading:
-      native: system-ui
-    code:
-      native: monospace-code
   - name: font-family-Rounded-Sans
     body:
       native: rounded-sans
@@ -32,15 +25,15 @@ typeScales:
 colors:
   - name: Vermillon
     value: '#de3831'
-  - name: Orange peel
+  - name: Orange-peel
     value: '#ffa02f'
-  - name: Burnt umber
+  - name: Burnt-umber
     value: '#802d25'
   - name: Cooper
     value: '#a97433'
-  - name: Delft Blue
+  - name: Delft-Blue
     value: '#343d63'
-  - name: YlnMn Blue
+  - name: YlnMn-Blue
     value: '#4c5792'
   - name: Gray
     value: '#807973'
@@ -50,6 +43,24 @@ colors:
     value: '#e0ded8'
   - name: White
     value: '#ffffff'
+palettes:
+  - name: main
+    text: Vermillon
+    bg: White
+    border: ''
+    outline: ''
+    text-decoration: ''
+    text--marker: ''
+    text-emphasis: ''
+    text--selection: ''
+    bg--selection: ''
+    shadow: ''
+    caret: ''
+    column-rule: ''
+    fill: ''
+    stroke: ''
+    outline--focus: ''
+    advanced: null
 styleContexts:
   - name: main
     value: ctx
