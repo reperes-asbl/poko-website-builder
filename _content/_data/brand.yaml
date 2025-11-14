@@ -44,7 +44,7 @@ colors:
   - name: White
     value: '#ffffff'
 palettes:
-  - name: main
+  - name: Vermillon
     text: Vermillon
     bg: White
     border: ''
