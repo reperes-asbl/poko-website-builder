@@ -6,8 +6,7 @@ uuid: f9a647ba18fd
 localizationKey: f02d808fd7b4
 name: Activités
 eleventyNavigation:
-  order: 0
-vars: {}
+  order: 2
 ---
 # Nos activités
 
