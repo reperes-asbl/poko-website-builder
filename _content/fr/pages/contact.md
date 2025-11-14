@@ -7,6 +7,7 @@ localizationKey: 769cf9a71f07
 name: Contact
 eleventyNavigation:
   order: 8
+vars: {}
 ---
 # Contactez-nous
 
@@ -14,6 +15,6 @@ Une question sur nos formations?
 Envie de construire un projet sur mesure avec votre équipe?
 Ou simplement besoin d’un échange avant de vous inscrire?
 
-## L’équipe de Repères est à votre écoute.
+## L’équipe de Repères est à votre écoute
 
 Nous prendrons le temps de comprendre votre demande et d’y répondre au mieux.
