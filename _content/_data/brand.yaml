@@ -200,6 +200,23 @@ palettes:
       border__mark: ''
       track-color: ''
       thumb-color: ''
+  - name: Delft-blue-Contrast
+    text: White
+    bg: Delft-Blue
+    border: ''
+    outline: ''
+    text-decoration: ''
+    text--marker: ''
+    text-emphasis: ''
+    text--selection: ''
+    bg--selection: ''
+    shadow: ''
+    caret: ''
+    column-rule: ''
+    fill: ''
+    stroke: ''
+    outline--focus: ''
+    advanced: null
   - name: Gray
     text: Gray
     bg: White
@@ -242,23 +259,6 @@ palettes:
   - name: Gray-Contrast
     text: Gray
     bg: Timberwolf
-    border: ''
-    outline: ''
-    text-decoration: ''
-    text--marker: ''
-    text-emphasis: ''
-    text--selection: ''
-    bg--selection: ''
-    shadow: ''
-    caret: ''
-    column-rule: ''
-    fill: ''
-    stroke: ''
-    outline--focus: ''
-    advanced: null
-  - name: Delft-blue-Contrast
-    text: White
-    bg: Delft-Blue
     border: ''
     outline: ''
     text-decoration: ''
