@@ -13,5 +13,4 @@ eleventyNavigation:
 # Centre de formation à la promotion de la santé
 
 Et si la santé était avant tout une manière de vivre et de se relier aux autres?
-
 Chez Repères, nous formons celles et ceux qui font vivre la promotion de la santé, pour renforcer les ressources individuelles et collectives au service du bien-être commun.
