@@ -8,9 +8,31 @@ name: Accueil
 eleventyNavigation:
   order: 0
 ---
+:::: div
+::: div
+
 {% image src="/_images/reperes-asbl-logo-sans-bords-rvb-01.webp", alt="Repère formations logo", width="200" %}
 
 # Centre de formation à la promotion de la santé
 
 Et si la santé était avant tout une manière de vivre et de se relier aux autres?
 Chez Repères, nous formons celles et ceux qui font vivre la promotion de la santé, pour renforcer les ressources individuelles et collectives au service du bien-être commun.
+:::
+
+IMAGE
+
+::::
+
+## Notre offre de formations et d’accompagnements
+
+ICONE - Nos formations à Bruxelles et en Wallonie
+ICONE - Nos interventions sur mesure (chez vous et/ou en équipe)
+ICONE - Notre service support (Le SESU)
+
+En tant que
+**ORGANISME DE PROMOTION DE LA SANTÉ,**
+nous accompagnons des services, des institutions et des équipes qui interagissent avec les sphères psychomédicosociales
+
+En tant que
+**SERVICE SUPPORT,**
+nous apportons notre expertise d’organisme de formation en promotion de la santé à d’autres organismes de formation et aux réseaux de formateurs et formatrices.
