@@ -36,3 +36,7 @@ nous accompagnons des services, des institutions et des équipes qui interagisse
 En tant que
 **SERVICE SUPPORT,**
 nous apportons notre expertise d’organisme de formation en promotion de la santé à d’autres organismes de formation et aux réseaux de formateurs et formatrices.
+
+Depuis 1998, Repères asbl est active dans le domaine de la formation en Promotion de la Santé. Repères est une asbl reconnue par la COCOF et l’AVIQ.
+Depuis 2018, dans le cadre du nouveau décret de Promotion de la Santé mis en place par la COCOF en Région Bruxelloise, Repères a été désignée comme service de support en matière de formation généraliste et continue.
+En savoir plus…
