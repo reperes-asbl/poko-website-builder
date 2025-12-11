@@ -78,3 +78,5 @@ Plusieurs démarches d’analyse et de diagnostic ont été mises en œuvre depu
 -BOUTON-Télécharger les fiches techniques-
 
 ### Ressources réalisées dans le cadre du SESU
+
+-4 BLOCS-
