@@ -8,11 +8,21 @@ name: Qui sommes-nous?
 eleventyNavigation:
   order: 0
 ---
+:::: div
+
+::: div
+
 # Qui sommes-nous?
 
 Repères ASBL, c’est une équipe engagée depuis plus de 25 ans dans la formation et l’accompagnement des professionnel·les du social et de la santé.
 Notre démarche? Promouvoir la santé comme un équilibre vivant, où chaque personne, chaque communauté et chaque contexte comptent.
 Découvrez ici notre histoire, nos valeurs et la vision qui guide nos actions.
+
+:::
+
+-IMAGE-
+
+::::
 
 ## Un peu d’histoire
 
@@ -22,6 +32,8 @@ Repères ASBL voit le jour à la fin des années 1990, dans le prolongement des 
 Ces formations s’adressent à des professionnel·les de tous horizons: institutions généralistes, structures spécialisées, milieux éducatifs ou services sociaux et de soin. Les membres fondateurs — Denise Salquin, Paule Dusquenne, Maggy Richard, Pascal Kayaert, Patricia Piron et Pierre Brasseur — posent les bases de l’association, rédigent les statuts et obtiennent un financement de la Communauté française.
 
 {% image src="/_images/reperes-asbl-archive.webp" %}
+
+-IMAGE-
 
 ### L’essor à l’époque de la Communauté française (2006 – 2013)
 
@@ -35,3 +47,45 @@ La régionalisation de la promotion de la santé à partir de 2014 a transformé
 
 - À Bruxelles, l’association est reconnue comme service support par la COCOF dès 2018 et continue d’accompagner les opérateurs du secteur, tout en proposant des formations ouvertes aux professionnel·les du social et de la santé.
 - En Wallonie, Repères participe aux plans et décrets régionaux, et obtient en 2023 un agrément comme opérateur en promotion de la santé.
+
+____ENCADRÉ_____
+
+## Notre cadre de référence
+
+Pour Repères, la promotion de la santé n’est pas seulement un domaine d’intervention: c’est une démarche qui guide toutes nos actions. Il s’agit d’une façon de penser et d’agir fondée sur des principes, des méthodes et des valeurs.
+
+### Nos principes fondateurs
+
+1. Une vision dynamique de la santé
+2. Articulation entre l’individuel et le collectif
+3. Une approche circulaire et systémique
+4. Transversalité et intersectorialité
+5. Participation et co-construction
+
+____ENCADRÉ_____
+
+## Pour Repères, se former c’est…
+
+**se donner du temps**
+
+- pour réfléchir
+- pour comprendre et apprendre
+- pour imaginer, expérimenter, créer
+
+**se donner du recul**
+
+- pour poser un autre regard sur sa pratique
+- pour la confronter à d’autres et à des idées nouvelles
+
+**se donner de l’air**
+
+- pour souffler
+- pour nourrir le quotidien d’une respiration essentielle
+
+### La promotion de la santé pour nous, c’est
+
+- Permettre aux personnes et aux communautés de mieux s’approprier leur santé.
+- Favoriser le développement de politiques qui prennent en compte l’ensemble des facteurs déterminant la santé: biologiques, sociaux, culturels, psychoaffectifs, économiques, environnementaux…
+- Contribuer au respect des différences et à la lutte contre les inégalités, ainsi que toutes les formes de précarisation et de disqualification.
+
+Cette approche nous permet de concevoir des formations participatives et adaptées, qui tiennent compte des interactions entre individus, communautés et environnement, pour favoriser le bien-être individuel et collectif.
