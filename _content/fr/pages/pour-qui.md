@@ -10,7 +10,7 @@ eleventyNavigation:
 ---
 :::: div
 
-:::
+::: div
 
 # À qui s’adressent nos formations?
 
@@ -64,7 +64,7 @@ Repères soutient les organismes de formation pour:
 - Échanger sur les pratiques et expériences avec d’autres organismes.
 - Être accompagnés dans leurs questionnements et difficultés en formation.
 
-____ENCADRÉ____
+**__ENCADRÉ_**_
 
 Pourquoi nous contacter?
 
@@ -76,7 +76,7 @@ Vous nous contactez si vous voulez:
 
 -BOUTON-Nous contacter-
 
-____ENCADRÉ____
+**__ENCADRÉ_**_
 
 ### Nous collaborons avec une grande diversité d’acteurs engagés:
 
