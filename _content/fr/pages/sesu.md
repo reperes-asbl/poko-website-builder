@@ -9,11 +9,21 @@ eleventyNavigation:
   order: 4
 vars: {}
 ---
+:::: div
+
+::: div
+
 # Service support formation (SESU)
 
 Dans le cadre du décret de Promotion de la Santé mis en place par la COCOF en Région Bruxelloise (2018), Repères a été désignée comme SERVICE DE SUPPORT en matière de FORMATION généraliste et Continue. Cette reconnaissance a été renouvelée en 2023.
 
-____ENCADRÉ____
+:::
+
+-IMAGE-
+
+::::
+
+**__ENCADRÉ_**_
 
 ## Qu’est-ce qu’un service support?
 
@@ -21,7 +31,7 @@ Les services de support en promotion de la santé offrent **un accompagnement m�
 
 {% image src="/_images/logo-francophones-bruxelles-blanc.webp" %}
 
-____ENCADRÉ____
+**__ENCADRÉ_**_
 
 ## Le service support formation
 
