@@ -137,7 +137,7 @@ Cette diversité enrichit nos formations grâce à la mise en commun des expéri
 
 ### Nos formateurs et formatrices
 
--PHOTOS + NOMS + FONCTIONS membre de l'équipe-
+⚠️ -PHOTOS + NOMS + FONCTIONS membre de l'équipe-
 
 - **Caroline Lejeune**
 Formatrice
