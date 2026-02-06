@@ -7,9 +7,7 @@ localizationKey: 1f9f28bf27cc
 name: SESU
 eleventyNavigation:
   order: 4
-vars: {}
 ---
-
 {% partialWrapper "page-header.njk", { image: { src: '/_images/pexels-rethaferguson-3810792.webp' }, class: 'palette-delft-blue' } %}
 
 # Service support formation (SESU)
@@ -60,11 +58,11 @@ Nous participons à diverses concertations, notamment la concertation Interpilie
 
 Découvrir les acteurs du réseau de la promotion de la santé:
 
-{% button "ressources", text="TODO BRUXELLES", class="palette-ylnMn-blue-contrast b-0" %}
+{% button "ressources", text="BRUXELLES", class="palette-ylnMn-blue-contrast b-0" %}
 
-{% button "ressources", text="TODO WALLONIE", class="palette-ylnMn-blue-contrast b-0" %}
+{% button "ressources", text="WALLONIE", class="palette-ylnMn-blue-contrast b-0" %}
 
-{% button "ressources", text="TODO FEDERATIONS", class="palette-ylnMn-blue-contrast b-0" %}
+{% button "ressources", text="FEDERATIONS", class="palette-ylnMn-blue-contrast b-0" %}
 
 :::
 ::: div
