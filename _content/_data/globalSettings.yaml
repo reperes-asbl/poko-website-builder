@@ -5,6 +5,9 @@ htmlHead: ''
 cssHead: ''
 languages:
   - code: fr
+    name: Français
+    customUrlPrefix:
+      prefix: ""
     status: published
     keepUrlPrefix: false
     isCmsDefault: false
