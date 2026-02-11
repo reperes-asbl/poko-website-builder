@@ -18,28 +18,28 @@ Chez Repères, nous formons celles et ceux qui font vivre la promotion de la san
 
 {% endpartialWrapper %}
 
-::::: div { .section .palette-vermillon .palette-low-contrast .flow .v--flow-space:--step-2 .bleed-bg .v--bleed-bottom:20rem }
+::::: div { .section .palette-vermillon .palette-low-contrast .flow .v--flow-space:--step-4 .bleed-bg .v--bleed-bottom:20rem }
 
 ## Notre offre de formations et d’accompagnements
 
 :::: switcher { .width-prose .text-center }
 ::: flow { .v--flow-space:1em .items-center }
 
-{% icon "tabler:library", width="50", height="50" %}
+{% icon "tabler:library", width="64", height="64" %}
 
-Nos formations à Bruxelles et en Wallonie
+**Nos formations à Bruxelles et en Wallonie**
 :::
 
 ::: flow { .v--flow-space:1em .items-center }
-{% icon "tabler:automation", width="50", height="50" %}
+{% icon "tabler:automation", width="64", height="64" %}
 
-Nos interventions sur mesure (chez vous et/ou en équipe)
+**Nos interventions sur mesure (chez vous et/ou en équipe)**
 :::
 
 ::: flow { .v--flow-space:1em .items-center }
-{% icon "tabler:thumb-up", width="50", height="50" %}
+{% icon "tabler:thumb-up", width="64", height="64" %}
 
-Notre service support (Le SESU)
+**Notre service support (Le SESU)**
 :::
 ::::
 :::::
@@ -60,7 +60,7 @@ nous apportons notre expertise d’organisme de formation en promotion de la san
 ::: div { .section .palette-burnt-umber .palette-low-contrast .flow .text-center .bleed-bg .v--bleed-top:7rem }
 Depuis 1998, Repères asbl est active dans le domaine de la formation en Promotion de la Santé. Repères est une asbl reconnue par la COCOF et l’AVIQ.
 
-Depuis 2018, dans le cadre du nouveau décret de Promotion de la Santé mis en place par la COCOF en Région Bruxelloise, Repères a été désignée comme service de support en matière de formation généraliste et continue.
+Depuis 2018, dans le cadre du nouveau décret de Promotion de la Santé mis en place par la COCOF en Région Bruxelloise, Repères a été désignée comme **service de support** en matière de **formation** généraliste et continue.
 
 [En savoir plus]({{ "sesu" | locale_url }})
 :::
@@ -79,7 +79,25 @@ du soin à la jeunesse, du social à la formation et d’autres… { .h4 }
 
 ::::
 
-> «Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy»
-> Nom - organisation
+::: div { .section .bleed-bg .palette-cooper-contrast}
+
+> **«Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy»** {.text-center .h3}
+>
+> Nom - organisation {.text-right .my-0}
+
+:::
+::: flow { .text-center }
 
 -BOUTON - Newsletter-
+
+{% partial "btn-newsletter" %}
+
+:::
+
+{% css %}
+#notre-offre-de-formations-et-d-accompagnements{
+margin-inline: 0;
+max-width: 100%;
+}
+
+{% endcss %}
