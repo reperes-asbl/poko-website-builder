@@ -49,12 +49,21 @@ lang }, { by: 'parent', value: undefined }]) | eleventyNavigation %}
 .site-header {
 background-color: var(--color-bg);
 border-radius: 0 0 var(--radius-card) var(--radius-card);
-box-shadow: 0px 3px 6px var(--Silver);
+box-shadow: 0px 3px 6px color-mix(in srgb, var(--Silver) 29%, transparent);
+border-block-end: none;
 }
 
 nav.cluster {
 justify-content: space-between;
+align-items: center;
 padding-inline: var(--step-2);
+}
+
+nav.cluster a img {
+display: block;
+object-fit: cover;
+width:100%;
+height:100%;
 }
 
 [aria-current="page"] {

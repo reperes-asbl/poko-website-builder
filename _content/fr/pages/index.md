@@ -5,9 +5,8 @@ createdAt: 2025-11-14T09:35:00.000Z
 uuid: ccc997d69664
 localizationKey: 53a97b6af84d
 name: Accueil
-eleventyNavigation:
-  order: 0
 ---
+
 {% partialWrapper "page-header.njk", { image: { src:'/_images/pexels-rethaferguson-3810762.webp', aspectRatio:'1' } } %}
 
 {% image src="/_images/reperes-asbl-logo-sans-bords-rvb-01.webp", alt="Repères ASBL", width="200" %}
@@ -24,7 +23,7 @@ Chez Repères, nous formons celles et ceux qui font vivre la promotion de la san
 ## Notre offre de formations et d’accompagnements
 
 :::: switcher { .width-prose .text-center }
-::: flow { .v--flow-space:1em .items-center  }
+::: flow { .v--flow-space:1em .items-center }
 
 {% icon "tabler:library", width="50", height="50" %}
 
