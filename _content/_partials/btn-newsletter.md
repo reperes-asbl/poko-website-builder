@@ -1,4 +1,4 @@
-⚠️⚠️TODO: Changer l'url dans le partial ⚠️⚠️
+⚠️TODO: Changer l'url dans le partial ⚠️
 
 {% link url="index", text="S'abonner à la newsletter", class="button btn-gradient h4" %}
 
