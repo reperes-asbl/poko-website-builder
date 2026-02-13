@@ -63,6 +63,9 @@ Découvrez nos ressources documentaires et partenaires de terrain actifs dans la
 ::::
 :::::
 
+::: div { .section .palette-burnt-umber-contrast .bleed-bg}
+⚠️ Changer la couleur des liens ⚠️
+
 #### En Wallonie
 
 Les Centres Locaux de Promotion de la Santé (CLPS) sont des organismes qui soutiennent et accompagnent les professionnels locaux dans la mise en place de projets visant à améliorer la santé et le bien-être des populations. Ils offrent un appui méthodologique, facilitent la mise en réseau des acteurs de terrain et organisent des formations et des échanges de pratiques.
@@ -76,6 +79,8 @@ Les Centres Locaux de Promotion de la Santé (CLPS) sont des organismes qui sout
 - [Le Centre local de Promotion de la Santé de Mons-Soignies](http://www.clps-mons-soignies.be/)
 - [Le Centre local de Promotion de la Santé en province de Namur](http://www.clpsnamur.be/)
 - [Le Centre verviétois de Promotion de la Santé](http://www.cvps.be/)
+
+:::
 
 ### Vous recherchez un soutien politique?
 
