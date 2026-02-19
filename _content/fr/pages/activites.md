@@ -24,7 +24,7 @@ Chez Repères, nous proposons des dispositifs formatifs conçus pour soutenir le
 
 <!-- Activity 1 -->
 
-{% partialWrapper "activity.njk", { image: { src: '/_images/pexels-mikael-blomkvist-6476783.webp' }, color: "cooper", timing: "4 journées + 6 ateliers d’échanges de pratiques", pricing: "±180€/cycle", where: "Bruxelles et Wallonie", practical: "Cycles d’ateliers: durée, fréquence et tarif à déterminer" } %}
+{% partialWrapper "activity.njk", { image: { src: '/_images/pexels-mikael-blomkvist-6476783.webp' }, color: "cooper", timing: "4 journées + 6 ateliers d’échanges de pratiques", pricing: "220€/cycle", where: "Bruxelles et Wallonie", practical: "Cycles d’ateliers: durée, fréquence et tarif à déterminer" } %}
 
 :::: hgroup
 
@@ -45,7 +45,7 @@ La richesse de ces modules se situe dans la diversité des profils et des réali
 
 <!-- Activity 2 -->
 
-{% partialWrapper "activity.njk", { image: { src: '/_images/pexels-fauxels-3184298.webp' }, color: "delft-blue", timing: "4 journées + 6 ateliers d’échanges de pratiques", pricing: "±180€/cycle", where: "Bruxelles et Wallonie", practical: "Cycles d’ateliers: durée, fréquence et tarif à déterminer" } %}
+{% partialWrapper "activity.njk", { image: { src: '/_images/pexels-fauxels-3184298.webp' }, color: "delft-blue", timing: "Minimum 3 jours", pricing: "tarif à déterminer", where: "Bruxelles et Wallonie", practical: "Nombre d'ateliers et fréquence à déterminer" } %}
 
 ::: hgroup
 
@@ -66,7 +66,7 @@ Exemples de secteurs : fédération d’accueil et d’hébergement, fédérati
 
 <!-- Activity 3 -->
 
-{% partialWrapper "activity.njk", { image: { src: '/_images/pexels-rethaferguson-3810788.webp' }, color: "burnt-umber", timing: "-", pricing: "-", where: "Bruxelles et Wallonie", practical: "Cycles d’ateliers: durée, fréquence et tarif à déterminer" } %}
+{% partialWrapper "activity.njk", { image: { src: '/_images/pexels-rethaferguson-3810788.webp' }, color: "burnt-umber", timing: "Minimum 3 jours", pricing: "tarif à déterminer", where: "Bruxelles et Wallonie", practical: "Nombre d'ateliers et fréquence à déterminer" } %}
 
 ::: hgroup
 
@@ -85,7 +85,7 @@ Ils sont particulièrement utiles pour construire une vision partagée au sein d
 
 <!-- Activity 4 -->
 
-{% partialWrapper "activity.njk", { image: { src: '/_images/pexels-rethaferguson-3810761.webp' }, color: "gray", timing: "-", pricing: "250€/2h", where: "Bruxelles et Wallonie", practical: "Cycles d’ateliers: durée, fréquence et tarif à déterminer" } %}
+{% partialWrapper "activity.njk", { image: { src: '/_images/pexels-rethaferguson-3810761.webp' }, color: "gray", timing: "Généralement 1/mois sur 1 an (minimum 6 mois)", pricing: "250€/2h", where: "Bruxelles et Wallonie", practical: "Durée, fréquence et tarif à déterminer" } %}
 
 ::: hgroup
 

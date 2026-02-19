@@ -93,42 +93,15 @@ Pour Repères, la promotion de la santé n’est pas seulement un domaine d’in
 
 ::::: div { .section .palette-ylnMn-blue-contrast .bleed-bg .v--bleed-top:14rem }
 
-## Pour Repères, se former c’est…
+## Pour repères se former en promotion de la santé c’est…
 
-:::: grid-fluid
-::: div
-**se donner du temps**
+texte à rédiger ...
 
-- pour réfléchir
-- pour comprendre et apprendre
-- pour imaginer, expérimenter, créer
-
-:::
-::: div
-**se donner du recul**
-
-- pour poser un autre regard sur sa pratique
-- pour la confronter à d’autres et à des idées nouvelles
-
-:::
-::: div
-**se donner de l’air**
-
-- pour souffler
-- pour nourrir le quotidien d’une respiration essentielle
-
-:::
-::::
-
-### La promotion de la santé pour nous, c’est
-
-- Permettre aux personnes et aux communautés de mieux s’approprier leur santé.
-- Favoriser le développement de politiques qui prennent en compte l’ensemble des facteurs déterminant la santé: biologiques, sociaux, culturels, psychoaffectifs, économiques, environnementaux…
-- Contribuer au respect des différences et à la lutte contre les inégalités, ainsi que toutes les formes de précarisation et de disqualification.
-
-Cette approche nous permet de concevoir des formations participatives et adaptées, qui tiennent compte des interactions entre individus, communautés et environnement, pour favoriser le bien-être individuel et collectif.
-
-[⚠️ Lien vers pdf mettre le nom du fichier «notre charte de promotion de la santé» ⚠️](#)
+<p>
+<a href="/_images/ac-220302-dossier-onze-fondamentaux-en-promotion-de-la-sante.pdf" target="_blank" rel="noopener noreferrer" class="width-prose">
+Notre charte de promotion de la santé
+</a>
+</p>
 :::::
 
 {% image src="/_images/photo-equipe-dos.webp", aspectRatio="2", class="rounded-[--radius-card]" %}
@@ -144,17 +117,48 @@ Cette diversité enrichit nos formations grâce à la mise en commun des expéri
 ### Nos formateurs et formatrices
 
 ⚠️ -PHOTOS + NOMS + FONCTIONS membre de l'équipe-
+:::::div { .grid-fluid .mt-8 }
 
-- **Caroline Lejeune**
-  Formatrice
-- **Dominique Werbrouck**
-  Formatrice
-- **Jeanne Reyre**
-  ⚠️ ?
-- **Manoë Jacquet**
-  Coordinatrice - Formatrice
-- **Pascal Kayaert**
-  Formateur
+:::div { .flex .flex-col .items-center .text-center }
+{% image src="/_images/photo-equipe-dos.webp", aspectRatio="1", class="rounded-full w-32 h-32 mx-auto mb-4" %}
+
+**Caroline Lejeune**
+
+Formatrice
+:::
+
+:::div { .flex .flex-col .items-center .text-center }
+{% image src="/_images/photo-equipe-dos.webp", aspectRatio="1", class="rounded-full w-32 h-32 mx-auto mb-4" %}
+
+**Dominique Werbrouck**
+
+Formatrice
+:::
+
+:::div { .flex .flex-col .items-center .text-center }
+{% image src="/_images/photo-equipe-dos.webp", aspectRatio="1", class="rounded-full w-32 h-32 mx-auto mb-4" %}
+
+**Jeanne Reyre**
+
+Formatrice
+:::
+
+:::div { .flex .flex-col .items-center .text-center }
+{% image src="/_images/photo-equipe-dos.webp", aspectRatio="1", class="rounded-full w-32 h-32 mx-auto mb-4" %}
+
+**Manoë Jacquet**
+
+Coordinatrice - Formatrice
+:::
+
+:::div { .flex .flex-col .items-center .text-center }
+{% image src="/_images/photo-equipe-dos.webp", aspectRatio="1", class="rounded-full w-32 h-32 mx-auto mb-4" %}
+
+**Pascal Kayaert**
+
+Formateur
+:::
+:::::
 
 ### Notre gouvernance
 

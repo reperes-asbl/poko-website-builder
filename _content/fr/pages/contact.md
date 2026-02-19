@@ -100,7 +100,6 @@ Pour toute question ou demande générale, n’hésitez pas à nous contacter vi
 
 ::: div { .mis-[1rem] }
 Nos bureaux se trouvent au 4e étage, le bâtiment **ne** dispose **pas** d’accès PMR. Si vous êtes dans une situation à mobilité réduite et que vous souhaitez nous rencontrer, nous nous déplaçons.  
-Nos bureaux sont ouverts du lundi au vendredi, de 9h à 16h30.
 :::
 
 ::::

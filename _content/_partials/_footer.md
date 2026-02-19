@@ -25,12 +25,24 @@
     </div>
     <div class="flow">
         ⚠️ changer src, alt, title ⚠️
-        {% image src="/_images/reperes-asbl-logo-sans-bords-rvb-09.webp", alt="", title="", width="122", loading="lazy"%}
-        {% image src="/_images/reperes-asbl-logo-sans-bords-rvb-09.webp", alt="", title="", width="122", loading="lazy"%}
+        <a href="https://www.fbpsante.brussels/" target="_blank" rel="noopener noreferrer">
+            {% image src="/_images/logo_membre_fbps.webp", width="300" %}
+        </a>
+        <a href="https://www.fwpsante.be/" target="_blank" rel="noopener noreferrer">
+            {% image src="/_images/logo_membre_fwps.webp", width="300" %}
+        </a>
     </div>
     <div>
         <p>Avec le soutien de</p>
-        {% image src="/_images/reperes-asbl-logo-sans-bords-rvb-09.webp", alt="", title="", width="122", loading="lazy"%}
+        <a href="https://www.one.be/" target="_blank" rel="noopener noreferrer">
+            {% image src="/_images/one.webp", width="300" %}
+        </a>
+        <a href="https://www.aviq.be/" target="_blank" rel="noopener noreferrer">
+            {% image src="/_images/logo_aviq_officiel.svg", width="300" %}
+        </a>
+        <a href="https://www.francophones.be/" target="_blank" rel="noopener noreferrer">
+            {% image src="/_images/logo-francophones-bruxelles.webp", width="300" %}
+        </a>
     </div>
 </div>
 <div class="text-center small">
@@ -39,7 +51,7 @@
 
 {% css %}
 footer {
-border-image-source: linear-gradient(0deg, var(--Silver), var(--White) 70%) !important;
+border-image-source: linear-gradient(0deg, var(--Silver), var(--White)) !important;
 height: 100%;
 }
 

@@ -20,7 +20,7 @@ Chez Repères, nous formons celles et ceux qui font vivre la promotion de la san
 
 ::::: div { .section .palette-vermillon .palette-low-contrast .flow .v--flow-space:--step-4 .bleed-bg .v--bleed-bottom:20rem }
 
-## Notre offre de formations et d’accompagnements
+## Notre offre de formations et d’accompagnements { .text-center }
 
 :::: switcher { .width-prose .text-center }
 ::: flow { .v--flow-space:1em .items-center }
@@ -80,7 +80,7 @@ du soin à la jeunesse, du social à la formation et d’autres… { .h4 }
 ::::
 
 ::: div { .section .bleed-bg .palette-cooper-contrast }
-⚠️ Changer le texte ⚠️
+⚠️ Témoignage en attente ⚠️
 
 > **«Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy»** {.text-center .h3}
 >

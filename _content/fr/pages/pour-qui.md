@@ -23,6 +23,7 @@ Chez Repères, nos formations en promotion de la santé sont conçues pour toute
 {% image src="/_images/pexels-fauxels-3184298.webp", width="300", aspectRatio="1" %}
 
 ::: prose
+
 ## Vous êtes un·e professionnel·le?
 
 Vous travaillez dans le social, la santé ou l’éducation à Bruxelles ou en Wallonie? Nos formations peuvent vous aider à:
@@ -56,6 +57,7 @@ Vous êtes engagé·e dans une association, collectif citoyen ou initiative loca
 {% image src="/_images/pexels-fauxels-3184298.webp", width="300", aspectRatio="1" %}
 
 ::: prose
+
 ## Vous faites partie d’une équipe ou d’une institution?
 
 Nous accompagnons les structures et collectifs qui souhaitent:
@@ -83,9 +85,10 @@ Repères soutient les organismes de formation pour:
 :::
 ::::
 :::::
+
 <!-- End of articles -->
 
-::: div { .squashed .prose .box .card .palette-burnt-umber .palette-low-contrast }
+::: div { .squashed .prose .box .card .palette-burnt-umber .palette-low-contrast .font-bold }
 
 Pourquoi nous contacter?
 
@@ -101,7 +104,9 @@ Vous nous contactez si vous voulez:
 
 ::::: div { .section .bleed-bg .v--bleed-top:12rem }
 ::: hgroup { .text-center }
+
 ### Nous collaborons avec une grande diversité d’acteurs engagés:
+
 du soin à la jeunesse, du social à la formation et d’autres… { .h4 }
 :::
 
@@ -150,21 +155,20 @@ du soin à la jeunesse, du social à la formation et d’autres… { .h4 }
 ::::
 :::::
 
-
 {% css %}
 .articles {
-  display: flex;
-  flex-direction: column;
-  gap: var(--step-4);
+display: flex;
+flex-direction: column;
+gap: var(--step-4);
 }
 article.fixed-fluid {
-  align-items: center;
-  max-inline-size: var(--width-max);
+align-items: center;
+max-inline-size: var(--width-max);
 }
 article.fixed-fluid img {
-  border-radius: 100%;
+border-radius: 100%;
 }
 .sectors > div {
-  inline-size: 100%;
+inline-size: 100%;
 }
 {% endcss %}

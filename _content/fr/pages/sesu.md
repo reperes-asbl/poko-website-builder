@@ -83,9 +83,38 @@ Plusieurs démarches d’analyse et de diagnostic ont été mises en œuvre depu
 
 …Vous pouvez faire appel au service d’accompagnement CBPS et aux 8 autres SESU financés en région Bruxelloise pour vous apporter un soutien en promotion de la santé…
 
-**Afin de faciliter l’accès à nos services, nous avons finalisé des fiches synthétiques reprenant nos missions et les services que nous vous offrons.**
+#### À Bruxelles
 
-{% button "ressources", text="⚠️ Télécharger les fiches techniques ⚠️", class="palette-delft-blue-contrast" %}
+⚠️ Liens derière les images? ⚠️
+
+::::: div { .section }
+:::: grid-fluid { .prose .v--columns:8 }
+
+{% image src="/_images/logo-cbps-300x300.webp", alt="Logo CBPS", width="300" %}
+
+{% image src="/_images/culture-et-sante.webp", alt="Logo Culture et Santé", width="300" %}
+
+{% image src="/_images/eurotox.webp", alt="Logo Eurotox", width="300" %}
+
+{% image src="/_images/questionsante.webp", alt="Logo Question Santé", width="300" %}
+
+{% image src="/_images/femmes-sante_logo_sans-bords_rvb-09.webp", alt="Logo Femmes et Santé", width="300" %}
+
+{% image src="/_images/capture-decran-2022-02-05-a-09-14-38.webp", alt="Logo SIPES", width="300" %}
+
+{% image src="/_images/observatoire-sidasexualites.webp", alt="Logo Observatoire Sida et Sexualités", width="300" %}
+
+{% image src="/_images/logo_uclouvain_reso.webp", alt="Logo UCLouvain RESO", width="300" %}
+
+{% image src="/_images/les-pissenlits.webp", alt="Logo Les pissenlits", width="300" %}
+
+::::
+
+<p>
+<a href="/ressources/#vous-recherchez-un-soutien-methodologique" class="button palette-delft-blue-contrast">
+Consultez le répertoire des SESU
+</a>
+</p>
 
 ## Ressources réalisées dans le cadre du SESU
 
