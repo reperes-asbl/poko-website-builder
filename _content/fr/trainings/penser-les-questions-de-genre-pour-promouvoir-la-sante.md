@@ -6,61 +6,60 @@ uuid: a5765607dce9
 localizationKey: 64887251d710
 name: Penser les questions de genre pour promouvoir la santé
 metadata:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   image:
     src: /_images/business-executive-explaining-her-colleagues-whiteboard.webp
-    alt: ''
-    title: ''
+    alt: ""
+    title: ""
     width: null
     aspectRatio: null
-    loading: ''
-    imgAttrs: ''
+    loading: ""
+    imgAttrs: ""
 pageLayout: formation
 vars: null
 duration: 4 jours
-price: 180€
+price: 220€
 place: 1000 Bruxelles
 ---
 
-Les rapports de genre influencent l’accès aux soins, la manière de prendre soin de soi et la légitimité à agir sur sa santé. Cette formation offre un espace pour comprendre ces enjeux, analyser leurs effets dans nos pratiques et explorer des approches plus inclusives.
+<div class="flex items-center gap-2">
+Module de formation en partenariat avec <a href="https://femmesetsante.be/" class="flex items-center gap-2">Femme&Santé {% image src="/_images/femmes-sante_logo_sans-bords_rvb-09.webp", width=150 %}</a>
+</div>
+
+Ces 4 journées de formation et offrent un temps de réflexion et d’expérimentation. Le module permettra de construire ou de renforcer les connaissances autour des concepts de genre et de promotion de la santé ,de réfléchir à la manière dont des représentations liées au genre nous habitent malgré nous et traversent les questions de santé et ainsi de mesurer comment ces représentations influencent nos projets et nos pratiques.
 
 ## Cette formation permet de
 
-- Comprendre les notions clés liées au genre (cis/hétérosexisme, intersectionnalité, privilèges…)
-- Identifier comment ces questions traversent les projets et les relations professionnelles
-- Questionner les stéréotypes et leurs impacts sur les publics et les équipes
-- Développer des pratiques plus équitables, conscientes des rapports de pouvoir
-- Diffuser ces réflexions au sein de sa structure
+- De prendre le temps d'appréhender ce qui est en jeu dans les questions de genre en Promotion de la santé ;
+- D’interroger les rapports de pouvoir, de domination et les privilèges qui sont en jeu dans les relations ;
+- D’interroger les raisons pour lesquelles les personnes prennent ou ne prennent pas soin d'elles ;
+- D’identifier ce qui fait support à la création collective ;
+- De renforcer nos capacités à développer des pratiques plus équitables/égalitaires/ inclusives ;
+- De réfléchir aux enjeux de transmission et aux effets démultiplicateurs de ces réflexions dans les institutions et vers les publics.
 
 ## Pour qui?
 
-Professionnel·les de la promotion de la santé, du social et de l’accompagnement souhaitant:
+- Tout·e acteur·ice dans les secteurs psycho-médico-sociaux
+- Les professionnel·les impliqué·es dans des démarches de Promotion de la Santé
+- Celles et ceux qui travaillent sur les questions d’inégalités sociales de santé et de participation des publics.
 
-- Intégrer les enjeux de genre dans leurs pratiques
-- Adopter une posture plus réflexive et inclusive
-- Faire évoluer leurs dispositifs vers davantage d’équité et de participation
+## Démarche pédagogique
 
-## Contenu & démarche pédagogique
-
-- Apports théoriques et analyses collectives
-- Mises en situation et ateliers expérientiels
-- Partages d’expériences
+Les formateur·rice·s proposent aux participant·e·s un travail réflexif à propos de leurs pratiques professionnelles, les invitant à se mettre au travail et à s’impliquer activement dans la dynamique de la formation. La formation est un processus expérientiel qui se base sur la dynamique du groupe et s’élabore au travers de travaux en sous-groupes, de jeux de rôle et de mises en situation fictives, ou de situations professionnelles amenées par les participant·e·s. A partir des réflexions et des discussions, les points d’appui théoriques sont élaborés en commun.
 
 ::: section { .palette-burnt-umber .palette-low-contrast .card .inline-full }
 
 ## Prochaines dates
 
-- 22 novembre 2025
-- 16 décembre 2025
-- 15 janvier 2026
+À venir
 
 ## Lieu
 
-Bruxelles
+1000 Bruxelles
 
 ## Intervenant•es
 
-Manoë Jacquet et Dominique Werbrouck
+À confirmer
 
 :::

@@ -6,16 +6,14 @@
 {% set currentPalette = palettes[loop.index0 % palettes.length] %}
 
 <div class="card palette-{{ currentPalette }} palette-low-contrast">
-<h4>{{ training.data.name }}</h4>
+<h4>{{ training.data.name | safe }}</h4>
 {% if training.data.metadata.image.src %}
 <img src="{{ training.data.metadata.image.src }}" alt="{{ training.data.metadata.image.alt }}" title="{{ training.data.metadata.image.title }}" class="border-img">
 {% endif %}
 
-// TODO: il n'y a pas de description pour la preview
-
 <ul>
 <li>{{ training.data.duration }}</li>
-<li>{{ training.data.price }}</li>
+<li>{{ training.data.price | safe }}</li>
 <li>{{ training.data.place }}</li>
 </ul>
 

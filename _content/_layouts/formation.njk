@@ -14,7 +14,7 @@
 
         <div class="fixed-fluid fixed-right v--content-min:65% items-start">
             <div class="fluid flow items-start">
-                <h1>{{ title }}</h1>
+                <h1>{{ title | safe }}</h1>
                 <hr>
                 {{ content | safe }}
 
@@ -23,9 +23,9 @@
             <aside class="card palette-burnt-umber-contrast">
                 <h3>Infos pratiques</h3>
                 <ul>
-                    <li>Date: {{ metadata.date }}</li>
-                    <li>Heure: {{ metadata.time }}</li>
-                    <li>Lieu: {{ metadata.location }}</li>
+                    <li>{{ duration }}</li>
+                    <li>{{ price | safe }}</li>
+                    <li>{{ place }}</li>
                 </ul>
             </aside>
         </div>
