@@ -4,7 +4,7 @@ lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
 uuid: 73e6a272f144
 localizationKey: 3584974d09eb
-name: "Accueil des jeunes en PSE : quelle posture ? Quels outils ?"
+name: "Accueil des jeunes en PSE: quelle posture? Quels outils?"
 metadata:
   title: ""
   description: ""
@@ -28,7 +28,7 @@ Module de formation à destination des PSE - via <a href="https://www.one.be/pub
 </div>
 
 Ces 4 journées de formation et de 4 demies-journées offrent un temps de réflexion et d’expérimentation. Au sein de ces espace-temps que sont la visite médicale et les campagnes de vaccination, se jouent des enjeux en terme de communication, de liens dans la relation de confiance, de respect de l’intégrité des jeunes et du soutien de leur agentivité.
-Le module permettra de construire ou de renforcer les connaissances autour des concepts de promotion de la santé, des notions de pouvoir, d’autorité et de rapport de force dans la relation de soin avec un enfant et des parents. Celui-ci permettra de développer les outils d’’écoute active issues de la communication bienveillante.
+Le module permettra de construire ou de renforcer les connaissances autour des concepts de promotion de la santé, des notions de pouvoir, d’autorité et de rapport de force dans la relation de soin avec un enfant et des parents. Celui-ci permettra de développer les outils d’écoute active issues de la communication bienveillante.
 
 ## Cette formation permet :
 
