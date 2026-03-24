@@ -3,10 +3,9 @@ import fglob from "fast-glob";
 // import deepmerge from "deepmerge";
 import { DEBUG } from "../../../../env.config.js";
 // import { createKeyFromData } from "../../../utils/hash.js";
-import hashSum from "hash-sum";
-import { cleanupExpensiveData } from "../../../utils/eleventyData.js";
+// import hashSum from "hash-sum";
+// import { cleanupExpensiveData } from "../../../utils/eleventyData.js";
 
-// Premature optimisation
 // let cachedPartials = new Map();
 
 function cleanOutput(str) {
@@ -31,7 +30,7 @@ export default async function (eleventyConfig, pluginOptions) {
 
   // We use the renderFile shortcodes to render partials
   const renderFileShortcodeFn =
-    eleventyConfig.nunjucks.asyncShortcodes.renderFile;
+    eleventyConfig.universal.shortcodes.renderFile;
 
   async function retrievePartial(filename) {
     if (!/\./.test(filename)) {
@@ -68,12 +67,12 @@ export default async function (eleventyConfig, pluginOptions) {
     // const data = deepmerge(this.ctx, dataManual);
     const data = { ...this.ctx, ...dataManual };
     const filename = path.join(filenameRaw);
-    const cacheKey = hashSum({
-      filename,
-      data: cleanupExpensiveData(data),
-      // data: { page: data.page, data: data.data, ...dataManual },
-      templateEngineOverride,
-    });
+    // const cacheKey = hashSum({
+    //   filename,
+    //   data: cleanupExpensiveData(data),
+    //   // data: { page: data.page, data: data.data, ...dataManual },
+    //   templateEngineOverride,
+    // });
     const shouldKeepMdFormating =
       /\.md$/.test(filename) || /md/.test(templateEngineOverride);
 
@@ -108,7 +107,7 @@ export default async function (eleventyConfig, pluginOptions) {
     return "";
   }
 
-  async function renderePairedPartial(
+  async function renderPairedPartial(
     content,
     filenameRaw,
     dataManual,
@@ -160,6 +159,6 @@ export default async function (eleventyConfig, pluginOptions) {
       console.warn(`Invalid shortcode alias: ${alias}`);
       continue;
     }
-    await eleventyConfig.addPairedAsyncShortcode(alias, renderePairedPartial);
+    await eleventyConfig.addPairedAsyncShortcode(alias, renderPairedPartial);
   }
 }
