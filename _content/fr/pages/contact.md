@@ -9,7 +9,7 @@ eleventyNavigation:
   order: 8
 ---
 
-{% partialWrapper "page-header.njk", { image: { src: '/_images/pexels-edmond-dantes-4347331.webp' }, class: 'position-relative' } %}
+{% partialWrapper "page-header.njk", { image: "/_images/pexels-edmond-dantes-4347331.webp", class: "position-relative" } %}
 
 # Contactez-nous
 

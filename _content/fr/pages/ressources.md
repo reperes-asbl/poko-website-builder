@@ -9,7 +9,7 @@ eleventyNavigation:
   order: 6
 ---
 
-{% partialWrapper "page-header.njk", { image: { src: '/_images/pexels-rethaferguson-3810762.webp' }, class: 'palette-burnt-umber' } %}
+{% partialWrapper "page-header.njk", { image: "/_images/pexels-rethaferguson-3810762.webp", class: "palette-burnt-umber" } %}
 
 # Ressources
 

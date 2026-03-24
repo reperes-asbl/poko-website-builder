@@ -5,12 +5,13 @@ htmlHead: ''
 cssHead: ''
 languages:
   - code: fr
-    name: Français
-    customUrlPrefix:
-      prefix: ""
     status: published
     keepUrlPrefix: false
+    name: Français
+    customUrlPrefix:
+      prefix: ''
     isCmsDefault: false
     isWebsiteDefault: true
 collections:
   - articles
+  - people

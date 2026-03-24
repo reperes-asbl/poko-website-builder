@@ -10,7 +10,7 @@ eleventyNavigation:
 vars: {}
 ---
 
-{% partialWrapper "page-header.njk", { image: { src: '/_images/pexels-karolina-grabowska-5386428.webp' } } %}
+{% partialWrapper "page-header.njk", { image: "/_images/pexels-karolina-grabowska-5386428.webp", class: "" } %}
 
 # Nos activités
 

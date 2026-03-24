@@ -7,23 +7,47 @@ localizationKey: 0c2df325b206
 name: Pour qui?
 eleventyNavigation:
   order: 1
+vars: null
 ---
 
-{% partialWrapper "page-header.njk", { image: { src: '/_images/pexels-fauxels-3184298.webp' }, class: 'palette-cooper' } %}
+{% partialWrapper "page-header.njk", { image: "/_images/pexels-fauxels-3184298.webp", class: "palette-cooper" } %}
+
+
+
+
+
+
+
+
+
+
+
 
 # À qui s’adressent nos formations?
 
 Chez Repères, nos formations en promotion de la santé sont conçues pour toutes celles et ceux qui veulent agir sur la santé des personnes et des communautés, en équipe ou individuellement.
 
+
+
+
+
+
+
+
+
+
+
+
 {% endpartialWrapper %}
 
-::::: div { .articles .section .palette-cooper-contrast .bleed-bg .v--bleed-bottom:14rem }
-:::: article { .fixed-fluid }
+{% wrapper tag="section", class="articles palette-cooper-contrast bleed-bg v--bleed-bottom:14rem" %}
+{% sectionTwoColumns tag="article", class="reset-down-w" %}
 
-{% image src="/_images/pexels-fauxels-3184298.webp", width="300", aspectRatio="1" %}
-
-::: prose
-
+{% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
+{% twoColumnsItem  %}
+{% image src="/_images/pexels-fauxels-3184298.webp", aspectRatio=1, width=300, class="rounded-full" %}
+{% endtwoColumnsItem %}
+{% twoColumnsItem  %}
 ## Vous êtes un·e professionnel·le?
 
 Vous travaillez dans le social, la santé ou l’éducation à Bruxelles ou en Wallonie? Nos formations peuvent vous aider à:
@@ -33,15 +57,18 @@ Vous travaillez dans le social, la santé ou l’éducation à Bruxelles ou en W
 - Échanger avec d’autres professionnel·les confronté·es aux mêmes situations.
 
 Exemples de structures où nos participants travaillent souvent: maisons médicales, centres de planning familial, services sociaux, services de santé mentale, hôpitaux, structures jeunesse, CPAS, services d’accompagnement à l’emploi ou d’insertion.
+{% endtwoColumnsItem %}
+{% endtwoColumns %}
 
-:::
-::::
-:::: article { .fixed-fluid }
+{% endsectionTwoColumns %}
 
-{% image src="/_images/pexels-fauxels-3184298.webp", width="300", aspectRatio="1" %}
+{% sectionTwoColumns tag="article", class="reset-down-w" %}
 
-::: prose
-
+{% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
+{% twoColumnsItem  %}
+{% image src="/_images/pexels-fauxels-3184298.webp", aspectRatio=1, width=300, class="rounded-full" %}
+{% endtwoColumnsItem %}
+{% twoColumnsItem  %}
 ## Vous êtes un relais ou bénévole?
 
 Vous êtes engagé·e dans une association, collectif citoyen ou initiative locale? Nos formations peuvent vous permettre de:
@@ -49,15 +76,18 @@ Vous êtes engagé·e dans une association, collectif citoyen ou initiative loca
 - Développer votre posture en promotion de la santé dans vos actions.
 - Mobiliser votre communauté et construire des projets participatifs.
 - Rencontrer d’autres relais et bénévoles pour partager expériences et bonnes pratiques.
+{% endtwoColumnsItem %}
+{% endtwoColumns %}
 
-:::
-::::
-:::: article { .fixed-fluid }
+{% endsectionTwoColumns %}
 
-{% image src="/_images/pexels-fauxels-3184298.webp", width="300", aspectRatio="1" %}
+{% sectionTwoColumns tag="article", class="reset-down-w" %}
 
-::: prose
-
+{% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
+{% twoColumnsItem  %}
+{% image src="/_images/pexels-fauxels-3184298.webp", aspectRatio=1, width=300, class="rounded-full" %}
+{% endtwoColumnsItem %}
+{% twoColumnsItem  %}
 ## Vous faites partie d’une équipe ou d’une institution?
 
 Nous accompagnons les structures et collectifs qui souhaitent:
@@ -65,15 +95,18 @@ Nous accompagnons les structures et collectifs qui souhaitent:
 - Créer des repères communs en promotion de la santé.
 - Améliorer le travail collectif et les pratiques internes.
 - Mettre en place des espaces de formation ou de soutien au sein de leur organisation.
+{% endtwoColumnsItem %}
+{% endtwoColumns %}
 
-:::
-::::
-:::: article { .fixed-fluid }
+{% endsectionTwoColumns %}
 
-{% image src="/_images/pexels-fauxels-3184298.webp", width="300", aspectRatio="1" %}
+{% sectionTwoColumns tag="article", class="reset-down-w" %}
 
-::: prose
-
+{% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
+{% twoColumnsItem  %}
+{% image src="/_images/pexels-fauxels-3184298.webp", aspectRatio=1, width=300, class="rounded-full" %}
+{% endtwoColumnsItem %}
+{% twoColumnsItem  %}
 ## Vous êtes un organisme de formation?
 
 Repères soutient les organismes de formation pour:
@@ -81,16 +114,14 @@ Repères soutient les organismes de formation pour:
 - Développer la posture des formateur·rices en promotion de la santé.
 - Échanger sur les pratiques et expériences avec d’autres organismes.
 - Être accompagnés dans leurs questionnements et difficultés en formation.
+{% endtwoColumnsItem %}
+{% endtwoColumns %}
 
-:::
-::::
-:::::
+{% endsectionTwoColumns %}
+{% endwrapper %}
 
-<!-- End of articles -->
-
-::: div { .squashed .prose .box .card .palette-burnt-umber .palette-low-contrast .font-bold }
-
-Pourquoi nous contacter?
+{% wrapper tag="section", class="squashed prose box border-5 palette-cooper palette-low-contrast font-bold" %}
+## Pourquoi nous contacter?
 
 Vous nous contactez si vous voulez:
 
@@ -98,21 +129,20 @@ Vous nous contactez si vous voulez:
 - Avoir un regard réflexif sur vos pratiques, individuellement ou collectivement.
 - Trouver des supports méthodologiques pour intégrer la promotion de la santé dans vos projets, équipes ou structures.
 
-{% link url="contact", text="Nous contacter", class="button" %} { .text-center }
+{% link url="contact", text="Nous contacter", linkType="external", class="button" %} { .text-center }
+{% endwrapper %}
 
-:::
-
-::::: div { .section .bleed-bg .v--bleed-top:12rem }
+{% sectionGrid class="width-prose bleed-bg v--bleed-top:10rem" %}
+{% sectionHeader  %}
 ::: hgroup { .text-center }
 
-### Nous collaborons avec une grande diversité d’acteurs engagés:
+### Nous collaborons avec une grande diversité d’acteurs engagés
 
 du soin à la jeunesse, du social à la formation et d’autres… { .h4 }
 :::
-
-:::: grid-fluid { .sectors .v--columns:3 .gap-0 .m-block-[--step-4] .width-prose .rounded-[--radius-card] .overflow-hidden .font-bold }
-::: prose { .box .p-[--p-card] .palette-orange-peel .palette-low-contrast }
-
+{% endsectionHeader %}
+{% grid type="grid-fluid", columns=3, gap="0px", class="sectors font-bold px-0 m-block-[--step-4] rounded-[--radius-card] overflow-hidden" %}
+{% gridItem class="prose box rd-0 palette-orange-peel palette-low-contrast" %}
 #### Santé & bien-être
 
 - Maisons médicales (MM)
@@ -121,10 +151,8 @@ du soin à la jeunesse, du social à la formation et d’autres… { .h4 }
 - Hôpitaux
 - Services PMS / PSE
 - Services de promotion de la santé
-
-:::
-::: prose { .box .p-[--p-card] .palette-cooper .palette-low-contrast }
-
+{% endgridItem %}
+{% gridItem class="prose box rd-0 palette-orange-peel palette-low-contrast" %}
 #### Accompagnement social & humain
 
 - Services sociaux (SS) et CPAS
@@ -132,28 +160,25 @@ du soin à la jeunesse, du social à la formation et d’autres… { .h4 }
 - Services d’intervention psychosociale d’urgence
 - Maisons d’accueil et centres d’hébergement
 - Services de cohésion sociale
-
-:::
-::: prose { .box .p-[--p-card] .palette-cooper .palette-low-contrast }
-
+{% endgridItem %}
+{% gridItem class="prose box rd-0 palette-orange-peel palette-low-contrast" %}
 #### Jeunesse, éducation & insertion
 
 - Organismes de jeunesse (AMO)
 - Services d’aide à la jeunesse (SAJ)
 - Organismes d’accompagnement à l’emploi / insertion socioprofessionnelle
 - Services ou organismes de formation
-
-:::
-::: prose { .box .p-[--p-card] .palette-orange-peel .palette-low-contrast }
-
+{% endgridItem %}
+{% gridItem class="prose box rd-0 palette-orange-peel palette-low-contrast" %}
 #### Réseaux & fédérations
 
 - Fédérations de ces secteurs
 - Autres structures partenaires et acteurs associatifs
+{% endgridItem %}
+{% endgrid %}
 
-:::
-::::
-:::::
+{% endsectionGrid %}
+
 
 {% css %}
 .articles {
@@ -165,10 +190,11 @@ article.fixed-fluid {
 align-items: center;
 max-inline-size: var(--width-max);
 }
-article.fixed-fluid img {
-border-radius: 100%;
-}
 .sectors > div {
 inline-size: 100%;
+}
+.sectors > div:nth-of-type(2),
+.sectors > div:nth-of-type(3){
+--color-text: var(--Cooper);
 }
 {% endcss %}

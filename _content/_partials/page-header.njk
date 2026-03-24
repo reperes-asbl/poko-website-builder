@@ -1,32 +1,41 @@
-<header class="page-header section {{ class }}">
-{% partial "svg-boucle" %}
-<div class="page-header--content">
+{# {% partial "svg-boucle" %} #}
+<section class="layout page-header section {{ class }}">
+<div class="page-header--content width-prose">
 {{ content | md }}
 </div>
-{% image src=image.src, class="page-header--image" %}
-</header>
+{% image src=image, class="page-header--image" %}
+</section>
 
 {% css %}
 .page-header {
+  container-type: inline-size;
   display: grid;
-  grid-template-columns: auto;
-  align-items: flex-end;
+  align-items: end;
   gap: 1em;
-  margin-block: var(--step-6);
+  {# margin-block: var(--step-6); #}
+  & > .page-header--content > * {
+    {# margin-inline: 0; #}
+  }
   & > img {
-    aspect-ratio: 2;
+    aspect-ratio: 3;
   }
 
-  @media (min-width: 50rem) {
+  @media (min-width: 65rem) {
     & {
-      margin-inline-end: calc(-1 * var(--pi-body));
       grid-template-columns: 1fr 1fr;
     }
     & > img {
       aspect-ratio: 1;
       border-radius: var(--radius-card) 0 0 var(--radius-card);
+      {# margin-inline-end: calc(-1 * var(--px-body)); #}
     }
   }
 
+}
+
+@container (width < 97vw) {
+    .page-header > img {
+        border-radius: var(--radius-card);
+    }
 }
 {% endcss %}

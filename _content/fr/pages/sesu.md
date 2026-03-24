@@ -9,7 +9,7 @@ eleventyNavigation:
   order: 4
 ---
 
-{% partialWrapper "page-header.njk", { image: { src: '/_images/pexels-rethaferguson-3810792.webp' }, class: 'palette-delft-blue' } %}
+{% partialWrapper "page-header.njk", { image: "/_images/pexels-rethaferguson-3810792.webp", class: "palette-delft-blue" } %}
 
 # Service support formation (SESU)
 
