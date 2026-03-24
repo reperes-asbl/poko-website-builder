@@ -528,7 +528,7 @@ export default [
     /^icon$/,
     (match, { symbols }) => {
       return {
-        [symbols.selector]: () => `:where(.icon)`,
+        [symbols.selector]: () => `:where(p .icon)`,
         width: "var(--width-icon, var(--size-icon, 0.75em))",
         height: "var(--height-icon, var(--size-icon, 0.75em))",
         "vertical-align": "var(--vertical-align-icon, -0.125em)",

@@ -1,5 +1,20 @@
 // import obfuscateEmail from "../../utils/emailObfuscate.js";
 import { locale_url } from "../../filters/i18n.js";
+import { emailLink } from "../../filters/email.js";
+
+function isFileUrl(urlString) {
+  try {
+    // Use a dummy base for relative URLs
+    const url = new URL(urlString, "http://x");
+    const pathname = url.pathname;
+
+    if (pathname.endsWith("/")) return false;
+
+    return /\.\w{2,5}$/i.test(pathname);
+  } catch {
+    return false;
+  }
+}
 
 export function link(unnamedAttrOrObj, optionalAttrsObj) {
   const {
@@ -9,27 +24,38 @@ export function link(unnamedAttrOrObj, optionalAttrsObj) {
     lang,
     prop,
     collection,
-    isEmail: isEmailPass,
-    isFile: isFilePass,
-    isExternal: isExternalPass,
-    isInternal: isInternalPass,
+    linkType,
+    // Email fields
+    subject,
+    body,
+    cc,
+    bcc,
+    // TODO: implement the following?
+    // download,
+    // target,
+    // rel,
+    // hreflang,
     ...attrs
   } = optionalAttrsObj || unnamedAttrOrObj;
   const urlRef = typeof unnamedAttrOrObj === "string" ? unnamedAttrOrObj : url;
   // Boolean checks
   const isEmail =
-    isEmailPass ||
+    linkType === "email" ||
     /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(urlRef);
-  const isFile = isFilePass || urlRef.startsWith("file:");
+  const isFile = linkType === "file" || isFileUrl(urlRef);
   const isExternal =
-    isExternalPass || urlRef.startsWith("http") || urlRef.startsWith("www.");
-  const isInternal = isInternalPass || (!isEmail && !isExternal && !isFile);
+    linkType === "external" ||
+    urlRef.startsWith("http") ||
+    urlRef.startsWith("www.");
+  const isInternal =
+    linkType === "internal" || (!isEmail && !isExternal && !isFile);
 
   // could be one of:
   // - [ ] translationKey
   // - [ ] page url
   // - [ ] external url
   // - [ ] email
+  // - [ ] file url
   //
   // pageRef | locale_url(lang, propName, collectionName)
 
@@ -50,6 +76,33 @@ export function link(unnamedAttrOrObj, optionalAttrsObj) {
     }
   }
 
+  if (isExternal) {
+    const attrsStr = Object.entries(attrs)
+      .map(([key, value]) => `${key}="${value}"`)
+      .join(" ");
+
+    return `<a href="${urlRef}" ${attrsStr}>${text || urlRef}</a>`;
+  }
+
+  if (isEmail) {
+    return emailLink.call(this, urlRef, {
+      text,
+      subject,
+      body,
+      cc,
+      bcc,
+      ...attrs,
+    });
+  }
+
+  if (isFile) {
+    const attrsStr = Object.entries(attrs)
+      .map(([key, value]) => `${key}="${value}"`)
+      .join(" ");
+
+    return `<a href="${urlRef}" ${attrsStr}>${text || urlRef}</a>`;
+  }
+
   return "";
 }
 
@@ -68,5 +121,3 @@ export function button(unnamedAttrOrObj, optionalAttrsObj) {
     class: `button ${unnamedAttrOrObj?.class || optionalAttrsObj?.class || ""}`,
   });
 }
-
-// TODO: Email, tel, files, external, ...

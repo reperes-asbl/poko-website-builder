@@ -30,12 +30,12 @@ body,
     stroke: var(--color-stroke, currentcolor);
 }
 
-.contrast,
+/*.contrast,
 [class*="palette"].contrast,
 [class*="palette"] .contrast {
     color: var(--color-var-bg, #fdfdfe);
     background-color: var(--color-var-text, #100c08);
-}
+}*/
 
 /* More variable names definitions and fallback values for css selectors */
 *:focus,
@@ -54,86 +54,68 @@ body,
     border-color: var(--color-border--selection, currentcolor);
 }
 /* prettier-ignore */
-:is(h1, h2, h3, h4, h5, h6, .h-1, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8, .h9),
-:is(h1, h2, h3, h4, h5, h6, .h-1, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8, .h9)[class*='palette'],
-[class*='palette'] :is(h1, h2, h3, h4, h5, h6, .h-1, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8, .h9) {
-  color: var(--color-text__heading);
-  background-color: var(--color-bg__heading);
-  border-color: var(--color-border__heading, currentcolor);
+:where(.h8, .h7, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, .h0, .h-1, .h-2, .h-3, .h-4) {
+    :where(&[class*="palette"]),
+    :where([class*="palette"] &) {
+        color: var(--color-text__heading, --color-text);
+        background-color: var(--color-bg__heading);
+        border-color: var(--color-border__heading, currentcolor);
+    }
 }
 /* a */
-a,
-a[class*="palette"],
-[class*="palette"] a {
+:where(a),
+:where(a[class*="palette"]),
+:where([class*="palette"] a) {
     color: var(--color-text__a, var(--color-text));
     background-color: var(--color-bg__a, var(--color-bg));
     border-color: var(--color-border__a, var(--color-border, currentcolor));
 }
 a:hover,
-:where(a[class*="palette"]):hover,
-:where([class*="palette"]) a:hover {
+:where(a[class*="palette"]:hover),
+:where([class*="palette"] a:hover) {
     color: var(--color-text__a--hover);
     background-color: var(--color-bg__a--hover);
     border-color: var(--color-border__a, currentcolor);
 }
 /* Buttons */
-:is(
-    button,
-    .button,
-    input[type="submit"],
-    input[type="button"],
-    input[type="reset"],
-    [role="button"]
-),
-:where(
-    button,
-    .button,
-    input[type="submit"],
-    input[type="button"],
-    input[type="reset"],
-    [role="button"]
-)[class*="palette"],
-[class*="palette"]
-    :where(
-        button,
-        .button,
-        input[type="submit"],
-        input[type="button"],
-        input[type="reset"],
-        [role="button"]
-    ) {
-    color: var(--color-text__button, var(--color-text));
-    background-color: var(--color-bg__button, var(--color-bg));
-    border-color: var(
-        --color-border__button,
-        var(--color-border, currentcolor)
-    );
+/* prettier-ignore */
+:where(button,.button,input[type="submit"],input[type="button"],input[type="reset"],[role="button"]) {
+    :where(&[class*="palette"]),
+    :where([class*="palette"] &) {
+        color: var(--color-text__button, var(--color-text));
+        background-color: var(--color-bg__button, var(--color-bg));
+        border-color: var(
+            --color-border__button,
+            var(--color-border, currentcolor)
+        );
 
-    &:hover {
-        color: var(
-            --color-text__button--hover,
-            var(--color-bg__button, var(--color-bg))
-        );
-        background-color: var(
-            --color-bg__button--hover,
-            var(--color-text__button, var(--color-text))
-        );
-        /*background-color: red !important;*/
-        border-color: var(--color-border__button--hover);
+        &:hover {
+            color: var(
+                --color-text__button--hover,
+                var(--color-bg__button, var(--color-bg))
+            );
+            background-color: var(
+                --color-bg__button--hover,
+                var(--color-text__button, var(--color-text))
+            );
+            /*background-color: red !important;*/
+            border-color: var(--color-border__button--hover);
+        }
+        &:focus {
+            color: var(--color-text__button--focus);
+            background-color: var(--color-bg__button--focus);
+            border-color: var(--color-border__button--focus, currentcolor);
+        }
+        &:disabled {
+            color: var(--color-text__button--disabled);
+            background-color: var(--color-bg__button--disabled);
+            border-color: var(--color-border__button--disabled, currentcolor);
+        }
     }
-    &:focus {
-        color: var(--color-text__button--focus);
-        background-color: var(--color-bg__button--focus);
-        border-color: var(--color-border__button--focus, currentcolor);
-    }
-    &:disabled {
-        color: var(--color-text__button--disabled);
-        background-color: var(--color-bg__button--disabled);
-        border-color: var(--color-border__button--disabled, currentcolor);
-    }
+
 }
-:is(tt, code, kbd, pre, samp),
-:is(
+:where(tt, code, kbd, pre, samp),
+:where(
     tt,
     code,
     kbd,
@@ -145,12 +127,12 @@ a:hover,
     pre *,
     samp *
 )[class*="palette"],
-[class*="palette"] :is(tt, code, kbd, pre, samp) {
+[class*="palette"] :where(tt, code, kbd, pre, samp) {
     color: var(--color-text__code, white);
     background-color: var(--color-bg__code, GrayText);
     border-color: var(--color-border__code, currentcolor);
 }
-:is(mark, .mark, .highlight, mark *, .mark *, .highlight *),
+:where(mark, .mark, .highlight, mark *, .mark *, .highlight *),
 :where(
     mark,
     .mark,
@@ -208,3 +190,84 @@ b[class*="palette"],
     caret-color: inherit;
     column-rule-color: inherit;
 }
+
+/* Create color palette variations */
+body,
+.palette--reset,
+.palette--type,
+.palette--alt,
+.palette--accent,
+.palette--contrast {
+    --color-type-theme: var(--color-type); /* prettier-ignore */
+    --color-alt-theme: var(--color-alt); /* prettier-ignore */
+    --color-accent-theme: var(--color-accent); /* prettier-ignore */
+    --color-neutral-theme: var(--color-neutral); /* prettier-ignore */
+}
+.palette--contrast {
+    --color-type-theme: var(--color-neutral); /* prettier-ignore */
+    --color-neutral-theme: var(--color-type); /* prettier-ignore */
+}
+.palette--accent {
+    --color-type-theme: var(--color-accent); /* prettier-ignore */
+    --color-accent-theme: var(--color-type); /* prettier-ignore */
+}
+.palette--alt {
+    --color-type-theme: var(--color-alt); /* prettier-ignore */
+    --color-alt-theme: var(--color-type); /* prettier-ignore */
+}
+
+/* WIP: color palette interface */
+/*
+--color-text
+--color-bg
+--color-text
+--color-border
+--color-outline
+--color-text-decoration
+--color-text-emphasis
+--color-caret
+--color-column-rule
+--color-fill
+--color-stroke
+--color-var-bg
+--color-var-text
+--color-outline
+--color-text--selection
+--color-bg--selection
+--color-border--selection
+--color-text__heading
+--color-bg__heading
+--color-border__heading
+--color-text__a
+--color-bg__a
+--color-border__a
+--color-border
+--color-text__a--hover
+--color-bg__a--hover
+--color-border__a
+--color-text__button
+--color-bg__button
+--color-border
+--color-bg__button
+--color-text__button
+--color-border__button--hover
+--color-text__button--focus
+--color-bg__button--focus
+--color-border__button--focus
+--color-text__button--disabled
+--color-bg__button--disabled
+--color-border__button--disabled
+--color-text__code
+--color-bg__code
+--color-border__code
+--color-text__mark
+--color-bg__mark
+--color-border__mark
+--color-text__strong
+--color-bg__strong
+--color-text__em
+--color-bg__em
+--color-text__b
+--color-bg__b
+--color-text--marker
+*/

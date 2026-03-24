@@ -8,11 +8,12 @@ name: Mon article
 eleventyNavigation: null
 metadata: null
 preview: null
-tags: []
+tags:
+  - featured
 status: ''
 pageLayout: ''
 generatePage: ''
-vars: {}
+vars: null
 dataList: []
 ---
 
