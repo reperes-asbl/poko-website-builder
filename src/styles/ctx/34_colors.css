@@ -67,7 +67,7 @@ body,
 :where(a[class*="palette"]),
 :where([class*="palette"] a) {
     color: var(--color-text__a, var(--color-text));
-    background-color: var(--color-bg__a, var(--color-bg));
+    background-color: var(--color-bg__a);
     border-color: var(--color-border__a, var(--color-border, currentcolor));
 }
 a:hover,

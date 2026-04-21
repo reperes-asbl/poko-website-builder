@@ -46,6 +46,6 @@
     border-style: var(--border-style-token);
 }
 
-img, picture {
+:where(img, picture) {
     border-radius: var(--radius);
 }

@@ -58,13 +58,17 @@
     max-inline-size: min(100%, var(--width-prose));
     margin-inline: auto;
 }*/
+
 /* We might want to define each line separately like we do with colors */ /* prettier-ignore */
-:where(.prose, p, h1, h2, h3, h4, h5, h6, hgroup, address, :where(ul, ol):not([role="list"]):not(.reset), menu, search),
+:where(.prose, .featured, .card, p, h1, h2, h3, h4, h5, h6, hgroup, address, :where(ul, ol):not([role="list"]):not(.reset), menu, search),
 :where(figure,figcaption,form,fieldset),
 :where(dl,dt,dd,blockquote,details) {
     max-inline-size: min(100%, var(--width-prose));
     margin-inline: auto;
-    :where(:where(.layout, .section-header, .section-footer) &) {
+
+    :where(& *),
+    :where(.layout &),
+    :where(:where(section, .section) > :where(.area, header, footer, .header, .footer, .main) &) {
         margin-inline: 0;
     }
     :where(&.reset-w),
@@ -75,6 +79,15 @@
 
     /* Reset Flow */
     margin-block-start: 0;
+}
+:where(.featured) {
+    max-inline-size: min(100%, var(--width-featured, var(--width-prose)));
+}
+:where(.card) {
+    max-inline-size: min(100%, var(--width-card, var(--width-prose)));
+}
+:where(:where(.card, .box, [class*="width-"]) *) {
+    margin-inline: 0;
 }
 
 /* ----- Flow ----- */
@@ -111,7 +124,10 @@
 :where(hr) {
     margin-block: var(--flow-hr);
 } /* prettier-ignore */
-:where(:where(blockquote, figure, hgroup, address, menu, search, form, fieldset, details, img, picture, video, pre):not(:first-child)) {
+:where(:where(img, picture, video):not(:first-child)) {
+    margin-block-start: var(--flow-media);
+} /* prettier-ignore */
+:where(:where(blockquote, figure, hgroup, address, menu, search, form, fieldset, details, pre):not(:first-child)) {
     margin-block-start: var(--flow-prose);
 } /* prettier-ignore */
 :where(:where(section, .section, table):not(:first-child)) {
@@ -121,10 +137,18 @@
     margin-block-start: 0;
 }
 
+/* Avoid previous defaults in some situations */
 /* prettier-ignore */
-:where(:where(.layout, .switcher, .grid-fluid, .cluster, .flow, .fixed-fluid, .center, cover, reel) > *),
+:where(address) > *,
+:where(p, h1, h2, h3, h4, h5, h6, li, figure, figcaption, td, th, dt, dd, button, label, input, summary) :where(img, picture, video),
+:where(:where(.layout, .switcher, .grid-fluid, .cluster, .fixed-fluid, .center, cover, reel) > *),
 :where(hgroup > *) {
     margin-block-start: 0;
+}
+/* Flow between structured section blocks */
+/* prettier-ignore */
+:where(:where(section, .section) > * + :where(.area, .header, .main, .footer)) {
+    margin-block-start: var(--flow-section-area);
 }
 
 /* ----- Padding ----- */
@@ -158,8 +182,9 @@
 
 /* Content elements: apply body padding on the first 'content' element (only if flag is 0, then set flag to 1 for children) */
 /* :where(p, h1, h2, h3, h4, h5, h6, hgroup, address, blockquote, figure, figcaption, ul, ol, dl, menu, pre, form, table, details, search), */
+/* Apply on .box to avoid double lateral padding */
 /* prettier-ignore */
-:where(*:not(html, body, main, section, .section, header, footer, aside, article, hgroup, div), .layout, .switcher, .grid-fluid, .cluster, .flow, .fixed-fluid, .center, .cover, .reel) {
+:where(*:not(html, body, main, section, .section, header, footer, aside, article, hgroup, div), .layout, .switcher, .grid-fluid, .cluster, .flow, .fixed-fluid, .center, .cover, .reel, .box) {
   padding-inline: calc(var(--px-body, 0.8rem) * (1 - var(--px-applied)));
 
   & > * {
@@ -207,7 +232,8 @@
     padding-block: var(--py-body);
 }
 :where(section, .section) {
-    /*--py: var(--py-section);*/
+    /* TODO: Should I comment this var declaration? */
+    --py: var(--py-section);
     padding-block: var(--py-section);
 }
 :where(body > main:has(& > :where(header, footer, aside):first-child)) {
@@ -216,6 +242,12 @@
 :where(body > main:has(& > :where(header, footer, aside):last-child)) {
     padding-block-end: 0;
 } /* prettier-ignore */
+/* NOTE: Do not think this is relevant */
+/*:where(section, .section) > :where(.area, header, footer, .header, .footer, .main) {
+    --py: var(--py-section-area);
+    padding-block: var(--py-section-area);
+}*/
+/* prettier-ignore */
 :where(.prose) {
     --py: var(--py-prose);
     padding-block: var(--py-prose);
@@ -224,7 +256,26 @@
     --py: var(--py-featured);
     padding-block: var(--py-featured);
 } /* prettier-ignore */
+:where(.card) {
+    --py: var(--py-card);
+    padding-block: var(--py-card);
+} /* prettier-ignore */
 :where(.box, .card:where(.palette--contrast, .palette--dark, .palette--light)) {
+    /* Apply the same padding all around for boxes */
     padding: var(--py);
     --padding-box: var(--py);
+}
+
+/* -- Vertical Margin when need more breathing room -- */
+/* Implemented in Uno CSS */
+/*:where(.breathe) {
+    margin-block: var(--py);
+}*/
+/* Utility classes in UnoCSS for .breathe-prose, .breathe-featured, .breathe-section, ... */
+
+/* -- Negative Vertical Margin when we need overlap -- */
+:where(.squash) {
+    /* To avoid losing background etc on bleeding siblings */
+    isolation: isolate;
+    margin-block: calc(-0.5 * var(--py));
 }
