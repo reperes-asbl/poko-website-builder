@@ -9,7 +9,7 @@ export default async function (data) {
 
   // const pagePreviewSc = this.pagePreview
   // const articlePreviewSc = this.articlePreview
-  return `<article class="card item-collection breakout-clickable">
+  return `<${data.tag || "article"} class="cell item-collection breakout-clickable">
 ${output}
-</article>`;
+</${data.tag || "article"}>`;
 }

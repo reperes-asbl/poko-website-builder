@@ -19,4 +19,4 @@ export {
 } from "./array.js";
 export { ogImageSrc, image } from "./images.js";
 export { emailLink, email } from "./email.js";
-export { htmlAttrs, htmlImgAttrs } from "./html.js";
+export { htmlAttrs, htmlImgAttrs, ioAttr } from "./html.js";

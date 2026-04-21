@@ -2,13 +2,15 @@ export default function ({
   content,
   type,
   gap,
-  class: className,
   // Switcher options
   widthWrap,
   // Fixed-fluid options
   fixedSide,
   widthFixed,
   widthFluidMin,
+  // to pass
+  class: className,
+  tag,
 }) {
   // Default: switcher (Symmetrical)
   const layoutClass = type === "fixedFluid" ? "fixed-fluid" : "switcher";
@@ -30,7 +32,7 @@ export default function ({
   styleStr = styleStr ? `style="${styleStr}"` : "";
 
   const classes = [
-    "layout section-main two-columns",
+    "layout area main two-columns",
     layoutClass,
     modifierClass,
     className || "",
@@ -48,9 +50,9 @@ export default function ({
   // `
   //       : "";
 
-  return `<div class="${classes}" ${styleStr}>
+  return `<${tag || "div"} class="${classes}" ${styleStr}>
 ${content}
-</div>
+</${tag || "div"}>
 `;
   // ${defaultCss}
 }

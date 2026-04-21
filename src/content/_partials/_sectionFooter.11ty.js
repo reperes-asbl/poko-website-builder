@@ -1,5 +1,5 @@
-export default function ({ content, class: className }) {
-  return `<footer class="section-footer ${className || ""}">
+export default function ({ content, class: className, tag }) {
+  return `<${tag || "footer"} class="area footer ${className || ""}">
 ${content}
-</footer>`;
+</${tag || "footer"}>`;
 }

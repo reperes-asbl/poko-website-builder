@@ -16,9 +16,13 @@ const inlineToMultiline = (inline) => {
   return inline?.replace(/\\n/g, "\n")?.replace(/\\"/g, '"');
 };
 
+// Apparently, in Sveltia, an object with an md field can hold keys like 'content:c111:text'
 const njkAttrsStringFromObj = (obj) =>
   Object.entries(obj)
-    .filter(([key, value]) => !!value)
+    .filter(
+      ([key, value]) =>
+        !!value && key !== "content" && !key.startsWith("content:"),
+    )
     .map(([key, value]) => {
       if (typeof value === "string") {
         return `${key}="${value}"`;
@@ -27,13 +31,23 @@ const njkAttrsStringFromObj = (obj) =>
     })
     .join(", ");
 
+const njkAttrsStringFromSectionAreaData = (areaData) => {
+  const { content, attributes, ...isolatedAttrs } = areaData || {};
+  const constructedAttrs = njkAttrsStringFromObj(isolatedAttrs);
+  const attrs = [constructedAttrs, attributes || ""].filter(Boolean).join(", ");
+
+  return attrs;
+};
+
 function toQuotableString(text) {
   return text
-    .replace(/\\/g, "\\\\") // escape backslashes first
-    .replace(/"/g, '\\"') // escape double quotes
-    .replace(/\n/g, "\\n") // escape newlines
-    .replace(/\r/g, "\\r") // escape carriage returns
-    .replace(/\t/g, "\\t"); // escape tabs
+    ? text
+        .replace(/\\/g, "\\\\") // escape backslashes first
+        .replace(/"/g, '\\"') // escape double quotes
+        .replace(/\n/g, "\\n") // escape newlines
+        .replace(/\r/g, "\\r") // escape carriage returns
+        .replace(/\t/g, "\\t") // escape tabs
+    : undefined;
 }
 
 function fromQuotableString(text) {
@@ -207,6 +221,7 @@ const extractSimpleValue = (argumentsString, propName) => {
   return rawValue;
 };
 
+// ⚠️ Use this one !!!
 /**
  * Extracts specified attributes from a string (quoted or unquoted)
  * Works with both Nunjucks (comma-separated) and HTML (space-separated) attributes
@@ -330,6 +345,29 @@ const extractAllWithNunjucksTag = (contentString, tagName) => {
   return results;
 };
 
+const extractSectionAreaData = (contentString, tagName) => {
+  const { attributes, content } =
+    extractWithNunjucksTag(contentString || "", tagName) || {};
+  const { extracted, remaining } = extractAttributes(attributes || "", [
+    "class",
+  ]);
+  const className = extracted?.class || null;
+  return { class: className, attributes: remaining, content };
+};
+
+const extractAllSectionAreaData = (contentString, tagName) => {
+  let items = extractAllWithNunjucksTag(contentString || "", tagName);
+  items = items.map(({ attributes, content }) => {
+    const { extracted, remaining } = extractAttributes(attributes || "", [
+      "class",
+    ]);
+    const className = extracted?.class || null;
+    return { class: className, attributes: remaining, content };
+  });
+
+  return items;
+};
+
 const parsePartialSyntax = (match) => {
   // Parse the arguments from the captured string
   const partialSlug = match[1];
@@ -441,6 +479,65 @@ const imageFields = [
   },
 ];
 
+// Section fields
+const sectionHeaderField = {
+  name: "header",
+  label: "Section Header",
+  widget: "object",
+  required: false,
+  summary: "{{content | truncate(50)}}",
+  // collapsed: true,
+  fields: [
+    {
+      name: "content",
+      label: "Header Content",
+      widget: "markdown",
+      required: false,
+    },
+    {
+      name: "class",
+      label: "Header Classes",
+      widget: "string",
+      required: false,
+    },
+    {
+      name: "attributes",
+      label: "Header Raw Attributes",
+      widget: "hidden",
+      required: false,
+    },
+  ],
+};
+const sectionFooterField = {
+  name: "footer",
+  label: "Section Footer",
+  widget: "object",
+  required: false,
+  summary: "{{content | truncate(50)}}",
+  // collapsed: true,
+  fields: [
+    {
+      name: "content",
+      label: "Footer Content",
+      widget: "markdown",
+      required: false,
+    },
+    {
+      name: "class",
+      label: "Footer Classes",
+      widget: "string",
+      required: false,
+    },
+    {
+      name: "attributes",
+      label: "Footer Raw Attributes",
+      widget: "hidden",
+      required: false,
+    },
+  ],
+};
+
+// Layout options
 const layoutTypeGridFluid = {
   name: "grid-fluid",
   // label: "Fluid Grid: Fluid sized blocks wrap automatically",
@@ -1221,19 +1318,20 @@ export const wrapper = {
       required: false,
       widget: "select",
       options: [
-        { value: "div", label: "div" },
-        { value: "section", label: "section" },
+        { value: "div", label: "Simple box (div)" },
+        { value: "section", label: "Section (section)" },
+        { value: "hgroup", label: "Heading Group (hgroup)" },
         { value: "article", label: "article" },
-        { value: "aside", label: "aside" },
-        { value: "header", label: "header" },
-        { value: "footer", label: "footer" },
-        { value: "main", label: "main" },
-        { value: "nav", label: "nav" },
         { value: "figure", label: "figure" },
         { value: "figcaption", label: "figcaption" },
         { value: "details", label: "details" },
         { value: "summary", label: "summary" },
         { value: "dialog", label: "dialog" },
+        { value: "aside", label: "aside" },
+        { value: "header", label: "header" },
+        { value: "footer", label: "footer" },
+        { value: "nav", label: "nav" },
+        { value: "main", label: "main" },
       ],
     },
     {
@@ -1833,31 +1931,10 @@ ${content}
 
 export const sectionGrid = {
   id: "sectionGrid",
-  label: "Grid Section",
+  label: "Section > Grid",
   icon: "grid_view",
   fields: [
-    {
-      name: "header",
-      label: "Section Header",
-      widget: "object",
-      required: false,
-      summary: "{{content | truncate(50)}}",
-      collapsed: true,
-      fields: [
-        {
-          name: "content",
-          label: "Header Content",
-          widget: "markdown",
-          required: false,
-        },
-        {
-          name: "attributes",
-          label: "Header Raw Attributes",
-          widget: "string",
-          required: false,
-        },
-      ],
-    },
+    sectionHeaderField,
     {
       name: "items",
       label: "Grid Items",
@@ -1865,38 +1942,29 @@ export const sectionGrid = {
       required: true,
       default: [{ item: "" }, { item: "" }, { item: "" }],
       summary: "{{item | truncate(50)}}",
-      collapsed: true,
-      fields: [
-        {
-          name: "item",
-          label: "Grid Item",
-          widget: "markdown",
-          required: false,
-        },
-      ],
-    },
-    {
-      name: "footer",
-      label: "Section Footer",
-      widget: "object",
-      required: false,
-      summary: "{{content | truncate(50)}}",
-      collapsed: true,
+      // collapsed: true,
       fields: [
         {
           name: "content",
-          label: "Footer Content",
+          label: "Grid Item Content",
           widget: "markdown",
+          required: false,
+        },
+        {
+          name: "class",
+          label: "Grid Item Classes",
+          widget: "string",
           required: false,
         },
         {
           name: "attributes",
-          label: "Footer Raw Attributes",
-          widget: "string",
+          label: "Grid Item Raw Attributes",
+          widget: "hidden",
           required: false,
         },
       ],
     },
+    sectionFooterField,
     {
       name: "layoutOptions",
       label: "Layout Options",
@@ -1914,12 +1982,12 @@ export const sectionGrid = {
       widget: "string",
       required: false,
     },
-    {
-      name: "itemsAttributes",
-      label: "Items Raw Attributes",
-      widget: "string",
-      required: false,
-    },
+    // {
+    //   name: "itemsAttributes",
+    //   label: "Items Raw Attributes",
+    //   widget: "string",
+    //   required: false,
+    // },
   ],
   // Suggested mod by Claude because...
   // The ^ and $ anchors combined with the m (multiline) flag cause problems when there are multiple sectionGrid components - the pattern can match incorrectly across component boundaries.
@@ -1931,8 +1999,9 @@ export const sectionGrid = {
     const sectionAttributes = match[1];
     const sectionInner = match[2];
 
-    const header = extractWithNunjucksTag(sectionInner, "sectionHeader");
-    const footer = extractWithNunjucksTag(sectionInner, "sectionFooter");
+    const header = extractSectionAreaData(sectionInner, "sectionHeader");
+    const footer = extractSectionAreaData(sectionInner, "sectionFooter");
+
     const grid = extractWithNunjucksTag(sectionInner, "grid");
     const { extracted: gridAttributes } = extractAttributes(grid.attributes, [
       "type",
@@ -1943,24 +2012,15 @@ export const sectionGrid = {
     ]);
 
     // Extract all gridItems with their attributes
-    const gridItems = extractAllWithNunjucksTag(
-      grid?.content || "",
-      "gridItem",
-    );
-    const itemsAttributes = gridItems?.[0]?.attributes;
-
-    // If gridItems have attributes, parse them:
-    // gridItems.forEach(item => {
-    //   const columns = extractAttributeValue(item.attributes, 'columns');
-    // });
+    const items = extractAllSectionAreaData(grid?.content || "", "gridItem");
 
     return {
-      header: header ? header : undefined,
-      footer: footer ? footer : undefined,
-      items: gridItems.map((item) => ({ item: item.content })),
+      header: header?.content ? header : undefined,
+      footer: footer?.content ? footer : undefined,
+      items,
       layoutOptions: gridAttributes,
       attributes: sectionAttributes,
-      itemsAttributes,
+      // itemsAttributes,
     };
   },
   toBlock: function (data) {
@@ -1972,24 +2032,27 @@ export const sectionGrid = {
       columns,
     } = data?.layoutOptions || {};
 
+    const headerAttrs = njkAttrsStringFromSectionAreaData(data?.header);
     const headerContent = data?.header?.content
-      ? `{% sectionHeader ${data?.header?.attributes || ""} %}
+      ? `{% sectionHeader ${headerAttrs} %}
 ${data?.header?.content}
 {% endsectionHeader %}`
       : "";
 
+    const footerAttrs = njkAttrsStringFromSectionAreaData(data?.footer);
     const footerContent = data?.footer?.content
-      ? `{% sectionFooter ${data?.footer?.attributes || ""} %}
+      ? `{% sectionFooter ${footerAttrs} %}
 ${data?.footer?.content}
 {% endsectionFooter %}`
       : "";
 
     const gridItemsStr = data?.items?.length
       ? data.items
-          .map(({ item }, index) => {
-            return item
-              ? `{% gridItem ${data?.itemsAttributes || ""} %}
-${item}
+          .map((item, index) => {
+            const itemAttrs = njkAttrsStringFromSectionAreaData(item);
+            return item.content
+              ? `{% gridItem ${itemAttrs} %}
+${item.content}
 {% endgridItem %}`
               : "";
           })
@@ -2016,88 +2079,114 @@ ${footerContent}
 
 export const sectionTwoColumns = {
   id: "sectionTwoColumns",
-  label: "Two Columns Section",
+  label: "Section > Two Columns",
   icon: "grid_view",
   fields: [
+    sectionHeaderField,
     {
-      name: "header",
-      label: "Section Header",
-      widget: "object",
-      required: false,
-      summary: "{{content | truncate(50)}}",
-      collapsed: true,
-      fields: [
-        {
-          name: "content",
-          label: "Header Content",
-          widget: "markdown",
-          required: false,
-        },
-        {
-          name: "attributes",
-          label: "Header Raw Attributes",
-          widget: "string",
-          required: false,
-        },
-      ],
-    },
-    {
-      name: "items",
-      label: "Column Items",
+      name: "itemLeft",
+      label: "Column Left",
       widget: "object",
       required: true,
-      default: [{ itemLeft: "", itemRight: "" }],
-      summary: "{{item | truncate(50)}}",
-      collapsed: true,
+      summary: "{{content | truncate(50)}}",
+      // collapsed: true,
       fields: [
         {
-          name: "itemLeft",
-          label: "Column Left",
+          name: "content",
+          label: "Column Left Content",
           widget: "markdown",
           required: false,
         },
         {
-          name: "attributesItemLeft",
-          label: "Left Column Raw Attributes",
+          name: "class",
+          label: "Column Left Classes",
           widget: "string",
           required: false,
         },
         {
-          name: "itemRight",
-          label: "Column Right",
-          widget: "markdown",
-          required: false,
-        },
-        {
-          name: "attributesItemRight",
-          label: "Right Column Raw Attributes",
-          widget: "string",
+          name: "attributes",
+          label: "Column Left Raw Attributes",
+          widget: "hidden",
           required: false,
         },
       ],
     },
     {
-      name: "footer",
-      label: "Section Footer",
+      name: "itemRight",
+      label: "Column Right",
       widget: "object",
-      required: false,
+      required: true,
       summary: "{{content | truncate(50)}}",
-      collapsed: true,
+      // collapsed: true,
       fields: [
         {
           name: "content",
-          label: "Footer Content",
+          label: "Column Right Content",
           widget: "markdown",
           required: false,
         },
         {
-          name: "attributes",
-          label: "Footer Raw Attributes",
+          name: "class",
+          label: "Column Right Classes",
           widget: "string",
+          required: false,
+        },
+        {
+          name: "attributes",
+          label: "Column Right Raw Attributes",
+          widget: "hidden",
           required: false,
         },
       ],
     },
+    // {
+    //   name: "items",
+    //   label: "Column Items",
+    //   widget: "object",
+    //   required: true,
+    //   default: [{ itemLeft: "", itemRight: "" }],
+    //   summary: "{{item | truncate(50)}}",
+    //   // collapsed: true,
+    //   fields: [
+    //     {
+    //       name: "contentItemLeft",
+    //       label: "Column Left",
+    //       widget: "markdown",
+    //       required: false,
+    //     },
+    //     {
+    //       name: "classItemLeft",
+    //       label: "Left Column Classes",
+    //       widget: "string",
+    //       required: false,
+    //     },
+    //     {
+    //       name: "attributesItemLeft",
+    //       label: "Left Column Raw Attributes",
+    //       widget: "hidden",
+    //       required: false,
+    //     },
+    //     {
+    //       name: "contentItemRight",
+    //       label: "Column Right",
+    //       widget: "markdown",
+    //       required: false,
+    //     },
+    //     {
+    //       name: "classItemRight",
+    //       label: "Right Column Classes",
+    //       widget: "string",
+    //       required: false,
+    //     },
+    //     {
+    //       name: "attributesItemRight",
+    //       label: "Right Column Raw Attributes",
+    //       widget: "hidden",
+    //       required: false,
+    //     },
+    //   ],
+    // },
+    sectionFooterField,
     {
       name: "layoutOptions",
       label: "Layout Options",
@@ -2120,8 +2209,12 @@ export const sectionTwoColumns = {
     const sectionAttributes = match[1];
     const sectionInner = match[2];
 
-    const header = extractWithNunjucksTag(sectionInner, "sectionHeader");
-    const footer = extractWithNunjucksTag(sectionInner, "sectionFooter");
+    // const header = extractWithNunjucksTag(sectionInner, "sectionHeader");
+    // const footer = extractWithNunjucksTag(sectionInner, "sectionFooter");
+
+    const header = extractSectionAreaData(sectionInner, "sectionHeader");
+    const footer = extractSectionAreaData(sectionInner, "sectionFooter");
+
     const twoColumns = extractWithNunjucksTag(sectionInner, "twoColumns");
     const { extracted: twoColumnsAttributes } = extractAttributes(
       twoColumns?.attributes,
@@ -2136,22 +2229,36 @@ export const sectionTwoColumns = {
       ],
     );
 
-    // Extract the two column items (left = first, right = second)
-    const columnItems = extractAllWithNunjucksTag(
+    const items = extractAllSectionAreaData(
       twoColumns?.content || "",
       "twoColumnsItem",
     );
 
-    const itemLeft = columnItems[0]?.content || "";
-    const attributesItemLeft = columnItems[0]?.attributes || "";
+    // Extract the two column items (left = first, right = second)
+    // const columnItems = extractAllWithNunjucksTag(
+    //   twoColumns?.content || "",
+    //   "twoColumnsItem",
+    // );
 
-    const itemRight = columnItems[1]?.content || "";
-    const attributesItemRight = columnItems[1]?.attributes || "";
+    // const itemLeft = columnItems[0]?.content || "";
+    // const attributesItemLeft = columnItems[0]?.attributes || "";
+
+    // const itemRight = columnItems[1]?.content || "";
+    // const attributesItemRight = columnItems[1]?.attributes || "";
 
     return {
-      header: header ? header : undefined,
-      footer: footer ? footer : undefined,
-      items: { itemLeft, attributesItemLeft, itemRight, attributesItemRight },
+      header: header?.content ? header : undefined,
+      footer: footer?.content ? footer : undefined,
+      itemLeft: items[0]?.content ? items[0] : undefined,
+      itemRight: items[1]?.content ? items[1] : undefined,
+      // items: {
+      //   itemLeft,
+      //   classItemLeft,
+      //   attributesItemLeft,
+      //   itemRight,
+      //   classItemRight,
+      //   attributesItemRight
+      // },
       layoutOptions: twoColumnsAttributes,
       attributes: sectionAttributes,
     };
@@ -2167,32 +2274,36 @@ export const sectionTwoColumns = {
       fixedSide,
     } = data?.layoutOptions || {};
 
+    const headerAttrs = njkAttrsStringFromSectionAreaData(data?.header);
     const headerContent = data?.header?.content
-      ? `{% sectionHeader ${data?.header?.attributes || ""} %}
+      ? `{% sectionHeader ${headerAttrs} %}
 ${data?.header?.content}
 {% endsectionHeader %}`
       : "";
 
+    const footerAttrs = njkAttrsStringFromSectionAreaData(data?.footer);
     const footerContent = data?.footer?.content
-      ? `{% sectionFooter ${data?.footer?.attributes || ""} %}
+      ? `{% sectionFooter ${footerAttrs} %}
 ${data?.footer?.content}
 {% endsectionFooter %}`
       : "";
 
-    const itemLeftStr = data?.items?.itemLeft
-      ? `{% twoColumnsItem ${data.items.attributesItemLeft || ""} %}
-${data.items.itemLeft}
+    const itemLeftAttrs = njkAttrsStringFromSectionAreaData(data?.itemLeft);
+    const itemLeftContent = data?.itemLeft?.content
+      ? `{% twoColumnsItem ${itemLeftAttrs} %}
+${data?.itemLeft?.content}
 {% endtwoColumnsItem %}`
       : "";
 
-    const itemRightStr = data?.items?.itemRight
-      ? `{% twoColumnsItem ${data.items.attributesItemRight || ""} %}
-${data.items.itemRight}
+    const itemRightAttrs = njkAttrsStringFromSectionAreaData(data?.itemRight);
+    const itemRightContent = data?.itemRight?.content
+      ? `{% twoColumnsItem ${itemRightAttrs} %}
+${data?.itemRight?.content}
 {% endtwoColumnsItem %}`
       : "";
 
     // TODO: Check what happens when one of the items is empty
-    const columnItemsStr = [itemLeftStr, itemRightStr]
+    const columnItemsStr = [itemLeftContent, itemRightContent]
       .filter(Boolean)
       .join("\n");
 
@@ -2226,31 +2337,10 @@ ${footerContent}
 
 export const sectionCollection = {
   id: "sectionCollection",
-  label: "Collection Section",
+  label: "Section > Collection List",
   icon: "grid_view",
   fields: [
-    {
-      name: "header",
-      label: "Section Header",
-      widget: "object",
-      required: false,
-      summary: "{{content | truncate(50)}}",
-      collapsed: true,
-      fields: [
-        {
-          name: "content",
-          label: "Header Content",
-          widget: "markdown",
-          required: false,
-        },
-        {
-          name: "attributes",
-          label: "Header Raw Attributes",
-          widget: "string",
-          required: false,
-        },
-      ],
-    },
+    sectionHeaderField,
     {
       name: "collection",
       label: "Select a collection to display",
@@ -2408,28 +2498,7 @@ export const sectionCollection = {
         },
       ],
     },
-    {
-      name: "footer",
-      label: "Section Footer",
-      widget: "object",
-      required: false,
-      summary: "{{content | truncate(50)}}",
-      collapsed: true,
-      fields: [
-        {
-          name: "content",
-          label: "Footer Content",
-          widget: "markdown",
-          required: false,
-        },
-        {
-          name: "attributes",
-          label: "Footer Raw Attributes",
-          widget: "string",
-          required: false,
-        },
-      ],
-    },
+    sectionFooterField,
     {
       name: "layoutOptions",
       label: "Layout Options",
@@ -2452,8 +2521,11 @@ export const sectionCollection = {
     const sectionAttributes = match[1];
     const sectionInner = match[2];
 
-    const header = extractWithNunjucksTag(sectionInner, "sectionHeader");
-    const footer = extractWithNunjucksTag(sectionInner, "sectionFooter");
+    // const header = extractWithNunjucksTag(sectionInner, "sectionHeader");
+    // const footer = extractWithNunjucksTag(sectionInner, "sectionFooter");
+    const header = extractSectionAreaData(sectionInner, "sectionHeader");
+    const footer = extractSectionAreaData(sectionInner, "sectionFooter");
+
     const collection = extractWithNunjucksTag(sectionInner, "collection");
     const filters =
       extractJsonProperty(collection?.attributes, "filters") || [];
@@ -2484,8 +2556,8 @@ export const sectionCollection = {
     } = collectionAttributes;
 
     return {
-      header: header ? header : undefined,
-      footer: footer ? footer : undefined,
+      header: header?.content ? header : undefined,
+      footer: footer?.content ? footer : undefined,
       collection: collectionName,
       sortAndFilterOptions,
       layoutOptions,
@@ -2529,14 +2601,16 @@ export const sectionCollection = {
     //   };
     // }
 
+    const headerAttrs = njkAttrsStringFromSectionAreaData(data?.header);
     const headerContent = data?.header?.content
-      ? `{% sectionHeader ${data?.header?.attributes || ""} %}
+      ? `{% sectionHeader ${headerAttrs} %}
 ${data?.header?.content}
 {% endsectionHeader %}`
       : "";
 
+    const footerAttrs = njkAttrsStringFromSectionAreaData(data?.footer);
     const footerContent = data?.footer?.content
-      ? `{% sectionFooter ${data?.footer?.attributes || ""} %}
+      ? `{% sectionFooter ${footerAttrs} %}
 ${data?.footer?.content}
 {% endsectionFooter %}`
       : "";

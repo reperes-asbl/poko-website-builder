@@ -60,6 +60,9 @@ export async function image(args) {
   // wrapperTag = wrapperTag || (width ? "p" : "");
   // TODO: compute sizes from widths
   // TODO: Allow defining a wrapping tag??
+  //
+  // TODO: If we have some 'full-bleed' class on the image, we need sizes to be "100vw"?? We might want to account for a max bleed nonetheless
+
   const options = deepmerge.all(
     [
       imageTransformOptions,
