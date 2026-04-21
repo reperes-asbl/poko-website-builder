@@ -1,9 +1,11 @@
 {# {% partial "svg-boucle" %} #}
-<section class="layout page-header section {{ class }}">
+<section class="layout page-header section {{ class or "" }}">
 <div class="page-header--content width-prose">
 {{ content | md }}
 </div>
+{% if image %}
 {% image src=image, class="page-header--image" %}
+{% endif %}
 </section>
 
 {% css %}

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{lang or 'en'}}" class="no-js">
+<html lang="{{lang or 'fr'}}" class="no-js">
     <head>
         {% partial "_html-head-default.md" %} {% getBundle "html", "head" %}
     </head>
@@ -12,9 +12,6 @@
         {% partial "_main-content.md" %}
 
         <!-- Footer -->
-        {% if '_footer.njk' | partialExists %} {% partial '_footer.njk' %} {%
-        elif '_footer.md' | partialExists %}
-        <footer class="bleed-bg">{% partial '_footer.md' %}</footer>
-        {% else %} {% partial '_footer' %} {% endif %}
+        {% partial '_footer' %}
     </body>
 </html>

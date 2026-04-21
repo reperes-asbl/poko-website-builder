@@ -1,27 +1,44 @@
 
-<article class="activity width-max fixed-fluid v--width-fixed:20rem palette-{{color}} palette-low-contrast card">
-  {% image src=image.src, class="rounded-[--radius-card] object-[66%]" %}
+<article class="activity {{ class or '' }}">
+    <div class="activity-main fixed-fluid v--width-fixed:20rem v--width-fluid-min:60% palette-{{palette}} palette-low-contrast box radius-card">
+        <div class="activity-image-wrapper">
+            {% image src=image, class="radius-card object-[66%] h-full" %}
+        </div>
 
-  <div class="activity-content prose">
-
-    {{ content | md }}
-
-    <div class="box info-card flow v--flow-space:0.2em palette-{{color}}-contrast card max-inline-[--width-focus]">
-        <p class="with-icon left items-center">{% icon "tabler:calendar-week", width="35", height="35" %} <span>{{ timing }}</span></p>
-        <p class="with-icon left items-center">{% icon "tabler:coin-euro", width="35", height="35" %} <span>{{ pricing }}</span></p>
-        <p class="with-icon left items-center">{% icon "tabler:map-pin", width="35", height="35" %} <span>{{ where }}</span></p>
-        <p class="with-icon left items-center">{% icon "tabler:automation", width="35", height="35" %} <span>{{ practical }}</span></p>
+        <div class="activity-content prose">
+            {{ content | md }}
+        </div>
     </div>
-  </div>
+    <ul role="list" class="activity-info-card featured box radius-card mx-auto flow palette-{{palette}}-contrast v--size-icon:2em">
+        <li {{ timing | ioAttr }} class="with-icon left items-center v--flow-space:0.4em">{% icon "tabler:calendar-week", width="48", height="48" %} <span>{{ timing }}</span></li>
+        <li {{ pricing | ioAttr }} class="with-icon left items-center v--flow-space:0.4em">{% icon "tabler:coin-euro", width="48", height="48" %} <span>{{ pricing }}</span></li>
+        <li {{ location | ioAttr }} class="with-icon left items-center v--flow-space:0.4em">{% icon "tabler:map-pin", width="48", height="48" %} <span>{{ location }}</span></li>
+        <li {{ practical | ioAttr }} class="with-icon left items-center v--flow-space:0.4em">{% icon "tabler:automation", width="48", height="48" %} <span>{{ practical }}</span></li>
+    </ul>
 </article>
 
 {% css %}
-.activity img {
-  margin-block-end: 4rem;
+.activity-content {
+    margin-block-end: 10rem;
 }
-.info-card {
-  float: left;
-  position: relative;
-  left: -10rem;
+.activity-info-card {
+    margin-block-start: -10rem;
+    isolation: isolate;
+    position:relative;
+}
+@media (min-width: 60rem) {
+    .activity:nth-child(odd) {
+        .activity-info-card {
+            left: -5vw;
+        }
+    }
+    .activity:nth-child(even) {
+        .activity-image-wrapper {
+            order: 2;
+        }
+        .activity-info-card {
+            left: 5vw;
+        }
+    }
 }
 {% endcss %}

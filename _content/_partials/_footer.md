@@ -1,95 +1,70 @@
-<div class="grid-fluid v--columns:4 small">
-    <div>
-        ⚠️ Changer les liens ⚠️
-        <ul>
-            <li>
-                {% icon "tablerOutline:brand-linkedin", width="2rem", height="2rem" %}
-                <a href="#">Linkedin</a>
-            </li>
-            <li>
-                {% icon "tablerOutline:brand-facebook", width="2rem", height="2rem" %}
-                <a href="#">Facebook</a>
-            </li>
-            <li>
-                {% icon "tablerOutline:mail", width="2rem", height="2rem" %}
-                <a href="#">Newsletter</a>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <p><strong>Repères asbl</strong></p>
-        <p>Boulevard de Waterloo 99 - 1000 Bruxelles</p>
-        <p>0470/87 87 35</p>
-        <p>N° d'entreprise: BE0463799956</p>
-        <p>IBAN: BE08 0013 1886 1813</p>
-    </div>
-    <div class="flow">
-        ⚠️ changer src, alt, title ⚠️
-        <a href="https://www.fbpsante.brussels/" target="_blank" rel="noopener noreferrer">
-            {% image src="/_images/logo_membre_fbps.webp", width="150" %}
-        </a>
-        <a href="https://www.fwpsante.be/" target="_blank" rel="noopener noreferrer">
-            {% image src="/_images/logo_membre_fwps.webp", width="150" %}
-        </a>
-    </div>
-    <div>
-        <p>Avec le soutien de</p>
-        <a href="https://www.one.be/" target="_blank" rel="noopener noreferrer">
-            {% image src="/_images/one.webp", width="150" %}
-        </a>
-        <a href="https://www.aviq.be/" target="_blank" rel="noopener noreferrer">
-            {% image src="/_images/logo_aviq_officiel.svg", width="150" %}
-        </a>
-        <a href="https://www.francophones.be/" target="_blank" rel="noopener noreferrer">
-            {% image src="/_images/logo-francophones-bruxelles.webp", width="150" %}
-        </a>
-    </div>
-</div>
-<div class="text-center small">
-    <p>Site web réalisé éco-conçu avec <a href="https://poko.eco">Poko</a></p>
-</div>
+{% sectionGrid class='small flow bleed-bg', tag="footer" %}
+
+{% grid %}
+{% gridItem  %}
+<ul role="list" class="flow">
+<li class="with-icon items-center">
+    {% icon "tablerOutline:brand-linkedin", width="2rem", height="2rem" %}
+    {% link url="https://www.linkedin.com/in/asbl-rep%C3%A8res-06b23b128/", text="LinkedIn", linkType="external", target="_blank", rel="noopener noreferrer" %}
+</li>
+<li class="with-icon items-center">
+    {% icon "tablerOutline:brand-facebook", width="2rem", height="2rem" %}
+    {% link url="https://www.facebook.com/reperes.asbl.formation", text="Facebook", linkType="external", target="_blank", rel="noopener noreferrer" %}
+</li>
+<li class="with-icon items-center">
+    {% icon "tablerOutline:mail", width="2rem", height="2rem" %}
+    {% link url="https://030be45a.sibforms.com/serve/MUIFABds-gn5N94UTZKXKzJiY-eAmphZ033SW-Y8yQ3S2VYCVtuCWQXWcjZFomnneILqFiRiL1bhviO9lcNdlHvydLyEBvj2HBU4toaoMx7sx_Gm76uC8T6vUUnwUymDgTGdXjK5CTmtTiVWUHmCUCFGCv1Q3qfy7OU-QR8wEpd401Fml50OXRveL4F_Re_X10j7WcBSvjgAGmj9", text="Newsletter", linkType="external", target="_blank", rel="noopener noreferrer" %}
+</li>
+</ul>
+{% endgridItem %}
+{% gridItem  %}
+<address>
+
+**Repères asbl**
+
+Boulevard de Waterloo 99 - 1000 Bruxelles
+
+0470/87 87 35
+
+N° d'entreprise: BE0463799956
+
+IBAN: BE08 0013 1886 1813
+
+</address>
+{% endgridItem %}
+{% gridItem class="flow" %}
+<a href="https://www.fbpsante.brussels/" target="_blank" rel="noopener noreferrer">
+    {% image src="/_images/logo_membre_fbps.webp", alt="Membre de la FBPSanté.", width="150" %}
+</a>
+<a href="https://www.fwpsante.be/" target="_blank" rel="noopener noreferrer">
+    {% image src="/_images/logo_membre_fwps.webp", alt="Membre de la FWPSanté.", width="150" %}
+</a>
+{% endgridItem %}
+{% gridItem class="flow" %}
+Avec le soutien de
+
+::: cluster
+<a href="https://www.francophones.be/" target="_blank" rel="noopener noreferrer">
+    {% image src="/_images/logo-francophones-bruxelles.webp", width="120" %}
+</a>
+<a href="https://www.aviq.be/" target="_blank" rel="noopener noreferrer">
+    {% image src="/_images/logo_aviq_officiel.svg", width="120" %}
+</a>
+<a href="https://www.one.be/" target="_blank" rel="noopener noreferrer">
+    {% image src="/_images/logo-one-pos.webp", width="120" %}
+</a>
+:::
+{% endgridItem %}
+{% endgrid %}
+{% sectionFooter class="text-center v--flow-space:--step-4" %}
+
+Site web éco-conçu par {% link url="https://www.mookai.be/", text="mookaï", target="_blank", rel="noopener noreferrer" %} avec {% link url="https://www.poko.eco/", text="poko", target="_blank", rel="noopener noreferrer" %}
+
+{% endsectionFooter %}
+{% endsectionGrid %}
 
 {% css %}
 footer {
 border-image-source: linear-gradient(0deg, var(--Silver), var(--White)) !important;
-height: 100%;
 }
-
-footer div div{
-width: fit-content;
-}
-
-footer p {
-margin-block: 0;
-}
-
-footer div.text-center.small p:last-of-type {
-margin-block: var(--step--1);
-}
-
-footer ul {
-list-style: none;
-padding: 0;
-margin: 0;
-}
-
-footer ul li {
-display: flex;
-align-items: center;
-margin-block-end: var(--step-1);
-gap: var(--step--2);
-}
-
-footer img {
-margin-inline: 0;
-}
-
-footer a {
-background-color: transparent;
-}
-
-footer a > img {
-max-width: 150px;
-}
-
 {% endcss %}

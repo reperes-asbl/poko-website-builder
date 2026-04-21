@@ -11,33 +11,9 @@ vars: null
 ---
 
 {% partialWrapper "page-header.njk", { image: "/_images/pexels-fauxels-3184298.webp", class: "palette-cooper" } %}
-
-
-
-
-
-
-
-
-
-
-
-
 # À qui s’adressent nos formations?
 
 Chez Repères, nos formations en promotion de la santé sont conçues pour toutes celles et ceux qui veulent agir sur la santé des personnes et des communautés, en équipe ou individuellement.
-
-
-
-
-
-
-
-
-
-
-
-
 {% endpartialWrapper %}
 
 {% wrapper tag="section", class="articles palette-cooper-contrast bleed-bg v--bleed-bottom:14rem" %}
@@ -45,7 +21,7 @@ Chez Repères, nos formations en promotion de la santé sont conçues pour toute
 
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
-{% image src="/_images/pexels-fauxels-3184298.webp", aspectRatio=1, width=300, class="rounded-full" %}
+{% image src="/_images/pexels-moe-magners-7495555.webp", aspectRatio=1, width=300, class="rounded-full" %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 ## Vous êtes un·e professionnel·le?
@@ -66,7 +42,7 @@ Exemples de structures où nos participants travaillent souvent: maisons médica
 
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
-{% image src="/_images/pexels-fauxels-3184298.webp", aspectRatio=1, width=300, class="rounded-full" %}
+{% image src="/_images/business-executive-explaining-her-colleagues-whiteboard.webp", aspectRatio=1, width=300, class="rounded-full" %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 ## Vous êtes un relais ou bénévole?
@@ -85,7 +61,7 @@ Vous êtes engagé·e dans une association, collectif citoyen ou initiative loca
 
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
-{% image src="/_images/pexels-fauxels-3184298.webp", aspectRatio=1, width=300, class="rounded-full" %}
+{% image src="/_images/pexels-product-school-1299359-2678468.webp", aspectRatio=1, width=300, class="rounded-full" %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 ## Vous faites partie d’une équipe ou d’une institution?
@@ -104,7 +80,7 @@ Nous accompagnons les structures et collectifs qui souhaitent:
 
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
-{% image src="/_images/pexels-fauxels-3184298.webp", aspectRatio=1, width=300, class="rounded-full" %}
+{% image src="/_images/pexels-mikael-blomkvist-6476783.webp", aspectRatio=1, width=300, class="rounded-full" %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 ## Vous êtes un organisme de formation?
@@ -136,9 +112,9 @@ Vous nous contactez si vous voulez:
 {% sectionHeader  %}
 ::: hgroup { .text-center }
 
-### Nous collaborons avec une grande diversité d’acteurs engagés
+### Nous collaborons avec une grande diversité d’acteurs
 
-du soin à la jeunesse, du social à la formation et d’autres… { .h4 }
+du soin à la jeunesse, du social à la formation… { .h4 }
 :::
 {% endsectionHeader %}
 {% grid type="grid-fluid", columns=3, gap="0px", class="sectors font-bold px-0 m-block-[--step-4] rounded-[--radius-card] overflow-hidden" %}
@@ -178,7 +154,6 @@ du soin à la jeunesse, du social à la formation et d’autres… { .h4 }
 {% endgrid %}
 
 {% endsectionGrid %}
-
 
 {% css %}
 .articles {

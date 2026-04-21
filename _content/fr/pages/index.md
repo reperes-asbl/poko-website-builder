@@ -14,8 +14,9 @@ vars: {}
 
 # Centre de formation à la promotion de la santé
 
-Et si la santé était avant tout une manière de vivre et de se relier aux autres?
-Chez Repères, nous formons celles et ceux qui font vivre la promotion de la santé, pour renforcer les ressources individuelles et collectives au service du bien-être commun.
+**Chez Repères, nous accompagnons les professionnel·le·s à comprendre les enjeux de santé dans toute leur complexité.**
+
+{% link url="activites", type="internal", text="Nos dispositifs" %} (formations et accompagnements) permettent de penser des actions de promotion de la santé selon une approche multifactorielle, de développer des projets structurés et de renforcer une posture professionnelle adaptée aux réalités du terrain.
 
 {% endpartialWrapper %}
 
@@ -45,13 +46,13 @@ Chez Repères, nous formons celles et ceux qui font vivre la promotion de la san
 
 {% sectionTwoColumns class="squashed py-0" %}
 
-{% twoColumns type="switcher", class="width-prose gap-0 v--padding-box:--p-card" %}
-{% twoColumnsItem class="flow box palette-vermillon-contrast rounded-r-0 text-right" %}
+{% twoColumns type="switcher", class="width-prose gap-0" %}
+{% twoColumnsItem class="prose box flow palette-vermillon-contrast rounded-r-0 text-right" %}
 En tant que
 **ORGANISME DE PROMOTION DE LA SANTÉ,**
-nous accompagnons des services, des institutions et des équipes qui interagissent avec les sphères psychomédicosociales
+nous accompagnons des services, des institutions et des équipes qui interagissent avec les sphères psychomédicosociales.
 {% endtwoColumnsItem %}
-{% twoColumnsItem class="flow box palette-burnt-umber-contrast rounded-l-0" %}
+{% twoColumnsItem class="prose box flow palette-burnt-umber-contrast rounded-l-0" %}
 En tant que
 **SERVICE SUPPORT,**
 nous apportons notre expertise d’organisme de formation en promotion de la santé à d’autres organismes de formation et aux réseaux de formateurs et formatrices.
@@ -63,24 +64,25 @@ nous apportons notre expertise d’organisme de formation en promotion de la san
 {% wrapper tag="div", class="section palette-burnt-umber palette-low-contrast flow text-center bleed-bg v--bleed-top:7rem" %}
 Depuis 1998, Repères asbl est active dans le domaine de la formation en Promotion de la Santé. Repères est une asbl reconnue par la COCOF et l’AVIQ.
 
-Depuis 2018, dans le cadre du nouveau décret de Promotion de la Santé mis en place par la COCOF en Région Bruxelloise, Repères a été désignée comme **service de support** en matière de **formation** généraliste et continue.
+{% link url="qui-sommes-nous", text="Découvrez notre histoire", linkType="internal", collection="pages" %}
 
-{% link url="sesu", text="En savoir plus sur le SESU", linkType="internal", collection="pages" %}
+Depuis 2018, dans le cadre du nouveau décret de Promotion de la Santé mis en place par la COCOF en Région Bruxelloise, Repères a été désignée comme **service support** en matière de **formation** généraliste et continue.
+
+{% link url="sesu", text="En savoir plus sur les Services Support", linkType="internal", collection="pages" %}
 {% endwrapper %}
 
 {% wrapper tag="section", class="palette-ylnMn-blue flow text-center" %}
-::: hgroup
 
-## Nous collaborons avec une grande diversité d’acteurs engagés { .h3 }
+## Nous collaborons avec une grande diversité d’acteurs { .h3 }
 
-du soin à la jeunesse, du social à la formation et d’autres… { .h4 }
-:::
+Du soin à la jeunesse, du social à la formation… { .h4 }
 
-⚠️ -LOGO PARTENAIRES- ⚠️
+{# ⚠️ -LOGO PARTENAIRES- ⚠️ #}
 
 {% link url="pour-qui", text="À qui s'adresse nos formations?", linkType="internal", collection="pages", class="button" %}
 {% endwrapper %}
 
+{#
 {% wrapper tag="section", class="bleed-bg palette-cooper-contrast text-center" %}
 ⚠️ Témoignage en attente ⚠️
 
@@ -88,8 +90,11 @@ du soin à la jeunesse, du social à la formation et d’autres… { .h4 }
 > >
 > Nom - organisation {.text-right .my-0}
 {% endwrapper %}
+#}
 
+{% wrapper tag="aside", class="section flow" %}
 {% partial "btn-newsletter.md" %}
+{% endwrapper %}
 
 {% css %}
 

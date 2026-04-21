@@ -4,31 +4,31 @@ lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
 uuid: 73e6a272f144
 localizationKey: 3584974d09eb
-name: "Accueil des jeunes en PSE: quelle posture? Quels outils?"
+name: 'Accueil des jeunes en PSE: quelle posture? Quels outils?'
+subtitle: ''
+tempo: Dates à convenir
+duration: 4 jours et 4 demi-journées
+price: Gratuit pour les operateur.ice.s concerné.e.s
+place: Lieu à convenir
 metadata:
-  title: ""
-  description: ""
+  title: ''
+  description: ''
   image:
-    src: /_images/business-executive-explaining-her-colleagues-whiteboard.webp
-    alt: ""
-    title: ""
+    src: /_images/pexels-cottonbro-7395901.webp
+    alt: ''
+    title: ''
     width: null
     aspectRatio: null
-    loading: ""
-    imgAttrs: ""
+    loading: ''
+    imgAttrs: ''
 pageLayout: formation
 vars: null
-duration: 4 jours et 4 demies journées
-price: Gratuit pour les operateur.ice.s concerné.e.s
-place: 1000 Bruxelles
 ---
 
-<div class="flex items-center gap-2">
-Module de formation à destination des PSE - via <a href="https://www.one.be/public/" class="flex items-center gap-2">ONE {% image src="/_images/one.webp", width=150 %}</a>
-</div>
+Module de formation à destination des PSE - via {% link url="https://www.one.be/public/", text="ONE", linkType="external", target="_blank", rel="noopener noreferrer" %} {% image src="/_images/logo-one-pos.webp", alt="Logo ONE - Office de la naissance et de l'enfance", width=100, class="vertical-text-bottom m-inline-2" %}
 
-Ces 4 journées de formation et de 4 demies-journées offrent un temps de réflexion et d’expérimentation. Au sein de ces espace-temps que sont la visite médicale et les campagnes de vaccination, se jouent des enjeux en terme de communication, de liens dans la relation de confiance, de respect de l’intégrité des jeunes et du soutien de leur agentivité.
-Le module permettra de construire ou de renforcer les connaissances autour des concepts de promotion de la santé, des notions de pouvoir, d’autorité et de rapport de force dans la relation de soin avec un enfant et des parents. Celui-ci permettra de développer les outils d’écoute active issues de la communication bienveillante.
+Ces 4 journées de formation et 4 demi-journées d’ateliers d’échanges de pratiques offrent un temps de réflexion et d’expérimentation. Au sein de ces espace-temps que sont la visite médicale et les campagnes de vaccination, se jouent des enjeux en terme de communication, de liens dans la relation de confiance, de respect de l’intégrité des jeunes et du soutien de leur agentivité.
+Le module permettra de construire ou de renforcer les connaissances autour des concepts de promotion de la santé, des notions de pouvoir, d’autorité et de rapport de force dans la relation de soin avec un enfant et des parents. Celui-ci permettra d’expérimenter les outils d’écoute active issues de la communication bienveillante.
 
 ## Cette formation permet :
 
@@ -46,8 +46,7 @@ Le module permettra de construire ou de renforcer les connaissances autour des c
 
 Les formateur·rice·s proposent aux participant·e·s un travail réflexif à propos de leurs pratiques professionnelles, les invitant à se mettre au travail et à s’impliquer activement dans la dynamique de la formation. La formation est un processus expérientiel qui se base sur la dynamique du groupe et s’élabore au travers de travaux en sous-groupes, de jeux de rôle et de mises en situation fictives, ou de situations professionnelles amenées par les participant·e·s. A partir des réflexions et des discussions, les points d’appui théoriques sont élaborés en commun.
 
-::: section { .palette-burnt-umber .palette-low-contrast .card .inline-full }
-
+{% wrapper tag="section", class='prose box palette-burnt-umber palette-low-contrast' %}
 ## Prochaines dates
 
 À venir
@@ -59,5 +58,4 @@ Les formateur·rice·s proposent aux participant·e·s un travail réflexif à p
 ## Intervenant•es
 
 Manoë Jacquet et Jeanne Reyre
-
-:::
+{% endwrapper %}

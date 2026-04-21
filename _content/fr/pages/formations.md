@@ -7,46 +7,22 @@ localizationKey: fd2e1caad552
 name: Formations
 eleventyNavigation:
   order: 10
-vars: {}
+vars: null
 ---
 
-:::: header { .palette-burnt-umber .hero }
-::: div { .prose .mx-0 }
-{% partial "svg-boucle" %}
-
+{% partialWrapper "page-header.njk", { image: "", class: "palette-burnt-umber" } %}
 # Formations
 
 Des espaces pour apprendre, réfléchir et agir ensemble.
 Repères conçoit des formations qui soutiennent les professionnel·les du social et de la santé dans l’évolution de leurs pratiques et la construction d’environnements favorables à la santé.
 
 Découvrez ci-dessous nos modules de formation: des temps pour penser, expérimenter et faire évoluer les pratiques, au croisement du social et de la santé.
-
-:::
-::::
-
-<!-- -CATALOGUE FORMATIONS- -->
+{% endpartialWrapper %}
 
 {% partial "trainings" %}
 
-<!-- -CTA- -->
-
-:::: div { .section }
-::: box { .prose .card .palette-burnt-umber .palette-low-contrast .text-center .font-bold .max-inline-[--width-focus] }
-
+{% wrapper tag="section", class="prose box breathe palette-burnt-umber palette-low-contrast text-center font-bold" %}
 Nous pouvons vous aider à choisir la formule ou la formation qui vous convient le mieux
 
-{% link url="contact", text="Nous contacter", class="button" %}
-
-:::
-::::
-
-{% css %}
-
-.hero {
-background-color: transparent;
-
-z-index: 2;
-margin-block-start: 25%;
-}
-
-{% endcss %}
+{% link url="contact", text="Nous contacter", linkType="internal", collection="pages", class="button" %}
+{% endwrapper %}

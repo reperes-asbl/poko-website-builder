@@ -5,29 +5,29 @@ createdAt: 2026-02-05T14:22:00.000Z
 uuid: a5765607dce9
 localizationKey: 64887251d710
 name: Penser les questions de genre pour promouvoir la santé
+subtitle: Comment mieux comprendre ce que recouvrent les notions liées au genre (l’hétéronormativité, le ciscentrisme, l’intersectionnalité et bien d’autres) et expérimenter en quoi le genre est un déterminant de santé transversal.
+tempo: Prochaine session – à convenir
+duration: 4 jours
+price: 120€
+place: Lieu à convenir
 metadata:
-  title: ""
-  description: ""
+  title: ''
+  description: ''
   image:
-    src: /_images/business-executive-explaining-her-colleagues-whiteboard.webp
-    alt: ""
-    title: ""
+    src: /_images/pexels-billow926-2948812-5338294.webp
+    alt: ''
+    title: ''
     width: null
     aspectRatio: null
-    loading: ""
-    imgAttrs: ""
+    loading: ''
+    imgAttrs: ''
 pageLayout: formation
 vars: null
-duration: 4 jours
-price: 220€
-place: 1000 Bruxelles
 ---
 
-<div class="flex items-center gap-2">
-Module de formation en partenariat avec <a href="https://femmesetsante.be/" class="flex items-center gap-2">Femme&Santé {% image src="/_images/femmes-sante_logo_sans-bords_rvb-09.webp", width=150 %}</a>
-</div>
+Module en collaboration avec {% link url="https://femmesetsante.be/", text="Femme & Santé", linkType="external", target="_blank", rel="noopener noreferrer" %} {% image src="/_images/femmes-sante_logo_sans-bords_rvb-09.webp", alt="Logo Femmes & Santé", width=100, class="vertical-text-bottom m-inline-2" %}
 
-Ces 4 journées de formation et offrent un temps de réflexion et d’expérimentation. Le module permettra de construire ou de renforcer les connaissances autour des concepts de genre et de promotion de la santé ,de réfléchir à la manière dont des représentations liées au genre nous habitent malgré nous et traversent les questions de santé et ainsi de mesurer comment ces représentations influencent nos projets et nos pratiques.
+Ces 4 journées de formation permettent de construire ou de renforcer les connaissances autour des concepts de genre et de promotion de la santé, de réfléchir à la manière dont des représentations liées au genre nous habitent et ainsi de mesurer comment ces représentations influencent nos projets et nos pratiques.
 
 ## Cette formation permet de
 
@@ -48,8 +48,7 @@ Ces 4 journées de formation et offrent un temps de réflexion et d’expérimen
 
 Les formateur·rice·s proposent aux participant·e·s un travail réflexif à propos de leurs pratiques professionnelles, les invitant à se mettre au travail et à s’impliquer activement dans la dynamique de la formation. La formation est un processus expérientiel qui se base sur la dynamique du groupe et s’élabore au travers de travaux en sous-groupes, de jeux de rôle et de mises en situation fictives, ou de situations professionnelles amenées par les participant·e·s. A partir des réflexions et des discussions, les points d’appui théoriques sont élaborés en commun.
 
-::: section { .palette-burnt-umber .palette-low-contrast .card .inline-full }
-
+{% wrapper tag="section", class='prose box palette-burnt-umber palette-low-contrast' %}
 ## Prochaines dates
 
 À venir
@@ -61,5 +60,4 @@ Les formateur·rice·s proposent aux participant·e·s un travail réflexif à p
 ## Intervenant•es
 
 À confirmer
-
-:::
+{% endwrapper %}

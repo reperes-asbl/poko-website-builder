@@ -1,43 +1,75 @@
-<!DOCTYPE html>
-<html lang="{{lang or 'en'}}" class="no-js">
-  <head>
-    {% partial "_html-head-default.md" %}
-    {% getBundle "html", "head" %}
-  </head>
-  <body>
-    <!-- Navigation -->
-    {% partial "_main-nav.md", {}, "njk" %}
+<!doctype html>
+<html lang="{{lang or 'fr'}}" class="no-js layout-formation">
+    <head>
+        {% partial "_html-head-default.md" %} {% getBundle "html", "head" %}
+    </head>
 
-    <main>
-        {% image src=metadata.image.src, aspectRatio="3" %}
+    <body>
+        <!-- Navigation -->
+        {% partial "_main-nav", {}, "njk" %}
+
+        <!-- Content -->
+        <main>
+            {% image src=metadata.image.src, aspectRatio="4" %}
 
 
-        <div class="fixed-fluid fixed-right v--content-min:65% items-start v--width-fixed:25rem">
-            <div class="fluid flow items-start">
-                <h1>{{ title | safe }}</h1>
-                <hr>
-                {{ content | safe }}
+            <div class="fixed-right v--content-min:65% items-start v--width-fixed:25rem">
+                <section class="practical-info featured box palette-burnt-umber-contrast">
+                    <h3>Infos pratiques</h3>
+                    <ul role="list">
+                        <li {{tempo | io}}>{{ tempo }}</li>
+                        <li {{duration | io}}>{{ duration }}</li>
+                        <li {{price | io}}>{{ price | safe }}</li>
+                        <li {{place | io}}>{{ place }}</li>
+                    </ul>
+                    <p>{% button "contact", text="S'inscrire", class="palette-burnt-umber" %}</p>
+                </section>
+                <div class="flow">
+                    <hgroup class="flow space:0.5em breathe v--py:--step-3">
+                        <h1>{{ title | safe }}</h1>
+                        <p class="h4" {{ subtitle | io }}>{{ subtitle | safe }}</p>
+                    </hgroup>
+                    <hr>
+                    {{ content | safe }}
 
-                {% button "contact", text="S'inscrire" %}
+                    <div class="">
+                        {% button "contact", text="S'inscrire" %}
+                    </div>
+                </div>
             </div>
-            <aside class="card palette-burnt-umber-contrast">
-                <h3>Infos pratiques</h3>
-                <ul>
-                    <li>{{ duration }}</li>
-                    <li>{{ price | safe }}</li>
-                    <li>{{ place }}</li>
-                </ul>
-            </aside>
-        </div>
-    </main>
+        </main>
 
-    <!-- Footer -->
-    {% partial '_footer.md' %}
-  </body>
+        <!-- Footer -->
+        {% partial '_footer' %}
+    </body>
 </html>
 
 {% css %}
-.fluid > * {
-  max-inline-size: 100%;
+
+.practical-info {
+    isolation: isolate;
+    position: relative;
+    margin-inline: var(--px-body);
+    margin-block-start: max(-4vw, -4rem);
 }
+
+@media (min-width: 60em) {
+    .practical-info {
+        float: right;
+    }
+}
+@media (min-width: 80em) {
+    .practical-info {
+        margin-inline-end: 2rem;
+    }
+}
+
+.practical-info li {
+    padding-block: 0.4em;
+        border-block-start: solid 1px currentColor;
+    &:last-of-type {
+        border-block-end: solid 1px currentColor;
+    }
+}
+
 {% endcss %}
