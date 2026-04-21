@@ -1,5 +1,5 @@
-export default function ({ content, class: className }) {
-  return `<div class="card item-two-columns ${className || ""}">
+export default function ({ content, class: className, tag }) {
+  return `<${tag || "div"} class="cell item-two-columns ${className || ""}">
 ${content}
-</div>`;
+</${tag || "div"}>`;
 }

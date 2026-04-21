@@ -2,11 +2,12 @@ export default function ({
   content,
   type,
   gap,
-  class: className,
   widthWrap,
   columns,
   widthColumnMin,
   widthColumnMax,
+  class: className,
+  tag,
 }) {
   const gridItemRegex = /class=["'][^"']*\bitem-grid\b[^"']*["']/g;
   const childrenNb = (content?.match(gridItemRegex) || []).length;
@@ -24,7 +25,7 @@ export default function ({
     .join(" ");
   styleStr = styleStr ? `style="${styleStr}"` : "";
 
-  return `<div class="layout section-main list-grid ${type || layoutClass} ${className || ""}" ${styleStr}>
+  return `<${tag || "div"} class="layout area main list-grid ${type || layoutClass} ${className || ""}" ${styleStr}>
 ${content}
-</div>`;
+</${tag || "div"}>`;
 }

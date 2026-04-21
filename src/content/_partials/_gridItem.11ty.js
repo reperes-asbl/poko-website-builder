@@ -1,5 +1,5 @@
-export default function ({ content, class: className }) {
-  return `<div class="card item-grid ${className || ""}">
+export default function ({ content, class: className, tag }) {
+  return `<${tag || "div"} class="cell item-grid ${className || ""}">
 ${content}
-</div>`;
+</${tag || "div"}>`;
 }

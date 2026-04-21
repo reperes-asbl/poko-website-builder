@@ -1,5 +1,5 @@
-export default function ({ content, class: className }) {
-  return `<header class="section-header ${className || ""}">
+export default function ({ content, class: className, tag }) {
+  return `<${tag || "header"} class="area header ${className || ""}">
 ${content}
-</header>`;
+</${tag || "header"}>`;
 }

@@ -9,11 +9,12 @@ export default async function ({
   sortCriterias,
   type,
   gap,
-  class: className,
   widthWrap,
   columns,
   widthColumnMin,
   widthColumnMax,
+  class: className,
+  tag,
 }) {
   const filterCollection = this.filterCollection;
   const sortCollection = this.sortCollection;
@@ -33,9 +34,9 @@ export default async function ({
   const itemsStr = (
     await Promise.all(
       items.map(async (item) => {
-          return await partialSc.call(this, "_collectionItem", {
-            ...item.data,
-          });
+        return await partialSc.call(this, "_collectionItem", {
+          ...item.data,
+        });
       }),
     )
   ).join("\n");
@@ -58,7 +59,7 @@ export default async function ({
     .join(" ");
   styleStr = styleStr ? `style="${styleStr}"` : "";
 
-  return `<div class="layout section-main list-collection ${type || layoutClass} ${className || ""}" ${styleStr}>
+  return `<${tag || "div"} class="layout area main list-collection ${type || layoutClass} ${className || ""}" ${styleStr}>
 ${itemsStr}
-</div>`;
+</${tag || "div"}>`;
 }
