@@ -30,6 +30,7 @@ import yamlData from "./src/config-11ty/plugins/yamlData/index.js";
 import cmsConfigPlugin from "./src/config-11ty/plugins/cms-config/index.js";
 import autoCollections from "./src/config-11ty/plugins/auto-collections/index.js";
 import htmlClassesTransform from "./src/config-11ty/plugins/html-classes-transform/index.js";
+import ioElementsTransform from "./src/config-11ty/plugins/io-elements-transform/index.js";
 import populateInputDir from "./src/config-11ty/plugins/populateInputDir/index.js";
 import partialsPlugin from "./src/config-11ty/plugins/partials/index.js";
 import partialShortcodesPlugin from "./src/config-11ty/plugins/partialShortcodes/index.js";
@@ -78,6 +79,7 @@ import {
   brandStyles,
   fontPreloadTags,
   userCmsConfig,
+  userHtmlClasses,
 } from "./env.config.js";
 import { getSelectedCollections } from "./src/config-11ty/plugins/cms-config/index.js";
 import eleventyComputed from "./src/data/eleventyComputed.js";
@@ -106,6 +108,7 @@ import {
   email,
   htmlAttrs,
   htmlImgAttrs,
+  ioAttr,
 } from "./src/config-11ty/filters/index.js";
 import {
   newLine,
@@ -513,17 +516,21 @@ export default async function (eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginCodeblocks([pluginCodeBlocksCharts]));
 
-  // await eleventyConfig.addPlugin(ctxCss);
-  await eleventyConfig.addPlugin(buildExternalCSS);
-  await eleventyConfig.addPlugin(pluginUnoCSS);
-  // TODO: import those classes from a data file
+  // Add classes to specific elements depending on the project
+  const userHtmlClassesImport = await userHtmlClasses();
   eleventyConfig.addPlugin(htmlClassesTransform, {
     classes: {
       // <selector>: "<class>",
       // html: "imported-html-class",
       // body: "imported-body-class",
+      ...(userHtmlClassesImport || {}),
     },
   });
+
+  // await eleventyConfig.addPlugin(ctxCss);
+  await eleventyConfig.addPlugin(buildExternalCSS);
+  await eleventyConfig.addPlugin(pluginUnoCSS);
+  eleventyConfig.addPlugin(ioElementsTransform);
 
   // --------------------- Populate files and default content
   eleventyConfig.addPassthroughCopy({
@@ -659,6 +666,8 @@ export const iconLists = ${JSON.stringify(iconLists)};
   // HTML helpers
   eleventyConfig.addFilter("htmlAttrs", htmlAttrs);
   eleventyConfig.addFilter("htmlImgAttrs", htmlImgAttrs);
+  eleventyConfig.addFilter("ioAttr", ioAttr);
+  eleventyConfig.addFilter("io", ioAttr);
 
   // --------------------- Shortcodes
   // eleventyConfig.addAsyncShortcode("partial", partialShortcode);

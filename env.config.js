@@ -266,6 +266,20 @@ export const userCmsConfig = async function () {
   return userCmsConfigTemp;
 };
 
+export const userHtmlClasses = async function () {
+  let userHtmlClassesTemp = {};
+  try {
+    const uhc = await import(`${WORKING_DIR_ABSOLUTE}/_config/htmlClasses.js`);
+
+    userHtmlClassesTemp = { ...(uhc?.default || {}) };
+  } catch (error) {
+    console.warn(
+      `INFO: No custom HTML classes found from "${WORKING_DIR_ABSOLUTE}/_config/htmlClasses.js"`,
+    );
+  }
+  return userHtmlClassesTemp;
+};
+
 // export const userCmsConfig = userCmsConfigTemp;
 
 // More specific useful global settings
