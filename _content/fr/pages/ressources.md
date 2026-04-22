@@ -17,13 +17,12 @@ Vous souhaitez renforcer vos projets ou approfondir vos pratiques?
 Découvrez nos ressources documentaires et partenaires de terrain actifs dans la promotion de la santé et la formation. Des outils, des recherches, des réseaux: tout ce qu’il faut pour soutenir vos démarches et vos actions.
 {% endpartialWrapper %}
 
-{% wrapper tag="section", class='bleed-bg palette-cooper palette-low-contrast' %}
+{% wrapper tag="section", class='bleed-bg palette-cooper palette-low-contrast layout flow' %}
 ## Documentation
 
-- nom document - thématique
-- nom document - thématique
-- nom document - thématique
-- nom document - thématique
+- {% link url="/assets/files/note-sesu.pdf", text="Support formation: Besoins, analyses et perspectives (PDF)", linkType="file", class="font-bold", target="_blank" %}
+- {% link url="/assets/files/definitions-formation.pdf", text="Mieux comprendre le contour des pratiques en promotion de la santé (PDF)", linkType="file", class="font-bold", target="_blank" %}
+
 {% endwrapper %}
 
 {% wrapper tag="section", class='palette-burnt-umber' %}
@@ -35,7 +34,7 @@ Découvrez nos ressources documentaires et partenaires de terrain actifs dans la
 {% endsectionHeader %}
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
-<a href="/assets/files/repertoire-servicessupportpromosantebxl_2026.pdf" target="_blank" rel="noopener noreferrer">
+<a href="/assets/files/repertoire-sesu.pdf" target="_blank" rel="noopener noreferrer">
 
 {% image src="/_images/repertoire-servicessupportpromosantebxl_2026.webp", alt="Couverture du répertoire des SESU, lien vers le fichier PDF", width="300" %}
 
@@ -46,7 +45,7 @@ Découvrez nos ressources documentaires et partenaires de terrain actifs dans la
 
 Vous souhaitez renforcer vos connaissances et compétences en promotion de la santé? Améliorer vos pratiques sur l’une des thématiques prioritaires du Plan Promotion Santé? Vous initier ou développer vos pratiques selon les techniques d’intervention éprouvées en promotion de la santé? Intégrer la participation des bénéficiaires à la mise en place de vos actions? Un service de support pourrait répondre à vos besoins!
 
-{% link url="/assets/files/repertoire-servicessupportpromosantebxl_2026.pdf", text="Consultez le répertoire des SESU en PDF", linkType="file", class="button palette-orange-peel-contrast font-bold", target="_blank", rel="noopener noreferrer" %}
+{% link url="/assets/files/repertoire-sesu.pdf", text="Consultez le répertoire des SESU en PDF", linkType="file", class="button palette-orange-peel-contrast font-bold", target="_blank", rel="noopener noreferrer" %}
 
 {% link url="/sesu/#decouvrez-les-autres-sesu", text="Liens vers tous les SESU", linkType="external", class="button palette-orange-peel-contrast font-bold" %}
 {% endtwoColumnsItem %}
@@ -68,9 +67,27 @@ Vous souhaitez renforcer vos connaissances et compétences en promotion de la sa
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 ### Les Centres Locaux de Promotion de la Santé
-  **Les Centres Locaux de Promotion de la Santé** (CLPS) sont des organismes qui soutiennent et accompagnent les professionnels locaux dans la mise en place de projets visant à améliorer la santé et le bien-être des populations. Ils offrent un appui méthodologique, facilitent la mise en réseau des acteurs de terrain et organisent des formations et des échanges de pratiques.
+
+**Les Centres Locaux de Promotion de la Santé** (CLPS) sont des organismes qui soutiennent et accompagnent les professionnels locaux dans la mise en place de projets visant à améliorer la santé et le bien-être des populations. Ils offrent un appui méthodologique, facilitent la mise en réseau des acteurs de terrain et organisent des formations et des échanges de pratiques.
 
 {% link url="https://lesclps.org/", text="Le site des CLPS", linkType="external", class="button", target="_blank", rel="noopener noreferrer" %}
+{% endtwoColumnsItem %}
+{% endtwoColumns %}
+
+{% twoColumns type="fixedFluid", fixedSide="fixedLeft", class="items-center" %}
+{% twoColumnsItem  %}
+<a href="https://www.aviq.be/fr/sensibilisation-et-promotion/operateurs-de-promotion-de-la-sante/centres-dexpertises" target="_blank" rel="noopener noreferrer">
+
+{% image src="/_images/logo_aviq_officiel.svg", alt="Logo AVIQ, lien vers la liste des centres d'expertise", width="300" %}
+
+</a>
+{% endtwoColumnsItem %}
+{% twoColumnsItem  %}
+### Les Centres d’expertise en promotion de la santé
+
+**Les Centres d’expertise en promotion de la santé** sont agréés en vue d’apporter un support scientifique et méthodologique à l’Agence, aux centres locaux de promotion de la santé, aux centres d’opérationnalisation en médecine préventive et aux opérateurs en promotion de la santé.
+
+{% link url="https://www.aviq.be/fr/sensibilisation-et-promotion/operateurs-de-promotion-de-la-sante/centres-dexpertises", text="La liste des centres d'expertise", linkType="external", class="button", target="_blank", rel="noopener noreferrer" %}
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 
@@ -82,8 +99,8 @@ Vous souhaitez renforcer vos connaissances et compétences en promotion de la sa
 ## Vous cherchez un soutien politique?
 
 Les fédérations bruxelloise (FBPSanté) et wallonne (FWPS) rassemblent les organisations actives en promotion de la santé au niveau régional. Elles jouent un rôle essentiel en représentant le secteur, en défendant ses missions et en portant une vision commune de la promotion de la santé.
-    - **À Bruxelles**, {% link url="https://www.fbpsante.brussels/", text="la FBPSanté", linkType="external", target="_blank", rel="noopener noreferrer" %} valorise et défend la promotion de la santé, représente les associations auprès des pouvoirs publics et soutient un plaidoyer politique commun pour renforcer la place du secteur dans les politiques régionales.
--	**En Wallonie**, {% link url="https://www.fwpsante.be/", text="la FWPS", linkType="external", target="_blank", rel="noopener noreferrer" %} réunit les acteurs du secteur pour construire et diffuser une vision partagée, améliorer la qualité des actions, favoriser la concertation et représenter collectivement les opérateurs auprès des autorités.
+- **À Bruxelles**, {% link url="https://www.fbpsante.brussels/", text="la FBPSanté", linkType="external", target="_blank", rel="noopener noreferrer" %} valorise et défend la promotion de la santé, représente les associations auprès des pouvoirs publics et soutient un plaidoyer politique commun pour renforcer la place du secteur dans les politiques régionales.
+- **En Wallonie**, {% link url="https://www.fwpsante.be/", text="la FWPS", linkType="external", target="_blank", rel="noopener noreferrer" %} réunit les acteurs du secteur pour construire et diffuser une vision partagée, améliorer la qualité des actions, favoriser la concertation et représenter collectivement les opérateurs auprès des autorités.
 {% endsectionHeader %}
 {% grid type="grid-fluid", class="items-center flex cluster v--gap:--step-4" %}
 {% gridItem  %}

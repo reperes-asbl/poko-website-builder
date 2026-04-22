@@ -6,10 +6,10 @@ uuid: f0c98656a097
 localizationKey: 4925446f2f1f
 name: Accompagner des personnes sans-abri en collectivité
 subtitle: Soutenir la capacité des personnes à prendre soin d’elles
-tempo: Mars à décembre 2025 ⚠️ ?
+tempo: Mars à décembre 2026
 duration: 4 jours et 6 demi-journées
 price: 280€
-place: 1000 Bruxelles
+place: Liège
 metadata:
   title: ''
   description: ''

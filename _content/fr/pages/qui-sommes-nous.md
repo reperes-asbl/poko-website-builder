@@ -96,7 +96,7 @@ Chez Repères, la formation se vit en présentiel et s’anime en binôme, afin 
 
 Ces expériences vécues ensemble, dans un cadre sécurisant et impliquant, soutiennent le développement d’une posture professionnelle adaptée à la complexité des enjeux de santé et des contextes de vie.
 
-⚠️ ? Notre charte de promotion de la santé ? ⚠️
+{% link url="formations", text="Voir le catalogue des formations", linkType="internal", collection="pages", class="button" %}
 {% endwrapper %}
 
 {% sectionCollection  %}
@@ -107,9 +107,7 @@ Ces expériences vécues ensemble, dans un cadre sécurisant et impliquant, sout
 
 L’équipe de Repères rassemble des formateurs et formatrices pluridisciplinaires : travailleurs sociaux, psychologues, pédagogues et spécialistes en santé communautaire, éducation sexuelle et affective, formation d’adultes, supervision d’équipes et accompagnement de projets.
 
-Cette diversité enrichit nos formations grâce à la mise en commun des expériences, une réflexion continue sur nos pratiques et une
-
-écoute attentive des besoins des participant·es.
+Cette diversité enrichit nos formations grâce à la mise en commun des expériences, une réflexion continue sur nos pratiques et une écoute attentive des besoins des participant·es.
 
 ### Nos formateurs et formatrices
 {% endsectionHeader %}

@@ -105,7 +105,7 @@ Vous nous contactez si vous voulez:
 - Avoir un regard réflexif sur vos pratiques, individuellement ou collectivement.
 - Trouver des supports méthodologiques pour intégrer la promotion de la santé dans vos projets, équipes ou structures.
 
-{% link url="contact", text="Nous contacter", linkType="external", class="button" %} { .text-center }
+{% link url="contact", text="Nous contacter", linkType="internal", collection="pages", class="button" %} { .text-center }
 {% endwrapper %}
 
 {% sectionGrid class="width-prose bleed-bg v--bleed-top:10rem" %}

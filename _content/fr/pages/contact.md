@@ -112,13 +112,12 @@ Nos bureaux sont ouverts du lundi au vendredi, de 9h à 16h30. { .mis-[1rem] }
 {% endsectionTwoColumns %}
 
 {% wrapper tag="section", class="flow text-center" %}
-#### Vous cherchez une formation spécifique?
+## Vous cherchez une formation spécifique? { .h3 }
 
-Consultez notre catalogue de formations ou découvrez nos interventions sur mesure
-
-⚠️ Probablement pas le bouton qu'on veut ici ⚠️
+Consultez {% link url="formations", text="notre catalogue de formations", linkType="internal", collection="pages" %}, découvrez {% link url="activites", text="nos interventions sur mesure", linkType="internal", collection="pages" %} ou abbonez-vous à notre newsletter pour être informé de nos prochaines formations.
 
 {% partial "btn-newsletter.md" %}
+
 {% endwrapper %}
 
 {% css %}

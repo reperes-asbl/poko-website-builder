@@ -25,20 +25,20 @@ vars: {}
 ## Notre offre de formations et d’accompagnements
 {% endsectionHeader %}
 {% grid type="switcher", class="text-center" %}
-{% gridItem  %}
+{% gridItem class="breakout-clickable" %}
 {% icon "tabler:library", width="64", height="64" %}
 
-**Nos formations à Bruxelles et en Wallonie**
+**{% link url="formations", text="Nos formations", collection="pages" %} à Bruxelles et en Wallonie**
 {% endgridItem %}
-{% gridItem  %}
+{% gridItem class="breakout-clickable" %}
 {% icon "tabler:automation", width="64", height="64" %}
 
-**Nos interventions sur mesure (chez vous et/ou en équipe)**
+**{% link url="activites", text="Nos interventions sur mesure", collection="pages" %} (chez vous et/ou en équipe)**
 {% endgridItem %}
-{% gridItem  %}
+{% gridItem class="breakout-clickable" %}
 {% icon "tabler:thumb-up", width="64", height="64" %}
 
-**Notre service support (Le SESU)**
+**{% link url="sesu", text="Notre service support", collection="pages" %} (Le SESU)**
 {% endgridItem %}
 {% endgrid %}
 
@@ -79,7 +79,7 @@ Du soin à la jeunesse, du social à la formation… { .h4 }
 
 {# ⚠️ -LOGO PARTENAIRES- ⚠️ #}
 
-{% link url="pour-qui", text="À qui s'adresse nos formations?", linkType="internal", collection="pages", class="button" %}
+{% link url="pour-qui", text="À qui s'adressent nos formations?", linkType="internal", collection="pages", class="button" %}
 {% endwrapper %}
 
 {#
