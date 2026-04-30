@@ -677,6 +677,13 @@ export const link = {
               collection: "pages",
               required: true,
             },
+            {
+              name: "anchor",
+              label: "Anchor",
+              widget: "string",
+              required: false,
+              hint: "Optional anchor (without #) to link to a specific section of the page",
+            }
           ],
         },
         ...activeCollections.map((collection) => ({
@@ -694,6 +701,13 @@ export const link = {
               collection: collection.name,
               required: true,
             },
+            {
+              name: "anchor",
+              label: "Anchor",
+              widget: "string",
+              required: false,
+              hint: "Optional anchor (without #) to link to a specific section of the page",
+            }
           ],
         })),
         {
@@ -782,6 +796,7 @@ export const link = {
     const argumentsString = match[1] || "";
     const text = extractQuotedString(argumentsString, "text") || "";
     const url = extractQuotedString(argumentsString, "url") || "";
+    const anchor = extractQuotedString(argumentsString, "anchor") || "";
     let linkType = extractQuotedString(argumentsString, "linkType") || "";
     const collection = extractQuotedString(argumentsString, "collection") || "";
     const cc = extractQuotedString(argumentsString, "cc") || "";
@@ -794,7 +809,7 @@ export const link = {
     const otherAttrs = argumentsString
       .replace(/^\s*,\s*/, "")
       .replace(
-        /(text|url|linkType|collection|cc|bcc|subject|body)="[^"]*"(?:\s*,)?/g,
+        /(text|url|linkType|collection|cc|bcc|subject|body|anchor)="[^"]*"(?:\s*,)?/g,
         "",
       )
       .trim();
@@ -849,6 +864,7 @@ export const link = {
       linkType: {
         type: linkType,
         url,
+        anchor,
         ...(linkType === "email" && advanced ? { advanced } : {}),
       },
       otherAttrs,
@@ -859,6 +875,7 @@ export const link = {
     const text = data?.text || "";
     let linkType = data?.linkType?.type;
     const url = data?.linkType?.url;
+    const anchor = data?.linkType?.anchor;
     const advanced = data?.linkType?.advanced || {};
     const { cc, bcc, subject, body } = advanced;
     const otherAttrs = data?.otherAttrs;
@@ -881,7 +898,7 @@ export const link = {
     } else {
       const collection = linkType;
       linkType = "internal";
-      return `{% link url="${url}", text="${text}", linkType="${linkType}", collection="${collection}"${otherAttrsString} %}`;
+      return `{% link url="${url}", text="${text}", anchor="${anchor}", linkType="${linkType}", collection="${collection}"${otherAttrsString} %}`;
     }
   },
 

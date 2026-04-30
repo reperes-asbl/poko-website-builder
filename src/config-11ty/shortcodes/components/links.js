@@ -25,6 +25,7 @@ export function link(unnamedAttrOrObj, optionalAttrsObj) {
     prop,
     collection,
     linkType,
+    anchor,
     // Email fields
     subject,
     body,
@@ -72,7 +73,8 @@ export function link(unnamedAttrOrObj, optionalAttrsObj) {
       .join(" ");
 
     if (typeof pageData === "object") {
-      return `<a href="${pageData.url}" ${attrsStr}>${text || pageData.name || pageData.url}</a>`;
+      const anchorStr = anchor ? `#${anchor}` : "";
+      return `<a href="${pageData.url}${anchorStr}" ${attrsStr}>${text || pageData.name || pageData.url}</a>`;
     }
   }
 
