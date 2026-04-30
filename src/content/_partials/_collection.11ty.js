@@ -6,6 +6,7 @@ export default async function ({
   // content,
   collection,
   filters,
+  exclusions,
   sortCriterias,
   type,
   gap,
@@ -26,10 +27,11 @@ export default async function ({
   items = sortCollection(items, sortCriterias);
   // 3. Filter the collection if filters are provided
   // TODO: Provide an escape hatch if we want to filter by another language that the current one
-  items = filterCollection(items, [
-    { by: "lang", value: lang },
-    ...(filters ? filters : []),
-  ]);
+  items = filterCollection(items, [{ by: "lang", value: lang }]);
+  
+  if (filters && filters.length > 0) {
+    items = filterCollection(items, filters, exclusions);
+  }
 
   const itemsStr = (
     await Promise.all(

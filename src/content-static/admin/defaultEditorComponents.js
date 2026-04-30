@@ -2439,7 +2439,7 @@ export const sectionCollection = {
                   value_field: "tagsList.*.slug",
                   display_fields: ["tagsList.*.name"],
                   required: true,
-                  multiple: false,
+                  multiple: true,
                 },
               ],
             },
@@ -2472,6 +2472,15 @@ export const sectionCollection = {
               ],
             },
           ],
+        },
+        {
+          name: "exclusions",
+          label: "Exclusions",
+          label_singular: "Exclusion",
+          widget: "boolean",
+          required: false,
+          default: false,
+          hint: "When enabled, the defined filters will exclude items instead of including them. For example, if you set a Tag filter with 'example' value and enable Exclusions, items with 'example' tag will not be displayed in the section.",
         },
         {
           name: "sortCriterias",
@@ -2580,16 +2589,14 @@ export const sectionCollection = {
       extractJsonProperty(collection?.attributes, "filters") || [];
     const sortCriterias =
       extractJsonProperty(collection?.attributes, "sortCriterias") || [];
-    const sortAndFilterOptions =
-      filters.length || sortCriterias.length
-        ? { filters, sortCriterias }
-        : undefined;
+
     const { extracted: collectionAttributes } = extractAttributes(
       collection?.attributes,
       [
         "collection",
         "filters", // Complex value. We just extract it here to avoid polluting `remaining` attributes
         "sortCriterias", // Complex value. We just extract it here to avoid polluting `remaining` attributes
+        "exclusions",
         "type",
         "gap",
         "class",
@@ -2601,8 +2608,14 @@ export const sectionCollection = {
       collection: collectionName,
       filters: noop1, // Just to remove key from ...layoutOptions
       sortCriterias: noop2, // Just to remove key from ...layoutOptions
+      exclusions,
       ...layoutOptions
     } = collectionAttributes;
+
+    const sortAndFilterOptions =
+      filters.length || sortCriterias.length || exclusions
+        ? { filters, sortCriterias, exclusions: !!exclusions }
+        : undefined;
 
     return {
       header: header?.content ? header : undefined,
@@ -2615,7 +2628,7 @@ export const sectionCollection = {
   },
   toBlock: function (data) {
     const collection = data?.collection || "all";
-    const { filters, sortCriterias } = data?.sortAndFilterOptions || {};
+    const { filters, sortCriterias, exclusions } = data?.sortAndFilterOptions || {};
     // const tag = data?.tags;
     // const sort = data?.sortOptions?.sort;
     // const sortBy = data?.sortOptions?.sortBy;
@@ -2686,6 +2699,7 @@ ${data?.footer?.content}
     const collAttrs = {
       collection,
       filters,
+      exclusions,
       sortCriterias,
       type,
       columns,
