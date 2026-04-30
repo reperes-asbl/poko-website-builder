@@ -1,4 +1,5 @@
 // import obfuscateEmail from "../../utils/emailObfuscate.js";
+import slugify from "@sindresorhus/slugify";
 import { locale_url } from "../../filters/i18n.js";
 import { emailLink } from "../../filters/email.js";
 
@@ -24,6 +25,7 @@ export function link(unnamedAttrOrObj, optionalAttrsObj) {
     lang,
     prop,
     collection,
+    type: typeTemp,
     linkType,
     anchor,
     // Email fields
@@ -38,18 +40,20 @@ export function link(unnamedAttrOrObj, optionalAttrsObj) {
     // hreflang,
     ...attrs
   } = optionalAttrsObj || unnamedAttrOrObj;
+  const type = typeTemp || linkType;
+
   const urlRef = typeof unnamedAttrOrObj === "string" ? unnamedAttrOrObj : url;
   // Boolean checks
   const isEmail =
-    linkType === "email" ||
+    type === "email" ||
     /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(urlRef);
-  const isFile = linkType === "file" || isFileUrl(urlRef);
+  const isFile = type === "file" || isFileUrl(urlRef);
   const isExternal =
-    linkType === "external" ||
+    type === "external" ||
     urlRef.startsWith("http") ||
     urlRef.startsWith("www.");
   const isInternal =
-    linkType === "internal" || (!isEmail && !isExternal && !isFile);
+    type === "internal" || (!isEmail && !isExternal && !isFile);
 
   // could be one of:
   // - [ ] translationKey
@@ -73,7 +77,7 @@ export function link(unnamedAttrOrObj, optionalAttrsObj) {
       .join(" ");
 
     if (typeof pageData === "object") {
-      const anchorStr = anchor ? `#${anchor}` : "";
+      const anchorStr = anchor ? `#${slugify(anchor)}` : "";
       return `<a href="${pageData.url}${anchorStr}" ${attrsStr}>${text || pageData.name || pageData.url}</a>`;
     }
   }

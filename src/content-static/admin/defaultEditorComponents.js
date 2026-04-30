@@ -681,9 +681,10 @@ export const link = {
               name: "anchor",
               label: "Anchor",
               widget: "string",
+              // type: "url", // NOTE: might be useful but not working currently
               required: false,
-              hint: "Optional anchor (without #) to link to a specific section of the page",
-            }
+              hint: "Optional anchor. Link to any title by copy-pasting it here",
+            },
           ],
         },
         ...activeCollections.map((collection) => ({
@@ -705,9 +706,10 @@ export const link = {
               name: "anchor",
               label: "Anchor",
               widget: "string",
+              // type: "url", // NOTE: might be useful but not working currently
               required: false,
-              hint: "Optional anchor (without #) to link to a specific section of the page",
-            }
+              hint: "Optional anchor. Link to any title by copy-pasting it here",
+            },
           ],
         })),
         {
@@ -797,8 +799,9 @@ export const link = {
     const text = extractQuotedString(argumentsString, "text") || "";
     const url = extractQuotedString(argumentsString, "url") || "";
     const anchor = extractQuotedString(argumentsString, "anchor") || "";
-    let linkType = extractQuotedString(argumentsString, "linkType") || "";
-    const collection = extractQuotedString(argumentsString, "collection") || "";
+    const linkType = extractQuotedString(argumentsString, "linkType") || "";
+    let type = extractQuotedString(argumentsString, "type") || linkType || "";
+    let collection = extractQuotedString(argumentsString, "collection") || "";
     const cc = extractQuotedString(argumentsString, "cc") || "";
     const bcc = extractQuotedString(argumentsString, "bcc") || "";
     const subject = extractQuotedString(argumentsString, "subject") || "";
@@ -809,7 +812,7 @@ export const link = {
     const otherAttrs = argumentsString
       .replace(/^\s*,\s*/, "")
       .replace(
-        /(text|url|linkType|collection|cc|bcc|subject|body|anchor)="[^"]*"(?:\s*,)?/g,
+        /(text|url|linkType|type|collection|cc|bcc|subject|body|anchor)="[^"]*"(?:\s*,)?/g,
         "",
       )
       .trim();
@@ -828,24 +831,21 @@ export const link = {
       }
     }
 
-    switch (true) {
-      case !!linkType:
-        break;
-      case url.startsWith("http") || url.startsWith("www."):
-        linkType = "external";
-        break;
-      case /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(url):
-        linkType = "email";
-        break;
-      case isFileUrl(url):
-        linkType = "file";
-        break;
-      default:
-        linkType = "external";
+    if (!type) {
+      // Atribute a type if it is not provided
+      if (url.startsWith("http") || url.startsWith("www.")) {
+        type = "external";
+      } else if (/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(url)) {
+        type = "email";
+      } else if (isFileUrl(url)) {
+        type = "file";
+      } else {
+        type = "external";
+      }
     }
 
-    if (linkType == "internal") {
-      linkType = collection || "all";
+    if (type == "internal") {
+      collection = collection || "pages";
     }
 
     let advanced;
@@ -862,10 +862,10 @@ export const link = {
     return {
       text: text || "",
       linkType: {
-        type: linkType,
+        type: type === "internal" ? collection : type,
         url,
         anchor,
-        ...(linkType === "email" && advanced ? { advanced } : {}),
+        ...(type === "email" && advanced ? { advanced } : {}),
       },
       otherAttrs,
     };
@@ -873,7 +873,7 @@ export const link = {
 
   toBlock: function (data) {
     const text = data?.text || "";
-    let linkType = data?.linkType?.type;
+    let type = data?.linkType?.type;
     const url = data?.linkType?.url;
     const anchor = data?.linkType?.anchor;
     const advanced = data?.linkType?.advanced || {};
@@ -881,13 +881,13 @@ export const link = {
     const otherAttrs = data?.otherAttrs;
     const otherAttrsString = otherAttrs?.trim() ? `, ${otherAttrs}` : "";
 
-    if (linkType === "external" || linkType === "file") {
-      return `{% link url="${url}", text="${text}", linkType="${linkType}"${otherAttrsString} %}`;
-    } else if (linkType === "email") {
+    if (type === "external" || type === "file") {
+      return `{% link url="${url}", text="${text}", type="${type}"${otherAttrsString} %}`;
+    } else if (type === "email") {
       const attrsStr = njkAttrsStringFromObj({
         url,
         text,
-        linkType,
+        type,
         cc,
         bcc,
         subject,
@@ -896,9 +896,14 @@ export const link = {
 
       return `{% link ${attrsStr}${otherAttrsString} %}`;
     } else {
-      const collection = linkType;
-      linkType = "internal";
-      return `{% link url="${url}", text="${text}", anchor="${anchor}", linkType="${linkType}", collection="${collection}"${otherAttrsString} %}`;
+      const attrsStr = njkAttrsStringFromObj({
+        url,
+        text,
+        anchor,
+        type: "internal",
+        collection: type,
+      });
+      return `{% link ${attrsStr}${otherAttrsString} %}`;
     }
   },
 
