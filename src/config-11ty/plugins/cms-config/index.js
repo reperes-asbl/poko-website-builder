@@ -67,6 +67,7 @@ export const varsField = {
   widget: "keyvalue",
   i18n: true,
   required: false,
+  preview: false,
 };
 export const imageFields = [
   {
@@ -139,6 +140,7 @@ export const dataListField = {
   collapsed: true,
   i18n: "duplicate",
   allow_reorder: true,
+  preview: false,
   types: [
     {
       name: "text",
@@ -197,6 +199,7 @@ export const statusField = {
   default: "",
   required: false,
   i18n: true,
+  preview: false,
 };
 export const generatePageField = {
   name: "generatePage",
@@ -211,6 +214,7 @@ export const generatePageField = {
   default: "",
   required: false,
   i18n: "duplicate",
+  preview: false,
 };
 export const pageLayoutRelationField = {
   name: "pageLayout",
@@ -220,6 +224,7 @@ export const pageLayoutRelationField = {
   hint: "Select a layout for this page or leave empty to use the default layout",
   required: false,
   i18n: "duplicate",
+  preview: false,
 };
 
 // footer defined page by page (in the CMS)
@@ -234,6 +239,7 @@ export const pageFooterRelationField = {
   search_fields: ["slug"],
   display_fields: ["slug"],
   value_field: "{{slug}}",
+  preview: false,
 };
 export const pageNavRelationField = {
   name: "pageNav",
@@ -246,6 +252,7 @@ export const pageNavRelationField = {
   search_fields: ["name"],
   value_field: "{{name}}",
   display_fields: ["name"],
+  preview: false,
 };
 
 // const bodyMarkdownField = {
@@ -272,6 +279,7 @@ export const eleventyNavigationField = {
   required: false,
   summary: "Position: {{fields.order}} | Nav Title: {{fields.title}}",
   i18n: true,
+  preview: false,
   fields: [
     {
       name: "title",
@@ -309,6 +317,7 @@ export const simpleMetadataField = {
   required: false,
   collapsed: true,
   i18n: true,
+  preview: false,
   fields: [
     {
       name: "title",
@@ -344,6 +353,7 @@ export const pagePreviewField = {
   collapsed: true,
   i18n: true,
   hint: "Fields to be used when linking to this page or listing it",
+  preview: false,
   fields: [
     {
       name: "title",
@@ -389,6 +399,7 @@ export const tagsField = {
   display_fields: ["tagsList.*.name"],
   required: false,
   i18n: "duplicate",
+  preview: false,
 };
 export const brandColorField = {
   widget: "relation",
@@ -452,20 +463,20 @@ export const commonCollectionFields = [
     default: "{{datetime}}",
     i18n: true,
   },
-  {
-    name: "uuid",
-    label: "UUID",
-    widget: "hidden",
-    default: "{{uuid_short}}",
-    i18n: true,
-  },
-  {
-    name: "localizationKey",
-    label: "Localization Key",
-    widget: "hidden",
-    default: "{{uuid_short}}",
-    i18n: "duplicate",
-  },
+  // {
+  //   name: "uuid",
+  //   label: "UUID",
+  //   widget: "hidden",
+  //   default: "{{uuid_short}}",
+  //   i18n: true,
+  // },
+  // {
+  //   name: "localizationKey",
+  //   label: "Localization Key",
+  //   widget: "hidden",
+  //   default: "{{uuid_short}}",
+  //   i18n: "duplicate",
+  // },
 ];
 
 export const mostCommonMarkdownCollectionConfig = {
@@ -483,9 +494,9 @@ export const mostCommonMarkdownCollectionConfig = {
       direction: "ascending",
     },
   },
-  editor: {
-    preview: false,
-  },
+  // editor: {
+  //   preview: false,
+  // },
 };
 
 export const stylesheetsCollection = {
@@ -949,6 +960,7 @@ export const commonPageFields = [
     i18n: true,
     // PERSON had ...
     // i18n: "duplicate",
+    preview: false,
   },
   // {
   //   name: "currentSlug",
@@ -982,6 +994,7 @@ export const pages = {
   // TODO: check if it works
   slug: "{{name | localize}}", // This allows the slug to be localized
   // slug: "{{fields._slug | localize}}",
+  reorder: true,
 
   // MEDIAS
   media_folder: `/${CONTENT_DIR}/_images`,
