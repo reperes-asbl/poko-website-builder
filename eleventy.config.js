@@ -113,6 +113,8 @@ import {
 import {
   newLine,
   fetchFile as fetchFileShortcode,
+  linkPaired as linkPairedShortcode,
+  buttonPaired as buttonPairedShortcode,
   link as linkShortcode,
   button as buttonShortcode,
   image,
@@ -515,6 +517,10 @@ export default async function (eleventyConfig) {
     sources: iconSources,
     icon: {
       class: (name, source) => `icon icon-${source} icon-${name}`,
+      transform: async (svg) => {
+        const min = (svg || "").replace(/\s+/g, " ");
+        return min;
+      },
     },
   });
 
@@ -685,8 +691,12 @@ export const iconLists = ${JSON.stringify(iconLists)};
     "fetchFile",
     fetchFileShortcode,
   );
-  eleventyConfig.addShortcode("link", linkShortcode);
-  eleventyConfig.addShortcode("button", buttonShortcode);
+  eleventyConfig.addPairedShortcode("link", linkPairedShortcode);
+  eleventyConfig.addPairedShortcode("button", buttonPairedShortcode);
+  // TODO: remove these someday!
+  // We are keeping for now for easier migration from '{% link' to '{% linkSimple' before manually replacing
+  eleventyConfig.addAsyncShortcode("linkSimple", linkShortcode);
+  eleventyConfig.addShortcode("buttonSimple", buttonShortcode);
   eleventyConfig.addShortcode("image", image);
   eleventyConfig.addShortcode("gallery", gallery);
   // eleventyConfig.addPairedShortcode("wrapper", wrapper);

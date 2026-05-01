@@ -651,15 +651,8 @@ export const link = {
   icon: "link",
   dialog: true,
   summary:
-    "🔗 {{text | truncate(20)}}{{text | ternary(': ', '')}}{{linkType.url | truncate(30)}}",
+    "🔗 {{content | truncate(20)}}{{content | ternary(': ', '')}}{{linkType.url | truncate(30)}}",
   fields: [
-    {
-      name: "text",
-      label: "Text",
-      widget: "string",
-      required: false,
-      hint: "Optional text to display for the link",
-    },
     {
       name: "linkType",
       label: "Link Type",
@@ -787,16 +780,35 @@ export const link = {
       ],
     },
     {
+      name: "text",
+      label: "Text",
+      widget: "hidden",
+      required: false,
+      hint: "Optional text to display for the link",
+    },
+    {
+      name: "content",
+      label: "Content",
+      widget: "markdown",
+      minimal: true,
+      buttons: ["bold", "italic", "strikethrough", "code"],
+      editor_components: ["icon", "imageShortcode"],
+      required: false,
+      hint: "Optional content to display for the link. Defaults to internal page name or link URL",
+    },
+    {
       name: "otherAttrs",
       label: "Other raw attributes",
       widget: "hidden",
       required: false,
     },
   ],
-  pattern: /{% link\s+(.*?)\s*%}/,
+  // pattern: /{% link\s+(.*?)\s*%}/,
+  pattern: /{%\s*link\s*([^>]*?)\s*%}(.*?){% endlink %}/,
   fromBlock: function (match) {
     const argumentsString = match[1] || "";
     const text = extractQuotedString(argumentsString, "text") || "";
+    const content = match[2] || text;
     const url = extractQuotedString(argumentsString, "url") || "";
     const anchor = extractQuotedString(argumentsString, "anchor") || "";
     const linkType = extractQuotedString(argumentsString, "linkType") || "";
@@ -812,7 +824,7 @@ export const link = {
     const otherAttrs = argumentsString
       .replace(/^\s*,\s*/, "")
       .replace(
-        /(text|url|linkType|type|collection|cc|bcc|subject|body|anchor)="[^"]*"(?:\s*,)?/g,
+        /(text|content|url|linkType|type|collection|cc|bcc|subject|body|anchor)="[^"]*"(?:\s*,)?/g,
         "",
       )
       .trim();
@@ -860,19 +872,20 @@ export const link = {
     }
 
     return {
-      text: text || "",
       linkType: {
         type: type === "internal" ? collection : type,
         url,
         anchor,
         ...(type === "email" && advanced ? { advanced } : {}),
       },
+      // text: text || "",
+      content: content || "",
       otherAttrs,
     };
   },
 
   toBlock: function (data) {
-    const text = data?.text || "";
+    const content = data?.content || data?.text || "";
     let type = data?.linkType?.type;
     const url = data?.linkType?.url;
     const anchor = data?.linkType?.anchor;
@@ -881,33 +894,44 @@ export const link = {
     const otherAttrs = data?.otherAttrs;
     const otherAttrsString = otherAttrs?.trim() ? `, ${otherAttrs}` : "";
 
+    let attrsStr = "";
+
     if (type === "external" || type === "file") {
-      return `{% link url="${url}", text="${text}", type="${type}"${otherAttrsString} %}`;
+      attrsStr = njkAttrsStringFromObj({ url, type });
     } else if (type === "email") {
-      const attrsStr = njkAttrsStringFromObj({
+      attrsStr = njkAttrsStringFromObj({
         url,
-        text,
         type,
         cc,
         bcc,
         subject,
         body: toQuotableString(body),
       });
-
-      return `{% link ${attrsStr}${otherAttrsString} %}`;
     } else {
-      const attrsStr = njkAttrsStringFromObj({
+      attrsStr = njkAttrsStringFromObj({
         url,
-        text,
         anchor,
         type: "internal",
         collection: type,
       });
-      return `{% link ${attrsStr}${otherAttrsString} %}`;
     }
+
+    return `{% link ${attrsStr}${otherAttrsString} %}${content || ""}{% endlink %}`;
   },
 
-  toPreview: (data) => `<span>LINK</span>`,
+  toPreview: (data) => {
+    const content = data?.content || data?.text || "";
+    let type = data?.linkType?.type;
+    const url = data?.linkType?.url;
+    const isInternal =
+      type !== "external" && type !== "email" && type !== "file";
+    // For internal link, lead to the relevant page in the CMS
+    const href = isInternal
+      ? `/admin/#/collections/pages/entries/${type}/${url}`
+      : url;
+
+    return `<a href="${href}">${content || url}${isInternal ? ` <sup>🢱${url}</sup>` : ""}</a>`;
+  },
 };
 
 export const icon = {
@@ -1038,6 +1062,9 @@ export const imageShortcode = {
   id: "imageShortcode",
   label: "Image",
   icon: "image",
+  // dialog: true,
+  // summary:
+  //   "🖼️ {{attributes.alt | truncate(20)}}{{attributes.alt | ternary(': ', '')}}{{src | truncate(30)}}",
   fields: [
     {
       name: "src",
@@ -1129,7 +1156,7 @@ export const imageShortcode = {
       ],
     },
   ],
-  pattern: /^{% image\s+(.*?)\s*%}$/ms,
+  pattern: /{% image\s+(.*?)\s*%}/,
   fromBlock: function (match) {
     // Parse the arguments from the captured string
     const argumentsString = match[1];

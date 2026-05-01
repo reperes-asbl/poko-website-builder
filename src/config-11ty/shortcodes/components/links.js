@@ -17,11 +17,12 @@ function isFileUrl(urlString) {
   }
 }
 
-export function link(unnamedAttrOrObj, optionalAttrsObj) {
+export async function link(unnamedAttrOrObj, optionalAttrsObj) {
   const {
     __keywords,
     url,
     text,
+    content,
     lang,
     prop,
     collection,
@@ -41,6 +42,8 @@ export function link(unnamedAttrOrObj, optionalAttrsObj) {
     ...attrs
   } = optionalAttrsObj || unnamedAttrOrObj;
   const type = typeTemp || linkType;
+
+  const htmlContent = content || text;
 
   const urlRef = typeof unnamedAttrOrObj === "string" ? unnamedAttrOrObj : url;
   // Boolean checks
@@ -78,7 +81,7 @@ export function link(unnamedAttrOrObj, optionalAttrsObj) {
 
     if (typeof pageData === "object") {
       const anchorStr = anchor ? `#${slugify(anchor)}` : "";
-      return `<a href="${pageData.url}${anchorStr}" ${attrsStr}>${text || pageData.name || pageData.url}</a>`;
+      return `<a href="${pageData.url}${anchorStr}" ${attrsStr}>${htmlContent || pageData.name || pageData.url}</a>`;
     }
   }
 
@@ -87,12 +90,12 @@ export function link(unnamedAttrOrObj, optionalAttrsObj) {
       .map(([key, value]) => `${key}="${value}"`)
       .join(" ");
 
-    return `<a href="${urlRef}" ${attrsStr}>${text || urlRef}</a>`;
+    return `<a href="${urlRef}" ${attrsStr}>${htmlContent || urlRef}</a>`;
   }
 
   if (isEmail) {
     return emailLink.call(this, urlRef, {
-      text,
+      text: htmlContent,
       subject,
       body,
       cc,
@@ -106,7 +109,7 @@ export function link(unnamedAttrOrObj, optionalAttrsObj) {
       .map(([key, value]) => `${key}="${value}"`)
       .join(" ");
 
-    return `<a href="${urlRef}" ${attrsStr}>${text || urlRef}</a>`;
+    return `<a href="${urlRef}" ${attrsStr}>${htmlContent || urlRef}</a>`;
   }
 
   return "";
@@ -124,6 +127,33 @@ function normalizeAttributes(unnamedAttrOrObj, optionalAttrsObj) {
 export function button(unnamedAttrOrObj, optionalAttrsObj) {
   return link.call(this, {
     ...normalizeAttributes(unnamedAttrOrObj, optionalAttrsObj),
+    class: `button ${unnamedAttrOrObj?.class || optionalAttrsObj?.class || ""}`,
+  });
+}
+
+export async function linkPaired(
+  contentRaw,
+  unnamedAttrOrObj,
+  optionalAttrsObj,
+) {
+  const content = (contentRaw || "").replace(/\n\n+/g, "<br>");
+  // const content = contentRaw;
+  return link.call(this, {
+    ...normalizeAttributes(unnamedAttrOrObj, optionalAttrsObj),
+    content,
+  });
+}
+
+export async function buttonPaired(
+  contentRaw,
+  unnamedAttrOrObj,
+  optionalAttrsObj,
+) {
+  const content = (contentRaw || "").replace(/\n\n+/g, "<br>");
+  // const content = contentRaw;
+  return link.call(this, {
+    ...normalizeAttributes(unnamedAttrOrObj, optionalAttrsObj),
+    content,
     class: `button ${unnamedAttrOrObj?.class || optionalAttrsObj?.class || ""}`,
   });
 }
