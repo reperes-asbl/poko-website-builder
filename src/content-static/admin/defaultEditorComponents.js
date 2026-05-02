@@ -2052,7 +2052,7 @@ export const sectionGrid = {
     const footer = extractSectionAreaData(sectionInner, "sectionFooter");
 
     const grid = extractWithNunjucksTag(sectionInner, "grid");
-    const { extracted: gridAttributes } = extractAttributes(grid.attributes, [
+    const { extracted: gridAttributes } = extractAttributes(grid?.attributes, [
       "type",
       "gap",
       "class",
@@ -2628,7 +2628,8 @@ export const sectionCollection = {
   },
   toBlock: function (data) {
     const collection = data?.collection || "all";
-    const { filters, sortCriterias, exclusions } = data?.sortAndFilterOptions || {};
+    const { filters, sortCriterias, exclusions } =
+      data?.sortAndFilterOptions || {};
     // const tag = data?.tags;
     // const sort = data?.sortOptions?.sort;
     // const sortBy = data?.sortOptions?.sortBy;

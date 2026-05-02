@@ -229,32 +229,33 @@ export const pageLayoutRelationField = {
 };
 
 // footer defined page by page (in the CMS)
-export const pageFooterRelationField = {
-  name: "pageFooter",
-  label: "Footer",
-  widget: "relation",
-  collection: "footers",
-  hint: "Select a footer for this entry. Leave empty to use default footer set in global settings.",
-  required: false,
-  i18n: "duplicate",
-  search_fields: ["slug"],
-  display_fields: ["slug"],
-  value_field: "{{slug}}",
-  preview: false,
-};
-export const pageNavRelationField = {
-  name: "pageNav",
-  label: "Page Navigation",
-  widget: "relation",
-  collection: "navs",
-  hint: "Select a navigation for this page or leave empty to use the default navigation",
-  required: false,
-  i18n: "duplicate",
-  search_fields: ["name"],
-  value_field: "{{name}}",
-  display_fields: ["name"],
-  preview: false,
-};
+// export const pageFooterRelationField = {
+//   name: "pageFooter",
+//   label: "Footer",
+//   widget: "relation",
+//   // collection: "footers",
+//   collection: "partials",
+//   hint: "Select a partial as footer for this entry. Leave empty to use default footer set in global settings.",
+//   required: false,
+//   i18n: "duplicate",
+//   search_fields: ["slug"],
+//   display_fields: ["slug"],
+//   value_field: "{{slug}}",
+//   preview: false,
+// };
+// export const pageNavRelationField = {
+//   name: "pageNav",
+//   label: "Page Navigation",
+//   widget: "relation",
+//   collection: "navs",
+//   hint: "Select a navigation for this page or leave empty to use the default navigation",
+//   required: false,
+//   i18n: "duplicate",
+//   search_fields: ["name"],
+//   value_field: "{{name}}",
+//   display_fields: ["name"],
+//   preview: false,
+// };
 
 // const bodyMarkdownField = {
 //   name: "body",
@@ -1056,8 +1057,8 @@ export function spreadCommonPageFields(modFields) {
     tags: tagsField,
     status: statusField,
     pageLayoutRelation: pageLayoutRelationField,
-    pageFooterRelation: pageFooterRelationField,
-    pageNavRelation: pageNavRelationField,
+    // pageFooterRelation: pageFooterRelationField,
+    // pageNavRelation: pageNavRelationField,
     generatePage: generatePageField,
     vars: varsField,
     dataList: dataListField,
@@ -2006,215 +2007,215 @@ function createNavLevels(allSelectedCollections, currentLevel, maxLevels) {
   ];
 }
 
-export const navCollection = (allSelectedCollections) => ({
-  ...mostCommonMarkdownCollectionConfig,
-  identifier_field: "{{slug}}",
-  name: "nav",
-  label: "Navigations",
-  label_singular: "Navigation",
-  path: "nav/{{slug}}",
-  slug: "{{fields._slug}}",
-  icon: "menu_open",
-  folder: `${CONTENT_DIR}/_data`,
-  format: "yaml",
-  extension: "yaml",
-  summary: "{{slug}}",
-  media_folder: `/${CONTENT_DIR}/_images`,
-  public_folder: "/_images",
-  fields: [
-    {
-      name: "items",
-      label: "Items",
-      label_singular: "Item (Level 1)",
-      widget: "list",
-      i18n: "duplicate",
-      required: true,
-      fields: [
-        {
-          name: "linkTo",
-          label: "Link to ...",
-          widget: "object",
-          required: false,
-          i18n: "duplicate",
-          collapsed: "auto",
-          types: [
-            {
-              name: "linkTo",
-              label: "Link to ...",
-              widget: "object",
-              required: false,
-              i18n: "duplicate",
-              collapsed: "auto",
-              root: true,
-              types: [
-                {
-                  name: "pages",
-                  label: "Page",
-                  fields: [
-                    {
-                      name: "slug",
-                      label: "Select Page",
-                      widget: "relation",
-                      collection: "pages",
-                      search_fields: ["name"],
-                      display_fields: ["name"],
-                      required: false,
-                      i18n: "duplicate",
-                    },
-                    {
-                      name: "label",
-                      label: "Label",
-                      widget: "string",
-                      required: false,
-                      hint: "Override the page title",
-                      i18n: true,
-                    },
-                    {
-                      name: "image",
-                      label: "Image",
-                      widget: "object",
-                      hint: "Override the page title with an image",
-                      required: false,
-                      i18n: "duplicate",
-                      summary: "{{src}}",
-                      fields: [
-                        {
-                          name: "src",
-                          label: "Image",
-                          widget: "image",
-                          required: true,
-                          i18n: true,
-                        },
-                      ],
-                    },
-                  ],
-                },
-                ...getMiscLinkTypes(allSelectedCollections, 1, NAV_DEPTH_MAX),
-                {
-                  name: "url",
-                  label: "Custom URL",
-                  fields: [
-                    {
-                      name: "label",
-                      label: "Label",
-                      widget: "string",
-                      required: false,
-                      hint: "Override the page title",
-                      i18n: true,
-                    },
-                    {
-                      name: "url",
-                      label: "Custom URL",
-                      widget: "string",
-                      required: false,
-                      hint: "Use this for external links or if you want to override the page link.",
-                      i18n: true,
-                    },
-                    {
-                      name: "image",
-                      label: "Image",
-                      widget: "object",
-                      hint: "Override the page title with an image",
-                      required: false,
-                      i18n: "duplicate",
-                      summary: "{{src}}",
-                      fields: [
-                        {
-                          name: "src",
-                          label: "Src",
-                          widget: "image",
-                          required: true,
-                          i18n: true,
-                        },
-                      ],
-                    },
-                  ],
-                },
-                {
-                  name: "subItems",
-                  label: "Sub Menu",
-                  fields: [
-                    {
-                      name: "label",
-                      label: "Label",
-                      widget: "string",
-                      required: true,
-                      hint: "Override the page title",
-                      i18n: true,
-                    },
-                    {
-                      name: "image",
-                      label: "Image",
-                      widget: "object",
-                      hint: "Override the page title with an image",
-                      required: false,
-                      i18n: "duplicate",
-                      summary: "{{src}}",
-                      fields: [
-                        {
-                          name: "src",
-                          label: "Src",
-                          widget: "image",
-                          required: true,
-                          i18n: true,
-                        },
-                      ],
-                    },
-                    ...createNavLevels(
-                      allSelectedCollections,
-                      1,
-                      NAV_DEPTH_MAX,
-                    ), // Adjust the second argument to set max levels
-                  ],
-                },
-                ...createNavLevels(allSelectedCollections, 1, NAV_DEPTH_MAX), // Adjust the second argument to set max levels
-              ],
-            },
-            ...getMiscLinkTypes(allSelectedCollections, 1, NAV_DEPTH_MAX),
-            {
-              name: "url",
-              label: "Custom URL",
-              fields: [
-                {
-                  name: "label",
-                  label: "Label",
-                  widget: "string",
-                  required: false,
-                  hint: "Override the page title",
-                  i18n: true,
-                },
-                {
-                  name: "url",
-                  label: "Custom URL",
-                  widget: "string",
-                  required: false,
-                  hint: "Use this for external links or if you want to override the page link.",
-                  i18n: true,
-                },
-                ...createNavLevels(allSelectedCollections, 1, NAV_DEPTH_MAX), // Adjust the second argument to set max levels
-              ],
-            },
-            {
-              name: "label",
-              label: "Label Only",
-              fields: [
-                {
-                  name: "label",
-                  label: "Label",
-                  widget: "string",
-                  required: false,
-                  hint: "Override the page title",
-                  i18n: true,
-                },
-                ...createNavLevels(allSelectedCollections, 1, NAV_DEPTH_MAX), // Adjust the second argument to set max levels
-              ],
-            },
-          ],
-        },
-      ],
-    },
-  ],
-});
+// export const navCollection = (allSelectedCollections) => ({
+//   ...mostCommonMarkdownCollectionConfig,
+//   identifier_field: "{{slug}}",
+//   name: "nav",
+//   label: "Navigations",
+//   label_singular: "Navigation",
+//   path: "nav/{{slug}}",
+//   slug: "{{fields._slug}}",
+//   icon: "menu_open",
+//   folder: `${CONTENT_DIR}/_data`,
+//   format: "yaml",
+//   extension: "yaml",
+//   summary: "{{slug}}",
+//   media_folder: `/${CONTENT_DIR}/_images`,
+//   public_folder: "/_images",
+//   fields: [
+//     {
+//       name: "items",
+//       label: "Items",
+//       label_singular: "Item (Level 1)",
+//       widget: "list",
+//       i18n: "duplicate",
+//       required: true,
+//       fields: [
+//         {
+//           name: "linkTo",
+//           label: "Link to ...",
+//           widget: "object",
+//           required: false,
+//           i18n: "duplicate",
+//           collapsed: "auto",
+//           types: [
+//             {
+//               name: "linkTo",
+//               label: "Link to ...",
+//               widget: "object",
+//               required: false,
+//               i18n: "duplicate",
+//               collapsed: "auto",
+//               root: true,
+//               types: [
+//                 {
+//                   name: "pages",
+//                   label: "Page",
+//                   fields: [
+//                     {
+//                       name: "slug",
+//                       label: "Select Page",
+//                       widget: "relation",
+//                       collection: "pages",
+//                       search_fields: ["name"],
+//                       display_fields: ["name"],
+//                       required: false,
+//                       i18n: "duplicate",
+//                     },
+//                     {
+//                       name: "label",
+//                       label: "Label",
+//                       widget: "string",
+//                       required: false,
+//                       hint: "Override the page title",
+//                       i18n: true,
+//                     },
+//                     {
+//                       name: "image",
+//                       label: "Image",
+//                       widget: "object",
+//                       hint: "Override the page title with an image",
+//                       required: false,
+//                       i18n: "duplicate",
+//                       summary: "{{src}}",
+//                       fields: [
+//                         {
+//                           name: "src",
+//                           label: "Image",
+//                           widget: "image",
+//                           required: true,
+//                           i18n: true,
+//                         },
+//                       ],
+//                     },
+//                   ],
+//                 },
+//                 ...getMiscLinkTypes(allSelectedCollections, 1, NAV_DEPTH_MAX),
+//                 {
+//                   name: "url",
+//                   label: "Custom URL",
+//                   fields: [
+//                     {
+//                       name: "label",
+//                       label: "Label",
+//                       widget: "string",
+//                       required: false,
+//                       hint: "Override the page title",
+//                       i18n: true,
+//                     },
+//                     {
+//                       name: "url",
+//                       label: "Custom URL",
+//                       widget: "string",
+//                       required: false,
+//                       hint: "Use this for external links or if you want to override the page link.",
+//                       i18n: true,
+//                     },
+//                     {
+//                       name: "image",
+//                       label: "Image",
+//                       widget: "object",
+//                       hint: "Override the page title with an image",
+//                       required: false,
+//                       i18n: "duplicate",
+//                       summary: "{{src}}",
+//                       fields: [
+//                         {
+//                           name: "src",
+//                           label: "Src",
+//                           widget: "image",
+//                           required: true,
+//                           i18n: true,
+//                         },
+//                       ],
+//                     },
+//                   ],
+//                 },
+//                 {
+//                   name: "subItems",
+//                   label: "Sub Menu",
+//                   fields: [
+//                     {
+//                       name: "label",
+//                       label: "Label",
+//                       widget: "string",
+//                       required: true,
+//                       hint: "Override the page title",
+//                       i18n: true,
+//                     },
+//                     {
+//                       name: "image",
+//                       label: "Image",
+//                       widget: "object",
+//                       hint: "Override the page title with an image",
+//                       required: false,
+//                       i18n: "duplicate",
+//                       summary: "{{src}}",
+//                       fields: [
+//                         {
+//                           name: "src",
+//                           label: "Src",
+//                           widget: "image",
+//                           required: true,
+//                           i18n: true,
+//                         },
+//                       ],
+//                     },
+//                     ...createNavLevels(
+//                       allSelectedCollections,
+//                       1,
+//                       NAV_DEPTH_MAX,
+//                     ), // Adjust the second argument to set max levels
+//                   ],
+//                 },
+//                 ...createNavLevels(allSelectedCollections, 1, NAV_DEPTH_MAX), // Adjust the second argument to set max levels
+//               ],
+//             },
+//             ...getMiscLinkTypes(allSelectedCollections, 1, NAV_DEPTH_MAX),
+//             {
+//               name: "url",
+//               label: "Custom URL",
+//               fields: [
+//                 {
+//                   name: "label",
+//                   label: "Label",
+//                   widget: "string",
+//                   required: false,
+//                   hint: "Override the page title",
+//                   i18n: true,
+//                 },
+//                 {
+//                   name: "url",
+//                   label: "Custom URL",
+//                   widget: "string",
+//                   required: false,
+//                   hint: "Use this for external links or if you want to override the page link.",
+//                   i18n: true,
+//                 },
+//                 ...createNavLevels(allSelectedCollections, 1, NAV_DEPTH_MAX), // Adjust the second argument to set max levels
+//               ],
+//             },
+//             {
+//               name: "label",
+//               label: "Label Only",
+//               fields: [
+//                 {
+//                   name: "label",
+//                   label: "Label",
+//                   widget: "string",
+//                   required: false,
+//                   hint: "Override the page title",
+//                   i18n: true,
+//                 },
+//                 ...createNavLevels(allSelectedCollections, 1, NAV_DEPTH_MAX), // Adjust the second argument to set max levels
+//               ],
+//             },
+//           ],
+//         },
+//       ],
+//     },
+//   ],
+// });
 
 const globalSettingsSingleton = {
   name: "globalSettings",
@@ -2379,17 +2380,17 @@ const globalSettingsSingleton = {
       options: Object.keys(optionalCollections),
       dropdown_threshold: 100,
     },
-    {
-      name: "customNav",
-      label: "Custom Navigation",
-      widget: "relation",
-      collection: "nav",
-      value_field: "slug",
-      search_fields: ["slug"],
-      display_fields: ["slug"],
-      required: false,
-      hint: "Choose which custom nav file to use globally",
-    },
+    // {
+    //   name: "customNav",
+    //   label: "Custom Navigation",
+    //   widget: "relation",
+    //   collection: "nav",
+    //   value_field: "slug",
+    //   search_fields: ["slug"],
+    //   display_fields: ["slug"],
+    //   required: false,
+    //   hint: "Choose which custom nav file to use globally",
+    // },
   ],
 };
 
@@ -2956,9 +2957,9 @@ class CmsConfig {
               // {
               //   divider: Boolean(!mustSetup && userConfig.collections?.length),
               // },
-              navCollection(allSelectedCollections),
-              navCollection2,
-              footerCollection,
+              // navCollection(allSelectedCollections),
+              // navCollection2,
+              // footerCollection,
               pageLayoutsCollection,
               { divider: true },
               partialsCollection,
@@ -2983,76 +2984,76 @@ class CmsConfig {
     return JSON.stringify(generalConfig, null, isDev ? 2 : 0);
   }
 }
-export const navCollection2 = {
-  name: "navs",
-  label: "Navs",
-  label_singular: "Nav",
-  path: "navs/{{slug}}",
-  slug: "{{fields._slug}}",
-  icon: "menu_open",
-  folder: `${CONTENT_DIR}/_partials`,
-  extension: "md",
-  format: "yaml-frontmatter",
-  create: true,
-  editor: { preview: false }, // to not display the preview of the page like in other collections
-  summary: "{{slug}}",
-  i18n: true, // to have the left-right feature with the two languages
-  // MEDIAS
-  media_folder: `/${CONTENT_DIR}/_images`,
-  public_folder: "/_images",
-  sortable_fields: {
-    fields: ["slug"],
-    default: {
-      field: "slug",
-      direction: "ascending",
-    },
-  },
-  fields: [
-    {
-      name: "body",
-      label: "Content",
-      widget: "markdown",
-      required: false,
-      i18n: true, // each language has its own body
-    },
-  ],
-};
+// export const navCollection2 = {
+//   name: "navs",
+//   label: "Navs",
+//   label_singular: "Nav",
+//   path: "navs/{{slug}}",
+//   slug: "{{fields._slug}}",
+//   icon: "menu_open",
+//   folder: `${CONTENT_DIR}/_partials`,
+//   extension: "md",
+//   format: "yaml-frontmatter",
+//   create: true,
+//   editor: { preview: false }, // to not display the preview of the page like in other collections
+//   summary: "{{slug}}",
+//   i18n: true, // to have the left-right feature with the two languages
+//   // MEDIAS
+//   media_folder: `/${CONTENT_DIR}/_images`,
+//   public_folder: "/_images",
+//   sortable_fields: {
+//     fields: ["slug"],
+//     default: {
+//       field: "slug",
+//       direction: "ascending",
+//     },
+//   },
+//   fields: [
+//     {
+//       name: "body",
+//       label: "Content",
+//       widget: "markdown",
+//       required: false,
+//       i18n: true, // each language has its own body
+//     },
+//   ],
+// };
 
-export const footerCollection = {
-  // identifier_field: "{{slug}}",
-  name: "footers",
-  label: "Footers",
-  label_singular: "Footer",
-  path: "footers/{{slug}}",
-  slug: "{{fields._slug}}",
-  icon: "bottom_navigation",
-  folder: `${CONTENT_DIR}/_partials`,
-  extension: "md",
-  format: "yaml-frontmatter",
-  create: true,
-  editor: { preview: false }, // to not display the preview of the page like in other collections
-  summary: "{{slug}}",
-  i18n: true, // to have the left-right feature with the two languages
-  // MEDIAS
-  media_folder: `/${CONTENT_DIR}/_images`,
-  public_folder: "/_images",
-  sortable_fields: {
-    fields: ["slug"],
-    default: {
-      field: "slug",
-      direction: "ascending",
-    },
-  },
-  fields: [
-    {
-      name: "body",
-      label: "Content",
-      widget: "markdown",
-      required: false,
-      i18n: true, // each language has its own body
-    },
-  ],
-};
+// export const footerCollection = {
+//   // identifier_field: "{{slug}}",
+//   name: "footers",
+//   label: "Footers",
+//   label_singular: "Footer",
+//   path: "footers/{{slug}}",
+//   slug: "{{fields._slug}}",
+//   icon: "bottom_navigation",
+//   folder: `${CONTENT_DIR}/_partials`,
+//   extension: "md",
+//   format: "yaml-frontmatter",
+//   create: true,
+//   editor: { preview: false }, // to not display the preview of the page like in other collections
+//   summary: "{{slug}}",
+//   i18n: true, // to have the left-right feature with the two languages
+//   // MEDIAS
+//   media_folder: `/${CONTENT_DIR}/_images`,
+//   public_folder: "/_images",
+//   sortable_fields: {
+//     fields: ["slug"],
+//     default: {
+//       field: "slug",
+//       direction: "ascending",
+//     },
+//   },
+//   fields: [
+//     {
+//       name: "body",
+//       label: "Content",
+//       widget: "markdown",
+//       required: false,
+//       i18n: true, // each language has its own body
+//     },
+//   ],
+// };
 
 export default async function (eleventyConfig, pluginOptions) {
   eleventyConfig.versionCheck(">=3.0.0-alpha.1");
