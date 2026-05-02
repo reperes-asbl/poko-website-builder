@@ -136,7 +136,7 @@ export default {
       key: data.page.fileSlug, // TODO: Should we use localizationKey here?
       title: data.eleventyNavigation?.title || data.title,
       parent: data.eleventyNavigation?.parent,
-      order: data.eleventyNavigation?.order,
+      order: data.order || data.eleventyNavigation?.order,
     };
   },
   // eleventyNavigation: {
@@ -171,7 +171,7 @@ export default {
   date: (data) => data.date || data.page?.date,
   url: (data) => data.url || data.page?.url,
 
-  pageFooter: (data) => {    
+  pageFooter: (data) => {
     // Prioritize the footer selected on the collection, then the default in settings
     const raw = data.pageFooter || data.globalSettings?.pageFooter || "";
     // const key =

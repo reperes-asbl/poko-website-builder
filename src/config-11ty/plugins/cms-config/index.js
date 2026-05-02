@@ -277,10 +277,19 @@ export const eleventyNavigationField = {
   widget: "object",
   collapsed: true,
   required: false,
-  summary: "Position: {{fields.order}} | Nav Title: {{fields.title}}",
+  // summary: "Position: {{fields.order}} | Nav Title: {{fields.title}}",
+  summary:
+    "Custom order: {{fields.order}} | Nav Title: {{fields.title}}{{fields.title | ternary('', '(Page Name)')}}",
   i18n: true,
   preview: false,
   fields: [
+    {
+      name: "add",
+      label: "Add to Navigation",
+      widget: "string",
+      default: "Nav",
+      required: false,
+    },
     {
       name: "title",
       label: "Title",
@@ -300,14 +309,14 @@ export const eleventyNavigationField = {
       required: false,
       i18n: "duplicate",
     },
-    {
-      name: "order",
-      label: "Order",
-      widget: "number",
-      default: 0,
-      required: false,
-      i18n: "duplicate",
-    },
+    // {
+    //   name: "order",
+    //   label: "Order",
+    //   widget: "number",
+    //   // default: 0,
+    //   required: false,
+    //   i18n: "duplicate",
+    // },
   ],
 };
 export const simpleMetadataField = {
@@ -485,6 +494,7 @@ export const mostCommonMarkdownCollectionConfig = {
   extension: "md",
   format: "yaml-frontmatter",
   create: true,
+  duplicate: true,
   identifier_field: "name",
   summary: "{{name}}",
   sortable_fields: {
@@ -493,6 +503,16 @@ export const mostCommonMarkdownCollectionConfig = {
       field: "name",
       direction: "ascending",
     },
+  },
+  view_groups: {
+    groups: [
+      {
+        label: "Nav Items",
+        field: "eleventyNavigation.add",
+        value: "Nav",
+      },
+    ],
+    default: "eleventyNavigation.add",
   },
   // editor: {
   //   preview: false,
@@ -972,6 +992,14 @@ export const commonPageFields = [
   // { name: "path", label: "Page URL path", widget: "string", required: true, pattern: ['^(?![\s\/\-]*$)(?!\/)[a-z0-9\/\-]*[a-z0-9\-]$', "URL must contain only letters, numbers, dashes, and forward slashes (not starting or ending with a slash or dash), and at least one letter or number"], hint: "URL-friendly slug or path (may contain '/' and '-'). NOTE: The homepage must be called 'index'"},
   bodyMarkdownField,
   eleventyNavigationField,
+  {
+    name: "order",
+    label: "Order",
+    widget: "number",
+    required: false,
+    i18n: "duplicate",
+    preview: false,
+  },
   simpleMetadataField,
   pagePreviewField,
   tagsField,
@@ -1004,8 +1032,9 @@ export const pages = {
 export const pagesCollection = {
   ...pages,
   path: "pages/{{slug}}",
-  summary:
-    "{{name}} {{eleventyNavigation.order | ternary(' (nav ', '')}}{{eleventyNavigation.order}}{{eleventyNavigation.order | ternary(')', '')}}",
+  // summary:
+  //   "{{name}} {{eleventyNavigation.order | ternary(' (nav ', '')}}{{eleventyNavigation.order}}{{eleventyNavigation.order | ternary(')', '')}}",
+  summary: "{{order | default('x')}} - {{name}}",
   sortable_fields: {
     fields: [
       "eleventyNavigation.parent",
@@ -1952,20 +1981,20 @@ const globalSettingsSingleton = {
       output_code_only: true,
       allow_language_selection: false,
     },
-    {
-      // footer defined in global settings (in the CMS)
-      name: "pageFooter",
-      label: "Default Footer",
-      widget: "relation",
-      collection: "footers",
-      hint: "Footer used for all pages and collections that don't have a specific footer set.",
-      required: false,
-      i18n: true,
-      // search_fields: ["slug"],
-      // display_fields: ["fields.slug"],
-      // value_field: "{{slug}}",
-      // options: faire une liste avec les footers disponibles dans la collection footers
-    },
+    // {
+    //   // footer defined in global settings (in the CMS)
+    //   name: "pageFooter",
+    //   label: "Default Footer",
+    //   widget: "relation",
+    //   collection: "footers",
+    //   hint: "Footer used for all pages and collections that don't have a specific footer set.",
+    //   required: false,
+    //   i18n: true,
+    //   // search_fields: ["slug"],
+    //   // display_fields: ["fields.slug"],
+    //   // value_field: "{{slug}}",
+    //   // options: faire une liste avec les footers disponibles dans la collection footers
+    // },
     {
       name: "languages",
       label: "Languages",
@@ -2572,7 +2601,7 @@ class CmsConfig {
       },
       // TODO: configure data formating: https://github.com/sveltia/sveltia-cms?tab=readme-ov-file#controlling-data-output
       output: {
-        omit_empty_optional_fields: false,
+        omit_empty_optional_fields: true,
         encode_file_path: true, // true to URL-encode file paths for File/Image fields
         json: {
           indent_style: "space", // space or tab
