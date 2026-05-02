@@ -3,7 +3,7 @@ import { sort } from "fast-sort";
 // import memoize from "memoize";
 import { tryMatchNestedVariable } from "./objects.js";
 
-export function filterCollection(collection, filtersRaw) {
+export function filterCollection(collection, filtersRaw, exclusions = false) {
   const toInt = (value) => (isNaN(parseInt(value)) ? 1 : parseInt(value));
   const toArrayOfStrings = (value) => {
     const arr = Array.isArray(value) ? value : [value];
@@ -12,6 +12,8 @@ export function filterCollection(collection, filtersRaw) {
   const toString = (value) => (!!value ? value.toString() : "");
 
   const filters = Array.isArray(filtersRaw) ? filtersRaw : [filtersRaw];
+
+  const filterAcc = (acc, callback) => acc.filter((item) => !!callback(item));
 
   const filteredCollection = filters.reduce((acc, { by, value } = {}) => {
     switch (by) {
@@ -29,9 +31,10 @@ export function filterCollection(collection, filtersRaw) {
           () => Math.floor(Math.random() * acc.length),
         ).sort((a, b) => a - b);
         return itemIndexes.map((index) => collection[index]);
+      case "tag":
       case "tags":
         const tagsToMatch = toArrayOfStrings(value);
-        return acc.filter((item) =>
+        return filterAcc(acc, (item) =>
           item.data.tags?.some((tag) => tagsToMatch.includes(tag)),
         );
       case "lang":
@@ -41,14 +44,16 @@ export function filterCollection(collection, filtersRaw) {
       case "parent":
         // If we provide a nullish value, we want no parent so we need an && operator
         if (!value) {
-          return acc.filter(
+          return filterAcc(
+            acc,
             (item) =>
               toString(item.data.parent) === toString(value) &&
               toString(item.data.eleventyNavigation?.parent) ===
                 toString(value),
           );
         }
-        return acc.filter(
+        return filterAcc(
+          acc,
           (item) =>
             toString(item.data.parent) === toString(value) ||
             toString(item.data.eleventyNavigation?.parent) === toString(value),
@@ -58,17 +63,18 @@ export function filterCollection(collection, filtersRaw) {
       default:
         if (typeof by === "string") {
           if (Array.isArray(value)) {
-            return acc.filter((item) =>
+            return filterAcc(acc, (item) =>
               value.some((v) => tryMatchNestedVariable(item, by) === v),
             );
           } else if (typeof value === "string" || typeof value === "number") {
-            return acc.filter(
+            return filterAcc(
+              acc,
               (item) => tryMatchNestedVariable(item, by) === value,
             );
           } else if (typeof value === "boolean") {
-            return acc.filter((item) => tryMatchNestedVariable(item, by));
+            return filterAcc(acc, (item) => tryMatchNestedVariable(item, by));
           } else if (!value) {
-            return acc.filter((item) => {
+            return filterAcc(acc, (item) => {
               const val = tryMatchNestedVariable(item, by);
               return val === undefined || val === null || val === false;
             });
@@ -77,6 +83,10 @@ export function filterCollection(collection, filtersRaw) {
         return acc;
     }
   }, collection);
+
+  if (exclusions) {
+    return collection.filter((item) => !filteredCollection.includes(item));
+  }
 
   return filteredCollection;
 }
@@ -93,9 +103,11 @@ export function sortCollection(collection, sortCriteriasRaw) {
     : [sortCriteriasRaw];
 
   const sortedCollection = sort(collection).by(
-    sortCriterias.map(({ direction, by }) => ({
-      [direction]: (collectionItem) => sortCb(collectionItem, by),
-    })),
+    sortCriterias
+      .filter((sc) => sc?.by && sc?.direction)
+      .map(({ direction, by }) => ({
+        [direction]: (collectionItem) => sortCb(collectionItem, by),
+      })),
   );
 
   return sortedCollection;

@@ -1,21 +1,5 @@
-class Grid {
-  // or `async data() {`
-  // or `get data() {`
-  // data() {
-  // 	return {
-  // 		name: "Ted",
-  // 		layout: "teds-rad-layout",
-  // 		// … other front matter keys
-  // 	};
-  // }
-
-  async render({ content }) {
-    // const contentRendered = await this.renderTemplate(content, "njk,md");
-
-    return `<footer class="section-footer">
+export default function ({ content, class: className, tag }) {
+  return `<${tag || "footer"} class="area footer ${className || ""}">
 ${content}
-</footer>`;
-  }
+</${tag || "footer"}>`;
 }
-
-export default Grid;

@@ -158,7 +158,7 @@ export default {
       key: data.page.fileSlug, // TODO: Should we use localizationKey here?
       title: data.eleventyNavigation?.title || data.title,
       parent: data.eleventyNavigation?.parent,
-      order: data.eleventyNavigation?.order,
+      order: data.order || data.eleventyNavigation?.order,
     };
   },
   // eleventyNavigation: {

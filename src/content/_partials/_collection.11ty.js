@@ -1,111 +1,67 @@
-import {
-  filterCollection,
-  sortCollection,
-  first as firstFilter,
-  last as lastFilter,
-} from "../../config-11ty/filters/array.js";
+export default async function ({
+  // Data from context template
+  collections,
+  lang,
+  // Data passed to the shortcode
+  // content,
+  collection,
+  filters,
+  exclusions,
+  sortCriterias,
+  type,
+  gap,
+  widthWrap,
+  columns,
+  widthColumnMin,
+  widthColumnMax,
+  class: className,
+  tag,
+}) {
+  const filterCollection = this.filterCollection;
+  const sortCollection = this.sortCollection;
+  const partialSc = this.partial;
 
-class Collection {
-  async render({
-    content,
-    collections,
-    collection,
-    tag,
-    sort,
-    sortBy,
-    filterFirst,
-    filterLast,
-    type,
-    columns,
-    widthWrap,
-    gap,
-    class: extraClass,
-  }) {
-    // Access Eleventy collections via template context
-    const allCollections = collections || {};
-    const collectionItemSc = this.collectionItem;
-
-    // 1. Build the raw items list first
-    let items = [];
-
-    if (!collection || collection === "all") {
-      // Merge all collections into one flat array (deduplicated by url)
-      const seen = new Set();
-      for (const col of Object.values(allCollections)) {
-        if (Array.isArray(col)) {
-          for (const item of col) {
-            if (item?.url && !seen.has(item.url)) {
-              seen.add(item.url);
-              items.push(item);
-            }
-          }
-        }
-      }
-    } else {
-      items = allCollections[collection] || [];
-    }
-
-    // 2. Filter by tag
-    if (tag) {
-      items = filterCollection(items, { by: "tags", value: tag });
-    }
-
-    // 3. Sort
-    if (sort === "asc" || sort === "desc") {
-      items = sortCollection(items, { direction: sort, by: sortBy || "date" });
-    }
-
-    // 4. Apply filterFirst / filterLast
-    if (filterFirst !== undefined) {
-      items = firstFilter(items, Number(filterFirst));
-    } else if (filterLast !== undefined) {
-      items = lastFilter(items, Number(filterLast));
-    }
-
-    // 5. Render each item via collectionItem shortcode
-    const itemsStr = (
-      await Promise.all(
-        items.map(async (item) => {
-          if (collectionItemSc) {
-            return await collectionItemSc.call(this, "", {
-              title: item.data.pagePreview?.title,
-              description: item.data.pagePreview?.description,
-              image: item.data.pagePreview?.image,
-            });
-          }
-          // Fallback if shortcode not available
-          return `<div class="collection-item">
-  <a href="${item?.url || "#"}">${item?.data?.name || item?.fileSlug || ""}</a>
-</div>`;
-        }),
-      )
-    ).join("\n");
-
-    // 6. Determine layout class
-    // Default: switcher for <=3 items, grid-fluid for >3
-    const layoutType = type || (items.length <= 3 ? "switcher" : "grid-fluid");
-
-    // Build inline CSS vars for layout options
-    const cssVars = [
-      layoutType === "grid-fluid"
-        ? columns
-          ? `--columns: ${columns}`
-          : "--columns: 5"
-        : "",
-      gap ? `--gap: ${gap}` : "",
-      widthWrap ? `--width-wrap: ${widthWrap}` : "",
-    ]
-      .filter(Boolean)
-      .join("; ");
-
-    const classAttr = ["collection", layoutType, extraClass]
-      .filter(Boolean)
-      .join(" ");
-
-    return `<div class="${classAttr}" data-collection="${collection || "all"}"${tag ? ` data-tag="${tag}"` : ""}${cssVars ? ` style="${cssVars}"` : ""}>
-${itemsStr}
-</div>`;
+  // 1. Get the collection of items
+  let items = collections[collection || "all"] || [];
+  // 2. First: Sort the collection (if sort criteria are provided) before filtering
+  items = sortCollection(items, sortCriterias);
+  // 3. Filter the collection if filters are provided
+  // TODO: Provide an escape hatch if we want to filter by another language that the current one
+  items = filterCollection(items, [{ by: "lang", value: lang }]);
+  
+  if (filters && filters.length > 0) {
+    items = filterCollection(items, filters, exclusions);
   }
-}
 
-export default Collection;
+  const itemsStr = (
+    await Promise.all(
+      items.map(async (item) => {
+        return await partialSc.call(this, "_collectionItem", {
+          ...item.data,
+        });
+      }),
+    )
+  ).join("\n");
+
+  // const contentRendered = await this.renderTemplate(content, "njk,md");
+  // const gridItemRegex = /class=["'][^"']*\bitem-grid\b[^"']*["']/g;
+  // const childrenNb = (content?.match(gridItemRegex) || []).length;
+  const layoutClass = items.length > 3 ? "grid-fluid" : "switcher";
+  // const layoutClass = "grid-fluid";
+  const styles = {
+    "--columns": columns,
+    "--gap": gap,
+    "--width-column-min": widthColumnMin,
+    "--width-column-max": widthColumnMax,
+    "--width-wrap": widthWrap,
+  };
+  let styleStr = Object.entries(styles)
+    .filter(([key, value]) => value)
+    .map(([key, value]) => `${key}: ${value};`)
+    .join(" ");
+  styleStr = styleStr ? `style="${styleStr}"` : "";
+
+  return `<${tag || "div"} class="layout area main list-collection ${type || layoutClass} ${className || ""}" ${styleStr}>
+${itemsStr}
+</${tag || "div"}>`;
+}

@@ -1,9 +1,5 @@
-class TwoColumnsItem {
-  async render({ content }) {
-    return `<div class="two-columns-item">
+export default function ({ content, class: className, tag }) {
+  return `<${tag || "div"} class="cell item-two-columns ${className || ""}">
 ${content}
-</div>`;
-  }
+</${tag || "div"}>`;
 }
-
-export default TwoColumnsItem;

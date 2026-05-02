@@ -1,5 +1,6 @@
 @import "./01_variables.css";
 @import "./05_reset.css";
+@import "./33_spaces.css";
 @import "./18_foundation.css";
 /*@import "./28_classless.css";*/
 
@@ -8,7 +9,6 @@
 /* @import './32_layouts.css'; */
 
 /* LAYER COLORS  */
-@import "./33_spaces.css";
 @import "./34_colors.css";
 @import "./34_flair.css";
 

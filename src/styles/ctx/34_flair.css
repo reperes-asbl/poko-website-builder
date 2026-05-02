@@ -45,3 +45,7 @@
     border-width: var(--thick-token);
     border-style: var(--border-style-token);
 }
+
+:where(img, picture) {
+    border-radius: var(--radius);
+}

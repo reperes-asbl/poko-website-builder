@@ -42,30 +42,44 @@
 
 {{ fontPreloadTags | safe }}
 
-{# Internal CSS: E-mail obfuscation + CSS head injection (from globalSettings) + bundle #}
+{# Order of CSS imports for cascade: CTX, Uno, Proj. Stylesheets, Proj. external bundle, Proj. CssHead, Proj. CSS bundles #}
+{# UnoCSS styles contain brand styles as preload #}
 
 {% if inlineAllStyles %}
 
 <style>
+/* CTX CSS Styles */
+{{CtxCssInline | safe}}
+/* UnoCSS Styles */
+.noop-load-uno{}
+/* Project Stylesheets */
 {{externalStylesInline | safe}}
 </style>
 
 {% else %}
-
-{{htmlExternalCssFiles | safe}}
+<!-- CTX CSS Styles -->
+{{htmlExternalCtxCssTag | safe}}
+<!-- UnoCSS Styles -->
+<style>
+.noop-load-uno{}
+</style>
+<!-- Project Stylesheets -->
+{{htmlExternalCssTags | safe}}
 
 {% endif %}
 
-{# TODO: Avoid generating this tag if no content in the bundle #}
+{# NOTE: Avoid generating this tag if no content in the bundle #}
 {% set externalBundleContent %}{% getBundle 'css', 'external' %}{% endset %}
 {% if externalBundleContent == '/*__EleventyBundle:get:css:external:EleventyBundle__*/' %}
 <!-- No forced external CSS bundle -->
 {% else %}
-<link rel="stylesheet" href="{% getBundleFileUrl 'css', 'external' %}" fetchpriority="low">
+<link rel="stylesheet" href="{% getBundleFileUrl 'css', 'external' %}" fetchpriority="low" data-forced-external-css>
 {% endif %}
 
 <style>
+/* globalSettings.cssHead */
 {{ globalSettings.cssHead | safe }}
+/* CSS template bundles */
 {% getBundle "css" %}
 </style>
 

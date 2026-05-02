@@ -68,6 +68,7 @@ export const varsField = {
   widget: "keyvalue",
   i18n: true,
   required: false,
+  preview: false,
 };
 export const imageFields = [
   {
@@ -140,6 +141,7 @@ export const dataListField = {
   collapsed: true,
   i18n: "duplicate",
   allow_reorder: true,
+  preview: false,
   types: [
     {
       name: "text",
@@ -198,6 +200,7 @@ export const statusField = {
   default: "",
   required: false,
   i18n: true,
+  preview: false,
 };
 export const generatePageField = {
   name: "generatePage",
@@ -212,6 +215,7 @@ export const generatePageField = {
   default: "",
   required: false,
   i18n: "duplicate",
+  preview: false,
 };
 export const pageLayoutRelationField = {
   name: "pageLayout",
@@ -221,6 +225,7 @@ export const pageLayoutRelationField = {
   hint: "Select a layout for this page or leave empty to use the default layout",
   required: false,
   i18n: "duplicate",
+  preview: false,
 };
 
 // footer defined page by page (in the CMS)
@@ -235,6 +240,7 @@ export const pageFooterRelationField = {
   search_fields: ["slug"],
   display_fields: ["slug"],
   value_field: "{{slug}}",
+  preview: false,
 };
 export const pageNavRelationField = {
   name: "pageNav",
@@ -247,6 +253,7 @@ export const pageNavRelationField = {
   search_fields: ["name"],
   value_field: "{{name}}",
   display_fields: ["name"],
+  preview: false,
 };
 
 // const bodyMarkdownField = {
@@ -271,9 +278,19 @@ export const eleventyNavigationField = {
   widget: "object",
   collapsed: true,
   required: false,
-  summary: "Position: {{fields.order}} | Nav Title: {{fields.title}}",
+  // summary: "Position: {{fields.order}} | Nav Title: {{fields.title}}",
+  summary:
+    "Custom order: {{fields.order}} | Nav Title: {{fields.title}}{{fields.title | ternary('', '(Page Name)')}}",
   i18n: true,
+  preview: false,
   fields: [
+    {
+      name: "add",
+      label: "Add to Navigation",
+      widget: "string",
+      default: "Nav",
+      required: false,
+    },
     {
       name: "title",
       label: "Title",
@@ -293,15 +310,23 @@ export const eleventyNavigationField = {
       required: false,
       i18n: "duplicate",
     },
-    {
-      name: "order",
-      label: "Order",
-      widget: "number",
-      default: 0,
-      required: false,
-      i18n: "duplicate",
-    },
+    // {
+    //   name: "order",
+    //   label: "Order",
+    //   widget: "number",
+    //   // default: 0,
+    //   required: false,
+    //   i18n: "duplicate",
+    // },
   ],
+};
+export const orderField = {
+  name: "order",
+  label: "Order",
+  widget: "number",
+  required: false,
+  i18n: "duplicate",
+  preview: false,
 };
 export const simpleMetadataField = {
   name: "metadata",
@@ -310,6 +335,7 @@ export const simpleMetadataField = {
   required: false,
   collapsed: "auto",
   i18n: true,
+  preview: false,
   fields: [
     {
       name: "title",
@@ -361,6 +387,7 @@ export const pagePreviewField = {
   collapsed: true,
   i18n: true,
   hint: "Fields to be used when linking to this page or listing it",
+  preview: false,
   fields: [
     {
       name: "title",
@@ -406,6 +433,7 @@ export const tagsField = {
   display_fields: ["tagsList.*.name"],
   required: false,
   i18n: "duplicate",
+  preview: false,
 };
 export const brandColorField = {
   widget: "relation",
@@ -469,20 +497,20 @@ export const commonCollectionFields = [
     default: "{{datetime}}",
     i18n: true,
   },
-  {
-    name: "uuid",
-    label: "UUID",
-    widget: "hidden",
-    default: "{{uuid_short}}",
-    i18n: true,
-  },
-  {
-    name: "localizationKey",
-    label: "Localization Key",
-    widget: "hidden",
-    default: "{{uuid_short}}",
-    i18n: "duplicate",
-  },
+  // {
+  //   name: "uuid",
+  //   label: "UUID",
+  //   widget: "hidden",
+  //   default: "{{uuid_short}}",
+  //   i18n: true,
+  // },
+  // {
+  //   name: "localizationKey",
+  //   label: "Localization Key",
+  //   widget: "hidden",
+  //   default: "{{uuid_short}}",
+  //   i18n: "duplicate",
+  // },
 ];
 
 export const mostCommonMarkdownCollectionConfig = {
@@ -491,6 +519,7 @@ export const mostCommonMarkdownCollectionConfig = {
   extension: "md",
   format: "yaml-frontmatter",
   create: true,
+  duplicate: true,
   identifier_field: "name",
   summary: "{{name}}",
   sortable_fields: {
@@ -500,9 +529,19 @@ export const mostCommonMarkdownCollectionConfig = {
       direction: "ascending",
     },
   },
-  editor: {
-    preview: false,
+  view_groups: {
+    groups: [
+      {
+        label: "Nav Items",
+        field: "eleventyNavigation.add",
+        value: "Nav",
+      },
+    ],
+    default: "eleventyNavigation.add",
   },
+  // editor: {
+  //   preview: false,
+  // },
 };
 
 export const stylesheetsCollection = {
@@ -999,6 +1038,7 @@ export function spreadCommonPageFields(modFields) {
       i18n: true,
       // PERSON had ...
       // i18n: "duplicate",
+      preview: false,
     },
     // {
     //   name: "currentSlug",
@@ -1010,6 +1050,7 @@ export function spreadCommonPageFields(modFields) {
     // { name: "path", label: "Page URL path", widget: "string", required: true, pattern: ['^(?![\s\/\-]*$)(?!\/)[a-z0-9\/\-]*[a-z0-9\-]$', "URL must contain only letters, numbers, dashes, and forward slashes (not starting or ending with a slash or dash), and at least one letter or number"], hint: "URL-friendly slug or path (may contain '/' and '-'). NOTE: The homepage must be called 'index'"},
     bodyMarkdown: bodyMarkdownField,
     eleventyNavigation: eleventyNavigationField,
+    order: orderField,
     simpleMetadata: simpleMetadataField,
     pagePreview: pagePreviewField,
     tags: tagsField,
@@ -1046,6 +1087,7 @@ export const pages = {
   // TODO: check if it works
   slug: "{{name | localize}}", // This allows the slug to be localized
   // slug: "{{fields._slug | localize}}",
+  reorder: true,
 
   // MEDIAS
   media_folder: `/${CONTENT_DIR}/_images`,
@@ -1055,8 +1097,9 @@ export const pages = {
 export const pagesCollection = {
   ...pages,
   path: "pages/{{slug}}",
-  summary:
-    "{{name}} {{eleventyNavigation.order | ternary(' (nav ', '')}}{{eleventyNavigation.order}}{{eleventyNavigation.order | ternary(')', '')}}",
+  // summary:
+  //   "{{name}} {{eleventyNavigation.order | ternary(' (nav ', '')}}{{eleventyNavigation.order}}{{eleventyNavigation.order | ternary(')', '')}}",
+  summary: "{{order | default('x')}} - {{name}}",
   sortable_fields: {
     fields: [
       "eleventyNavigation.parent",
@@ -2226,20 +2269,20 @@ const globalSettingsSingleton = {
       output_code_only: true,
       allow_language_selection: false,
     },
-    {
-      // footer defined in global settings (in the CMS)
-      name: "pageFooter",
-      label: "Default Footer",
-      widget: "relation",
-      collection: "footers",
-      hint: "Footer used for all pages and collections that don't have a specific footer set.",
-      required: false,
-      i18n: true,
-      // search_fields: ["slug"],
-      // display_fields: ["fields.slug"],
-      // value_field: "{{slug}}",
-      // options: faire une liste avec les footers disponibles dans la collection footers
-    },
+    // {
+    //   // footer defined in global settings (in the CMS)
+    //   name: "pageFooter",
+    //   label: "Default Footer",
+    //   widget: "relation",
+    //   collection: "footers",
+    //   hint: "Footer used for all pages and collections that don't have a specific footer set.",
+    //   required: false,
+    //   i18n: true,
+    //   // search_fields: ["slug"],
+    //   // display_fields: ["fields.slug"],
+    //   // value_field: "{{slug}}",
+    //   // options: faire une liste avec les footers disponibles dans la collection footers
+    // },
     {
       name: "languages",
       label: "Languages",
@@ -2846,7 +2889,7 @@ class CmsConfig {
       },
       // TODO: configure data formating: https://github.com/sveltia/sveltia-cms?tab=readme-ov-file#controlling-data-output
       output: {
-        omit_empty_optional_fields: false,
+        omit_empty_optional_fields: true,
         encode_file_path: true, // true to URL-encode file paths for File/Image fields
         json: {
           indent_style: "space", // space or tab
@@ -2875,7 +2918,7 @@ class CmsConfig {
             transformations: {
               raster_image: {
                 format: "webp",
-                quality: 98,
+                quality: 92,
                 width: 5000,
                 height: 5000,
               },

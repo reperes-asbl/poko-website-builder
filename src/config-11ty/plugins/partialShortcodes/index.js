@@ -3,8 +3,9 @@
 export default async function (eleventyConfig, pluginOptions) {
   eleventyConfig.versionCheck(">=3.0.0-alpha.1");
 
-  const partialShortcodeFn = eleventyConfig.nunjucks.asyncShortcodes.partial;
-  const renderContentFilterFn = eleventyConfig.universal.filters.renderContent;
+  const partialShortcodeFn = eleventyConfig.universal.shortcodes.partial;
+  const renderContentFilterFn =
+    eleventyConfig.universal.filters.renderContent;
   // const renderTemplateShortcodeFn = eleventyConfig.nunjucks.tags.renderTemplate;
   // const renderMd = eleventyConfig.universal.filters.md;
   // const safeFilterFn = eleventyConfig.universal;
@@ -38,7 +39,20 @@ export default async function (eleventyConfig, pluginOptions) {
   }
 
   // prettier-ignore
-  for (const partialName of ["sectionGrid", "grid", "sectionHeader", "gridItem", "sectionFooter", "sectionTwoColumns", "twoColumns", "twoColumnsItem", "collection", "collectionItem", "sectionCollection"]) {
+  for (const partialName of [
+    "wrapper",
+    "sectionGrid",
+    "grid",
+    "sectionHeader",
+    "gridItem",
+    "sectionFooter",
+    "sectionTwoColumns",
+    "twoColumns",
+    "twoColumnsItem",
+    "collection",
+    "collectionItem",
+    "sectionCollection",
+  ]) {
     await eleventyConfig.addPairedAsyncShortcode(partialName, async function(content, dataManual, templateEngineOverride) {
       return renderNamedPartial.call(this, `_${partialName}`, content, dataManual, templateEngineOverride);
     });

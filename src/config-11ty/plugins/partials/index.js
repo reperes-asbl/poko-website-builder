@@ -8,7 +8,7 @@ import { DEBUG } from "../../../../env.config.js";
 
 // let cachedPartials = new Map();
 
-function cleanOutput(str) {
+function cleanMdString(str) {
   // Removes leading whitespace from each line and multiples line breaks become a single line break
   return str.replace(/^\s+/gm, "").replace(/\n+/g, "\n");
 }
@@ -29,8 +29,7 @@ export default async function (eleventyConfig, pluginOptions) {
     pluginOptions.pairedShortcodeAliases) || ["partialWrapper"];
 
   // We use the renderFile shortcodes to render partials
-  const renderFileShortcodeFn =
-    eleventyConfig.nunjucks.asyncShortcodes.renderFile;
+  const renderFileShortcodeFn = eleventyConfig.universal.shortcodes.renderFile;
 
   async function retrievePartial(filename) {
     if (!/\./.test(filename)) {
@@ -97,7 +96,7 @@ export default async function (eleventyConfig, pluginOptions) {
         .then((result) => {
           const cleanResult = shouldKeepMdFormating
             ? result
-            : cleanOutput(result);
+            : cleanMdString(result);
 
           // cachedPartials.set(cacheKey, cleanResult);
           return cleanResult;

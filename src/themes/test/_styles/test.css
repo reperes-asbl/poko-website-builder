@@ -41,7 +41,7 @@
     --width-section: var(--width-body);
     --width-featured: calc(var(--width-prose) / 1.618); /* 30.90 */
     --width-card: calc(var(--width-prose) / 2.618); /* 19 */
-    /*--width-token: 30rem;*/
+    --width-token: calc(var(--width-prose) / 4.2358); /* 11.8 */
 
     /* Open Props */
     /*--radius-1: 2px;
@@ -79,6 +79,8 @@
     --border-style-featured: solid;
     --border-style-card: solid;
     --border-style-token: solid;*/
+
+    --p-card: var(--step-1);
 
     --px-body: var(--step--2, 0.8rem);
     --px-section: var(--step--1, 1rem);
