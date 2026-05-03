@@ -130,9 +130,10 @@ if (DEBUG) {
 }
 
 function shouldNotRender(data) {
+  // This excludes files whose path contains a `.` or a `_` directly after a `/`
   if (
-    data.page.filePathStem.startsWith("/_") ||
-    data.page.filePathStem.startsWith("/.")
+    /(?:^|\/)_/.test(data.page.filePathStem) ||
+    /(?:^|\/)\\./.test(data.page.filePathStem)
   ) {
     return true;
   }
@@ -621,6 +622,10 @@ export const iconLists = ${JSON.stringify(iconLists)};
   await eleventyConfig.addPlugin(partialsPlugin, {
     defaultExt: ["11ty.js", "njk", "md"],
     dirs: [
+      {
+        pattern: path.join(WORKING_DIR, "*", PARTIALS_DIR),
+        resolveDiscriminant: (data) => (data?.lang ? `/${data.lang}/` : ""),
+      },
       path.join(WORKING_DIR, PARTIALS_DIR),
       path.join(`src/themes/${POKO_THEME}/_partials`),
       path.join("src/content/_partials"),
