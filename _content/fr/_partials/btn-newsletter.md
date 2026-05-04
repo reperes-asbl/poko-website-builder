@@ -2,12 +2,25 @@
 
 {% css %}
 .button.newsletter {
-background: linear-gradient(to top, var(--vermilion), var(--orange-peel) 100%);
+position: relative;
+background: radial-gradient(100% 130% at 100% 0%, var(--orange-peel) 130%, var(--vermilion) 0%);
 color: var(--white);
 border: none;
-&:hover {
-background: linear-gradient(0deg, var(--vermilion), var(--orange-peel) 100%);
-color: var(--white);
+isolation: isolate;
+
+&::after {
+content: '';
+position: absolute;
+inset: 0;
+background: radial-gradient(100% 120% at 50% 0%, var(--orange-peel) 40%, var(--vermilion) 100%);
+border-radius: inherit;
+opacity: 0;
+transition: opacity .3s ease-in-out;
+z-index: -1;
+}
+
+&:hover::after {
+opacity: 1;
 }
 }
 {% endcss %}
