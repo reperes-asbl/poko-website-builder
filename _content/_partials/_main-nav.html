@@ -4,43 +4,51 @@ lang }, { by: 'parent', value: undefined }]) | eleventyNavigation %}
 {% if navPages | length %}
 
 <header class="site-header">
-    <nav class="cluster">
-    <!-- Main pages navigation -->
-    <a href="{{ '/' | locale_url }}">
-        {% image src="/_images/reperes-favicon-64px.svg", alt="Logo Reperes ASBL", title="Logo Reperes ASBL", width="52", loading="eager"%}
-    </a>
-    <ul role="list" id="main-nav" class="cluster">
-        {% for link in navPages %}
-        {% if link.url != '/' %}
-            <li>
-            {# prettier-ignore #}
-            <a
-                href="{{link.url}}"
-                hreflang="{{link.lang}}"
-                {% if link.url == page.url %}aria-current="page"{% endif %}
-                >{{link.title}}</a
-            >
-            </li>
-        {% endif %}
-        {% endfor %}
-    </ul>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <div class="wrapper">
+        <div class="site-head__inner cluster">
+            <a href="{{ '/' | locale_url }}" class="site-head__logo">
+                {% image src="/_images/reperes-asbl-logo-sans-bords-rvb-33.webp", alt="Logo Reperes ASBL", title="Logo Reperes ASBL", width="52", loading="eager"%}
+            </a>
+            <burger-menu max-width="800">
+                <nav class="cluster">
+                <!-- Main pages navigation -->
+                <ul role="list" id="main-nav" class="cluster">
+                    {% for link in navPages %}
+                    {% if link.url != '/' %}
+                    <li>
+                    {# prettier-ignore #}
+                    <a
+                        href="{{link.url}}"
+                        hreflang="{{link.lang}}"
+                        {% if link.url == page.url %}aria-current="page"{% endif %}
+                        >{{link.title}}</a
+                    >
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
 
-    <!-- Language navigation -->
-    {% if page.url | locale_links | length %}
-    <ul role="list" id="lang-nav">
-        {% for link in page.url | locale_links("all") %}
-        <li>
-        <a
-            href="{{link.url}}"
-            hreflang="{{link.lang}}"
-            aria-current="{{ 'page' if link.lang === page.lang else 'false' }}"
-            ><abbr lang="{{link.lang}}" title="{{link.label}}"
-            >{{link.lang | upper}}</abbr></a>
-        </li>
-        {% endfor %}
-    </ul>
-    {% endif %}
-    </nav>
+                <!-- Language navigation -->
+                {% if page.url | locale_links | length %}
+                <ul role="list" id="lang-nav">
+                    {% for link in page.url | locale_links("all") %}
+                    <li>
+                    <a
+                        href="{{link.url}}"
+                        hreflang="{{link.lang}}"
+                        aria-current="{{ 'page' if link.lang === page.lang else 'false' }}"
+                        ><abbr lang="{{link.lang}}" title="{{link.label}}"
+                        >{{link.lang | upper}}</abbr></a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                </nav>
+            </burger-menu>
+        </div>
+    </div>
+
 
 </header>
 {% endif %}
@@ -54,9 +62,15 @@ box-shadow: 0px 3px 6px color-mix(in srgb, var(--silver) 29%, transparent);
 border-block-end: none;
 position: relative;
 z-index: 10;
+isolation: isolate;
 }
 
-nav.cluster {
+.site-head__logo {
+    position: relative;
+    z-index: 100;
+}
+
+.site-head__inner.cluster {
 justify-content: space-between;
 align-items: center;
 padding-inline: var(--step-2);
@@ -80,4 +94,284 @@ text-decoration: none;
 #lang-nav a {
 text-decoration: none;
 }
+
+/* Skip Link Styles */
+.skip-link:not(:focus) {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.skip-link:focus {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 999;
+  background: var(--color-bg);
+  padding: 0.5rem 1rem;
+  outline: 2px solid currentColor;
+}
+
+/* Burger Menu Trigger */
+.burger-menu__trigger {
+  display: none;
+}
+
+.burger-menu__bar,
+.burger-menu__bar::before,
+.burger-menu__bar::after {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background: currentColor;
+  border: 1px solid currentColor;
+  position: absolute;
+  border-radius: 3px;
+  left: 50%;
+  margin-left: -12px;
+  transition: transform 350ms ease-in-out;
+}
+
+.burger-menu__bar {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.burger-menu__bar::before,
+.burger-menu__bar::after {
+  content: '';
+}
+
+.burger-menu__bar::before {
+  top: -8px;
+}
+
+.burger-menu__bar::after {
+  bottom: -8px;
+}
+
+/* Enabled State (Mobile/Tablet) */
+.burger-menu[enabled='true'] .burger-menu__trigger {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  z-index: 100;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text, currentColor);
+}
+
+.burger-menu[enabled='true'] .burger-menu__panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 6rem 2rem 2rem 2rem;
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+  background-color: var(--color-bg);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  z-index: 90;
+}
+
+.burger-menu[enabled='true'] nav.cluster {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.burger-menu[enabled='true'] #main-nav.cluster {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+/* Opened / Closed States */
+.burger-menu[enabled='true'][status='open'] .burger-menu__panel {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 400ms ease;
+}
+
+.burger-menu[enabled='true'][status='closed'] .burger-menu__panel > * {
+  opacity: 0;
+  transform: translateY(2rem);
+}
+
+.burger-menu[enabled='true'][status='open'] .burger-menu__panel > * {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 500ms cubic-bezier(0.17, 0.67, 0, 0.87) 200ms, opacity 500ms ease 300ms;
+}
+
+/* Burger to Cross Animation */
+.burger-menu[enabled='true'][status='open'] .burger-menu__bar::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.burger-menu[enabled='true'][status='open'] .burger-menu__bar::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.burger-menu[enabled='true'][status='open'] .burger-menu__bar {
+  background: transparent;
+  border-color: transparent;
+  transform: rotate(180deg);
+}
+
 {% endcss %}
+{% js %}
+class BurgerMenu extends HTMLElement {
+  constructor() {
+    super();
+    const self = this;
+    this.state = new Proxy(
+      { status: 'open', enabled: false },
+      {
+        set(state, key, value) {
+          const oldValue = state[key];
+          state[key] = value;
+          if (oldValue !== value) {
+            self.processStateChange();
+          }
+          return state;
+        }
+      }
+    );
+  }
+
+  get maxWidth() {
+    return parseInt(this.getAttribute('max-width') || 9999, 10);
+  }
+
+  connectedCallback() {
+    this.initialMarkup = this.innerHTML;
+    this.render();
+
+    const observer = new ResizeObserver(observedItems => {
+      const { contentRect } = observedItems[0];
+      this.state.enabled = contentRect.width <= this.maxWidth;
+    });
+    // Observer le parent pour ajuster l'état
+    observer.observe(this.parentNode);
+  }
+
+  render() {
+    this.innerHTML = `
+      <div class="burger-menu" data-element="burger-root">
+        <button class="burger-menu__trigger" data-element="burger-menu-trigger" type="button" aria-label="Open menu">
+          <span class="burger-menu__bar" aria-hidden="true"></span>
+        </button>
+        <div class="burger-menu__panel" data-element="burger-menu-panel">
+          ${this.initialMarkup}
+        </div>
+      </div>
+    `;
+    this.postRender();
+  }
+
+  postRender() {
+    this.trigger = this.querySelector('[data-element="burger-menu-trigger"]');
+    this.panel = this.querySelector('[data-element="burger-menu-panel"]');
+    this.root = this.querySelector('[data-element="burger-root"]');
+    
+    const getFocusableElements = (parent) => {
+      if (!parent) return [];
+      return parent.querySelectorAll(
+        'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"]):not([disabled]), details:not([disabled]), summary:not(:disabled)'
+      );
+    };
+    
+    this.focusableElements = getFocusableElements(this);
+
+    if (this.trigger && this.panel) {
+      this.toggle();
+      this.trigger.addEventListener('click', evt => {
+        evt.preventDefault();
+        this.toggle();
+      });
+      document.addEventListener('focusin', () => {
+        if (!this.contains(document.activeElement)) {
+          this.toggle('closed');
+        }
+      });
+      return;
+    }
+    this.innerHTML = this.initialMarkup;
+  }
+
+  toggle(forcedStatus) {
+    if (forcedStatus) {
+      if (this.state.status === forcedStatus) return;
+      this.state.status = forcedStatus;
+    } else {
+      this.state.status = this.state.status === 'closed' ? 'open' : 'closed';
+    }
+  }
+
+  processStateChange() {
+    this.root.setAttribute('status', this.state.status);
+    this.root.setAttribute('enabled', this.state.enabled ? 'true' : 'false');
+
+    // Prevent body scrolling when the menu is open
+    if (this.state.status === 'open' && this.state.enabled) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
+    this.manageFocus();
+
+    switch (this.state.status) {
+      case 'closed':
+        this.trigger.setAttribute('aria-expanded', 'false');
+        this.trigger.setAttribute('aria-label', 'Open menu');
+        break;
+      case 'open':
+      case 'initial':
+        this.trigger.setAttribute('aria-expanded', 'true');
+        this.trigger.setAttribute('aria-label', 'Close menu');
+        break;
+    }
+  }
+
+  manageFocus() {
+    if (!this.state.enabled) {
+      this.focusableElements.forEach(element => element.removeAttribute('tabindex'));
+      return;
+    }
+    switch (this.state.status) {
+      case 'open':
+        this.focusableElements.forEach(element => element.removeAttribute('tabindex'));
+        break;
+      case 'closed':
+        [...this.focusableElements]
+          .filter(element => element.getAttribute('data-element') !== 'burger-menu-trigger')
+          .forEach(element => element.setAttribute('tabindex', '-1'));
+        break;
+    }
+  }
+}
+
+if ('customElements' in window) {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+      customElements.define('burger-menu', BurgerMenu);
+    });
+  } else {
+    customElements.define('burger-menu', BurgerMenu);
+  }
+}
+{% endjs %}
