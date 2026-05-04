@@ -2691,7 +2691,8 @@ const stylesConfigCollection = (fontsourceFonts) => ({
           required: false,
           collapsed: true,
           allow_reorder: true,
-          summary: "Palette '{{name}}'  [Text '{{text}}', Background '{{bg}}']",
+          summary:
+            ".palette-{{name}}  [{{read}}  {{tone}}  {{pop}}  {{neutral}}]",
           hint: "The first palette is used as the default",
           fields: [
             {
@@ -2701,18 +2702,18 @@ const stylesConfigCollection = (fontsourceFonts) => ({
               required: true,
             },
             // prettier-ignore
-            { name: "type", label: "Typography Color", ...brandColorField, required: true }, // prettier-ignore
-            { name: "alt", label: "Alternative Typography Color", ...brandColorField, required: true }, // prettier-ignore
-            { name: "accent", label: "Accent Color", ...brandColorField, required: true }, // prettier-ignore
-            { name: "contrast", label: "Contrast Color (E.g. for background)", ...brandColorField, required: true }, // prettier-ignore
-            { name: "text", label: "Text Color", ...brandColorField }, // prettier-ignore
-            { name: "bg", label: "Background Color", ...brandColorField }, // prettier-ignore
-            { name: "border", label: "Border Color", ...brandColorField }, // prettier-ignore
-            { name: "text-decoration", label: "Text Decoration Color", ...brandColorField }, // prettier-ignore
-            { name: "text--marker", label: "Text Marker Color (bullet points, etc.)", ...brandColorField }, // prettier-ignore
+            { name: "read", label: "read: Most readable Color (Typography)", ...brandColorField, required: true }, // prettier-ignore
+            { name: "tone", label: "tone: Alternative tone Color", ...brandColorField, required: true }, // prettier-ignore
+            { name: "pop", label: "pop: Accent Color that 'pops'", ...brandColorField, required: true }, // prettier-ignore
+            { name: "neutral", label: "neutral: Neutral Color for surface", ...brandColorField, required: true }, // prettier-ignore
             // prettier-ignore
             {
               name: "advancedDefaults", label: "Advanced Defaults", widget: "object", collapsed: "auto", required: false, fields: [
+                { name: "text", label: "Text Color", ...brandColorField }, // prettier-ignore
+                { name: "bg", label: "Background Color", ...brandColorField }, // prettier-ignore
+                { name: "border", label: "Border Color", ...brandColorField }, // prettier-ignore
+                { name: "text-decoration", label: "Text Decoration Color", ...brandColorField }, // prettier-ignore
+                { name: "text--marker", label: "Text Marker Color (bullet points, etc.)", ...brandColorField }, // prettier-ignore
                 { name: "outline", label: "Outline Color", ...brandColorField }, // prettier-ignore
                 { name: "shadow", label: "Shadow Color", ...brandColorField }, // prettier-ignore
                 { name: "caret", label: "Caret Color", ...brandColorField }, // prettier-ignore
