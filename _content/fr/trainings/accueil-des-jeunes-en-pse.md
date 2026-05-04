@@ -10,6 +10,9 @@ tempo: Dates à convenir
 duration: 4 jours et 4 demi-journées
 price: Gratuit pour les operateur.ice.s concerné.e.s
 place: Lieu à convenir
+nextDate: À venir
+address: À confirmer
+speakers: Manoë Jacquet et Jeanne Reyre
 metadata:
   title: ""
   description: ""
@@ -45,18 +48,3 @@ Le module permettra de construire ou de renforcer les connaissances autour des c
 ## Démarche pédagogique
 
 Les formateur·rice·s proposent aux participant·e·s un travail réflexif à propos de leurs pratiques professionnelles, les invitant à se mettre au travail et à s’impliquer activement dans la dynamique de la formation. La formation est un processus expérientiel qui se base sur la dynamique du groupe et s’élabore au travers de travaux en sous-groupes, de jeux de rôle et de mises en situation fictives, ou de situations professionnelles amenées par les participant·e·s. A partir des réflexions et des discussions, les points d’appui théoriques sont élaborés en commun.
-
-{% wrapper tag="section", class='prose box palette-burnt-umber palette-low-contrast' %}
-
-## Prochaines dates
-
-À venir
-
-## Lieu
-
-À confirmer
-
-## Intervenant•es
-
-Manoë Jacquet et Jeanne Reyre
-{% endwrapper %}
