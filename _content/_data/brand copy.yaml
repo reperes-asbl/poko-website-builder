@@ -1,0 +1,248 @@
+ctxCssImport: true
+inlineAllStyles: true
+widthsContexts:
+  - name: main
+    max: 80rem
+    prose: 50rem
+fontStacksContexts:
+  - name: main
+    body:
+      native: rounded-sans
+      custom: Quicksand
+    heading:
+      native: rounded-sans
+      custom: Quicksand
+    code:
+      native: monospace-code
+customFontsImport:
+  - name: Quicksand
+    source:
+      type: fontsource
+      name: Quicksand
+      weights:
+        - "400"
+        - "500"
+        - "600"
+        - "700"
+        - "100"
+        - "200"
+        - "300"
+        - "800"
+        - "900"
+      styles:
+        - normal
+      subsets:
+        - latin
+typeScales:
+  - name: main
+    minFontSize: 18
+    maxFontSize: 20
+    minTypeScale: 1.2
+    maxTypeScale: 1.25
+colors:
+  - name: vermilion
+    value: "#de3831"
+  - name: orange-peel
+    value: "#ffa02f"
+  - name: burnt-umber
+    value: "#802d25"
+  - name: copper
+    value: "#a97433"
+  - name: delft-blue
+    value: "#343d63"
+  - name: ylnmn-blue
+    value: "#4c5792"
+  - name: gray
+    value: "#807973"
+  - name: silver
+    value: "#b7b1a9"
+  - name: timberwolf
+    value: "#e0ded8"
+  - name: white
+    value: "#ffffff"
+palettes:
+  - name: gray
+    text: gray
+    bg: white
+    outline: ""
+    text-emphasis: ""
+    text--selection: ""
+    bg--selection: ""
+    shadow: ""
+    caret: ""
+    column-rule: ""
+    fill: ""
+    stroke: ""
+    outline--focus: ""
+  - name: gray-contrast
+    text: white
+    bg: gray
+    outline: ""
+    text-emphasis: ""
+    text--selection: ""
+    bg--selection: ""
+    shadow: ""
+    caret: ""
+    column-rule: ""
+    fill: ""
+    stroke: ""
+    outline--focus: ""
+  - name: delft-blue
+    text: delft-blue
+    bg: white
+    outline: ""
+    text-emphasis: ""
+    text--selection: ""
+    bg--selection: ""
+    shadow: ""
+    caret: ""
+    column-rule: ""
+    fill: ""
+    stroke: ""
+    outline--focus: ""
+  - name: delft-blue-contrast
+    text: white
+    bg: delft-blue
+    outline: ""
+    text-emphasis: ""
+    text--selection: ""
+    bg--selection: ""
+    shadow: ""
+    caret: ""
+    column-rule: ""
+    fill: ""
+    stroke: ""
+    outline--focus: ""
+  - name: copper
+    text: copper
+    bg: white
+    outline: ""
+    text-emphasis: ""
+    text--selection: ""
+    bg--selection: ""
+    shadow: ""
+    caret: ""
+    column-rule: ""
+    fill: ""
+    stroke: ""
+    outline--focus: ""
+  - name: copper-contrast
+    text: white
+    bg: copper
+    outline: ""
+    text-emphasis: ""
+    text--selection: ""
+    bg--selection: ""
+    shadow: ""
+    caret: ""
+    column-rule: ""
+    fill: ""
+    stroke: ""
+    outline--focus: ""
+  - name: burnt-umber
+    text: burnt-umber
+    bg: white
+    outline: ""
+    text-emphasis: ""
+    text--selection: ""
+    bg--selection: ""
+    shadow: ""
+    caret: ""
+    column-rule: ""
+    fill: ""
+    stroke: ""
+    outline--focus: ""
+  - name: burnt-umber-contrast
+    text: white
+    bg: burnt-umber
+    outline: ""
+    text-emphasis: ""
+    text--selection: ""
+    bg--selection: ""
+    shadow: ""
+    caret: ""
+    column-rule: ""
+    fill: ""
+    stroke: ""
+    outline--focus: ""
+  - name: vermilion
+    text: vermilion
+    bg: white
+    outline: ""
+    text-emphasis: ""
+    text--selection: ""
+    bg--selection: ""
+    shadow: ""
+    caret: ""
+    column-rule: ""
+    fill: ""
+    stroke: ""
+    outline--focus: ""
+  - name: vermilion-contrast
+    text: white
+    bg: vermilion
+    outline: ""
+    text-emphasis: ""
+    text--selection: ""
+    bg--selection: ""
+    shadow: ""
+    caret: ""
+    column-rule: ""
+    fill: ""
+    stroke: ""
+    outline--focus: ""
+  - name: ylnmn-blue
+    text: ylnmn-blue
+    bg: white
+    outline: ""
+    text-emphasis: ""
+    text--selection: ""
+    bg--selection: ""
+    shadow: ""
+    caret: ""
+    column-rule: ""
+    fill: ""
+    stroke: ""
+    outline--focus: ""
+  - name: ylnmn-blue-contrast
+    text: white
+    bg: ylnmn-blue
+    outline: ""
+    text-emphasis: ""
+    text--selection: ""
+    bg--selection: ""
+    shadow: ""
+    caret: ""
+    column-rule: ""
+    fill: ""
+    stroke: ""
+    outline--focus: ""
+  - name: orange-peel
+    text: orange-peel
+    bg: white
+    outline: ""
+    text-emphasis: ""
+    text--selection: ""
+    bg--selection: ""
+    shadow: ""
+    caret: ""
+    column-rule: ""
+    fill: ""
+    stroke: ""
+    outline--focus: ""
+  - name: orange-peel-contrast
+    text: white
+    bg: orange-peel
+    outline: ""
+    text-emphasis: ""
+    text--selection: ""
+    bg--selection: ""
+    shadow: ""
+    caret: ""
+    column-rule: ""
+    fill: ""
+    stroke: ""
+    outline--focus: ""
+styleContexts:
+  - name: main
+    value: ctx

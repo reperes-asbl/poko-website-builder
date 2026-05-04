@@ -1,32 +1,26 @@
 ---
 translationKey: activites
+order: 4
 lang: fr
 createdAt: 2025-11-14T09:42:00.000Z
-uuid: f9a647ba18fd
-localizationKey: f02d808fd7b4
 name: Activités
 eleventyNavigation:
-  order: 2
-vars: null
+  add: Nav
+localizationKey: f02d808fd7b4
+uuid: f9a647ba18fd
 ---
 
 {% partialWrapper "page-header.njk", { image: "/_images/pexels-karolina-grabowska-5386428.webp", class: "" } %}
-
 
 # Nos activités
 
 ## Quels types de dispositifs formatifs proposons-nous?
 
 Chez Repères, nous proposons des dispositifs formatifs conçus pour soutenir le développement des compétences en Promotion de la Santé et favoriser une réflexion collective sur les pratiques professionnelles. Ces dispositifs peuvent être déclinés sous différentes formules et formats.
-
-
 {% endpartialWrapper %}
 
 {% wrapper tag="div", class="activities flex flex-col gap-[--step-4]" %}
-{% partialWrapper "activity.njk", { image: "/_images/pexels-mikael-blomkvist-6476783.webp", palette: "cooper", timing: "4 journées + 6 ateliers d’échanges de pratiques", pricing: "220€/cycle", location: "Bruxelles et Wallonie", practical: "Cycles d’ateliers: durée, fréquence et tarif à déterminer", class: "" } %}
-
-
-
+{% partialWrapper "activity.njk", { image: "/_images/pexels-mikael-blomkvist-6476783.webp", palette: "copper", timing: "4 journées + 6 ateliers d’échanges de pratiques", pricing: "220€/cycle", location: "Bruxelles et Wallonie", practical: "Cycles d’ateliers: durée, fréquence et tarif à déterminer", class: "" } %}
 
 :::: hgroup
 
@@ -41,10 +35,7 @@ Les participant-es à ce type de formation proviennent tantôt du secteur de la 
 
 La richesse de ces modules se situe dans la diversité des profils et des réalités professionnelles représentées. Cette formule favorise l’échange de pratiques et le développement de réseaux.
 
-{% link url="formations", text="Nos formations", linkType="internal", class="button" %}
-
-
-
+{% link url="formations", text="Nos formations", linkType="internal", class="button" %}{% endlink %}
 
 {% endpartialWrapper %}
 
@@ -63,15 +54,11 @@ Les participant-es de ces formations partagent généralement des réalités ou 
 
 Exemples de secteurs : fédération d’accueil et d’hébergement, fédération de planning familial, promotion de la santé à l’école.
 
-{% link url="formations", text="Quel type de formation puis-je attendre?", linkType="internal", class="button" %}
-
-
-
+{% link url="formations", text="Quel type de formation puis-je attendre?", linkType="internal", class="button" %}{% endlink %}
 
 {% endpartialWrapper %}
 
 {% partialWrapper "activity.njk", { image: "/_images/pexels-rethaferguson-3810788.webp", palette: "burnt-umber", timing: "Minimum 3 jours", pricing: "tarif à déterminer", location: "Bruxelles et Wallonie", practical: "Nombre d'ateliers et fréquence à déterminer", class: "" } %}
-
 
 ::: hgroup
 
@@ -84,8 +71,7 @@ La formation et les accompagnements sont élaborées à la demande d’une équi
 
 Ils sont particulièrement utiles pour construire une vision partagée au sein d’une équipe. Ces espaces permettent aux équipes de partager leurs expériences, d’analyser leurs pratiques et de renforcer la cohésion au sein du groupe.
 
-{% link url="formations", text="Nos formations", linkType="internal", class="button" %}
-
+{% link url="formations", text="Nos formations", linkType="internal", class="button" %}{% endlink %}
 
 {% endpartialWrapper %}
 
@@ -102,14 +88,16 @@ En marge de nos formations et de façon plus minoritaire, Repères propose des e
 
 La spécificité de nos supervisions est d’être teintée de nos grilles de lecture en promotion de la santé ; nous mettons le focus sur l’approche globale de la santé, le diagnostic communautaire, les pratiques participatives pour analyser et soutenir les questions de travail apportées par les participant-es.
 
-{% link url="contact", text="Nous contacter", linkType="internal", collection="pages", class="button" %}
+{% link url="contact", text="Nous contacter", linkType="internal", collection="pages", class="button" %}{% endlink %}
 
 {% endpartialWrapper %}
 {% endwrapper %}
 
 {% sectionTwoColumns class="flow" %}
 {% sectionHeader  %}
+
 ## Repères, c’est aussi…
+
 {% endsectionHeader %}
 {% twoColumns  %}
 {% twoColumnsItem  %}
@@ -119,7 +107,7 @@ La spécificité de nos supervisions est d’être teintée de nos grilles de le
 
 Repères asbl soutient l’existence et le développement d’une offre de formations en promotion de la santé. Dans ce cadre, nous participons à des recherches, nous récoltons les besoins de formation en promotion de la santé, nous donnons à voir l’offre de formation existante en promotion de la santé.
 
-{% link url="sesu", text="SESU", linkType="internal", class="button palette-orange-peel-contrast" %}
+{% link url="sesu", type="internal", collection="pages", class="button palette-orange-peel palette--contrast" %}SESU{% endlink %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 {% icon "tabler:thumb-up", width="50", height="50", class="palette-orange-peel" %}
@@ -128,7 +116,7 @@ Repères asbl soutient l’existence et le développement d’une offre de forma
 
 Parce qu’une pratique professionnelle de qualité nécessite du soutien, nous compilons des ressources de référence en matière de promotion de la santé et de formation. Nous rendons également visible le réseau associatif en promotion de la santé.
 
-{% link url="ressources", text="Ressources", linkType="internal", class="button palette-orange-peel-contrast" %}
+{% link url="ressources", type="internal", collection="pages", class="button palette-orange-peel palette--contrast" %}Ressources{% endlink %}
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 
@@ -137,5 +125,5 @@ Parce qu’une pratique professionnelle de qualité nécessite du soutien, nous 
 {% wrapper tag="section", class="prose box palette-burnt-umber palette-low-contrast text-center font-bold" %}
 Nous pouvons vous aider à choisir la formule ou la formation qui vous convient le mieux
 
-{% link url="contact", text="Nous contacter", linkType="internal", collection="pages", class="button" %}
+{% link url="contact", type="internal", collection="pages", class="button" %}Nous contacter{% endlink %}
 {% endwrapper %}

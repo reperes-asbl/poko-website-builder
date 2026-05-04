@@ -11,21 +11,21 @@ duration: 4 jours
 price: 120€
 place: Lieu à convenir
 metadata:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   image:
     src: /_images/pexels-billow926-2948812-5338294.webp
-    alt: ''
-    title: ''
+    alt: ""
+    title: ""
     width: null
     aspectRatio: null
-    loading: ''
-    imgAttrs: ''
+    loading: ""
+    imgAttrs: ""
 pageLayout: formation
 vars: null
 ---
 
-Module en collaboration avec {% link url="https://femmesetsante.be/", text="Femme & Santé", linkType="external", target="_blank", rel="noopener noreferrer" %} {% image src="/_images/femmes-sante_logo_sans-bords_rvb-09.webp", alt="Logo Femmes & Santé", width=100, class="vertical-text-bottom m-inline-2" %}
+Module en collaboration avec {% link url="https://femmesetsante.be/", text="Femme & Santé", linkType="external", target="_blank", rel="noopener noreferrer" %}{% endlink %} {% image src="/_images/femmes-sante_logo_sans-bords_rvb-09.webp", alt="Logo Femmes & Santé", width=100, class="vertical-text-bottom m-inline-2" %}
 
 Ces 4 journées de formation permettent de construire ou de renforcer les connaissances autour des concepts de genre et de promotion de la santé, de réfléchir à la manière dont des représentations liées au genre nous habitent et ainsi de mesurer comment ces représentations influencent nos projets et nos pratiques.
 
@@ -49,6 +49,7 @@ Ces 4 journées de formation permettent de construire ou de renforcer les connai
 Les formateur·rice·s proposent aux participant·e·s un travail réflexif à propos de leurs pratiques professionnelles, les invitant à se mettre au travail et à s’impliquer activement dans la dynamique de la formation. La formation est un processus expérientiel qui se base sur la dynamique du groupe et s’élabore au travers de travaux en sous-groupes, de jeux de rôle et de mises en situation fictives, ou de situations professionnelles amenées par les participant·e·s. A partir des réflexions et des discussions, les points d’appui théoriques sont élaborés en commun.
 
 {% wrapper tag="section", class='prose box palette-burnt-umber palette-low-contrast' %}
+
 ## Prochaines dates
 
 À venir

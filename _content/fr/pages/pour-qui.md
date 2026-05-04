@@ -1,23 +1,21 @@
 ---
 translationKey: pour-qui
+order: 3
 lang: fr
 createdAt: 2025-11-14T09:43:00.000Z
-uuid: 9c396c025e17
-localizationKey: 0c2df325b206
 name: Pour qui?
 eleventyNavigation:
-  order: 1
-vars: null
+  add: Nav
 ---
 
-{% partialWrapper "page-header.njk", { image: "/_images/pexels-fauxels-3184298.webp", class: "palette-cooper" } %}
+{% partialWrapper "page-header.njk", { image: "/_images/pexels-fauxels-3184298.webp", class: "palette-copper" } %}
 # À qui s’adressent nos formations?
 
 Chez Repères, nos formations en promotion de la santé sont conçues pour toutes celles et ceux qui veulent agir sur la santé des personnes et des communautés, en équipe ou individuellement.
 {% endpartialWrapper %}
 
-{% wrapper tag="section", class="articles palette-cooper-contrast bleed-bg v--bleed-bottom:14rem" %}
-{% sectionTwoColumns tag="article", class="reset-down-w" %}
+{% wrapper tag="section", class="articles palette-copper palette--contrast bleed-bg v--bleed-bottom:14rem" %}
+{% sectionTwoColumns class="reset-down-w", tag="article" %}
 
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
@@ -38,7 +36,7 @@ Exemples de structures où nos participants travaillent souvent: maisons médica
 
 {% endsectionTwoColumns %}
 
-{% sectionTwoColumns tag="article", class="reset-down-w" %}
+{% sectionTwoColumns class="reset-down-w", tag="article" %}
 
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
@@ -57,7 +55,7 @@ Vous êtes engagé·e dans une association, collectif citoyen ou initiative loca
 
 {% endsectionTwoColumns %}
 
-{% sectionTwoColumns tag="article", class="reset-down-w" %}
+{% sectionTwoColumns class="reset-down-w", tag="article" %}
 
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
@@ -76,7 +74,7 @@ Nous accompagnons les structures et collectifs qui souhaitent:
 
 {% endsectionTwoColumns %}
 
-{% sectionTwoColumns tag="article", class="reset-down-w" %}
+{% sectionTwoColumns class="reset-down-w", tag="article" %}
 
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
@@ -96,7 +94,7 @@ Repères soutient les organismes de formation pour:
 {% endsectionTwoColumns %}
 {% endwrapper %}
 
-{% wrapper tag="section", class="squashed prose box border-5 palette-cooper palette-low-contrast font-bold" %}
+{% wrapper tag="section", class="squashed prose box border-5 palette-copper palette-low-contrast font-bold" %}
 ## Pourquoi nous contacter?
 
 Vous nous contactez si vous voulez:
@@ -105,7 +103,7 @@ Vous nous contactez si vous voulez:
 - Avoir un regard réflexif sur vos pratiques, individuellement ou collectivement.
 - Trouver des supports méthodologiques pour intégrer la promotion de la santé dans vos projets, équipes ou structures.
 
-{% link url="contact", text="Nous contacter", linkType="internal", collection="pages", class="button" %} { .text-center }
+{% link url="contact", type="internal", collection="pages", class="button" %}Nous contacter{% endlink %} { .text-center }
 {% endwrapper %}
 
 {% sectionGrid class="width-prose bleed-bg v--bleed-top:10rem" %}
@@ -117,7 +115,7 @@ Vous nous contactez si vous voulez:
 du soin à la jeunesse, du social à la formation… { .h4 }
 :::
 {% endsectionHeader %}
-{% grid type="grid-fluid", columns=3, gap="0px", class="sectors font-bold px-0 m-block-[--step-4] rounded-[--radius-card] overflow-hidden" %}
+{% grid type="grid-fluid", gap="0px", columns=3, class="sectors font-bold px-0 m-block-[--step-4] rounded-[--radius-card] overflow-hidden" %}
 {% gridItem class="prose box rd-0 palette-orange-peel palette-low-contrast" %}
 #### Santé & bien-être
 
@@ -170,6 +168,6 @@ inline-size: 100%;
 }
 .sectors > div:nth-of-type(2),
 .sectors > div:nth-of-type(3){
---color-text: var(--Cooper);
+--color-text: var(--copper);
 }
 {% endcss %}

@@ -1,6 +1,6 @@
 <section class="trainings-list grid-fluid v--columns:3 max-inline-size-[--width-max]">
 
-{% set palettes = ['delft-blue', 'cooper', 'vermillon', 'orange-peel', 'ylnMn-blue', 'burnt-umber'] %}
+{% set palettes = ['delft-blue', 'copper', 'vermilion', 'orange-peel', 'ylnmn-blue', 'burnt-umber'] %}
 
 {% for training in collections.trainings %}
 {% set currentPalette = palettes[loop.index0 % palettes.length] %}
@@ -18,7 +18,7 @@
 <li {{training.data.place | io}}>{{ training.data.place }}</li>
 </ul>
 
-{% link url=training.url, text="En savoir plus...", class="clickable button palette-" ~ currentPalette ~ "-contrast" %}
+{% link url=training.url, text="En savoir plus...", class="clickable button palette-" ~ currentPalette ~ " palette--contrast" %}{% endlink %}
 
 </div>
 {% endfor %}

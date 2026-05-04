@@ -14,7 +14,7 @@
 
 
             <div class="fixed-right v--content-min:65% items-start v--width-fixed:25rem">
-                <section class="practical-info featured box palette-burnt-umber-contrast">
+                <section class="practical-info featured box palette-burnt-umber palette--contrast">
                     <h3>Infos pratiques</h3>
                     <ul role="list">
                         <li {{tempo | io}}>{{ tempo }}</li>
@@ -22,7 +22,7 @@
                         <li {{price | io}}>{{ price | safe }}</li>
                         <li {{place | io}}>{{ place }}</li>
                     </ul>
-                    <p>{% button "https://form.jotform.com/230593367445361", text="S'inscrire", class="palette-burnt-umber", target="_blank", rel="noopener noreferrer" %}</p>
+                    <p>{% button "https://form.jotform.com/230593367445361", text="S'inscrire", class="palette-burnt-umber", target="_blank", rel="noopener noreferrer" %}{% endbutton %}</p>
                 </section>
                 <div class="flow">
                     <hgroup class="flow space:0.5em breathe v--py:--step-3">
@@ -33,7 +33,7 @@
                     {{ content | safe }}
 
                     <div class="">
-                    {% button "https://form.jotform.com/230593367445361", text="S'inscrire", target="_blank", rel="noopener noreferrer" %}
+                    {% button "https://form.jotform.com/230593367445361", text="S'inscrire", target="_blank", rel="noopener noreferrer" %}{% endbutton %}
                     </div>
                 </div>
             </div>

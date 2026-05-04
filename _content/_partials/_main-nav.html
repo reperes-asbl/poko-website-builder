@@ -11,15 +11,17 @@ lang }, { by: 'parent', value: undefined }]) | eleventyNavigation %}
     </a>
     <ul role="list" id="main-nav" class="cluster">
         {% for link in navPages %}
-        <li>
-        {# prettier-ignore #}
-        <a
-            href="{{link.url}}"
-            hreflang="{{link.lang}}"
-            {% if link.url == page.url %}aria-current="page"{% endif %}
-            >{{link.title}}</a
-        >
-        </li>
+        {% if link.url != '/' %}
+            <li>
+            {# prettier-ignore #}
+            <a
+                href="{{link.url}}"
+                hreflang="{{link.lang}}"
+                {% if link.url == page.url %}aria-current="page"{% endif %}
+                >{{link.title}}</a
+            >
+            </li>
+        {% endif %}
         {% endfor %}
     </ul>
 
@@ -48,7 +50,7 @@ lang }, { by: 'parent', value: undefined }]) | eleventyNavigation %}
 .site-header {
 background-color: var(--color-bg);
 border-radius: 0 0 var(--radius-card) var(--radius-card);
-box-shadow: 0px 3px 6px color-mix(in srgb, var(--Silver) 29%, transparent);
+box-shadow: 0px 3px 6px color-mix(in srgb, var(--silver) 29%, transparent);
 border-block-end: none;
 position: relative;
 z-index: 10;

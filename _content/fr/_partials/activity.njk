@@ -9,7 +9,7 @@
             {{ content | md }}
         </div>
     </div>
-    <ul role="list" class="activity-info-card featured box radius-card mx-auto flow palette-{{palette}}-contrast v--size-icon:2em">
+    <ul role="list" class="activity-info-card featured box radius-card mx-auto flow palette-{{palette}} palette--contrast v--size-icon:2em">
         <li {{ timing | ioAttr }} class="with-icon left items-center v--flow-space:0.4em">{% icon "tabler:calendar-week", width="48", height="48" %} <span>{{ timing }}</span></li>
         <li {{ pricing | ioAttr }} class="with-icon left items-center v--flow-space:0.4em">{% icon "tabler:coin-euro", width="48", height="48" %} <span>{{ pricing }}</span></li>
         <li {{ location | ioAttr }} class="with-icon left items-center v--flow-space:0.4em">{% icon "tabler:map-pin", width="48", height="48" %} <span>{{ location }}</span></li>

@@ -1,7 +1,7 @@
 /*@import "_ctx.css";*/
 
 @view-transition {
-    navigation: auto;
+  navigation: auto;
 }
 
 /* Was in the project before */
@@ -17,78 +17,136 @@
 }*/
 
 :root {
-    --width-prose: 50rem;
-    /*--width-max: (alias for width-body) ;*/
-    /*--width-outset: ;*/
-    --width-body: calc(var(--width-prose) * 1.618); /* 80,98 */
-    --width-section: var(--width-body);
-    /*--width-inset: ;*/
-    --width-featured: calc(var(--width-prose) / 1.618); /* 30.90 */
-    --width-card: calc(var(--width-prose) / 2.618); /* 19 */
-    --width-token: calc(var(--width-prose) / 4.2358); /* 11.8 */
+  /* --width-prose: 50rem; */
+  /*--width-max: (alias for width-body) ;*/
+  /*--width-outset: ;*/
+  /* --width-body: calc(var(--width-prose) * 1.618); */
+  /*--width-max: var(--width-body);*/
+  /* --width-section: var(--width-body); */
+  /*--width-inset: ;*/
+  /* --width-featured: calc(var(--width-prose) / 1.618); */
+  /* --width-card: calc(var(--width-prose) / 2.618); */
+  /* --width-token: calc(var(--width-prose) / 4.2358); */
 
-    --radius-round: 1e5px;
-    /*--radius-body: 0rem;*/
-    /*--radius-section: 2rem;*/
-    --radius-prose: 1rem;
-    --radius-featured: 1rem;
-    --radius-card: 1rem;
-    --radius-token: var(--radius-round);
+  /* --radius-round: 1e5px; */
+  /*--radius-body: 0rem;*/
+  /*--radius-section: 2rem;*/
+  --radius-prose: 1rem;
+  --radius-featured: 1rem;
+  --radius-card: 1rem;
+  --radius-token: var(--radius-round);
 
-    --thick-body: 5px;
-    --thick-section: 5px;
-    --thick-prose: 5px;
-    --thick-featured: 2px;
-    --thick-card: 2px;
-    --thick-token: 1px;
+  --thick-body: 5px;
+  --thick-section: 5px;
+  --thick-prose: 5px;
+  --thick-featured: 2px;
+  --thick-card: 2px;
+  --thick-token: 1px;
 
-    /*--border-style-body: solid;*/
-    /*--border-style-section: solid;*/
-    /*--border-style-prose: solid;*/
-    /*--border-style-featured: solid;*/
-    /*--border-style-card: solid;*/
-    --border-style-token: solid;
+  /*--border-style-body: solid;*/
+  /*--border-style-section: solid;*/
+  /*--border-style-prose: solid;*/
+  /*--border-style-featured: solid;*/
+  /*--border-style-card: solid;*/
+  --border-style-token: solid;
 
-    --p-card: var(--step-1);
+  --p-card: var(--step-1);
 
-    --px-body: var(--step--2);
-    --px-section: var(--step--1);
-    --px-prose: var(--step--1);
-    --px-featured: var(--step--1);
-    --px-card: var(--step-1);
-    --px-token: 1.5em;
+  --px-body: var(--step--2);
+  --px-section: var(--step--1);
+  --px-prose: var(--step--1);
+  --px-featured: var(--step--1);
+  --px-card: var(--step-1);
+  --px-token: 1.5em;
 
-    --py-body: var(--step-2);
-    --py-section: var(--step-6);
-    /*--py-section-area: var(--step-1);*/
-    --py-prose: var(--step-1);
-    --py-featured: var(--step-0);
-    --py-card: var(--step-1);
-    --py-token: 0.2em;
+  --py-body: var(--step-2);
+  --py-section: var(--step-6);
+  /*--py-area: var(--step-1);*/
+  --py-prose: var(--step-1);
+  --py-featured: var(--step-0);
+  --py-card: var(--step-1);
+  --py-token: 0.2em;
 
-    /*--gap-body: var(--step-0, 1.25rem);
-    --gap-section: var(--step-0, 1.25rem);
-    --gap-prose: var(--step--1, 1rem);
-    --gap-featured: var(--step--1, 1rem);
-    --gap-card: var(--step--1, 1rem);
-    --gap-token: var(--step--1, 1rem);*/
+  /* --gap-body: var(--step-0, 1.25rem); */
+  /* --gap-section: var(--step-0, 1.25rem); */
+  /* --gap-prose: var(--step--1, 1rem); */
+  /* --gap-featured: var(--step--1, 1rem); */
+  /* --gap-card: var(--step--1, 1rem); */
+  /* --gap-token: var(--step--1, 1rem); */
 
-    --flow-p: var(--step-0); /* Chrome: 1em | for ul, menu, dir, ol, dl, p */
-    --flow-h1: var(--step-0); /* Chrome: 0.67em */
-    --flow-h2: var(--step-0); /* Chrome: 0.83em */
-    --flow-h3: var(--step-0); /* Chrome: 1em */
-    --flow-h4: var(--step-0); /* Chrome: 1.33em */
-    --flow-h5: var(--step-0); /* Chrome: 1.67em */
-    --flow-h6: var(--step-0); /* Chrome: 2.33em */
-    --flow-hr: var(--step-0);
-    --flow-prose: var(--step-1); /* Chrome: 1em | for blockquote, figure */
-    --flow-section: var(--step-2);
-    --flow-section-area: var(--step-3);
+  /* --flow-p: 1em; */
+  /* --flow-h1: 0.67em; */
+  /* --flow-h2: 0.83em; */
+  /* --flow-h3: 1em; */
+  /* --flow-h4: 1.33em; */
+  /* --flow-h5: 1.67em; */
+  /* --flow-h6: 2.33em; */
+  /* --flow-hr: 1em; */
+  /* --flow-prose: var(--step-1); */
+  /* --flow-section: var(--step-2); */
+  /* --flow-area: var(--step-3); */
 
-    --offset-list: 2rem; /* ul and ol left padding */
-    --offset-blockquote: 1rem;
-    --text-underline-offset: 0.15em;
-    --fit: cover;
+  /* ul and ol left padding */
+  /* --offset-list: 2rem; */
+  /* --offset-blockquote: 1rem; */
+  /* --text-underline-offset: 0.15em; */
+  /* --fit: cover; */
+}
+
+/* The theme choses how to apply colors */
+:where(:root, body, [class*="palette"]) {
+  /* --- DEFAULTS --- */
+  --color-text: var(--color-fg-theme);
+  --color-bg: var(--color-bg-theme);
+  /* --color-border: var(); */
+  /* --color-border: var(); */
+  /* --color-outline: var(); */
+  /*--color-text-decoration: var();*/
+  /* --color-text-emphasis: var(); */
+  /* --color-shadow has to be used manually in box-shadow definitions */
+  /*--color-shadow: var();*/
+  /* --color-caret: var(); */
+  /* --color-column-rule: var(); */
+  /* --color-fill: var(); */
+  /* --color-stroke: var(); */
+
+  /* --- FOCUS --- */
+  /* --color-outline--focus: var(); */
+
+  /* --- SELECTION --- */
+  /*--color-text--selection: var();
+    --color-bg--selection: var();*/
+
+  /* --- A --- */
+  /* --color-text__a: var(); */
+  /* --color-bg__a: transparent; */
+  --color-text__a--hover: var(--color-pop-theme);
+  /* --color-bg__a--hover: var(); */
+
+  /* --- BUTTON --- */
+  /*--color-text__button: var();*/
+  /*--color-bg__button: var();*/
+  /*--color-border__button: var();*/
+  /*--color-text__button--hover: var();*/
+  /*--color-bg__button--hover: var();*/
+  /*--color-border__button--hover: var();*/
+  /* --color-text__button--disabled: var(); */
+  /* --color-bg__button--disabled: var(); */
+
+  /* --- CODE --- */
+  /* --color-text__code: var(); */
+  /* --color-bg__code: var(); */
+  /* --color-border__code: var(); */
+
+  /* --- MARK --- */
+  /* --color-text__mark: var(); */
+  /*--color-bg__mark: var();*/
+  /* --color-border__mark: var(); */
+
+  /* --- SCROLLBAR --- */
+  /* TODO: this is for the Reel Layout Component */
+  /* --track-color */
+  /* --thumb-color */
 }
 
 /*main > :is(section, .section) {
@@ -127,44 +185,45 @@ main :is(.sub-section) {
 }*/
 
 .squashed {
-    /*margin-block: calc(
+  /*margin-block: calc(
         -1 * var(--margin-section) - 0.5 * var(--padding-section)
     );*/
-    margin-block: calc(-0.5 * var(--py-section));
-    /*position: relative;*/
-    /*z-index: 1;*/
-    isolation: isolate;
+  margin-block: calc(-0.5 * var(--py-section));
+  /*position: relative;*/
+  /*z-index: 1;*/
+  isolation: isolate;
 }
 
 .palette-low-contrast {
-    --color-bg: hsl(from var(--color-text) h s var(--low-l, 85));
-    &.palette-vermillon,
-    &.palette-orange-peel,
-    &.palette-cooper {
-        --low-l: 95;
-    }
+  --color-bg: hsl(from var(--color-text) h s var(--low-l, 85));
+  &.palette-vermilion,
+  &.palette-orange-peel,
+  &.palette-copper {
+    --low-l: 95;
+  }
 }
 
 input,
 textarea {
-    border-radius: var(--radius-card);
-    border: 1px solid currentColor;
-    background-color: var(--White);
+  border-radius: var(--radius-card);
+  border: 1px solid currentColor;
+  background-color: var(--white);
 }
 
 :where(
-    a.button,
-    button,
-    input[type="submit"],
-    input[type="reset"],
-    input[type="button"]
+  a.button,
+  button,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"]
 ) {
-    &.cta,
-    .featured & {
-        padding-inline: min(3em, 4.5vw);
-        padding-block: 0.618em;
-        /*max-inline-size: 100%;*/
-    }
+  transition: all 0.08s ease;
+  &.cta,
+  .featured & {
+    padding-inline: min(3em, 4.5vw);
+    padding-block: 0.618em;
+    /*max-inline-size: 100%;*/
+  }
 }
 
 /*.card {

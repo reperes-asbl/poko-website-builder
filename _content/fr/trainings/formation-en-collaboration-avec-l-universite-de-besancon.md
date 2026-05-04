@@ -5,22 +5,22 @@ createdAt: 2026-03-09T14:22:00.000Z
 uuid: 4295226efd6d
 localizationKey: 676392f9a15a
 name: Formation en collaboration avec l’Université de Besançon
-subtitle: ''
+subtitle: ""
 tempo: Juillet 2026
 duration: 4 jours
 price: 600 à 800 euro (selon conditions de l’Université)
 place: 25000 Besançon (France)
 metadata:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   image:
     src: /_images/pexels-fauxels-3184339.webp
-    alt: ''
-    title: ''
+    alt: ""
+    title: ""
     width: null
     aspectRatio: null
-    loading: ''
-    imgAttrs: ''
+    loading: ""
+    imgAttrs: ""
 pageLayout: formation
 vars: null
 ---
@@ -60,6 +60,7 @@ Le tarif comprend pour 27h30 de formation:
 Les formateur·rice·s proposent aux participant·e·s un travail réflexif à propos de leurs pratiques professionnelles, les invitant à se mettre au travail et à s’impliquer activement dans la dynamique de la formation. La formation est un processus expérientiel qui se base sur la dynamique du groupe et s’élabore au travers de travaux en sous-groupes, de jeux de rôle et de mises en situation fictives, ou de situations professionnelles amenées par les participant·e·s. A partir des réflexions et des discussions, les points d’appui théoriques sont élaborés en commun.
 
 {% wrapper tag="section", class='prose box palette-burnt-umber palette-low-contrast' %}
+
 ## Prochaines dates
 
 Du lundi 29 juin au 2 juillet 2026

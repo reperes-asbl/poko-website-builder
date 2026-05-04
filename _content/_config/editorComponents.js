@@ -4,6 +4,7 @@ const multilineToInline = (multi) => {
 const inlineToMultiline = (inline) => {
   return inline?.replace(/\\n/g, "\n")?.replace(/\\"/g, '"');
 };
+const SECTION_WRAPPER_STYLE = `background-color: hsl(var(--sui-background-color-3-hsl) / 0.8);`;
 
 export const pageHeader = {
   id: "pageHeader",
@@ -34,11 +35,15 @@ export const pageHeader = {
   },
   toBlock: function ({ image, class: className, content }) {
     return `{% partialWrapper "page-header.njk", { image: "${image || ""}", class: "${className || ""}" } %}
-${content.trim()}
+${(content || "").trim()}
 {% endpartialWrapper %}`;
   },
-  toPreview: function (data) {
-    return `TEST`;
+  toPreview: function ({ image, class: className, content }) {
+    return `<div class="${className || ""}">
+<img src="${image || ""}" alt="" width="300" style="display: block; margin-bottom: 1rem" />
+
+${(content || "").trim()}
+</div>`;
   },
 };
 
@@ -117,10 +122,30 @@ export const activityCard = {
     content,
   }) {
     return `{% partialWrapper "activity.njk", { image: "${image}", palette: "${palette}", timing: "${timing}", pricing: "${pricing}", location: "${location}", practical: "${practical}", class: "${className}" } %}
-${content.trim()}
+${(content || "").trim()}
 {% endpartialWrapper %}`;
   },
-  toPreview: function (data) {
-    return `TEST`;
+  toPreview: function ({
+    image,
+    palette,
+    timing,
+    pricing,
+    location,
+    practical,
+    content,
+  }) {
+    return `<div class="" style="${SECTION_WRAPPER_STYLE} margin-top: 1rem">
+<small style="float:right;">Carte d'activité</small>
+<img src="${image || ""}" alt="" width="300" style="display: block; margin-bottom: 1rem" />
+<ul>
+  <li><strong>Palette:</strong> ${palette || ""}</li>
+  <li><strong>Timing:</strong> ${timing || ""}</li>
+  <li><strong>Pricing:</strong> ${pricing || ""}</li>
+  <li><strong>Location:</strong> ${location || ""}</li>
+  <li><strong>Practical:</strong> ${practical || ""}</li>
+</ul>
+
+${(content || "").trim()}
+</div>`;
   },
 };

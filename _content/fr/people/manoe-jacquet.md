@@ -21,8 +21,6 @@ preview:
 tags: []
 status: ''
 pageLayout: ''
-pageFooter: ''
-pageNav: ''
 generatePage: previewOnly
 vars: null
 dataList: []
