@@ -10,6 +10,9 @@ tempo: Prochaine session – à convenir
 duration: 4 jours
 price: 120€
 place: Lieu à convenir
+nextDate: À venir
+address: 1000 Bruxelles
+speakers: À confirmer
 metadata:
   title: ''
   description: ''
@@ -47,17 +50,3 @@ Ces 4 journées de formation permettent de construire ou de renforcer les connai
 ## Démarche pédagogique
 
 Les formateur·rice·s proposent aux participant·e·s un travail réflexif à propos de leurs pratiques professionnelles, les invitant à se mettre au travail et à s’impliquer activement dans la dynamique de la formation. La formation est un processus expérientiel qui se base sur la dynamique du groupe et s’élabore au travers de travaux en sous-groupes, de jeux de rôle et de mises en situation fictives, ou de situations professionnelles amenées par les participant·e·s. A partir des réflexions et des discussions, les points d’appui théoriques sont élaborés en commun.
-
-{% wrapper tag="section", class='prose box palette-burnt-umber palette-low-contrast' %}
-## Prochaines dates
-
-À venir
-
-## Lieu
-
-1000 Bruxelles
-
-## Intervenant•es
-
-À confirmer
-{% endwrapper %}

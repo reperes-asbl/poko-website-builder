@@ -42,6 +42,21 @@ const additionalTrainingFields = [
     type: "string",
     required: false,
   },
+  {
+    name: "nextDate",
+    widget: "markdown",
+    required: false,
+  },
+  {
+    name: "address",
+    type: "string",
+    required: false,
+  },
+  {
+    name: "speakers", // intervenants
+    type: "string",
+    required: false,
+  },
 ];
 const pos = 5; // Just after page name field
 const trainingFields = [

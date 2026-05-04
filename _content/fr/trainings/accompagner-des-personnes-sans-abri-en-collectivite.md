@@ -10,6 +10,12 @@ tempo: Mars à décembre 2026
 duration: 4 jours et 6 demi-journées
 price: 280€
 place: Liège
+nextDate: |-
+  Les 4 journées de formations auront lieux les 20/03, 10/04, 24/04 et 29/05 de 09h30 à 16h30.
+
+  Elle sera suivie par 6 ½ journées d'échanges (12/06, 18/09, 09/10, 06/11, 04/12 et une 6ème date sera décidée ultérieurement) de 09h30 à 12h30.
+address: 4000 Liège
+speakers: Manoë Jacquet et Caroline Lejeune
 metadata:
   title: ''
   description: ''
@@ -51,19 +57,3 @@ L’accompagnement de personnes en décrochage social, en errance, en situation 
 ## Démarche pédagogique
 
 Les formateur·rice·s proposent aux participant·e·s un travail réflexif à propos de leurs pratiques professionnelles, les invitant à se mettre au travail et à s’impliquer activement dans la dynamique de la formation. La formation est un processus expérientiel qui se base sur la dynamique du groupe et s’élabore au travers de travaux en sous-groupes, de jeux de rôle et de mises en situation fictives, ou de situations professionnelles amenées par les participant·e·s. A partir des réflexions et des discussions, les points d’appui théoriques sont élaborés en commun.
-
-{% wrapper tag="section", class='prose box palette-burnt-umber palette-low-contrast' %}
-## Prochaines dates
-
-Les 4 journées de formations auront lieux les 20/03, 10/04, 24/04 et 29/05 de 09h30 à 16h30.
-
-Elle sera suivie par 6 ½ journées d'échanges (12/06, 18/09, 09/10, 06/11, 04/12 et une 6ème date sera décidée ultérieurement) de 09h30 à 12h30.
-
-## Lieu
-
-4000 Liège
-
-## Intervenant•es
-
-Manoë Jacquet et Caroline Lejeune
-{% endwrapper %}

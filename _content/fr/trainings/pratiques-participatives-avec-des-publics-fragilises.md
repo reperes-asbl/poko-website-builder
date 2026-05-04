@@ -10,6 +10,9 @@ tempo: Prochaine session – rentrée académique 2026
 duration: 4 jours et 6 demi-journées
 price: 220€
 place: 5000 Namur
+nextDate: Prochaine session en octobre 2026
+address: 5000 Namur
+speakers: À confirmer
 metadata:
   title: ''
   description: ''
@@ -59,17 +62,3 @@ Ce module se décline en 4 journées de formation et 6 demi-journées d’atelie
 ## Démarche pédagogique
 
 Les formateur·rice·s proposent aux participant·e·s un travail réflexif à propos de leurs pratiques professionnelles, les invitant à se mettre au travail et à s’impliquer activement dans la dynamique de la formation. La formation est un processus expérientiel qui se base sur la dynamique du groupe et s’élabore au travers de travaux en sous-groupes, de jeux de rôle et de mises en situation fictives, ou de situations professionnelles amenées par les participant·e·s. A partir des réflexions et des discussions, les points d’appui théoriques sont élaborés en commun.
-
-{% wrapper tag="section", class='prose box palette-burnt-umber palette-low-contrast' %}
-## Prochaines dates
-
-Prochaine session en octobre 2026
-
-## Lieu
-
-5000 Namur
-
-## Intervenant•es
-
-À confirmer
-{% endwrapper %}

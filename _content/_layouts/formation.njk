@@ -32,6 +32,16 @@
                     <hr>
                     {{ content | safe }}
 
+                    <section class="prose box palette-burnt-umber palette-low-contrast">
+                        <h2>Prochaines dates</h2>
+                        <div {{ nextDate | io }} class="next-date">{{ nextDate | md | safe }}</div>
+                        <h2>Lieu</h2>
+                        <p {{ address | io }}>{{ address }}</p>
+                        <h2>Intervenant•es</h2>
+                        <p {{ speakers | io }}>{{ speakers }}</p>
+
+                    </section>
+
                     <div class="">
                     {% button "https://form.jotform.com/230593367445361", text="S'inscrire", target="_blank", rel="noopener noreferrer" %}
                     </div>
@@ -70,6 +80,10 @@
     &:last-of-type {
         border-block-end: solid 1px currentColor;
     }
+}
+
+.next-date p:first-child {
+    margin-block-start: var(--flow-p);
 }
 
 {% endcss %}

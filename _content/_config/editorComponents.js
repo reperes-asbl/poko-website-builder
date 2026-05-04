@@ -34,7 +34,7 @@ export const pageHeader = {
   },
   toBlock: function ({ image, class: className, content }) {
     return `{% partialWrapper "page-header.njk", { image: "${image || ""}", class: "${className || ""}" } %}
-${content.trim()}
+${(content || "").trim()}
 {% endpartialWrapper %}`;
   },
   toPreview: function (data) {
@@ -117,7 +117,7 @@ export const activityCard = {
     content,
   }) {
     return `{% partialWrapper "activity.njk", { image: "${image}", palette: "${palette}", timing: "${timing}", pricing: "${pricing}", location: "${location}", practical: "${practical}", class: "${className}" } %}
-${content.trim()}
+${(content || "").trim()}
 {% endpartialWrapper %}`;
   },
   toPreview: function (data) {
