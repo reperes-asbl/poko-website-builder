@@ -1,20 +1,19 @@
 <!doctype html>
 <html lang="{{lang or 'fr'}}" class="no-js">
-    <head>
-        {% partial "_html-head-default.md" %} {% partial "_metadata-jsonld" %}
-        {% getBundle "html", "head" %}
-    </head>
-    <body>
-        {# {% partial "headless/page-nav.11ty.js" %} #}
-        <!-- Navigation -->
-        {% partial "_main-nav.html", {}, "njk" %}
+  <head>
+    {% partial "_html-head-default.md" %} {% getBundle "html", "head" %}
+  </head>
+  <body>
+    {# {% partial "headless/page-nav.11ty.js" %} #}
+    <!-- Navigation -->
+    {% partial "_main-nav.html", {}, "njk" %}
 
-        <!-- Content -->
-        {% partial "_main-content.md" %}
+    <!-- Content -->
+    {% partial "_main-content.md" %}
 
-        <!---->
-        {# {% partial "headless/page-footer.11ty.js" %} #}
-        <!-- Footer -->
-        {% partial '_footer' %}
-    </body>
+    <!---->
+    {# {% partial "headless/page-footer.11ty.js" %} #}
+    <!-- Footer -->
+    {% partial '_footer' %}
+  </body>
 </html>
