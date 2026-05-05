@@ -24,7 +24,6 @@ localizationKey: 676392f9a15a
 uuid: 4295226efd6d
 ---
 
-
 <div class="flex items-center gap-2">
 Formation avec <a href="https://agir-bfc.fr/agirbfc/agenda/111/universite-d-ete-francophone-en-sante-publique-de-besancon-edition-2026" class="flex items-center gap-2">l’université d’été de Besançon</a>
 </div>
@@ -51,8 +50,8 @@ Le tarif comprend pour 27h30 de formation:
 
 ## Pour qui?
 
-- Tout·e acteur·ice dans les secteurs psycho-médico-sociaux
-- Les professionnel·les impliqué·es dans des démarches de Promotion de la Santé
+- Tout·e acteur·ice dans les secteurs psycho-médico-sociaux ; 
+- Les professionnel·les impliqué·es dans des démarches de Promotion de la Santé ; 
 - Celles et ceux qui travaillent sur les questions d’inégalités sociales de santé et de participation des publics.
 
 ## Démarche pédagogique
