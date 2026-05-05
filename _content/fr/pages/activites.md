@@ -11,17 +11,15 @@ uuid: f9a647ba18fd
 ---
 
 {% partialWrapper "page-header.njk", { image: "/_images/pexels-karolina-grabowska-5386428.webp", class: "" } %}
-
 # Nos activités
 
-## Quels types de dispositifs formatifs proposons-nous?
+## Quels types de dispositifs formatifs proposons-nous ?
 
 Chez Repères, nous proposons des dispositifs formatifs conçus pour soutenir le développement des compétences en Promotion de la Santé et favoriser une réflexion collective sur les pratiques professionnelles. Ces dispositifs peuvent être déclinés sous différentes formules et formats.
 {% endpartialWrapper %}
 
 {% wrapper tag="div", class="activities flex flex-col gap-[--step-4]" %}
 {% partialWrapper "activity.njk", { image: "/_images/pexels-mikael-blomkvist-6476783.webp", palette: "copper", timing: "4 journées + 6 ateliers d’échanges de pratiques", pricing: "220€/cycle", location: "Bruxelles et Wallonie", practical: "Cycles d’ateliers: durée, fréquence et tarif à déterminer", class: "" } %}
-
 :::: hgroup
 
 ### La formation intersectorielle et les cycles d’ateliers
@@ -35,12 +33,10 @@ Les participant-es à ce type de formation proviennent tantôt du secteur de la 
 
 La richesse de ces modules se situe dans la diversité des profils et des réalités professionnelles représentées. Cette formule favorise l’échange de pratiques et le développement de réseaux.
 
-{% link url="formations", text="Nos formations", linkType="internal", class="button" %}{% endlink %}
-
+{% link url="formations", type="internal", collection="pages", class="button" %}Nos formations{% endlink %}
 {% endpartialWrapper %}
 
 {% partialWrapper "activity.njk", { image: "/_images/pexels-fauxels-3184298.webp", palette: "delft-blue", timing: "Minimum 3 jours", pricing: "tarif à déterminer", location: "Bruxelles et Wallonie", practical: "Nombre d'ateliers et fréquence à déterminer", class: "" } %}
-
 ::: hgroup
 
 ### La formation intrasectorielle et l’intervision
@@ -54,12 +50,10 @@ Les participant-es de ces formations partagent généralement des réalités ou 
 
 Exemples de secteurs : fédération d’accueil et d’hébergement, fédération de planning familial, promotion de la santé à l’école.
 
-{% link url="formations", text="Quel type de formation puis-je attendre?", linkType="internal", class="button" %}{% endlink %}
-
+{% link url="formations", type="internal", collection="pages", class="button" %}Quel type de formation puis-je attendre?{% endlink %}
 {% endpartialWrapper %}
 
 {% partialWrapper "activity.njk", { image: "/_images/pexels-rethaferguson-3810788.webp", palette: "burnt-umber", timing: "Minimum 3 jours", pricing: "tarif à déterminer", location: "Bruxelles et Wallonie", practical: "Nombre d'ateliers et fréquence à déterminer", class: "" } %}
-
 ::: hgroup
 
 ### La formation et les accompagnements en équipe
@@ -71,12 +65,10 @@ La formation et les accompagnements sont élaborées à la demande d’une équi
 
 Ils sont particulièrement utiles pour construire une vision partagée au sein d’une équipe. Ces espaces permettent aux équipes de partager leurs expériences, d’analyser leurs pratiques et de renforcer la cohésion au sein du groupe.
 
-{% link url="formations", text="Nos formations", linkType="internal", class="button" %}{% endlink %}
-
+{% link url="formations", type="internal", collection="pages", class="button" %}Nos formations{% endlink %}
 {% endpartialWrapper %}
 
 {% partialWrapper "activity.njk", { image: "/_images/pexels-rethaferguson-3810761.webp", palette: "gray", timing: "Généralement 1/mois sur 1 an (minimum 6 mois)", pricing: "250€/2h", location: "Bruxelles et Wallonie", practical: "Durée, fréquence et tarif à déterminer", class: "" } %}
-
 ::: hgroup
 
 ### La supervision collective
@@ -88,16 +80,13 @@ En marge de nos formations et de façon plus minoritaire, Repères propose des e
 
 La spécificité de nos supervisions est d’être teintée de nos grilles de lecture en promotion de la santé ; nous mettons le focus sur l’approche globale de la santé, le diagnostic communautaire, les pratiques participatives pour analyser et soutenir les questions de travail apportées par les participant-es.
 
-{% link url="contact", text="Nous contacter", linkType="internal", collection="pages", class="button" %}{% endlink %}
-
+{% link url="contact", type="internal", collection="pages", class="button" %}Nous contacter{% endlink %}
 {% endpartialWrapper %}
 {% endwrapper %}
 
 {% sectionTwoColumns class="flow" %}
 {% sectionHeader  %}
-
 ## Repères, c’est aussi…
-
 {% endsectionHeader %}
 {% twoColumns  %}
 {% twoColumnsItem  %}
