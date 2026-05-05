@@ -6,6 +6,7 @@ createdAt: 2025-11-14T09:43:00.000Z
 name: Pour qui?
 eleventyNavigation:
   add: Nav
+vars: {}
 ---
 
 {% partialWrapper "page-header.njk", { image: "/_images/pexels-fauxels-3184298.webp", class: "palette-copper" } %}
@@ -24,13 +25,13 @@ Chez Repères, nos formations en promotion de la santé sont conçues pour toute
 {% twoColumnsItem  %}
 ## Vous êtes un·e professionnel·le?
 
-Vous travaillez dans le social, la santé ou l’éducation à Bruxelles ou en Wallonie? Nos formations peuvent vous aider à:
+Vous travaillez dans le social, la santé ou l’éducation à Bruxelles ou en Wallonie? Nos formations peuvent vous aider à :
 
-- Comprendre et appliquer la promotion de la santé dans votre pratique quotidienne.
-- Réfléchir à vos pratiques et trouver du soutien face aux difficultés rencontrées.
-- Échanger avec d’autres professionnel·les confronté·es aux mêmes situations.
+- Comprendre et appliquer la promotion de la santé dans votre pratique quotidienne ; 
+- Réfléchir à vos pratiques et trouver du soutien face aux difficultés rencontrées ; 
+- Échanger avec d’autres professionnel·les confronté·es aux mêmes situations ; 
 
-Exemples de structures où nos participants travaillent souvent: maisons médicales, centres de planning familial, services sociaux, services de santé mentale, hôpitaux, structures jeunesse, CPAS, services d’accompagnement à l’emploi ou d’insertion.
+Exemples de structures où nos participants travaillent souvent : maisons médicales, centres de planning familial, services sociaux, services de santé mentale, hôpitaux, structures jeunesse, CPAS, services d’accompagnement à l’emploi ou d’insertion.
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 
@@ -99,8 +100,8 @@ Repères soutient les organismes de formation pour:
 
 Vous nous contactez si vous voulez:
 
-- Découvrir ou renforcer vos connaissances en promotion de la santé, approche participative et approche de genre.
-- Avoir un regard réflexif sur vos pratiques, individuellement ou collectivement.
+- Découvrir ou renforcer vos connaissances en promotion de la santé, approche participative et approche de genre ; 
+- Avoir un regard réflexif sur vos pratiques, individuellement ou collectivement ;
 - Trouver des supports méthodologiques pour intégrer la promotion de la santé dans vos projets, équipes ou structures.
 
 {% link url="contact", type="internal", collection="pages", class="button" %}Nous contacter{% endlink %} { .text-center }
