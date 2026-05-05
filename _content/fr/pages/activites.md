@@ -19,7 +19,7 @@ Chez Repères, nous proposons des dispositifs formatifs conçus pour soutenir le
 {% endpartialWrapper %}
 
 {% wrapper tag="div", class="activities flex flex-col gap-[--step-4]" %}
-{% partialWrapper "activity.njk", { image: "/_images/pexels-mikael-blomkvist-6476783.webp", palette: "copper", timing: "4 journées + 6 ateliers d’échanges de pratiques", pricing: "220€/cycle", location: "Bruxelles et Wallonie", practical: "Cycles d’ateliers: durée, fréquence et tarif à déterminer", class: "" } %}
+{% partialWrapper "activity.njk", { image: "/_images/pexels-mikael-blomkvist-6476783.webp", palette: "copper", timing: "4 journées + 6 ateliers d’échanges de pratiques", pricing: "220€/cycle", location: "Bruxelles et Wallonie", practical: "Cycles d’ateliers : durée, fréquence et tarif à déterminer", class: "" } %}
 :::: hgroup
 
 ### La formation intersectorielle et les cycles d’ateliers
