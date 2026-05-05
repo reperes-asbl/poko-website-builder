@@ -21,7 +21,7 @@ Découvrez nos ressources documentaires et partenaires de terrain actifs dans la
 {% wrapper tag="section", class='bleed-bg palette-copper palette-low-contrast layout flow' %}
 ## Documentation
 
-- {% link url="/assets/files/note-sesu.pdf", type="file", class="font-bold", target="_blank" %}Support formation: Besoins, analyses et perspectives (PDF){% endlink %}
+- {% link url="/assets/files/note-sesu.pdf", type="file", class="font-bold", target="_blank" %}Support formation : Besoins, analyses et perspectives (PDF){% endlink %}
 - {% link url="/assets/files/definitions-formation.pdf", type="file", class="font-bold", target="_blank" %}Mieux comprendre le contour des pratiques en promotion de la santé (PDF){% endlink %}
 {% endwrapper %}
 
@@ -43,7 +43,7 @@ Découvrez nos ressources documentaires et partenaires de terrain actifs dans la
 {% twoColumnsItem  %}
 ### Les Services Support
 
-Vous souhaitez renforcer vos connaissances et compétences en promotion de la santé? Améliorer vos pratiques sur l’une des thématiques prioritaires du Plan Promotion Santé? Vous initier ou développer vos pratiques selon les techniques d’intervention éprouvées en promotion de la santé? Intégrer la participation des bénéficiaires à la mise en place de vos actions? Un service de support pourrait répondre à vos besoins!
+Vous souhaitez renforcer vos connaissances et compétences en promotion de la santé ? Améliorer vos pratiques sur l’une des thématiques prioritaires du Plan Promotion Santé ? Vous initier ou développer vos pratiques selon les techniques d’intervention éprouvées en promotion de la santé ? Intégrer la participation des bénéficiaires à la mise en place de vos actions ? Un service de support pourrait répondre à vos besoins !
 
 {% link url="/assets/files/repertoire-sesu.pdf", type="file", class="button palette-orange-peel palette--contrast font-bold", target="_blank", rel="noopener noreferrer" %}Consultez le répertoire des SESU en PDF{% endlink %}
 
