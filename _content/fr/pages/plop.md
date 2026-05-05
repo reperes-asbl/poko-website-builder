@@ -9,7 +9,9 @@ eleventyNavigation:
   add: Nav
 ---
 
-# ~~Plop~~
+{% partialWrapper "page-header.njk", { image: "/_images/business-executive-explaining-her-colleagues-whiteboard.webp", class: "" } %}
+# Plop encore
+{% endpartialWrapper %}
 
 **ehiojd**
 
