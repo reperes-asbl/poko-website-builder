@@ -1,9 +1,8 @@
 ---
 translationKey: penser-les-questions-de-genre-pour-promouvoir-la-sante
+order: 6
 lang: fr
 createdAt: 2026-02-05T14:22:00.000Z
-uuid: a5765607dce9
-localizationKey: 64887251d710
 name: Penser les questions de genre pour promouvoir la santé
 subtitle: Comment mieux comprendre ce que recouvrent les notions liées au genre (l’hétéronormativité, le ciscentrisme, l’intersectionnalité et bien d’autres) et expérimenter en quoi le genre est un déterminant de santé transversal.
 tempo: Prochaine session – à convenir
@@ -14,19 +13,18 @@ nextDate: À venir
 address: 1000 Bruxelles
 speakers: À confirmer
 metadata:
-  title: ""
-  description: ""
   image:
     src: /_images/pexels-billow926-2948812-5338294.webp
-    alt: ""
-    title: ""
-    width: null
+    imgAttrs: ''
+    loading: ''
     aspectRatio: null
-    loading: ""
-    imgAttrs: ""
+    width: null
+    title: ''
 pageLayout: formation
-vars: null
+uuid: a5765607dce9
+localizationKey: 64887251d710
 ---
+
 
 Module en collaboration avec {% link url="https://femmesetsante.be/", text="Femme & Santé", linkType="external", target="_blank", rel="noopener noreferrer" %}{% endlink %} {% image src="/_images/femmes-sante_logo_sans-bords_rvb-09.webp", alt="Logo Femmes & Santé", width=100, class="vertical-text-bottom m-inline-2" %}
 

@@ -1,11 +1,9 @@
 ---
 translationKey: pratiques-participatives-avec-des-publics-fragilises
+order: 7
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
-uuid: 606ef02eb472
-localizationKey: 1051fedce533
 name: Pratiques participatives avec des publics fragilisés
-subtitle: ""
 tempo: Prochaine session – rentrée académique 2026
 duration: 4 jours et 6 demi-journées
 price: 220€
@@ -14,19 +12,18 @@ nextDate: Prochaine session en octobre 2026
 address: 5000 Namur
 speakers: À confirmer
 metadata:
-  title: ""
-  description: ""
   image:
     src: /_images/pexels-mizunokozuki-12903169.webp
-    alt: ""
-    title: ""
-    width: null
+    imgAttrs: ''
+    loading: ''
     aspectRatio: null
-    loading: ""
-    imgAttrs: ""
+    width: null
+    title: ''
 pageLayout: formation
-vars: null
+uuid: 606ef02eb472
+localizationKey: 1051fedce533
 ---
+
 
 Cette formation offre un temps de réflexion et d’expérimentation. Elle aborde les représentations, la posture professionnelle et les enjeux liés à la participation des personnes en situation de précarité et/ou de vulnérabilité. Vous y explorez les conditions qui favorisent l’expression, l’implication et le pouvoir d’agir des personnes. Le tout en tenant compte des réalités sociales et institutionnelles de vos pratiques.
 

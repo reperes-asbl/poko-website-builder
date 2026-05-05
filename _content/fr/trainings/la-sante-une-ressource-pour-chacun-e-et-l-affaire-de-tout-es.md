@@ -1,11 +1,9 @@
 ---
 translationKey: la-sante-une-ressource-pour-chacun-e-et-l-affaire-de-tout-es
+order: 5
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
-uuid: a6f9598e0dd0
-localizationKey: 4169d04d95e4
 name: La santé, une ressource pour chacun·e et l'affaire de tout·es?
-subtitle: ""
 tempo: Prochaine session – rentrée académique 2026
 duration: 4 jours et 6 demi-journées
 price: 220€
@@ -14,19 +12,18 @@ nextDate: Prochaine session en octobre 2026
 address: 1000 Bruxelles
 speakers: À confirmer
 metadata:
-  title: ""
-  description: ""
   image:
     src: /_images/pexels-pavel-danilyuk-8815077.webp
-    alt: ""
-    title: ""
-    width: null
+    imgAttrs: ''
+    loading: ''
     aspectRatio: null
-    loading: ""
-    imgAttrs: ""
+    width: null
+    title: ''
 pageLayout: formation
-vars: null
+uuid: a6f9598e0dd0
+localizationKey: 4169d04d95e4
 ---
+
 
 **Repères pour penser, interroger les pratiques professionnelles et concevoir des projets au regard de la promotion de la santé**
 

@@ -1,11 +1,9 @@
 ---
 translationKey: formation-en-collaboration-avec-l-universite-de-besancon
+order: 4
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
-uuid: 4295226efd6d
-localizationKey: 676392f9a15a
 name: Formation en collaboration avec l’Université de Besançon
-subtitle: ""
 tempo: Juillet 2026
 duration: 4 jours
 price: 600 à 800 euro (selon conditions de l’Université)
@@ -14,19 +12,18 @@ nextDate: Du lundi 29 juin au 2 juillet 2026
 address: 25000 Besançon (France)
 speakers: Manoë Jacquet et Jeanne Reyre
 metadata:
-  title: ""
-  description: ""
   image:
     src: /_images/pexels-fauxels-3184339.webp
-    alt: ""
-    title: ""
-    width: null
+    imgAttrs: ''
+    loading: ''
     aspectRatio: null
-    loading: ""
-    imgAttrs: ""
+    width: null
+    title: ''
 pageLayout: formation
-vars: null
+uuid: 4295226efd6d
+localizationKey: 676392f9a15a
 ---
+
 
 <div class="flex items-center gap-2">
 Formation avec <a href="https://agir-bfc.fr/agirbfc/agenda/111/universite-d-ete-francophone-en-sante-publique-de-besancon-edition-2026" class="flex items-center gap-2">l’université d’été de Besançon</a>
