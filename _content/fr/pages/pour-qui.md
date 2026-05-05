@@ -6,6 +6,7 @@ createdAt: 2025-11-14T09:43:00.000Z
 name: Pour qui?
 eleventyNavigation:
   add: Nav
+vars: {}
 ---
 
 {% partialWrapper "page-header.njk", { image: "/_images/pexels-fauxels-3184298.webp", class: "palette-copper" } %}
@@ -14,11 +15,10 @@ eleventyNavigation:
 Chez Repères, nos formations en promotion de la santé sont conçues pour toutes celles et ceux qui veulent agir sur la santé des personnes et des communautés, en équipe ou individuellement.
 {% endpartialWrapper %}
 
-{# {% wrapper tag="section", class="articles palette-copper palette--contrast bleed-bg v--bleed-bottom:14rem" %} #}
+{% wrapper tag="section", class="articles palette-copper palette--contrast bleed-bg v--bleed-bottom:14rem" %}
+{% sectionTwoColumns class="reset-down-w", tag="article" %}
 
-{% sectionBuilder class="reset-down-w articles palette-copper palette--contrast bleed-bg v--bleed-bottom:14rem" %}
-
-{% twoColumns type="fixedFluid", fixedSide="fixedLeft", tag="article" %}
+{% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
 {% image src="/_images/pexels-moe-magners-7495555.webp", aspectRatio=1, width=300, class="rounded-full" %}
 {% endtwoColumnsItem %}
@@ -27,17 +27,19 @@ Chez Repères, nos formations en promotion de la santé sont conçues pour toute
 
 Vous travaillez dans le social, la santé ou l’éducation à Bruxelles ou en Wallonie? Nos formations peuvent vous aider à:
 
-- Comprendre et appliquer la promotion de la santé dans votre pratique quotidienne.
-- Réfléchir à vos pratiques et trouver du soutien face aux difficultés rencontrées.
+- Comprendre et appliquer la promotion de la santé dans votre pratique quotidienne ; 
+- Réfléchir à vos pratiques et trouver du soutien face aux difficultés rencontrées ; 
 - Échanger avec d’autres professionnel·les confronté·es aux mêmes situations.
 
 Exemples de structures où nos participants travaillent souvent: maisons médicales, centres de planning familial, services sociaux, services de santé mentale, hôpitaux, structures jeunesse, CPAS, services d’accompagnement à l’emploi ou d’insertion.
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 
+{% endsectionTwoColumns %}
 
+{% sectionTwoColumns class="reset-down-w", tag="article" %}
 
-{% twoColumns type="fixedFluid", fixedSide="fixedLeft", tag="article" %}
+{% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
 {% image src="/_images/business-executive-explaining-her-colleagues-whiteboard.webp", aspectRatio=1, width=300, class="rounded-full" %}
 {% endtwoColumnsItem %}
@@ -46,15 +48,17 @@ Exemples de structures où nos participants travaillent souvent: maisons médica
 
 Vous êtes engagé·e dans une association, collectif citoyen ou initiative locale? Nos formations peuvent vous permettre de:
 
-- Développer votre posture en promotion de la santé dans vos actions.
-- Mobiliser votre communauté et construire des projets participatifs.
+- Développer votre posture en promotion de la santé dans vos actions ; 
+- Mobiliser votre communauté et construire des projets participatifs ; 
 - Rencontrer d’autres relais et bénévoles pour partager expériences et bonnes pratiques.
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 
+{% endsectionTwoColumns %}
 
+{% sectionTwoColumns class="reset-down-w", tag="article" %}
 
-{% twoColumns type="fixedFluid", fixedSide="fixedLeft", tag="article" %}
+{% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
 {% image src="/_images/pexels-product-school-1299359-2678468.webp", aspectRatio=1, width=300, class="rounded-full" %}
 {% endtwoColumnsItem %}
@@ -63,15 +67,17 @@ Vous êtes engagé·e dans une association, collectif citoyen ou initiative loca
 
 Nous accompagnons les structures et collectifs qui souhaitent:
 
-- Créer des repères communs en promotion de la santé.
-- Améliorer le travail collectif et les pratiques internes.
+- Créer des repères communs en promotion de la santé ; 
+- Améliorer le travail collectif et les pratiques internes ; 
 - Mettre en place des espaces de formation ou de soutien au sein de leur organisation.
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 
+{% endsectionTwoColumns %}
 
+{% sectionTwoColumns class="reset-down-w", tag="article" %}
 
-{% twoColumns type="fixedFluid", fixedSide="fixedLeft", tag="article" %}
+{% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
 {% image src="/_images/pexels-mikael-blomkvist-6476783.webp", aspectRatio=1, width=300, class="rounded-full" %}
 {% endtwoColumnsItem %}
@@ -86,7 +92,8 @@ Repères soutient les organismes de formation pour:
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 
-{% endsectionBuilder %}
+{% endsectionTwoColumns %}
+{% endwrapper %}
 
 {% wrapper tag="section", class="squashed prose box border-5 palette-copper palette-low-contrast font-bold" %}
 ## Pourquoi nous contacter?
