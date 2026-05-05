@@ -14,14 +14,14 @@ speakers: Manoë Jacquet et Jeanne Reyre
 metadata:
   image:
     src: /_images/pexels-cottonbro-7395901.webp
-    imgAttrs: ''
-    loading: ''
-    aspectRatio: null
-    width: null
     title: ''
+    width: null
+    aspectRatio: null
+    loading: ''
+    imgAttrs: ''
 pageLayout: formation
-uuid: 73e6a272f144
 localizationKey: 3584974d09eb
+uuid: 73e6a272f144
 ---
 
 

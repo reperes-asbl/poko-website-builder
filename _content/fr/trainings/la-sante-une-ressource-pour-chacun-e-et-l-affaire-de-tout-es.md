@@ -14,14 +14,14 @@ speakers: À confirmer
 metadata:
   image:
     src: /_images/pexels-pavel-danilyuk-8815077.webp
-    imgAttrs: ''
-    loading: ''
-    aspectRatio: null
-    width: null
     title: ''
+    width: null
+    aspectRatio: null
+    loading: ''
+    imgAttrs: ''
 pageLayout: formation
-uuid: a6f9598e0dd0
 localizationKey: 4169d04d95e4
+uuid: a6f9598e0dd0
 ---
 
 

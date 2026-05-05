@@ -14,14 +14,14 @@ speakers: Manoë Jacquet et Jeanne Reyre
 metadata:
   image:
     src: /_images/pexels-fauxels-3184339.webp
-    imgAttrs: ''
-    loading: ''
-    aspectRatio: null
-    width: null
     title: ''
+    width: null
+    aspectRatio: null
+    loading: ''
+    imgAttrs: ''
 pageLayout: formation
-uuid: 4295226efd6d
 localizationKey: 676392f9a15a
+uuid: 4295226efd6d
 ---
 
 

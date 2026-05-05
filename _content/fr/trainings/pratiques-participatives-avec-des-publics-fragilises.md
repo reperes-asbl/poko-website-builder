@@ -14,14 +14,14 @@ speakers: À confirmer
 metadata:
   image:
     src: /_images/pexels-mizunokozuki-12903169.webp
-    imgAttrs: ''
-    loading: ''
-    aspectRatio: null
-    width: null
     title: ''
+    width: null
+    aspectRatio: null
+    loading: ''
+    imgAttrs: ''
 pageLayout: formation
-uuid: 606ef02eb472
 localizationKey: 1051fedce533
+uuid: 606ef02eb472
 ---
 
 

@@ -18,14 +18,14 @@ speakers: Manoë Jacquet et Caroline Lejeune
 metadata:
   image:
     src: /_images/pexels-julia-m-cameron-6994965.webp
-    imgAttrs: ''
-    loading: ''
-    aspectRatio: null
-    width: null
     title: ''
+    width: null
+    aspectRatio: null
+    loading: ''
+    imgAttrs: ''
 pageLayout: formation
-uuid: f0c98656a097
 localizationKey: 4925446f2f1f
+uuid: f0c98656a097
 ---
 
 

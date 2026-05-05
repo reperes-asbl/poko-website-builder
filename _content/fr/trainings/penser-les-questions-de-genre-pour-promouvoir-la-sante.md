@@ -15,14 +15,14 @@ speakers: À confirmer
 metadata:
   image:
     src: /_images/pexels-billow926-2948812-5338294.webp
-    imgAttrs: ''
-    loading: ''
-    aspectRatio: null
-    width: null
     title: ''
+    width: null
+    aspectRatio: null
+    loading: ''
+    imgAttrs: ''
 pageLayout: formation
-uuid: a5765607dce9
 localizationKey: 64887251d710
+uuid: a5765607dce9
 ---
 
 
