@@ -14,7 +14,7 @@ uuid: 3bfd46874867
 {% partialWrapper "page-header.njk", { image: "/_images/pexels-edmond-dantes-4339797.webp", class: "palette-burnt-umber object-center-bottom" } %}
 # Ressources
 
-Vous souhaitez renforcer vos projets ou approfondir vos pratiques?
+Vous souhaitez renforcer vos projets ou approfondir vos pratiques ?
 Découvrez nos ressources documentaires et partenaires de terrain actifs dans la promotion de la santé et la formation. Des outils, des recherches, des réseaux : tout ce qu’il faut pour soutenir vos démarches et vos actions.
 {% endpartialWrapper %}
 
@@ -45,9 +45,9 @@ Découvrez nos ressources documentaires et partenaires de terrain actifs dans la
 
 Vous souhaitez renforcer vos connaissances et compétences en promotion de la santé? Améliorer vos pratiques sur l’une des thématiques prioritaires du Plan Promotion Santé? Vous initier ou développer vos pratiques selon les techniques d’intervention éprouvées en promotion de la santé? Intégrer la participation des bénéficiaires à la mise en place de vos actions? Un service de support pourrait répondre à vos besoins!
 
-{% link url="/assets/files/repertoire-sesu.pdf", text="Consultez le répertoire des SESU en PDF", linkType="file", class="button palette-orange-peel palette--contrast font-bold", target="_blank", rel="noopener noreferrer" %}{% endlink %}
+{% link url="/assets/files/repertoire-sesu.pdf", type="file", class="button palette-orange-peel palette--contrast font-bold", target="_blank", rel="noopener noreferrer" %}Consultez le répertoire des SESU en PDF{% endlink %}
 
-{% link url="/sesu/#decouvrez-les-autres-sesu", text="Liens vers tous les SESU", linkType="external", class="button palette-orange-peel palette--contrast font-bold" %}{% endlink %}
+{% link url="/sesu/#decouvrez-les-autres-sesu", type="external", class="button palette-orange-peel palette--contrast font-bold" %}Liens vers tous les SESU{% endlink %}
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 
