@@ -86,8 +86,8 @@ Nous accompagnons les structures et collectifs qui souhaitent:
 
 Repères soutient les organismes de formation pour:
 
-- Développer la posture des formateur·rices en promotion de la santé.
-- Échanger sur les pratiques et expériences avec d’autres organismes.
+- Développer la posture des formateur·rices en promotion de la santé ; 
+- Échanger sur les pratiques et expériences avec d’autres organismes ; 
 - Être accompagnés dans leurs questionnements et difficultés en formation.
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
@@ -100,8 +100,8 @@ Repères soutient les organismes de formation pour:
 
 Vous souhaitez :
 
-- Découvrir ou renforcer vos connaissances en promotion de la santé, approche participative et approche de genre.
-- Avoir un regard réflexif sur vos pratiques, individuellement ou collectivement.
+- Découvrir ou renforcer vos connaissances en promotion de la santé, approche participative et approche de genre ; 
+- Avoir un regard réflexif sur vos pratiques, individuellement ou collectivement ; 
 - Trouver des supports méthodologiques pour intégrer la promotion de la santé dans vos projets, équipes ou structures.
 
 {% link url="contact", type="internal", collection="pages", class="button" %}Nous contacter{% endlink %} { .text-center }
