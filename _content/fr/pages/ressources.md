@@ -11,7 +11,6 @@ uuid: 3bfd46874867
 ---
 
 {% partialWrapper "page-header.njk", { image: "/_images/pexels-edmond-dantes-4339797.webp", class: "palette-burnt-umber object-center-bottom" } %}
-
 # Ressources
 
 Vous souhaitez renforcer vos projets ou approfondir vos pratiques?
@@ -19,39 +18,31 @@ Découvrez nos ressources documentaires et partenaires de terrain actifs dans la
 {% endpartialWrapper %}
 
 {% wrapper tag="section", class='bleed-bg palette-copper palette-low-contrast layout flow' %}
-
 ## Documentation
 
 - {% link url="/assets/files/note-sesu.pdf", type="file", class="font-bold", target="_blank" %}Support formation: Besoins, analyses et perspectives (PDF){% endlink %}
 - {% link url="/assets/files/definitions-formation.pdf", type="file", class="font-bold", target="_blank" %}Mieux comprendre le contour des pratiques en promotion de la santé (PDF){% endlink %}
-  {% endwrapper %}
+{% endwrapper %}
 
 {% wrapper tag="section", class='palette-burnt-umber' %}
-
 ## Vous recherchez un soutien méthodologique? { .width-body }
 
 {% sectionTwoColumns  %}
 {% sectionHeader  %}
-
 ## À Bruxelles
-
 {% endsectionHeader %}
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
-<a href="/assets/files/repertoire-sesu.pdf" target="_blank" rel="noopener noreferrer">
-
-{% image src="/_images/repertoire-servicessupportpromosantebxl_2026.webp", alt="Couverture du répertoire des SESU, lien vers le fichier PDF", width="300" %}
-
-</a>
+{% link url="/assets/files/repertoire-sesu.pdf", type="file", target="_blank" %}{% image src="/_images/repertoire-servicessupportpromosantebxl_2026.webp", alt="Couverture du répertoire des SESU, lien vers le fichier PDF", width="300" %}{% endlink %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 ### Les Services Support
 
 Vous souhaitez renforcer vos connaissances et compétences en promotion de la santé? Améliorer vos pratiques sur l’une des thématiques prioritaires du Plan Promotion Santé? Vous initier ou développer vos pratiques selon les techniques d’intervention éprouvées en promotion de la santé? Intégrer la participation des bénéficiaires à la mise en place de vos actions? Un service de support pourrait répondre à vos besoins!
 
-{% link url="/assets/files/repertoire-sesu.pdf", text="Consultez le répertoire des SESU en PDF", linkType="file", class="button palette-orange-peel palette--contrast font-bold", target="_blank", rel="noopener noreferrer" %}{% endlink %}
+{% link url="/assets/files/repertoire-sesu.pdf", type="file", class="button palette-orange-peel palette--contrast font-bold", target="_blank", rel="noopener noreferrer" %}Consultez le répertoire des SESU en PDF{% endlink %}
 
-{% link url="/sesu/#decouvrez-les-autres-sesu", text="Liens vers tous les SESU", linkType="external", class="button palette-orange-peel palette--contrast font-bold" %}{% endlink %}
+{% link url="/sesu/#decouvrez-les-autres-sesu", type="external", class="button palette-orange-peel palette--contrast font-bold" %}Liens vers tous les SESU{% endlink %}
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 
@@ -59,17 +50,11 @@ Vous souhaitez renforcer vos connaissances et compétences en promotion de la sa
 
 {% sectionBuilder  %}
 {% sectionHeader  %}
-
 ## En wallonie
-
 {% endsectionHeader %}
-{% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
+{% twoColumns fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
-<a href="https://lesclps.org/" target="_blank" rel="noopener noreferrer">
-
-{% image src="/_images/logo-interclps.webp", alt="Logo CLPS, lien vers le répertoire", width="300" %}
-
-</a>
+{% link url="https://lesclps.org/", type="external", target="_blank", rel="noopener noreferrer" %}{% image src="/_images/logo-interclps.webp", alt="Logo CLPS, lien vers le répertoire", width="300" %}{% endlink %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 ### Les Centres Locaux de Promotion de la Santé
@@ -79,14 +64,9 @@ Vous souhaitez renforcer vos connaissances et compétences en promotion de la sa
 {% link url="https://lesclps.org/", type="external", class="button", target="_blank", rel="noopener noreferrer" %}Le site des CLPS{% endlink %}
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
-
-{% twoColumns type="fixedFluid", fixedSide="fixedLeft", class="items-center" %}
+{% twoColumns fixedSide="fixedLeft", class="items-center" %}
 {% twoColumnsItem  %}
-<a href="https://www.aviq.be/fr/sensibilisation-et-promotion/operateurs-de-promotion-de-la-sante/centres-dexpertises" target="_blank" rel="noopener noreferrer">
-
-{% image src="/_images/logo_aviq_officiel.svg", alt="Logo AVIQ, lien vers la liste des centres d'expertise", width="300" %}
-
-</a>
+{% link url="https://www.aviq.be/fr/sensibilisation-et-promotion/operateurs-de-promotion-de-la-sante/centres-dexpertises", type="external", target="_blank", rel="noopener noreferrer" %}{% image src="/_images/logo_aviq_officiel.svg", alt="Logo AVIQ, lien vers la liste des centres d'expertise", width="300" %}{% endlink %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 ### Les Centres d’expertise en promotion de la santé
@@ -102,28 +82,19 @@ Vous souhaitez renforcer vos connaissances et compétences en promotion de la sa
 
 {% sectionGrid class="bleed-bg palette-copper palette-low-contrast" %}
 {% sectionHeader  %}
-
 ## Vous cherchez un soutien politique?
 
 Les fédérations bruxelloise (FBPSanté) et wallonne (FWPS) rassemblent les organisations actives en promotion de la santé au niveau régional. Elles jouent un rôle essentiel en représentant le secteur, en défendant ses missions et en portant une vision commune de la promotion de la santé.
 
 - **À Bruxelles**, {% link url="https://www.fbpsante.brussels/", type="external", target="_blank", rel="noopener noreferrer" %}la FBPSanté{% endlink %} valorise et défend la promotion de la santé, représente les associations auprès des pouvoirs publics et soutient un plaidoyer politique commun pour renforcer la place du secteur dans les politiques régionales.
 - **En Wallonie**, {% link url="https://www.fwpsante.be/", type="external", target="_blank", rel="noopener noreferrer" %}la FWPS{% endlink %} réunit les acteurs du secteur pour construire et diffuser une vision partagée, améliorer la qualité des actions, favoriser la concertation et représenter collectivement les opérateurs auprès des autorités.
-  {% endsectionHeader %}
-  {% grid type="grid-fluid", class="items-center flex cluster v--gap:--step-4" %}
-  {% gridItem  %}
-  <a href="https://www.fbpsante.brussels/" target="_blank" rel="noopener noreferrer">
-
-{% image src="/_images/fbps-logo-1.webp", alt="Logo FBPSanté, lien vers leur site web", width="300" %}
-
-</a>
+{% endsectionHeader %}
+{% grid type="cluster", class="items-center flex cluster v--gap:--step-4" %}
+{% gridItem  %}
+{% link url="https://www.fbpsante.brussels/", type="external", target="_blank", rel="noopener noreferrer" %}{% image src="/_images/fbps-logo-1.webp", alt="Logo FBPSanté, lien vers leur site web", width="300" %}{% endlink %}
 {% endgridItem %}
 {% gridItem  %}
-<a href="https://www.fwpsante.be/" target="_blank" rel="noopener noreferrer">
-
-{% image src="/_images/fwps-logo-colors-01.webp", alt="Logo FWPS, lien vers leur site web", width="300" %}
-
-</a>
+{% link url="https://www.fwpsante.be/", type="external", target="_blank", rel="noopener noreferrer" %}{% image src="/_images/fwps-logo-colors-01.webp", alt="Logo FWPS, lien vers leur site web", width="300" %}{% endlink %}
 {% endgridItem %}
 {% endgrid %}
 

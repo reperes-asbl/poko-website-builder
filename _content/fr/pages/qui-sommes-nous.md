@@ -19,11 +19,13 @@ Aujourd’hui, une équipe renouvelée et pluridisciplinaire perpétue cette his
 Ensemble, nous mettons nos compétences au service des acteur·rice·s du social et de la santé, dans la continuité des valeurs fondatrices de l’association.
 {% endpartialWrapper %}
 
-{% wrapper tag="section", class="reset-down-w palette-delft-blue palette--contrast bleed-bg v--bleed-bottom:40rem v--width-fluid-min:60%" %}
+{% sectionBuilder class="reset-down-w palette-delft-blue palette--contrast bleed-bg v--bleed-bottom:40rem v--width-fluid-min:60%" %}
+
+{% areaRaw %}
 
 ## Un peu d’histoire
 
-{% sectionTwoColumns  %}
+{% endareaRaw %}
 
 {% twoColumns type="fixedFluid", widthFixed="300px", fixedSide="fixedRight" %}
 {% twoColumnsItem  %}
@@ -37,10 +39,6 @@ Ces formations s’adressent à des professionnel·les de tous horizons: institu
 {% image src="/_images/reperes-asbl-archive.webp", width=300, class="radius-card" %}
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
-
-{% endsectionTwoColumns %}
-
-{% sectionTwoColumns  %}
 
 {% twoColumns type="fixedFluid", widthFixed="300px", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
@@ -60,7 +58,7 @@ Cette période marque également la formalisation des références méthodologiq
   {% endtwoColumnsItem %}
   {% endtwoColumns %}
 
-{% endsectionTwoColumns %}
+{% areaRaw %}
 
 ### De la régionalisation à aujourd’hui (2014 – {{ year }})
 
@@ -69,7 +67,9 @@ La régionalisation de la promotion de la santé à partir de 2014 a transformé
 **À Bruxelles**, l’association est reconnue comme service support (SESU) par la COCOF dès 2018. Elle continue d’accompagner et de proposer des formations aux professionnel·les du social et de la santé. Elle propose aussi du soutien aux opérateurs de formation en promotion de la santé.
 
 **En Wallonie**, Repères participe aux plans et décrets régionaux, et obtient en 2023 un agrément comme opérateur en promotion de la santé.
-{% endwrapper %}
+
+{% endareaRaw %}
+{% endsectionBuilder %}
 
 {% wrapper tag="section", class="squash-section prose box palette-copper border-5" %}
 

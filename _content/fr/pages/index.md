@@ -20,9 +20,7 @@ eleventyNavigation:
 
 {% sectionGrid class="width-prose palette-vermilion palette-low-contrast flow v--flow-space:--step-4 bleed-bg v--bleed-bottom:20rem" %}
 {% sectionHeader class="text-center" %}
-
 ## Notre offre de formations et d’accompagnements
-
 {% endsectionHeader %}
 {% grid type="switcher", class="text-center" %}
 {% gridItem class="font-bold breakout-clickable" %}
@@ -47,7 +45,7 @@ eleventyNavigation:
 {% sectionTwoColumns class="squashed py-0" %}
 
 {% twoColumns type="switcher", class="width-prose gap-0" %}
-{% twoColumnsItem class="prose box flow palette-vermilion palette--contrast rounded-r-0 text-right" %}
+{% twoColumnsItem class="prose box flow palette-vermilion palette--contrast rounded-r-0 sm:text-right" %}
 En tant que
 **ORGANISME DE PROMOTION DE LA SANTÉ,**
 nous accompagnons des services, des institutions et des équipes qui interagissent avec les sphères psychomédicosociales.
@@ -72,28 +70,12 @@ Depuis 2018, dans le cadre du nouveau décret de Promotion de la Santé mis en p
 {% endwrapper %}
 
 {% wrapper tag="section", class="palette-ylnmn-blue flow text-center" %}
-
 ## Nous collaborons avec une grande diversité d’acteurs { .h3 }
 
 Du soin à la jeunesse, du social à la formation… { .h4 }
 
-{# ⚠️ -LOGO PARTENAIRES- ⚠️ #}
-
 {% link url="pour-qui", type="internal", collection="pages", class="button" %}À qui s'adressent nos formations?{% endlink %}
 {% endwrapper %}
-
-{#
-
-{% wrapper tag="section", class="bleed-bg palette-copper palette--contrast text-center" %}
-⚠️ Témoignage en attente ⚠️
-
-> **«Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy»** { .h3}
->
-> > Nom - organisation {.text-right .my-0}
-> >
-> > {% endwrapper %}
-
-#}
 
 {% wrapper tag="aside", class="section flow" %}
 {% partial "btn-newsletter.md" %}

@@ -14,10 +14,11 @@ eleventyNavigation:
 Chez Repères, nos formations en promotion de la santé sont conçues pour toutes celles et ceux qui veulent agir sur la santé des personnes et des communautés, en équipe ou individuellement.
 {% endpartialWrapper %}
 
-{% wrapper tag="section", class="articles palette-copper palette--contrast bleed-bg v--bleed-bottom:14rem" %}
-{% sectionTwoColumns class="reset-down-w", tag="article" %}
+{# {% wrapper tag="section", class="articles palette-copper palette--contrast bleed-bg v--bleed-bottom:14rem" %} #}
 
-{% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
+{% sectionBuilder class="reset-down-w articles palette-copper palette--contrast bleed-bg v--bleed-bottom:14rem" %}
+
+{% twoColumns type="fixedFluid", fixedSide="fixedLeft", tag="article" %}
 {% twoColumnsItem  %}
 {% image src="/_images/pexels-moe-magners-7495555.webp", aspectRatio=1, width=300, class="rounded-full" %}
 {% endtwoColumnsItem %}
@@ -34,11 +35,9 @@ Exemples de structures où nos participants travaillent souvent: maisons médica
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 
-{% endsectionTwoColumns %}
 
-{% sectionTwoColumns class="reset-down-w", tag="article" %}
 
-{% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
+{% twoColumns type="fixedFluid", fixedSide="fixedLeft", tag="article" %}
 {% twoColumnsItem  %}
 {% image src="/_images/business-executive-explaining-her-colleagues-whiteboard.webp", aspectRatio=1, width=300, class="rounded-full" %}
 {% endtwoColumnsItem %}
@@ -53,11 +52,9 @@ Vous êtes engagé·e dans une association, collectif citoyen ou initiative loca
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 
-{% endsectionTwoColumns %}
 
-{% sectionTwoColumns class="reset-down-w", tag="article" %}
 
-{% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
+{% twoColumns type="fixedFluid", fixedSide="fixedLeft", tag="article" %}
 {% twoColumnsItem  %}
 {% image src="/_images/pexels-product-school-1299359-2678468.webp", aspectRatio=1, width=300, class="rounded-full" %}
 {% endtwoColumnsItem %}
@@ -72,11 +69,9 @@ Nous accompagnons les structures et collectifs qui souhaitent:
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 
-{% endsectionTwoColumns %}
 
-{% sectionTwoColumns class="reset-down-w", tag="article" %}
 
-{% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
+{% twoColumns type="fixedFluid", fixedSide="fixedLeft", tag="article" %}
 {% twoColumnsItem  %}
 {% image src="/_images/pexels-mikael-blomkvist-6476783.webp", aspectRatio=1, width=300, class="rounded-full" %}
 {% endtwoColumnsItem %}
@@ -91,8 +86,7 @@ Repères soutient les organismes de formation pour:
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 
-{% endsectionTwoColumns %}
-{% endwrapper %}
+{% endsectionBuilder %}
 
 {% wrapper tag="section", class="squashed prose box border-5 palette-copper palette-low-contrast font-bold" %}
 ## Pourquoi nous contacter?
