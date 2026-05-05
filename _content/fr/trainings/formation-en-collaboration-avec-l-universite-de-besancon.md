@@ -1,11 +1,9 @@
 ---
 translationKey: formation-en-collaboration-avec-l-universite-de-besancon
+order: null
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
-uuid: 4295226efd6d
-localizationKey: 676392f9a15a
 name: Formation en collaboration avec l’Université de Besançon
-subtitle: ""
 tempo: Juillet 2026
 duration: 4 jours
 price: 600 à 800 euro (selon conditions de l’Université)
@@ -14,18 +12,16 @@ nextDate: Du lundi 29 juin au 2 juillet 2026
 address: 25000 Besançon (France)
 speakers: Manoë Jacquet et Jeanne Reyre
 metadata:
-  title: ""
-  description: ""
   image:
-    src: /_images/pexels-fauxels-3184339.webp
-    alt: ""
-    title: ""
+    src: /_images/photo-site-besancon.webp
+    title: ''
     width: null
     aspectRatio: null
-    loading: ""
-    imgAttrs: ""
+    loading: ''
+    imgAttrs: ''
 pageLayout: formation
-vars: null
+localizationKey: 676392f9a15a
+uuid: 4295226efd6d
 ---
 
 <div class="flex items-center gap-2">
