@@ -98,7 +98,7 @@ Repères soutient les organismes de formation pour:
 {% wrapper tag="section", class="squashed prose box border-5 palette-copper palette-low-contrast font-bold" %}
 ## Pourquoi nous contacter?
 
-Vous nous contactez si vous voulez:
+Vous souhaitez :
 
 - Découvrir ou renforcer vos connaissances en promotion de la santé, approche participative et approche de genre.
 - Avoir un regard réflexif sur vos pratiques, individuellement ou collectivement.
