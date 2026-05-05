@@ -48,8 +48,8 @@ Exemples de structures où nos participants travaillent souvent : maisons médic
 
 Vous êtes engagé·e dans une association, collectif citoyen ou initiative locale? Nos formations peuvent vous permettre de:
 
-- Développer votre posture en promotion de la santé dans vos actions.
-- Mobiliser votre communauté et construire des projets participatifs.
+- Développer votre posture en promotion de la santé dans vos actions ; 
+- Mobiliser votre communauté et construire des projets participatifs ; 
 - Rencontrer d’autres relais et bénévoles pour partager expériences et bonnes pratiques.
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
