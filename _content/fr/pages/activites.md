@@ -65,7 +65,7 @@ La formation et les accompagnements sont élaborées à la demande d’une équi
 
 Ils sont particulièrement utiles pour construire une vision partagée au sein d’une équipe. Ces espaces permettent aux équipes de partager leurs expériences, d’analyser leurs pratiques et de renforcer la cohésion au sein du groupe.
 
-{% link url="formations", text="Nos formations", linkType="internal", class="button" %}{% endlink %}
+{% link url="formations", type="internal", collection="pages", class="button" %}Nos formations{% endlink %}
 {% endpartialWrapper %}
 
 {% partialWrapper "activity.njk", { image: "/_images/pexels-rethaferguson-3810761.webp", palette: "gray", timing: "Généralement 1/mois sur 1 an (minimum 6 mois)", pricing: "250€/2h", location: "Bruxelles et Wallonie", practical: "Durée, fréquence et tarif à déterminer", class: "" } %}
@@ -80,7 +80,7 @@ En marge de nos formations et de façon plus minoritaire, Repères propose des e
 
 La spécificité de nos supervisions est d’être teintée de nos grilles de lecture en promotion de la santé ; nous mettons le focus sur l’approche globale de la santé, le diagnostic communautaire, les pratiques participatives pour analyser et soutenir les questions de travail apportées par les participant-es.
 
-{% link url="contact", text="Nous contacter", linkType="internal", collection="pages", class="button" %}{% endlink %}
+{% link url="contact", type="internal", collection="pages", class="button" %}Nous contacter{% endlink %}
 {% endpartialWrapper %}
 {% endwrapper %}
 
