@@ -6,35 +6,31 @@ createdAt: 2025-11-14T09:44:00.000Z
 name: Ressources
 eleventyNavigation:
   add: Nav
+vars: {}
 localizationKey: d23345a84392
 uuid: 3bfd46874867
 ---
 
 {% partialWrapper "page-header.njk", { image: "/_images/pexels-edmond-dantes-4339797.webp", class: "palette-burnt-umber object-center-bottom" } %}
-
 # Ressources
 
 Vous souhaitez renforcer vos projets ou approfondir vos pratiques?
-Découvrez nos ressources documentaires et partenaires de terrain actifs dans la promotion de la santé et la formation. Des outils, des recherches, des réseaux: tout ce qu’il faut pour soutenir vos démarches et vos actions.
+Découvrez nos ressources documentaires et partenaires de terrain actifs dans la promotion de la santé et la formation. Des outils, des recherches, des réseaux : tout ce qu’il faut pour soutenir vos démarches et vos actions.
 {% endpartialWrapper %}
 
 {% wrapper tag="section", class='bleed-bg palette-copper palette-low-contrast layout flow' %}
-
 ## Documentation
 
 - {% link url="/assets/files/note-sesu.pdf", type="file", class="font-bold", target="_blank" %}Support formation: Besoins, analyses et perspectives (PDF){% endlink %}
 - {% link url="/assets/files/definitions-formation.pdf", type="file", class="font-bold", target="_blank" %}Mieux comprendre le contour des pratiques en promotion de la santé (PDF){% endlink %}
-  {% endwrapper %}
+{% endwrapper %}
 
 {% wrapper tag="section", class='palette-burnt-umber' %}
-
 ## Vous recherchez un soutien méthodologique? { .width-body }
 
 {% sectionTwoColumns  %}
 {% sectionHeader  %}
-
 ## À Bruxelles
-
 {% endsectionHeader %}
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
@@ -59,11 +55,9 @@ Vous souhaitez renforcer vos connaissances et compétences en promotion de la sa
 
 {% sectionBuilder  %}
 {% sectionHeader  %}
-
 ## En wallonie
-
 {% endsectionHeader %}
-{% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
+{% twoColumns fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
 <a href="https://lesclps.org/" target="_blank" rel="noopener noreferrer">
 
@@ -79,8 +73,7 @@ Vous souhaitez renforcer vos connaissances et compétences en promotion de la sa
 {% link url="https://lesclps.org/", type="external", class="button", target="_blank", rel="noopener noreferrer" %}Le site des CLPS{% endlink %}
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
-
-{% twoColumns type="fixedFluid", fixedSide="fixedLeft", class="items-center" %}
+{% twoColumns fixedSide="fixedLeft", class="items-center" %}
 {% twoColumnsItem  %}
 <a href="https://www.aviq.be/fr/sensibilisation-et-promotion/operateurs-de-promotion-de-la-sante/centres-dexpertises" target="_blank" rel="noopener noreferrer">
 
@@ -102,17 +95,16 @@ Vous souhaitez renforcer vos connaissances et compétences en promotion de la sa
 
 {% sectionGrid class="bleed-bg palette-copper palette-low-contrast" %}
 {% sectionHeader  %}
-
 ## Vous cherchez un soutien politique?
 
 Les fédérations bruxelloise (FBPSanté) et wallonne (FWPS) rassemblent les organisations actives en promotion de la santé au niveau régional. Elles jouent un rôle essentiel en représentant le secteur, en défendant ses missions et en portant une vision commune de la promotion de la santé.
 
 - **À Bruxelles**, {% link url="https://www.fbpsante.brussels/", type="external", target="_blank", rel="noopener noreferrer" %}la FBPSanté{% endlink %} valorise et défend la promotion de la santé, représente les associations auprès des pouvoirs publics et soutient un plaidoyer politique commun pour renforcer la place du secteur dans les politiques régionales.
 - **En Wallonie**, {% link url="https://www.fwpsante.be/", type="external", target="_blank", rel="noopener noreferrer" %}la FWPS{% endlink %} réunit les acteurs du secteur pour construire et diffuser une vision partagée, améliorer la qualité des actions, favoriser la concertation et représenter collectivement les opérateurs auprès des autorités.
-  {% endsectionHeader %}
-  {% grid type="grid-fluid", class="items-center flex cluster v--gap:--step-4" %}
-  {% gridItem  %}
-  <a href="https://www.fbpsante.brussels/" target="_blank" rel="noopener noreferrer">
+{% endsectionHeader %}
+{% grid type="grid-fluid", class="items-center flex cluster v--gap:--step-4" %}
+{% gridItem  %}
+<a href="https://www.fbpsante.brussels/" target="_blank" rel="noopener noreferrer">
 
 {% image src="/_images/fbps-logo-1.webp", alt="Logo FBPSanté, lien vers leur site web", width="300" %}
 
