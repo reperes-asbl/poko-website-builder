@@ -9,4 +9,12 @@ eleventyNavigation:
   add: Nav
 ---
 
-# Plop
+# ~~Plop~~
+
+**ehiojd**
+
+_dejedéd_
+
+_Voilà `du code`._
+
+_Lien vers mes_ {% link url="formations", type="internal", collection="pages" %}formations{% endlink %}_._
