@@ -1,12 +1,14 @@
 ---
 translationKey: formations
-order: 8
+order: 9
 lang: fr
 createdAt: 2025-11-14T09:43:00.000Z
 name: Formations
 eleventyNavigation:
   add: Nav
+vars: {}
 ---
+
 
 {% partialWrapper "page-header.njk", { image: "", class: "palette-burnt-umber" } %}
 
