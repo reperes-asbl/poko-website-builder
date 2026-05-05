@@ -1111,7 +1111,7 @@ const layoutTypeGridFluid = {
 const layoutTypeSwitcher = {
   name: "switcher",
   // label: "Switcher: Switch from side by side to vertical display",
-  label: "Switcher (Symmetrical Columns",
+  label: "Switcher (Symmetrical Columns)",
   required: false,
   hint: "Switch between side by side and vertical display based on section width",
   fields: [
