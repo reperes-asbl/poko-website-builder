@@ -25,8 +25,7 @@ localizationKey: 64887251d710
 uuid: a5765607dce9
 ---
 
-
-Module en collaboration avec {% link url="https://femmesetsante.be/", text="Femme & Santé", linkType="external", target="_blank", rel="noopener noreferrer" %}{% endlink %} {% image src="/_images/femmes-sante_logo_sans-bords_rvb-09.webp", alt="Logo Femmes & Santé", width=100, class="vertical-text-bottom m-inline-2" %}
+Module en collaboration avec {% link url="https://femmesetsante.be/", type="external", target="_blank", rel="noopener noreferrer" %}Femme & Santé{% endlink %} {% image src="/_images/femmes-sante_logo_sans-bords_rvb-09.webp", alt="Logo Femmes & Santé", width=100, class="vertical-text-bottom m-inline-2" %}
 
 Ces 4 journées de formation permettent de construire ou de renforcer les connaissances autour des concepts de genre et de promotion de la santé, de réfléchir à la manière dont des représentations liées au genre nous habitent et ainsi de mesurer comment ces représentations influencent nos projets et nos pratiques.
 
@@ -41,8 +40,8 @@ Ces 4 journées de formation permettent de construire ou de renforcer les connai
 
 ## Pour qui?
 
-- Tout·e acteur·ice dans les secteurs psycho-médico-sociaux
-- Les professionnel·les impliqué·es dans des démarches de Promotion de la Santé
+- Tout·e acteur·ice dans les secteurs psycho-médico-sociaux ; 
+- Les professionnel·les impliqué·es dans des démarches de Promotion de la Santé ; 
 - Celles et ceux qui travaillent sur les questions d’inégalités sociales de santé et de participation des publics.
 
 ## Démarche pédagogique
