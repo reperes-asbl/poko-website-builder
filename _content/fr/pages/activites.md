@@ -83,7 +83,7 @@ La spécificité de nos supervisions est d’être teintée de nos grilles de le
 {% link url="contact", type="internal", collection="pages", class="button" %}Nous contacter{% endlink %}
 {% endpartialWrapper %}
 
-{% partialWrapper "activity.njk", { image: "/_images/6d5a62235cdb6bd5c0150f8e6d800280.webp", palette: "", timing: "bientôt", pricing: "gratuit", location: "à Bruxelles", practical: "contactez-nous", class: "undefined" } %}
+{% partialWrapper "activity.njk", { image: "/_images/6d5a62235cdb6bd5c0150f8e6d800280.webp", palette: "ylnmn-blue", timing: "bientôt", pricing: "gratuit", location: "à Bruxelles", practical: "contactez-nous", class: "undefined" } %}
 séminaire
 {% endpartialWrapper %}
 {% endwrapper %}
