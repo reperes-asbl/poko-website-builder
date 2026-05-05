@@ -18,3 +18,5 @@ _dejedéd_
 _Voilà `du code`._
 
 _Lien vers mes_ {% link url="formations", type="internal", collection="pages" %}formations{% endlink %}_._
+
+{% link url="https://www.poko.eco/", type="external" %}poko{% endlink %}
