@@ -14,3 +14,7 @@ ij~~iiàoj~~
 ikjijiji
 
 Lien vers mes formations {% link url="https://www.facebook.com", type="external" %}Notre titre{% endlink %}
+
+{% partialWrapper "page-header.njk", { image: "", class: "" } %}
+hiohuibhj
+{% endpartialWrapper %}
