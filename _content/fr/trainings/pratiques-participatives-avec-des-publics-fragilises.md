@@ -24,7 +24,6 @@ localizationKey: 1051fedce533
 uuid: 606ef02eb472
 ---
 
-
 Cette formation offre un temps de réflexion et d’expérimentation. Elle aborde les représentations, la posture professionnelle et les enjeux liés à la participation des personnes en situation de précarité et/ou de vulnérabilité. Vous y explorez les conditions qui favorisent l’expression, l’implication et le pouvoir d’agir des personnes. Le tout en tenant compte des réalités sociales et institutionnelles de vos pratiques.
 
 Ce module se décline en 4 journées de formation et 6 demi-journées d’atelier d’analyse de la pratique.
@@ -36,7 +35,7 @@ Ce module se décline en 4 journées de formation et 6 demi-journées d’atelie
 - D’interroger ses représentations sur les notions de vulnérabilité et de participation;
 - D’expérimenter des processus et des démarches d’intervention participatives ;
 - D’identifier les « ingrédients » qui favorisent la co-construction et l’implication des public ;
-- D’acquérir des repères méthodologiques pour développer des projets participatifs;
+- D’acquérir des repères méthodologiques pour développer des projets participatifs ;
 - D’analyser et de prendre du recul sur les enjeux institutionnels et sociopolitiques qui traversent vos projets ou accompagnements.
 
 ## Ces 6 demi-jours d’ateliers d’échanges de pratique permettent :
@@ -51,8 +50,8 @@ Ce module se décline en 4 journées de formation et 6 demi-journées d’atelie
 
 ## Pour qui?
 
-- Tout·e acteur·ice dans les secteurs psycho-médico-sociaux
-- Les professionnel·les impliqué·es dans des démarches de Promotion de la Santé
+- Tout·e acteur·ice dans les secteurs psycho-médico-sociaux ; 
+- Les professionnel·les impliqué·es dans des démarches de Promotion de la Santé ; 
 - Celles et ceux qui travaillent sur les questions d’inégalités sociales de santé et de
   participation des publics.
 
