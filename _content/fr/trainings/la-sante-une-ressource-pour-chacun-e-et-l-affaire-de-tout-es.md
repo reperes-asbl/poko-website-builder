@@ -1,31 +1,30 @@
 ---
 translationKey: la-sante-une-ressource-pour-chacun-e-et-l-affaire-de-tout-es
+order: null
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
-uuid: a6f9598e0dd0
-localizationKey: 4169d04d95e4
 name: La santé, une ressource pour chacun·e et l'affaire de tout·es?
-subtitle: ""
 tempo: Prochaine session – rentrée académique 2026
 duration: 4 jours et 6 demi-journées
 price: 220€
 place: 1000 Bruxelles
-nextDate: Prochaine session en octobre 2026
+nextDate: |-
+  4 journées : 10 novembre, 24 novembre, 1 décembre 2026 et 15 décembre 2026 de 9h30 à 16h30
+
+  6 demies-journées : 14 janvier, 9 février, 16 mars, 13 avril, 18 mai et 8 juin 2027 de 9h30 à 12h30
 address: 1000 Bruxelles
-speakers: À confirmer
+speakers: Caroline Lejeune et Jeanne Reyre
 metadata:
-  title: ""
-  description: ""
   image:
     src: /_images/pexels-pavel-danilyuk-8815077.webp
-    alt: ""
-    title: ""
+    title: ''
     width: null
     aspectRatio: null
-    loading: ""
-    imgAttrs: ""
+    loading: ''
+    imgAttrs: ''
 pageLayout: formation
-vars: null
+localizationKey: 4169d04d95e4
+uuid: a6f9598e0dd0
 ---
 
 **Repères pour penser, interroger les pratiques professionnelles et concevoir des projets au regard de la promotion de la santé**
