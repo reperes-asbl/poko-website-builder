@@ -6,6 +6,7 @@ createdAt: 2025-11-14T09:35:00.000Z
 name: Accueil
 eleventyNavigation:
   add: Nav
+vars: {}
 ---
 
 {% partialWrapper "page-header.njk", { image: "/_images/pexels-rethaferguson-3810762.webp", class: "" } %}
@@ -70,7 +71,7 @@ Depuis 2018, dans le cadre du nouveau décret de Promotion de la Santé mis en p
 {% endwrapper %}
 
 {% wrapper tag="section", class="palette-ylnmn-blue flow text-center" %}
-## Nous collaborons avec une grande diversité d’acteurs { .h3 }
+## Nous collaborons avec une diversité d’acteurs { .h3 }
 
 Du soin à la jeunesse, du social à la formation… { .h4 }
 
