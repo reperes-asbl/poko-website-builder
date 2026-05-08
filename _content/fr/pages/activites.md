@@ -13,7 +13,7 @@ uuid: f9a647ba18fd
 {% partialWrapper "page-header.njk", { image: "/_images/pasted-image-1778229803017.webp", class: "" } %}
 # Nos activités
 
-## Quels types de dispositifs formatifs proposons-nous ?
+## Quels types de dispositifs proposons-nous ?
 
 Chez Repères, nous proposons des dispositifs formatifs conçus pour soutenir le développement des compétences en Promotion de la Santé et favoriser une réflexion collective sur les pratiques professionnelles. Ces dispositifs peuvent être déclinés sous différentes formules et formats.
 {% endpartialWrapper %}
