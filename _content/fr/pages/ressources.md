@@ -10,7 +10,7 @@ localizationKey: d23345a84392
 uuid: 3bfd46874867
 ---
 
-{% partialWrapper "page-header.njk", { image: "/_images/pexels-edmond-dantes-4339797.webp", class: "palette-burnt-umber object-center-bottom" } %}
+{% partialWrapper "page-header.njk", { image: "/_images/photo-ressources.webp", class: "palette-burnt-umber object-center-bottom" } %}
 # Ressources
 
 Vous souhaitez renforcer vos projets ou approfondir vos pratiques?
