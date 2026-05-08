@@ -6,6 +6,7 @@ createdAt: 2025-11-14T09:41:00.000Z
 name: Qui sommes-nous?
 eleventyNavigation:
   add: Nav
+vars: {}
 ---
 
 {% partialWrapper "page-header.njk", { image: "/_images/pexels-diva-plavalaguna-6147387.webp", class: "palette-delft-blue" } %}
@@ -31,7 +32,7 @@ Repères ASBL voit le jour à la fin des années 1990, dans le prolongement des 
 Ces formations s’adressent à des professionnel·les de tous horizons: institutions généralistes, structures spécialisées, milieux éducatifs ou services sociaux et de soin. Les membres fondateurs — Denise Salquin, Paule Dusquenne, Maggy Richard, Pascal Kayaert, Patricia Piron et Pierre Brasseur — posent les bases de notre association
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
-{% image src="/_images/pasted-image-1778228721132.webp", width=300, class="radius-card" %}
+{% image src="/_images/pasted-image-1778228721132.webp", alt="affiche des années 90 qui annonce une formation à la prévention du SIDA. l'ancienne équipe y est représentée dans une photo noir et blanc avec des parapluies de couleur", width=300, class="radius-card" %}
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 
@@ -100,7 +101,7 @@ Ces expériences vécues ensemble, dans un cadre sécurisant et impliquant, sout
 
 {% sectionCollection  %}
 {% sectionHeader class="flow" %}
-{% image src="/_images/pasted-image-1778228607217.webp", aspectRatio="2", class="radius-card" %}
+{% image src="/_images/pasted-image-1778228607217.webp", alt="formatrice qui colle un post-it au mur dans le cadre d'un exercice", aspectRatio=2, class="radius-card" %}
 
 ## Notre équipe
 
