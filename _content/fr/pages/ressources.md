@@ -87,7 +87,7 @@ Vous souhaitez renforcer vos connaissances et compétences en promotion de la sa
 Les fédérations bruxelloise (FBPSanté) et wallonne (FWPS) rassemblent les organisations actives en promotion de la santé au niveau régional. Elles jouent un rôle essentiel en représentant le secteur, en défendant ses missions et en portant une vision commune de la promotion de la santé.
 
 - **À Bruxelles**, {% link url="https://www.fbpsante.brussels/", type="external", target="_blank", rel="noopener noreferrer" %}la FBPSanté{% endlink %} valorise et défend la promotion de la santé, représente les associations auprès des pouvoirs publics et soutient un plaidoyer politique commun pour renforcer la place du secteur dans les politiques régionales.
-- **En Wallonie**, {% link url="https://www.fwpsante.be/", type="external", target="_blank", rel="noopener noreferrer" %}la FWPS{% endlink %} réunit les acteurs du secteur pour construire et diffuser une vision partagée, améliorer la qualité des actions, favoriser la concertation et représenter collectivement les opérateurs auprès des autorités.
+- **En Wallonie**, {% link url="https://www.fwpsante.be/", type="external", target="_blank", rel="noopener noreferrer" %}la FWPSanté{% endlink %} réunit les acteurs du secteur pour construire et diffuser une vision partagée, améliorer la qualité des actions, favoriser la concertation et représenter collectivement les opérateurs auprès des autorités.
 {% endsectionHeader %}
 {% grid type="cluster", class="items-center flex cluster v--gap:--step-4" %}
 {% gridItem  %}
