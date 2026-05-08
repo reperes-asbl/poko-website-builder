@@ -6,10 +6,9 @@ createdAt: 2025-11-14T09:41:00.000Z
 name: Qui sommes-nous?
 eleventyNavigation:
   add: Nav
-vars: {}
 ---
 
-{% partialWrapper "page-header.njk", { image: "/_images/pasted-image-1778228214136.webp", class: "palette-delft-blue" } %}
+{% partialWrapper "page-header.njk", { image: "/_images/photo-formation-fgenre-2-dom.webp", class: "palette-delft-blue" } %}
 # Qui sommes-nous?
 
 Depuis plus de 25 ans, Repères ASBL propose des formations généralistes en promotion de la santé.
@@ -42,7 +41,7 @@ Ces formations s’adressent à des professionnel·les de tous horizons: institu
 
 {% twoColumns type="fixedFluid", widthFixed="300px", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
-{% image src="/_images/photo-formation-fgenre-2-dom.webp", alt="photo de trois travailleuses en manifestation", width=300, class="radius-card" %}
+{% image src="/_images/pasted-image-1778228214136.webp", alt="photo de trois travailleuses en manifestation", width=300, class="radius-card" %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 ### L’essor à l’époque de la Communauté française (2006 – 2013)
