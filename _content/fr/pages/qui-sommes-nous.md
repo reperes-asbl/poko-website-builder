@@ -41,7 +41,7 @@ Ces formations s’adressent à des professionnel·les de tous horizons: institu
 
 {% twoColumns type="fixedFluid", widthFixed="300px", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
-{% image src="/_images/pasted-image-1778228214136.webp", alt="photo de trois travailleuses en manifestation", width=300, class="radius-card" %}
+{% image src="/_images/photo-se-former-c-est-se-donner-du-temps.webp", alt="photo de trois travailleuses en manifestation", width=300, class="radius-card" %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 ### L’essor à l’époque de la Communauté française (2006 – 2013)
