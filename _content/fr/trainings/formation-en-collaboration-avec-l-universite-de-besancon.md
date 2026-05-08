@@ -14,6 +14,7 @@ speakers: Jeanne Reyre et Caroline Lejeune
 metadata:
   image:
     src: /_images/photo-site-besancon.webp
+    alt: photo de la ville de Besançon, lieu où va se dérouler la formation
     title: ''
     width: null
     aspectRatio: null
