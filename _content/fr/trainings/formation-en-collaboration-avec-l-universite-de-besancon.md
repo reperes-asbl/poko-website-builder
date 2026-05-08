@@ -10,7 +10,7 @@ price: 600 à 800 euro (selon conditions de l’Université)
 place: 25000 Besançon (France)
 nextDate: Du lundi 29 juin au 2 juillet 2026
 address: 25000 Besançon (France)
-speakers: Manoë Jacquet et Jeanne Reyre
+speakers: Jeanne Reyre et Caroline Lejeune
 metadata:
   image:
     src: /_images/photo-site-besancon.webp
@@ -32,7 +32,7 @@ Ce module est proposé dans le cadre de la 23ème Université d’été francoph
 
 Ce module de formation de base en Promotion de la Santé propose un temps de réflexion et d’expérimentation autour des concepts, enjeux et stratégies qui favorisent la santé et le bien-être des publics. Il invite à explorer les déterminants de la santé, l’équité en santé, la participation, la co-construction et l’intersectorialité, tout en questionnant les représentations et la posture professionnelle. Une attention particulière est portée aux enjeux liés à l’implication et au pouvoir d’agir des personnes en situation de vulnérabilité, en tenant compte des réalités sociales et institutionnelles professionnelles.
 
-Le tarif comprend pour 27h30 de formation:
+Le tarif comprend pour 23h30 de formation:
 
 - Module choisi
 - Conférences et temps communs
