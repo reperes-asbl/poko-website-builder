@@ -59,7 +59,7 @@ Vous êtes engagé·e dans une association, collectif citoyen ou initiative loca
 
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
-{% image src="/_images/photo-formation-equipe-reso-ucl.webp", aspectRatio=1, width=300, class="rounded-full" %}
+{% image src="/_images/photo-pour-qui-equipe.webp", aspectRatio=1, width=300, class="rounded-full" %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 ## Vous faites partie d’une équipe ou d’une institution?
@@ -78,7 +78,7 @@ Nous accompagnons les structures et collectifs qui souhaitent:
 
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
-{% image src="/_images/pexels-mikael-blomkvist-6476783.webp", aspectRatio=1, width=300, class="rounded-full" %}
+{% image src="/_images/photo-formation-equipe-reso-ucl.webp", aspectRatio=1, width=300, class="rounded-full" %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 ## Vous êtes un organisme de formation?
