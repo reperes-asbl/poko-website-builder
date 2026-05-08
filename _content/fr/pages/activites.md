@@ -6,7 +6,6 @@ createdAt: 2025-11-14T09:42:00.000Z
 name: Activités
 eleventyNavigation:
   add: Nav
-vars: {}
 localizationKey: f02d808fd7b4
 uuid: f9a647ba18fd
 ---
@@ -28,9 +27,9 @@ Chez Repères, nous proposons des dispositifs formatifs conçus pour soutenir le
 À la rencontre d’autres secteurs et approches du travail psycho-médico-social { .h4 }
 ::::
 
-Organisée par Repères à Bruxelles ou en Wallonie, ces dispositifs formatifs rassemblent des professionnel-les du secteur psycho-médio-social sur tout le territoire francophone, toute thématique et tout public confondu.
+Organisée par Repères à Bruxelles ou en Wallonie, ces dispositifs formatifs rassemblent des professionnel·les du secteur psycho-médio-social sur tout le territoire francophone, toute thématique et tout public confondu.
 
-Les participant-es à ce type de formation proviennent tantôt du secteur de la santé ou de la promotion de la santé (CLPS, assuétudes, santé sexuelle), du secteur social (services sociaux, médiation de dettes, réinsertion socioprofessionnelle) ou encore de la santé mentale. Iels peuvent être salarié-es, parfois indépendant-es, ou bénévoles-relais.
+Les participant-es à ce type de formation proviennent tantôt du secteur de la santé ou de la promotion de la santé (CLPS, assuétudes, santé sexuelle), du secteur social (services sociaux, médiation de dettes, réinsertion socioprofessionnelle) ou encore de la santé mentale. Iels peuvent être salarié·es, parfois indépendant·es, ou bénévoles-relais.
 
 La richesse de ces modules se situe dans la diversité des profils et des réalités professionnelles représentées. Cette formule favorise l’échange de pratiques et le développement de réseaux.
 
@@ -47,7 +46,7 @@ La richesse de ces modules se situe dans la diversité des profils et des réali
 
 Ces dispositifs répondent aux besoins spécifiques d’un groupe de professionnel·le·s travaillant dans le même champ d’activités. Ces formations s’inspirent de nos modules de formation intersectorielle ou de nos thématiques de travail (la promotion de la santé, les pratiques participatives, le genre), mais sont adaptées sur base d’une demande formulée, par exemple, par une fédération ou un collectif.
 
-Les participant-es de ces formations partagent généralement des réalités ou conditions de travail communes : une thématique (par exemple, la santé sexuelle) ou bien un public (des personnes vivant en rue). Pour autant, les fonctionnements institutionnels et les approches peuvent être différentes et constituer un espace d’enrichissement et d’interconnaissance.
+Les participant·es de ces formations partagent généralement des réalités ou conditions de travail communes : une thématique (par exemple, la santé sexuelle) ou bien un public (des personnes vivant en rue). Pour autant, les fonctionnements institutionnels et les approches peuvent être différentes et constituer un espace d’enrichissement et d’interconnaissance.
 
 Exemples de secteurs : fédération d’accueil et d’hébergement, fédération de planning familial, promotion de la santé à l’école.
 
