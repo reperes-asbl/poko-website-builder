@@ -13,7 +13,7 @@ address: 1000 Bruxelles
 speakers: Caroline Lejeune et Jeanne Reyre
 metadata:
   image:
-    src: /_images/fgenre-redil.webp
+    src: /_images/f1.webp
     title: ''
     width: null
     aspectRatio: null
