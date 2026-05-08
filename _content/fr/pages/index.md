@@ -6,6 +6,7 @@ createdAt: 2025-11-14T09:35:00.000Z
 name: Accueil
 eleventyNavigation:
   add: Nav
+vars: {}
 ---
 
 {% partialWrapper "page-header.njk", { image: "/_images/pexels-rethaferguson-3810762.webp", class: "" } %}
