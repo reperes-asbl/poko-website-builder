@@ -1,9 +1,8 @@
 ---
 translationKey: accompagner-des-personnes-sans-abri-en-collectivite
+order: 5
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
-uuid: f0c98656a097
-localizationKey: 4925446f2f1f
 name: Accompagner des personnes sans-abri en collectivité
 subtitle: Soutenir la capacité des personnes à prendre soin d’elles
 tempo: Mars à décembre 2026
@@ -17,19 +16,18 @@ nextDate: |-
 address: 4000 Liège
 speakers: Manoë Jacquet et Caroline Lejeune
 metadata:
-  title: ""
-  description: ""
   image:
     src: /_images/pexels-julia-m-cameron-6994965.webp
-    alt: ""
-    title: ""
+    title: ''
     width: null
     aspectRatio: null
-    loading: ""
-    imgAttrs: ""
+    loading: ''
+    imgAttrs: ''
 pageLayout: formation
-vars: null
+localizationKey: 4925446f2f1f
+uuid: f0c98656a097
 ---
+
 
 Module de formation {% link url="https://formations.sites.ama.be/formation/accompagner-des-personnes-sans-abri-en-collectivite-2026/", text="AMA", linkType="external", target="_blank", rel="noopener noreferrer" %}{% endlink %} {% image src="/_images/ama.webp", alt="Logo AMA - Fédération des maisons d'accueil et des services d'aide aux sans-abri", width=200, class="vertical-text-bottom m-inline-2" %}
 

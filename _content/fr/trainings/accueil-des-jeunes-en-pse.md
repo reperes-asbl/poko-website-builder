@@ -1,11 +1,9 @@
 ---
 translationKey: accueil-des-jeunes-en-pse
+order: 6
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
-uuid: 73e6a272f144
-localizationKey: 3584974d09eb
-name: "Accueil des jeunes en PSE: quelle posture? Quels outils?"
-subtitle: ""
+name: 'Accueil des jeunes en PSE: quelle posture? Quels outils?'
 tempo: Dates à convenir
 duration: 4 jours et 4 demi-journées
 price: Gratuit pour les operateur.ice.s concerné.e.s
@@ -14,19 +12,18 @@ nextDate: À venir
 address: À confirmer
 speakers: Manoë Jacquet et Jeanne Reyre
 metadata:
-  title: ""
-  description: ""
   image:
     src: /_images/pexels-cottonbro-7395901.webp
-    alt: ""
-    title: ""
+    title: ''
     width: null
     aspectRatio: null
-    loading: ""
-    imgAttrs: ""
+    loading: ''
+    imgAttrs: ''
 pageLayout: formation
-vars: null
+localizationKey: 3584974d09eb
+uuid: 73e6a272f144
 ---
+
 
 Module de formation à destination des PSE - via {% link url="https://www.one.be/public/", text="ONE", linkType="external", target="_blank", rel="noopener noreferrer" %}{% endlink %} {% image src="/_images/logo-one-pos.webp", alt="Logo ONE - Office de la naissance et de l'enfance", width=100, class="vertical-text-bottom m-inline-2" %}
 

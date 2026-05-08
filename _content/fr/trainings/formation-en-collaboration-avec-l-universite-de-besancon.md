@@ -1,6 +1,6 @@
 ---
 translationKey: formation-en-collaboration-avec-l-universite-de-besancon
-order: null
+order: 1
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
 name: Formation en collaboration avec l’Université de Besançon
