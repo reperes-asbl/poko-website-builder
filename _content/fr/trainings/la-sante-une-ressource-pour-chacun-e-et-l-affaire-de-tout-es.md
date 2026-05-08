@@ -14,6 +14,7 @@ speakers: Caroline Lejeune et Jeanne Reyre
 metadata:
   image:
     src: /_images/f1.webp
+    alt: deux mains ouvertes vers le haut avec un arc-en-ciel de petits logos représentant le brainstorming, le fait d'ouvrir la pensée à une multitude de facteurs autour de la santé
     title: ''
     width: null
     aspectRatio: null
