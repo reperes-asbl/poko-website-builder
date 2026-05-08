@@ -6,10 +6,9 @@ createdAt: 2025-11-14T09:43:00.000Z
 name: Pour qui?
 eleventyNavigation:
   add: Nav
-vars: {}
 ---
 
-{% partialWrapper "page-header.njk", { image: "/_images/pexels-fauxels-3184298.webp", class: "palette-copper" } %}
+{% partialWrapper "page-header.njk", { image: "/_images/photo-fgenre-groupe-cote-fenetre.webp", class: "palette-copper" } %}
 # À qui s’adressent nos formations?
 
 Chez Repères, nos formations en promotion de la santé sont conçues pour toutes celles et ceux qui veulent agir sur la santé des personnes et des communautés, en équipe ou individuellement.
