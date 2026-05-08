@@ -15,6 +15,7 @@ speakers: À confirmer
 metadata:
   image:
     src: /_images/fgenre-redil.webp
+    alt: 6 personnes aux expressions de genre différents, d'âges différents, de couleurs de peau différentes pour représenter la pluralité du genre dans la société
     title: ''
     width: null
     aspectRatio: null
