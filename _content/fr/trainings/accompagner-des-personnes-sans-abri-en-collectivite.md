@@ -18,6 +18,7 @@ speakers: Manoë Jacquet et Caroline Lejeune
 metadata:
   image:
     src: /_images/photo-fama.webp
+    alt: en avant plan différents objectifs sont posés sur une table (notamment des playmobiles et des ciseaux, de la colle, un minion) qui représente une situation clinique travaillée en formation, en arrière plan, les participantes de la formation qui observent la réalisation
     title: ''
     width: null
     aspectRatio: null
