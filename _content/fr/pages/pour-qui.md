@@ -19,7 +19,7 @@ Chez Repères, nos formations en promotion de la santé sont conçues pour toute
 
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
-{% image src="/_images/pexels-moe-magners-7495555.webp", aspectRatio=1, width=300, class="rounded-full" %}
+{% image src="/_images/groupe-de-travailleuses.webp", aspectRatio=1, width=300, class="rounded-full" %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 ## Vous êtes un·e professionnel·le?
@@ -36,7 +36,7 @@ Exemples de structures où nos participants travaillent souvent: maisons médica
 
 {% endsectionTwoColumns %}
 
-{% sectionTwoColumns class="reset-down-w", tag="article" %}
+{% sectionTwoColumns  %}
 
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
@@ -59,7 +59,7 @@ Vous êtes engagé·e dans une association, collectif citoyen ou initiative loca
 
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
-{% image src="/_images/pexels-product-school-1299359-2678468.webp", aspectRatio=1, width=300, class="rounded-full" %}
+{% image src="/_images/photo-formation-equipe-reso-ucl.webp", aspectRatio=1, width=300, class="rounded-full" %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 ## Vous faites partie d’une équipe ou d’une institution?
