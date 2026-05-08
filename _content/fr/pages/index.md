@@ -6,7 +6,6 @@ createdAt: 2025-11-14T09:35:00.000Z
 name: Accueil
 eleventyNavigation:
   add: Nav
-vars: {}
 ---
 
 {% partialWrapper "page-header.njk", { image: "/_images/pexels-rethaferguson-3810762.webp", class: "" } %}
@@ -14,9 +13,9 @@ vars: {}
 
 # Centre de formation à la promotion de la santé
 
-**Chez Repères, nous accompagnons les professionnel·le·s à comprendre les enjeux de santé dans toute leur complexité.**
+**Chez Repères, nous soutenons les professionnel·le·s à comprendre les enjeux de santé de manière globale et transversale.**
 
-{% link url="activites", type="internal", collection="pages" %}Nos dispositifs{% endlink %} (formations et accompagnements) permettent de penser des actions de promotion de la santé selon une approche multifactorielle, de développer des projets structurés et de renforcer une posture professionnelle adaptée aux réalités du terrain.
+{% link url="activites", type="internal", collection="pages" %}Nos dispositifs{% endlink %} (formations et accompagnements) permettent de penser des actions de promotion de la santé selon une approche multifactorielle, de développer des projets et de renforcer une posture professionnelle adaptée aux réalités du terrain.
 {% endpartialWrapper %}
 
 {% sectionGrid class="width-prose palette-vermilion palette-low-contrast flow v--flow-space:--step-4 bleed-bg v--bleed-bottom:20rem" %}
@@ -73,7 +72,7 @@ Depuis 2018, dans le cadre du nouveau décret de Promotion de la Santé mis en p
 {% wrapper tag="section", class="palette-ylnmn-blue flow text-center" %}
 ## Nous collaborons avec une diversité d’acteurs { .h3 }
 
-Du soin à la jeunesse, du social à la formation… { .h4 }
+Des secteurs du soin, du social, de la jeunesse, de la formation… { .h4 }
 
 {% link url="pour-qui", type="internal", collection="pages", class="button" %}À qui s'adressent nos formations?{% endlink %}
 {% endwrapper %}
