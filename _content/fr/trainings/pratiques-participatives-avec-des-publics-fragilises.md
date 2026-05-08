@@ -1,6 +1,6 @@
 ---
 translationKey: pratiques-participatives-avec-des-publics-fragilises
-order: 4
+order: 5
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
 name: Pratiques participatives avec des publics fragilisés

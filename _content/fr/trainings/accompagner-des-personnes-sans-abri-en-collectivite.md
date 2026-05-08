@@ -1,6 +1,6 @@
 ---
 translationKey: accompagner-des-personnes-sans-abri-en-collectivite
-order: 5
+order: 1
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
 name: Accompagner des personnes sans-abri en collectivité
