@@ -19,7 +19,7 @@ Chez Repères, nous proposons des dispositifs formatifs conçus pour soutenir le
 {% endpartialWrapper %}
 
 {% wrapper tag="div", class="activities flex flex-col gap-[--step-4]" %}
-{% partialWrapper "activity.njk", { image: "/_images/escargot-formation-intrasectorielle.webp", palette: "copper", timing: "4 journées + 6 ateliers d’échanges de pratiques", pricing: "220€/cycle", location: "Bruxelles et Wallonie", practical: "Cycles d’ateliers: durée, fréquence et tarif à déterminer", class: "" } %}
+{% partialWrapper "activity.njk", { image: "/_images/photo-formation-intersectorielle.webp", palette: "copper", timing: "4 journées + 6 ateliers d’échanges de pratiques", pricing: "220€/cycle", location: "Bruxelles et Wallonie", practical: "Cycles d’ateliers: durée, fréquence et tarif à déterminer", class: "" } %}
 :::: hgroup
 
 ### La formation intersectorielle et les cycles d’ateliers
@@ -36,7 +36,7 @@ La richesse de ces modules se situe dans la diversité des profils et des réali
 {% link url="formations", type="internal", collection="pages", class="button" %}Nos formations{% endlink %}
 {% endpartialWrapper %}
 
-{% partialWrapper "activity.njk", { image: "/_images/pexels-fauxels-3184298.webp", palette: "delft-blue", timing: "Minimum 3 jours", pricing: "tarif à déterminer", location: "Bruxelles et Wallonie", practical: "Nombre d'ateliers et fréquence à déterminer", class: "" } %}
+{% partialWrapper "activity.njk", { image: "/_images/escargot-formation-intrasectorielle.webp", palette: "delft-blue", timing: "Minimum 3 jours", pricing: "tarif à déterminer", location: "Bruxelles et Wallonie", practical: "Nombre d'ateliers et fréquence à déterminer", class: "" } %}
 ::: hgroup
 
 ### La formation intrasectorielle et l’intervision
