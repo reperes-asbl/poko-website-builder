@@ -7,7 +7,7 @@ name: Accompagner des personnes sans-abri en collectivité
 subtitle: Soutenir la capacité des personnes à prendre soin d’elles
 tempo: Mars à décembre 2026
 duration: 4 jours et 6 demi-journées
-price: 280€
+price: 280€ pour les membres (480€ pour les non-membres)
 place: Liège
 nextDate: |-
   Les 4 journées de formations auront lieux les 20/03, 10/04, 24/04 et 29/05 de 09h30 à 16h30.
@@ -17,7 +17,7 @@ address: 4000 Liège
 speakers: Manoë Jacquet et Caroline Lejeune
 metadata:
   image:
-    src: /_images/pexels-julia-m-cameron-6994965.webp
+    src: /_images/photo-fama.webp
     title: ''
     width: null
     aspectRatio: null
@@ -28,8 +28,7 @@ localizationKey: 4925446f2f1f
 uuid: f0c98656a097
 ---
 
-
-Module de formation {% link url="https://formations.sites.ama.be/formation/accompagner-des-personnes-sans-abri-en-collectivite-2026/", text="AMA", linkType="external", target="_blank", rel="noopener noreferrer" %}{% endlink %} {% image src="/_images/ama.webp", alt="Logo AMA - Fédération des maisons d'accueil et des services d'aide aux sans-abri", width=200, class="vertical-text-bottom m-inline-2" %}
+Module de formation {% link url="https://formations.sites.ama.be/formation/accompagner-des-personnes-sans-abri-en-collectivite-2026/", type="external", target="_blank", rel="noopener noreferrer" %}AMA{% endlink %} {% image src="/_images/ama.webp", alt="Logo AMA - Fédération des maisons d'accueil et des services d'aide aux sans-abri", width=200, class="vertical-text-bottom m-inline-2" %}
 
 L’accompagnement de personnes en décrochage social, en errance, en situation de crise, invite à travailler au carrefour de multiples réalités, imbriquées de manière complexe. L’accompagnement quotidien de personnes en grande précarité dans des lieux de vie confronte souvent les travailleur∙euse∙s aux difficultés du vivre ensemble mais, également, aux questions de la négligence de soi et des autres. Dans ces contextes de réalités de vies complexes, certain∙e∙s s’interrogent quant à la pertinence de s’appuyer sur des pratiques communautaires et/ou collective au sein de lieux de vie. L’approche globale proposée envisage d’interroger de manière multifactorielle l’ensemble des ressources qui contribuent à la qualité de vie des personnes et des communautés.
 
