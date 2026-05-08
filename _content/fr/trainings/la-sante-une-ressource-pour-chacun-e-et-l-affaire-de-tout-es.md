@@ -10,7 +10,7 @@ price: 220€
 place: 1000 Bruxelles
 nextDate: Prochaine session en octobre 2026
 address: 1000 Bruxelles
-speakers: À confirmer
+speakers: Caroline Lejeune et Jeanne Reyre
 metadata:
   image:
     src: /_images/fgenre-redil.webp
