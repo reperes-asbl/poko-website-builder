@@ -6,13 +6,12 @@ createdAt: 2025-11-14T09:41:00.000Z
 name: Qui sommes-nous?
 eleventyNavigation:
   add: Nav
-vars: {}
 ---
 
 {% partialWrapper "page-header.njk", { image: "/_images/pexels-diva-plavalaguna-6147387.webp", class: "palette-delft-blue" } %}
 # Qui sommes-nous?
 
-Depuis plus de 25 ans, Repères ASBL développe une expertise solide en promotion de la santé.
+Depuis plus de 25 ans, Repères ASBL propose des formations généralistes en promotion de la santé.
 
 Aujourd’hui, une équipe renouvelée et pluridisciplinaire perpétue cette histoire: spécialistes de la promotion de la santé, professionnel·les du terrain, expert·es en communication bienveillante et en médiation.
 
@@ -32,7 +31,7 @@ Repères ASBL voit le jour à la fin des années 1990, dans le prolongement des 
 Ces formations s’adressent à des professionnel·les de tous horizons: institutions généralistes, structures spécialisées, milieux éducatifs ou services sociaux et de soin. Les membres fondateurs — Denise Salquin, Paule Dusquenne, Maggy Richard, Pascal Kayaert, Patricia Piron et Pierre Brasseur — posent les bases de notre association
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
-{% image src="/_images/reperes-asbl-archive.webp", width=300, class="radius-card" %}
+{% image src="/_images/pasted-image-1778228721132.webp", width=300, class="radius-card" %}
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 
@@ -42,7 +41,7 @@ Ces formations s’adressent à des professionnel·les de tous horizons: institu
 
 {% twoColumns type="fixedFluid", widthFixed="300px", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
-{% image src="/_images/reperes-asbl-archive.webp", width=300, class="radius-card" %}
+{% image src="/_images/pasted-image-1778228214136.webp", alt="photo de trois travailleuses en manifestation", width=300, class="radius-card" %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 ### L’essor à l’époque de la Communauté française (2006 – 2013)
@@ -101,7 +100,7 @@ Ces expériences vécues ensemble, dans un cadre sécurisant et impliquant, sout
 
 {% sectionCollection  %}
 {% sectionHeader class="flow" %}
-{% image src="/_images/photo-equipe-dos.webp", aspectRatio="2", class="radius-card" %}
+{% image src="/_images/pasted-image-1778228607217.webp", aspectRatio="2", class="radius-card" %}
 
 ## Notre équipe
 
