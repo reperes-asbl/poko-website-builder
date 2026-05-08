@@ -77,7 +77,7 @@ Ils sont particulièrement utiles pour construire une vision partagée au sein d
 Un dispositif spécifique { .h4 }
 :::
 
-En marge de nos formations et de façon plus minoritaire, Repères propose des espaces de supervision d’une équipe, d’un service ou d’un collectif. Les supervisions collectives sont un espace d’interrogation des professionnel-les à propos de leurs pratiques, en articulation avec les valeurs, options éthiques, philosophiques, idéologiques, politiques et méthodologiques qui les sous-tendent.
+Repères propose des espaces de supervision d’équipe, d’un service ou d’un collectif. Les supervisions collectives sont un espace d’interrogation des professionnel-les à propos de leurs pratiques, en articulation avec les valeurs, options éthiques, philosophiques, idéologiques, politiques et méthodologiques qui les sous-tendent.
 
 La spécificité de nos supervisions est d’être teintée de nos grilles de lecture en promotion de la santé ; nous mettons le focus sur l’approche globale de la santé, le diagnostic communautaire, les pratiques participatives pour analyser et soutenir les questions de travail apportées par les participant-es.
 
