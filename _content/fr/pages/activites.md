@@ -53,7 +53,7 @@ Exemples de secteurs : fédération d’accueil et d’hébergement, fédérati
 {% link url="formations", type="internal", collection="pages", class="button" %}Quel type de formation puis-je attendre?{% endlink %}
 {% endpartialWrapper %}
 
-{% partialWrapper "activity.njk", { image: "/_images/pexels-rethaferguson-3810788.webp", palette: "burnt-umber", timing: "Minimum 3 jours", pricing: "tarif à déterminer", location: "Bruxelles et Wallonie", practical: "Nombre d'ateliers et fréquence à déterminer", class: "" } %}
+{% partialWrapper "activity.njk", { image: "/_images/photo-formation-equipe-reso-ucl.webp", palette: "burnt-umber", timing: "Minimum 3 jours", pricing: "tarif à déterminer", location: "Bruxelles et Wallonie", practical: "Nombre d'ateliers et fréquence à déterminer", class: "" } %}
 ::: hgroup
 
 ### La formation et les accompagnements en équipe
