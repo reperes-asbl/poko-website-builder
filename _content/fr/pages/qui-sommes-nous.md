@@ -9,7 +9,7 @@ eleventyNavigation:
 vars: {}
 ---
 
-{% partialWrapper "page-header.njk", { image: "/_images/pexels-diva-plavalaguna-6147387.webp", class: "palette-delft-blue" } %}
+{% partialWrapper "page-header.njk", { image: "/_images/pasted-image-1778228214136.webp", class: "palette-delft-blue" } %}
 # Qui sommes-nous?
 
 Depuis plus de 25 ans, Repères ASBL propose des formations généralistes en promotion de la santé.
@@ -42,7 +42,7 @@ Ces formations s’adressent à des professionnel·les de tous horizons: institu
 
 {% twoColumns type="fixedFluid", widthFixed="300px", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
-{% image src="/_images/pasted-image-1778228214136.webp", alt="photo de trois travailleuses en manifestation", width=300, class="radius-card" %}
+{% image src="/_images/photo-formation-fgenre-2-dom.webp", alt="photo de trois travailleuses en manifestation", width=300, class="radius-card" %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 ### L’essor à l’époque de la Communauté française (2006 – 2013)
@@ -101,9 +101,7 @@ Ces expériences vécues ensemble, dans un cadre sécurisant et impliquant, sout
 
 {% sectionCollection  %}
 {% sectionHeader class="flow" %}
-{% image src="/_images/pasted-image-1778228607217.webp", alt="formatrice qui colle un post-it au mur dans le cadre d'un exercice", aspectRatio=2, class="radius-card" %}
-
-## Notre équipe
+# Notre équipe
 
 L’équipe de Repères rassemble des formateurs et formatrices pluridisciplinaires : travailleurs sociaux, psychologues, pédagogues et spécialistes en santé communautaire, éducation sexuelle et affective, formation d’adultes, supervision d’équipes et accompagnement de projets.
 
