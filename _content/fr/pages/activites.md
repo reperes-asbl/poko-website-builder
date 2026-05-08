@@ -53,7 +53,7 @@ Exemples de secteurs : fédération d’accueil et d’hébergement, fédérati
 {% link url="formations", type="internal", collection="pages", class="button" %}Quel type de formation puis-je attendre?{% endlink %}
 {% endpartialWrapper %}
 
-{% partialWrapper "activity.njk", { image: "/_images/photo-formation-equipe-reso-ucl.webp", palette: "burnt-umber", timing: "Minimum 3 jours", pricing: "tarif à déterminer", location: "Bruxelles et Wallonie", practical: "Nombre d'ateliers et fréquence à déterminer", class: "" } %}
+{% partialWrapper "activity.njk", { image: "/_images/img_20240425_160522.webp", palette: "burnt-umber", timing: "Minimum 3 jours", pricing: "tarif à déterminer", location: "Bruxelles et Wallonie", practical: "Nombre d'ateliers et fréquence à déterminer", class: "" } %}
 ::: hgroup
 
 ### La formation et les accompagnements en équipe
@@ -68,7 +68,7 @@ Ils sont particulièrement utiles pour construire une vision partagée au sein d
 {% link url="formations", type="internal", collection="pages", class="button" %}Nos formations{% endlink %}
 {% endpartialWrapper %}
 
-{% partialWrapper "activity.njk", { image: "/_images/pexels-rethaferguson-3810761.webp", palette: "gray", timing: "Généralement 1/mois sur 1 an (minimum 6 mois)", pricing: "250€/2h", location: "Bruxelles et Wallonie", practical: "Durée, fréquence et tarif à déterminer", class: "" } %}
+{% partialWrapper "activity.njk", { image: "/_images/img_20221008_160040.webp", palette: "gray", timing: "Généralement 1/mois sur 1 an (minimum 6 mois)", pricing: "250€/2h", location: "Bruxelles et Wallonie", practical: "Durée, fréquence et tarif à déterminer", class: "" } %}
 ::: hgroup
 
 ### La supervision collective
