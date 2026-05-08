@@ -8,7 +8,7 @@ eleventyNavigation:
   add: Nav
 ---
 
-{% partialWrapper "page-header.njk", { image: "/_images/pexels-rethaferguson-3810762.webp", class: "" } %}
+{% partialWrapper "page-header.njk", { image: "/_images/photo-formation-fgenre-accueil.webp", class: "" } %}
 {% image src="/_images/reperes-asbl-logo-sans-bords-rvb-01.webp", alt="Repères ASBL", width="200" %}
 
 # Centre de formation à la promotion de la santé
