@@ -9,27 +9,25 @@ eleventyNavigation:
 vars: {}
 ---
 
-{% partialWrapper "page-header.njk", { image: "/_images/pexels-fauxels-3184298.webp", class: "palette-copper" } %}
+{% partialWrapper "page-header.njk", { image: "/_images/photo-fgenre-groupe-cote-fenetre.webp", class: "palette-copper" } %}
 # À qui s’adressent nos formations?
 
 Chez Repères, nos formations en promotion de la santé sont conçues pour toutes celles et ceux qui veulent agir sur la santé des personnes et des communautés, en équipe ou individuellement.
 {% endpartialWrapper %}
 
-{# {% wrapper tag="section", class="articles palette-copper palette--contrast bleed-bg v--bleed-bottom:14rem" %} #}
-
-{% sectionBuilder class="reset-down-w articles palette-copper palette--contrast bleed-bg v--bleed-bottom:14rem" %}
+{% sectionBuilder class="reset-down-w palette-copper palette--contrast bleed-bg v--bleed-bottom:14rem" %}
 
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft", tag="article" %}
 {% twoColumnsItem  %}
-{% image src="/_images/pexels-moe-magners-7495555.webp", aspectRatio=1, width=300, class="rounded-full" %}
+{% image src="/_images/groupe-de-travailleuses.webp", aspectRatio=1, width=300, class="rounded-full" %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 ## Vous êtes un·e professionnel·le?
 
 Vous travaillez dans le social, la santé ou l’éducation à Bruxelles ou en Wallonie? Nos formations peuvent vous aider à:
 
-- Comprendre et appliquer la promotion de la santé dans votre pratique quotidienne.
-- Réfléchir à vos pratiques et trouver du soutien face aux difficultés rencontrées.
+- Comprendre et appliquer la promotion de la santé dans votre pratique quotidienne ; 
+- Réfléchir à vos pratiques et trouver du soutien face aux difficultés rencontrées ; 
 - Échanger avec d’autres professionnel·les confronté·es aux mêmes situations.
 
 Exemples de structures où nos participants travaillent souvent: maisons médicales, centres de planning familial, services sociaux, services de santé mentale, hôpitaux, structures jeunesse, CPAS, services d’accompagnement à l’emploi ou d’insertion.
@@ -44,36 +42,36 @@ Exemples de structures où nos participants travaillent souvent: maisons médica
 
 Vous êtes engagé·e dans une association, collectif citoyen ou initiative locale? Nos formations peuvent vous permettre de:
 
-- Développer votre posture en promotion de la santé dans vos actions.
-- Mobiliser votre communauté et construire des projets participatifs.
+- Développer votre posture en promotion de la santé dans vos actions ; 
+- Mobiliser votre communauté et construire des projets participatifs ; 
 - Rencontrer d’autres relais et bénévoles pour partager expériences et bonnes pratiques.
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft", tag="article" %}
 {% twoColumnsItem  %}
-{% image src="/_images/pexels-product-school-1299359-2678468.webp", aspectRatio=1, width=300, class="rounded-full" %}
+{% image src="/_images/photo-pour-qui-equipe.webp", aspectRatio=1, width=300, class="rounded-full" %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 ## Vous faites partie d’une équipe ou d’une institution?
 
 Nous accompagnons les structures et collectifs qui souhaitent:
 
-- Créer des repères communs en promotion de la santé.
-- Améliorer le travail collectif et les pratiques internes.
+- Créer des repères communs en promotion de la santé ; 
+- Améliorer le travail collectif et les pratiques internes ; 
 - Mettre en place des espaces de formation ou de soutien au sein de leur organisation.
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft", tag="article" %}
 {% twoColumnsItem  %}
-{% image src="/_images/pexels-mikael-blomkvist-6476783.webp", aspectRatio=1, width=300, class="rounded-full" %}
+{% image src="/_images/photo-formation-equipe-reso-ucl.webp", aspectRatio=1, width=300, class="rounded-full" %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 ## Vous êtes un organisme de formation?
 
 Repères soutient les organismes de formation pour:
 
-- Développer la posture des formateur·rices en promotion de la santé.
-- Échanger sur les pratiques et expériences avec d’autres organismes.
+- Développer la posture des formateur·rices en promotion de la santé ; 
+- Échanger sur les pratiques et expériences avec d’autres organismes ; 
 - Être accompagnés dans leurs questionnements et difficultés en formation.
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
@@ -83,10 +81,10 @@ Repères soutient les organismes de formation pour:
 {% wrapper tag="section", class="squashed prose box border-5 palette-copper palette-low-contrast font-bold" %}
 ## Pourquoi nous contacter?
 
-Vous nous contactez si vous voulez:
+Vous souhaitez :
 
-- Découvrir ou renforcer vos connaissances en promotion de la santé, approche participative et approche de genre.
-- Avoir un regard réflexif sur vos pratiques, individuellement ou collectivement.
+- Découvrir ou renforcer vos connaissances en promotion de la santé, approche participative et approche de genre ; 
+- Avoir un regard réflexif sur vos pratiques, individuellement ou collectivement ; 
 - Trouver des supports méthodologiques pour intégrer la promotion de la santé dans vos projets, équipes ou structures.
 
 {% link url="contact", type="internal", collection="pages", class="button" %}Nous contacter{% endlink %} { .text-center }

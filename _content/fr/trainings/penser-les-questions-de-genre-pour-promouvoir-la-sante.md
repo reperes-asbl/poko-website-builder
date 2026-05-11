@@ -1,6 +1,6 @@
 ---
 translationKey: penser-les-questions-de-genre-pour-promouvoir-la-sante
-order: null
+order: 3
 lang: fr
 createdAt: 2026-02-05T14:22:00.000Z
 name: Penser les questions de genre pour promouvoir la santé
@@ -14,12 +14,13 @@ address: 1000 Bruxelles
 speakers: À confirmer
 metadata:
   image:
-    src: /_images/pexels-billow926-2948812-5338294.webp
-    title: ''
+    src: /_images/fgenre-redil.webp
+    alt: 6 personnes aux expressions de genre différents, d'âges différents, de couleurs de peau différentes pour représenter la pluralité du genre dans la société
+    title: ""
     width: null
     aspectRatio: null
-    loading: ''
-    imgAttrs: ''
+    loading: ""
+    imgAttrs: ""
 pageLayout: formation
 ---
 

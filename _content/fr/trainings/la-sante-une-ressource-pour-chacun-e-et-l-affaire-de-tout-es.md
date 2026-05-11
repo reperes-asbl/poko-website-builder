@@ -1,6 +1,6 @@
 ---
 translationKey: la-sante-une-ressource-pour-chacun-e-et-l-affaire-de-tout-es
-order: null
+order: 4
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
 name: La santé, une ressource pour chacun·e et l'affaire de tout·es?
@@ -16,15 +16,16 @@ address: 1000 Bruxelles
 speakers: Caroline Lejeune et Jeanne Reyre
 metadata:
   image:
-    src: /_images/pexels-pavel-danilyuk-8815077.webp
+    src: /_images/f1.webp
+    alt: deux mains ouvertes vers le haut avec un arc-en-ciel de petits logos représentant le brainstorming, le fait d'ouvrir la pensée à une multitude de facteurs autour de la santé
     title: ""
     width: null
     aspectRatio: null
     loading: ""
     imgAttrs: ""
+pageLayout: formation
 tags:
   - featured
-pageLayout: formation
 ---
 
 **Repères pour penser, interroger les pratiques professionnelles et concevoir des projets au regard de la promotion de la santé**

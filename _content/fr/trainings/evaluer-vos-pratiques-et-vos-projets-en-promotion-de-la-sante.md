@@ -1,6 +1,6 @@
 ---
 translationKey: evaluer-vos-pratiques-et-vos-projets-en-promotion-de-la-sante
-order: null
+order: 7
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
 name: Évaluer vos pratiques et vos projets en promotion de la santé
@@ -14,11 +14,11 @@ speakers: Manoë Jacquet et Jeanne Reyre
 metadata:
   image:
     src: /_images/pexels-moe-magners-7495493.webp
-    title: ''
+    title: ""
     width: null
     aspectRatio: null
-    loading: ''
-    imgAttrs: ''
+    loading: ""
+    imgAttrs: ""
 status: inactive
 pageLayout: formation
 ---

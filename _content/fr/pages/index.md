@@ -8,14 +8,14 @@ eleventyNavigation:
   add: Nav
 ---
 
-{% partialWrapper "page-header.njk", { image: "/_images/pexels-rethaferguson-3810762.webp", class: "" } %}
+{% partialWrapper "page-header.njk", { image: "/_images/photo-formation-fgenre-accueil.webp", class: "" } %}
 {% image src="/_images/reperes-asbl-logo-sans-bords-rvb-01.webp", alt="Repères ASBL", width="200" %}
 
 # Centre de formation à la promotion de la santé
 
-**Chez Repères, nous accompagnons les professionnel·le·s à comprendre les enjeux de santé dans toute leur complexité.**
+**Chez Repères, nous soutenons les professionnel·le·s à comprendre les enjeux de santé de manière globale et transversale.**
 
-{% link url="activites", type="internal", collection="pages" %}Nos dispositifs{% endlink %} (formations et accompagnements) permettent de penser des actions de promotion de la santé selon une approche multifactorielle, de développer des projets structurés et de renforcer une posture professionnelle adaptée aux réalités du terrain.
+{% link url="activites", type="internal", collection="pages" %}Nos dispositifs{% endlink %} (formations et accompagnements) permettent de penser des actions de promotion de la santé selon une approche multifactorielle, de développer des projets et de renforcer une posture professionnelle adaptée aux réalités du terrain.
 {% endpartialWrapper %}
 
 {% sectionCollection  %}
@@ -76,9 +76,9 @@ Depuis 2018, dans le cadre du nouveau décret de Promotion de la Santé mis en p
 {% endwrapper %}
 
 {% wrapper tag="section", class="palette-ylnmn-blue flow text-center" %}
-## Nous collaborons avec une grande diversité d’acteurs { .h3 }
+## Nous collaborons avec une diversité d’acteurs { .h3 }
 
-Du soin à la jeunesse, du social à la formation… { .h4 }
+Des secteurs du soin, du social, de la jeunesse, de la formation… { .h4 }
 
 {% link url="pour-qui", type="internal", collection="pages", class="button" %}À qui s'adressent nos formations?{% endlink %}
 {% endwrapper %}

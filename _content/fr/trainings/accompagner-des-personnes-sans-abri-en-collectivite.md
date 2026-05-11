@@ -1,13 +1,13 @@
 ---
 translationKey: accompagner-des-personnes-sans-abri-en-collectivite
-order: null
+order: 1
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
 name: Accompagner des personnes sans-abri en collectivité
 subtitle: Soutenir la capacité des personnes à prendre soin d’elles
 tempo: Mars à décembre 2026
 duration: 4 jours et 6 demi-journées
-price: 280€
+price: 280€ pour les membres (480€ pour les non-membres)
 place: Liège
 nextDate: |-
   Les 4 journées de formations auront lieux les 20/03, 10/04, 24/04 et 29/05 de 09h30 à 16h30.
@@ -17,12 +17,13 @@ address: 4000 Liège
 speakers: Manoë Jacquet et Caroline Lejeune
 metadata:
   image:
-    src: /_images/pexels-julia-m-cameron-6994965.webp
-    title: ''
+    src: /_images/photo-fama.webp
+    alt: en avant plan différents objectifs sont posés sur une table (notamment des playmobiles et des ciseaux, de la colle, un minion) qui représente une situation clinique travaillée en formation, en arrière plan, les participantes de la formation qui observent la réalisation
+    title: ""
     width: null
     aspectRatio: null
-    loading: ''
-    imgAttrs: ''
+    loading: ""
+    imgAttrs: ""
 pageLayout: formation
 ---
 

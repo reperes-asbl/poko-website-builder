@@ -1,6 +1,6 @@
 ---
 translationKey: pratiques-participatives-avec-des-publics-fragilises
-order: null
+order: 5
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
 name: Pratiques participatives avec des publics fragilisés
@@ -16,15 +16,13 @@ address: 5000 Namur
 speakers: Caroline Lejeune et Jeanne Reyre
 metadata:
   image:
-    src: /_images/pexels-mizunokozuki-12903169.webp
-    title: ''
+    src: /_images/photo-formation-fgenre-2-dom.webp
+    title: ""
     width: null
     aspectRatio: null
-    loading: ''
-    imgAttrs: ''
+    loading: ""
+    imgAttrs: ""
 pageLayout: formation
-localizationKey: 1051fedce533
-uuid: 606ef02eb472
 ---
 
 Cette formation offre un temps de réflexion et d’expérimentation. Elle aborde les représentations, la posture professionnelle et les enjeux liés à la participation des personnes en situation de précarité et/ou de vulnérabilité. Vous y explorez les conditions qui favorisent l’expression, l’implication et le pouvoir d’agir des personnes. Le tout en tenant compte des réalités sociales et institutionnelles de vos pratiques.

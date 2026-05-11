@@ -6,10 +6,10 @@ createdAt: 2025-11-14T09:44:00.000Z
 name: SESU
 eleventyNavigation:
   add: Nav
+vars: {}
 ---
 
-{% partialWrapper "page-header.njk", { image: "/_images/pexels-rethaferguson-3810792.webp", class: "palette-delft-blue" } %}
-
+{% partialWrapper "page-header.njk", { image: "/_images/photo-equipe-dos.webp", class: "palette-delft-blue" } %}
 # Service support formation (SESU)
 
 Dans le cadre du décret de Promotion de la Santé mis en place par la COCOF en Région Bruxelloise (2018), Repères a été désignée comme SERVICE DE SUPPORT en matière de FORMATION généraliste et Continue. Cette reconnaissance a été renouvelée en 2023.

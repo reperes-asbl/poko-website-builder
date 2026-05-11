@@ -11,16 +11,17 @@ localizationKey: f02d808fd7b4
 uuid: f9a647ba18fd
 ---
 
-{% partialWrapper "page-header.njk", { image: "/_images/pexels-karolina-grabowska-5386428.webp", class: "" } %}
+{% partialWrapper "page-header.njk", { image: "/_images/pasted-image-1778229803017.webp", class: "" } %}
+
 # Nos activités
 
-## Quels types de dispositifs formatifs proposons-nous?
+## Quels types de dispositifs proposons-nous ?
 
 Chez Repères, nous proposons des dispositifs formatifs conçus pour soutenir le développement des compétences en Promotion de la Santé et favoriser une réflexion collective sur les pratiques professionnelles. Ces dispositifs peuvent être déclinés sous différentes formules et formats.
 {% endpartialWrapper %}
 
 {% wrapper tag="div", class="activities flex flex-col gap-[--step-4]" %}
-{% partialWrapper "activity.njk", { image: "/_images/pexels-mikael-blomkvist-6476783.webp", palette: "copper", timing: "4 journées + 6 ateliers d’échanges de pratiques", pricing: "220€/cycle", location: "Bruxelles et Wallonie", practical: "Cycles d’ateliers: durée, fréquence et tarif à déterminer", class: "" } %}
+{% partialWrapper "activity.njk", { image: "/_images/photo-formation-intersectorielle.webp", palette: "copper", timing: "4 journées + 6 ateliers d’échanges de pratiques", pricing: "220€/cycle", location: "Bruxelles et Wallonie", practical: "Cycles d’ateliers: durée, fréquence et tarif à déterminer", class: "" } %}
 :::: hgroup
 
 ### La formation intersectorielle et les cycles d’ateliers
@@ -28,16 +29,16 @@ Chez Repères, nous proposons des dispositifs formatifs conçus pour soutenir le
 À la rencontre d’autres secteurs et approches du travail psycho-médico-social { .h4 }
 ::::
 
-Organisée par Repères à Bruxelles ou en Wallonie, ces dispositifs formatifs rassemblent des professionnel-les du secteur psycho-médio-social sur tout le territoire francophone, toute thématique et tout public confondu.
+Organisée par Repères à Bruxelles ou en Wallonie, ces dispositifs formatifs rassemblent des professionnel·les du secteur psycho-médio-social sur tout le territoire francophone, toute thématique et tout public confondu.
 
-Les participant-es à ce type de formation proviennent tantôt du secteur de la santé ou de la promotion de la santé (CLPS, assuétudes, santé sexuelle), du secteur social (services sociaux, médiation de dettes, réinsertion socioprofessionnelle) ou encore de la santé mentale. Iels peuvent être salarié-es, parfois indépendant-es, ou bénévoles-relais.
+Les participant-es à ce type de formation proviennent tantôt du secteur de la santé ou de la promotion de la santé (CLPS, assuétudes, santé sexuelle), du secteur social (services sociaux, médiation de dettes, réinsertion socioprofessionnelle) ou encore de la santé mentale. Iels peuvent être salarié·es, parfois indépendant·es, ou bénévoles-relais.
 
 La richesse de ces modules se situe dans la diversité des profils et des réalités professionnelles représentées. Cette formule favorise l’échange de pratiques et le développement de réseaux.
 
 {% link url="formations", type="internal", collection="pages", class="button" %}Nos formations{% endlink %}
 {% endpartialWrapper %}
 
-{% partialWrapper "activity.njk", { image: "/_images/pexels-fauxels-3184298.webp", palette: "delft-blue", timing: "Minimum 3 jours", pricing: "tarif à déterminer", location: "Bruxelles et Wallonie", practical: "Nombre d'ateliers et fréquence à déterminer", class: "" } %}
+{% partialWrapper "activity.njk", { image: "/_images/escargot-formation-intrasectorielle.webp", palette: "delft-blue", timing: "Minimum 3 jours", pricing: "tarif à déterminer", location: "Bruxelles et Wallonie", practical: "Nombre d'ateliers et fréquence à déterminer", class: "" } %}
 ::: hgroup
 
 ### La formation intrasectorielle et l’intervision
@@ -47,14 +48,14 @@ La richesse de ces modules se situe dans la diversité des profils et des réali
 
 Ces dispositifs répondent aux besoins spécifiques d’un groupe de professionnel·le·s travaillant dans le même champ d’activités. Ces formations s’inspirent de nos modules de formation intersectorielle ou de nos thématiques de travail (la promotion de la santé, les pratiques participatives, le genre), mais sont adaptées sur base d’une demande formulée, par exemple, par une fédération ou un collectif.
 
-Les participant-es de ces formations partagent généralement des réalités ou conditions de travail communes : une thématique (par exemple, la santé sexuelle) ou bien un public (des personnes vivant en rue). Pour autant, les fonctionnements institutionnels et les approches peuvent être différentes et constituer un espace d’enrichissement et d’interconnaissance.
+Les participant·es de ces formations partagent généralement des réalités ou conditions de travail communes : une thématique (par exemple, la santé sexuelle) ou bien un public (des personnes vivant en rue). Pour autant, les fonctionnements institutionnels et les approches peuvent être différentes et constituer un espace d’enrichissement et d’interconnaissance.
 
 Exemples de secteurs : fédération d’accueil et d’hébergement, fédération de planning familial, promotion de la santé à l’école.
 
 {% link url="formations", type="internal", collection="pages", class="button" %}Quel type de formation puis-je attendre?{% endlink %}
 {% endpartialWrapper %}
 
-{% partialWrapper "activity.njk", { image: "/_images/pexels-rethaferguson-3810788.webp", palette: "burnt-umber", timing: "Minimum 3 jours", pricing: "tarif à déterminer", location: "Bruxelles et Wallonie", practical: "Nombre d'ateliers et fréquence à déterminer", class: "" } %}
+{% partialWrapper "activity.njk", { image: "/_images/img_20240425_160522.webp", palette: "burnt-umber", timing: "Minimum 3 jours", pricing: "tarif à déterminer", location: "Bruxelles et Wallonie", practical: "Nombre d'ateliers et fréquence à déterminer", class: "" } %}
 ::: hgroup
 
 ### La formation et les accompagnements en équipe
@@ -69,7 +70,7 @@ Ils sont particulièrement utiles pour construire une vision partagée au sein d
 {% link url="formations", type="internal", collection="pages", class="button" %}Nos formations{% endlink %}
 {% endpartialWrapper %}
 
-{% partialWrapper "activity.njk", { image: "/_images/pexels-rethaferguson-3810761.webp", palette: "gray", timing: "Généralement 1/mois sur 1 an (minimum 6 mois)", pricing: "250€/2h", location: "Bruxelles et Wallonie", practical: "Durée, fréquence et tarif à déterminer", class: "" } %}
+{% partialWrapper "activity.njk", { image: "/_images/img_20221008_160040.webp", palette: "gray", timing: "Généralement 1/mois sur 1 an (minimum 6 mois)", pricing: "250€/2h", location: "Bruxelles et Wallonie", practical: "Durée, fréquence et tarif à déterminer", class: "" } %}
 ::: hgroup
 
 ### La supervision collective
@@ -77,7 +78,7 @@ Ils sont particulièrement utiles pour construire une vision partagée au sein d
 Un dispositif spécifique { .h4 }
 :::
 
-En marge de nos formations et de façon plus minoritaire, Repères propose des espaces de supervision d’une équipe, d’un service ou d’un collectif. Les supervisions collectives sont un espace d’interrogation des professionnel-les à propos de leurs pratiques, en articulation avec les valeurs, options éthiques, philosophiques, idéologiques, politiques et méthodologiques qui les sous-tendent.
+Repères propose des espaces de supervision d’équipe, d’un service ou d’un collectif. Les supervisions collectives sont un espace d’interrogation des professionnel-les à propos de leurs pratiques, en articulation avec les valeurs, options éthiques, philosophiques, idéologiques, politiques et méthodologiques qui les sous-tendent.
 
 La spécificité de nos supervisions est d’être teintée de nos grilles de lecture en promotion de la santé ; nous mettons le focus sur l’approche globale de la santé, le diagnostic communautaire, les pratiques participatives pour analyser et soutenir les questions de travail apportées par les participant-es.
 
@@ -87,7 +88,9 @@ La spécificité de nos supervisions est d’être teintée de nos grilles de le
 
 {% sectionTwoColumns class="flow" %}
 {% sectionHeader  %}
+
 ## Repères, c’est aussi…
+
 {% endsectionHeader %}
 {% twoColumns  %}
 {% twoColumnsItem  %}

@@ -8,7 +8,7 @@ eleventyNavigation:
   add: Nav
 ---
 
-{% partialWrapper "page-header.njk", { image: "/_images/pexels-edmond-dantes-4347331.webp", class: "position-relative" } %}
+{% partialWrapper "page-header.njk", { image: "/_images/pasted-image-1778228214136.webp", class: "position-relative" } %}
 # Contactez-nous
 
 Une question sur nos formations? Envie de construire un projet sur mesure avec votre équipe? Ou simplement besoin d’un échange avant de vous inscrire?
