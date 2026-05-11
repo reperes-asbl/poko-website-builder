@@ -230,3 +230,22 @@ textarea {
     border-radius: var(--radius-card);
     padding: var(--p-card);
 }*/
+
+/* This should be bundled with the training partial but there is a bug when using the partial in collection sections on different pages. Only one page gets the styles. */
+.training-card img {
+  border-top: 2px solid currentColor;
+  border-radius: 0;
+  aspect-ratio: 2.5;
+}
+.training-card p:last-of-type {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+}
+.training-card li {
+  padding-block: 0.4em;
+  border-block-start: solid 1px currentColor;
+  &:last-of-type {
+    border-block-end: solid 1px currentColor;
+  }
+}

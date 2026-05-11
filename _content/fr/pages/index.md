@@ -19,8 +19,10 @@ eleventyNavigation:
 {% endpartialWrapper %}
 
 {% sectionCollection  %}
-
-{% collection collection="trainings", filters=[{"by":"tag","value":["featured"]}], sortCriterias=[] %}{% endcollection %}
+{% sectionHeader  %}
+## Nos prochaines formations
+{% endsectionHeader %}
+{% collection collection="trainings", filters=[{"by":"tag","value":["featured"]}], sortCriterias=[], type="grid-fluid", columns=4, itemPartial="training" %}{% endcollection %}
 
 {% endsectionCollection %}
 

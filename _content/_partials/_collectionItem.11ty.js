@@ -1,6 +1,17 @@
 export default async function (data) {
+  const imgSc = this.image;
   const { title, description, image } = data.pagePreview;
-  const imageStr = image ? `<img src="${image.src}" alt="${title}" width="200" class="mx-auto" style="border-radius: var(--radius-round);">` : "";
+  // const imageStr = image
+  //   ? `<img src="${image.src}" alt="${title}" width="200" class="mx-auto" style="aspect-ratio:1;border-radius: var(--radius-round);">`
+  //   : "";
+  const imageStr = await imgSc({
+    ...image,
+    alt: title,
+    width: 200,
+    aspectRatio: 1,
+    class: "mx-auto",
+    style: "border-radius: var(--radius-round);",
+  });
   const titleStr = title ? `<h3 class="p">${title}</h3>` : "";
   const descriptionStr = description ? `<p>${description}</p>` : "";
   const output = [imageStr, titleStr, descriptionStr]

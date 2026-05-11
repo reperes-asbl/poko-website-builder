@@ -4,7 +4,7 @@
 <article class="training-card card box flow palette-{{ currentPalette }} palette-low-contrast breakout-clickable">
 <h4 class="p">{{ name | safe }}</h4>
 {% if metadata.image.src %}
-<img src="{{ metadata.image.src }}" alt="{{ metadata.image.alt }}" title="{{ metadata.image.title }}" class="">
+{% image src=metadata.image.src, alt=metadata.image.alt, title=metadata.image.title %}
 {% endif %}
 
 <ul role="list" class="">
@@ -14,22 +14,8 @@
 <li {{place | io}}>{{ place }}</li>
 </ul>
 
-{% link url=url, text="En savoir plus...", class="clickable button palette-" ~ currentPalette ~ " palette--contrast" %}{% endlink %}
+<p>
+    {% link type="internal", collection="trainings", url=url,   class="clickable button palette-" ~ currentPalette ~ " palette--contrast" %}En savoir plus...{% endlink %}
+</p>
 
 </article>
-
-{% css %}
-
-.training-card img {
-border-top: 2px solid currentColor;
-border-radius: 0;
-aspect-ratio: 2.5;
-}
-
-.training-card p:last-of-type {
-flex-grow: 1;
-display: flex;
-align-items: flex-end;
-}
-
-{% endcss %}
