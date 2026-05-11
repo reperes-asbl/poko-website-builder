@@ -8,17 +8,20 @@ tempo: Prochaine session – rentrée académique 2026
 duration: 4 jours et 6 demi-journées
 price: 220€
 place: 1000 Bruxelles
-nextDate: Prochaine session en octobre 2026
+nextDate: |-
+  4 journées : 10 novembre, 24 novembre, 1 décembre 2026 et 15 décembre 2026 de 9h30 à 16h30
+
+  6 demies-journées : 14 janvier, 9 février, 16 mars, 13 avril, 18 mai et 8 juin 2027 de 9h30 à 12h30
 address: 1000 Bruxelles
-speakers: À confirmer
+speakers: Caroline Lejeune et Jeanne Reyre
 metadata:
   image:
     src: /_images/pexels-pavel-danilyuk-8815077.webp
-    title: ''
+    title: ""
     width: null
     aspectRatio: null
-    loading: ''
-    imgAttrs: ''
+    loading: ""
+    imgAttrs: ""
 tags:
   - featured
 pageLayout: formation

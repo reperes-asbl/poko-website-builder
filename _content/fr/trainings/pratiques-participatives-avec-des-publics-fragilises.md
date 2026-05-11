@@ -1,29 +1,30 @@
 ---
 translationKey: pratiques-participatives-avec-des-publics-fragilises
+order: null
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
 name: Pratiques participatives avec des publics fragilisés
-subtitle: ""
 tempo: Prochaine session – rentrée académique 2026
 duration: 4 jours et 6 demi-journées
 price: 220€
 place: 5000 Namur
-nextDate: Prochaine session en octobre 2026
+nextDate: |-
+  4 journées : 29 septembre, 6 octobre, 3 novembre et 17 novembre 2026
+
+  6 demies-journées : 8 décembre 2026, 12 janvier, 2 février, 9 mars, 6 avril et 11 mai 2027 de 9h30 à 12h30
 address: 5000 Namur
-speakers: À confirmer
+speakers: Caroline Lejeune et Jeanne Reyre
 metadata:
-  title: ""
-  description: ""
   image:
     src: /_images/pexels-mizunokozuki-12903169.webp
-    alt: ""
-    title: ""
+    title: ''
     width: null
     aspectRatio: null
-    loading: ""
-    imgAttrs: ""
+    loading: ''
+    imgAttrs: ''
 pageLayout: formation
-vars: null
+localizationKey: 1051fedce533
+uuid: 606ef02eb472
 ---
 
 Cette formation offre un temps de réflexion et d’expérimentation. Elle aborde les représentations, la posture professionnelle et les enjeux liés à la participation des personnes en situation de précarité et/ou de vulnérabilité. Vous y explorez les conditions qui favorisent l’expression, l’implication et le pouvoir d’agir des personnes. Le tout en tenant compte des réalités sociales et institutionnelles de vos pratiques.
