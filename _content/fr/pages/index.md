@@ -22,8 +22,10 @@ eleventyNavigation:
 {% sectionHeader  %}
 ## Nos prochaines formations
 {% endsectionHeader %}
-{% collection collection="trainings", filters=[{"by":"tag","value":["featured"]}], sortCriterias=[], type="grid-fluid", columns=4, itemPartial="training" %}{% endcollection %}
-
+{% collection collection="trainings", filters=[{"by":"tag","value":["featured"]}], sortCriterias=[], type="grid-fluid", columns=3, itemPartial="training" %}{% endcollection %}
+{% sectionFooter  %}
+{% link url="formations", type="internal", collection="pages" %}Voir toutes nos formations{% endlink %}
+{% endsectionFooter %}
 {% endsectionCollection %}
 
 {% sectionGrid class="width-prose palette-vermilion palette-low-contrast flow v--flow-space:--step-4 bleed-bg v--bleed-bottom:20rem" %}

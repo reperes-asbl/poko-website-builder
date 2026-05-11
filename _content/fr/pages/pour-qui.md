@@ -6,7 +6,6 @@ createdAt: 2025-11-14T09:43:00.000Z
 name: Pour qui?
 eleventyNavigation:
   add: Nav
-vars: {}
 ---
 
 {% partialWrapper "page-header.njk", { image: "/_images/photo-fgenre-groupe-cote-fenetre.webp", class: "palette-copper" } %}

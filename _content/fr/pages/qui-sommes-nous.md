@@ -18,11 +18,10 @@ Aujourd’hui, une équipe renouvelée et pluridisciplinaire perpétue cette his
 Ensemble, nous mettons nos compétences au service des acteur·rice·s du social et de la santé, dans la continuité des valeurs fondatrices de l’association.
 {% endpartialWrapper %}
 
-{% wrapper tag="section", class="reset-down-w palette-delft-blue palette--contrast bleed-bg v--bleed-bottom:40rem v--width-fluid-min:60%" %}
-## Un peu d’histoire
-
-{% sectionTwoColumns  %}
-
+{% sectionBuilder class="reset-down-w palette-delft-blue palette--contrast bleed-bg v--bleed-bottom:40rem v--width-fluid-min:60%" %}
+{% sectionHeader  %}
+## Un peu d'histoire
+{% endsectionHeader %}
 {% twoColumns type="fixedFluid", widthFixed="300px", fixedSide="fixedRight" %}
 {% twoColumnsItem  %}
 ### Nos débuts (1998 – 2005)
@@ -34,11 +33,6 @@ Ces formations s’adressent à des professionnel·les de tous horizons: institu
 {% image src="/_images/pasted-image-1778228721132.webp", alt="affiche des années 90 qui annonce une formation à la prévention du SIDA. l'ancienne équipe y est représentée dans une photo noir et blanc avec des parapluies de couleur", width=300, class="radius-card" %}
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
-
-{% endsectionTwoColumns %}
-
-{% sectionTwoColumns  %}
-
 {% twoColumns type="fixedFluid", widthFixed="300px", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
 {% image src="/_images/photo-se-former-c-est-se-donner-du-temps.webp", alt="photo de trois travailleuses en manifestation", width=300, class="radius-card" %}
@@ -50,14 +44,12 @@ Entre 2006 et 2013, Repères consolide ses pratiques en promotion de la santé. 
 
 Cette période marque également la formalisation des références méthodologiques propres à Repères:
 
-- travail pluridisciplinaire ;
-- attention à la posture professionnelle ; 
+- travail pluridisciplinaire;
+- attention à la posture professionnelle;
 - approche participative centrée sur les représentations et pratiques des participant·es.
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
-
-{% endsectionTwoColumns %}
-
+{% area tagName="areaRaw", type="areaRaw" %}
 ### De la régionalisation à aujourd’hui (2014 – {{ year }})
 
 La régionalisation de la promotion de la santé à partir de 2014 a transformé le cadre d’action de Repères.
@@ -65,7 +57,9 @@ La régionalisation de la promotion de la santé à partir de 2014 a transformé
 **À Bruxelles**, l’association est reconnue comme service support (SESU) par la COCOF dès 2018. Elle continue d’accompagner et de proposer des formations aux professionnel·les du social et de la santé. Elle propose aussi du soutien aux opérateurs de formation en promotion de la santé.
 
 **En Wallonie**, Repères participe aux plans et décrets régionaux, et obtient en 2023 un agrément comme opérateur en promotion de la santé.
-{% endwrapper %}
+{% endarea %}
+
+{% endsectionBuilder %}
 
 {% wrapper tag="section", class="squash-section prose box palette-copper border-5" %}
 ## Notre cadre de référence

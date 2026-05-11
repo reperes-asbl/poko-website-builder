@@ -20,7 +20,7 @@ Découvrez ci-dessous nos modules de formation: des temps pour penser, expérime
 
 {% sectionCollection  %}
 
-{% collection collection="trainings", type="grid-fluid", columns=4, itemPartial="training" %}{% endcollection %}
+{% collection collection="trainings", type="grid-fluid", columns=3, itemPartial="training" %}{% endcollection %}
 
 {% endsectionCollection %}
 
