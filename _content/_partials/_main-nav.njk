@@ -8,9 +8,9 @@ lang }, { by: 'parent', value: undefined }]) | eleventyNavigation %}
     <div class="wrapper">
         <div class="site-head__inner cluster">
             <a href="{{ '/' | locale_url }}" class="site-head__logo">
-                {% image src="/_images/reperes-asbl-logo-sans-bords-rvb-33.webp", alt="Logo Reperes ASBL", title="Logo Reperes ASBL", width="52", loading="eager"%}
+                {% image src="/_images/reperes-favicon-64px.svg", alt="Logo Reperes ASBL. Vers la page d'accueil.", title="Logo Reperes ASBL", width="52", loading="eager"%}
             </a>
-            <burger-menu max-width="800">
+            <burger-menu max-width="920">
                 <nav class="cluster">
                 <!-- Main pages navigation -->
                 <ul role="list" id="main-nav" class="cluster">
@@ -286,14 +286,14 @@ class BurgerMenu extends HTMLElement {
     this.trigger = this.querySelector('[data-element="burger-menu-trigger"]');
     this.panel = this.querySelector('[data-element="burger-menu-panel"]');
     this.root = this.querySelector('[data-element="burger-root"]');
-    
+
     const getFocusableElements = (parent) => {
       if (!parent) return [];
       return parent.querySelectorAll(
         'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"]):not([disabled]), details:not([disabled]), summary:not(:disabled)'
       );
     };
-    
+
     this.focusableElements = getFocusableElements(this);
 
     if (this.trigger && this.panel) {

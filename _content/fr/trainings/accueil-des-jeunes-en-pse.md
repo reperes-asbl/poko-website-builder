@@ -1,11 +1,9 @@
 ---
 translationKey: accueil-des-jeunes-en-pse
+order: null
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
-uuid: 73e6a272f144
-localizationKey: 3584974d09eb
-name: "Accueil des jeunes en PSE: quelle posture? Quels outils?"
-subtitle: ""
+name: 'Accueil des jeunes en PSE: quelle posture? Quels outils?'
 tempo: Dates à convenir
 duration: 4 jours et 4 demi-journées
 price: Gratuit pour les operateur.ice.s concerné.e.s
@@ -14,21 +12,18 @@ nextDate: À venir
 address: À confirmer
 speakers: Manoë Jacquet et Jeanne Reyre
 metadata:
-  title: ""
-  description: ""
   image:
     src: /_images/pexels-cottonbro-7395901.webp
-    alt: ""
-    title: ""
+    title: ''
     width: null
     aspectRatio: null
-    loading: ""
-    imgAttrs: ""
+    loading: ''
+    imgAttrs: ''
+status: inactive
 pageLayout: formation
-vars: null
 ---
 
-Module de formation à destination des PSE - via {% link url="https://www.one.be/public/", text="ONE", linkType="external", target="_blank", rel="noopener noreferrer" %}{% endlink %} {% image src="/_images/logo-one-pos.webp", alt="Logo ONE - Office de la naissance et de l'enfance", width=100, class="vertical-text-bottom m-inline-2" %}
+Module de formation à destination des PSE - via {% link url="https://www.one.be/public/", type="external", target="_blank", rel="noopener noreferrer" %}ONE {% image src="/_images/logo-one-pos.webp", alt="Logo ONE - Office de la naissance et de l'enfance", width=100, class="vertical-text-bottom m-inline-2" %}{% endlink %}
 
 Ces 4 journées de formation et 4 demi-journées d’ateliers d’échanges de pratiques offrent un temps de réflexion et d’expérimentation. Au sein de ces espace-temps que sont la visite médicale et les campagnes de vaccination, se jouent des enjeux en terme de communication, de liens dans la relation de confiance, de respect de l’intégrité des jeunes et du soutien de leur agentivité.
 Le module permettra de construire ou de renforcer les connaissances autour des concepts de promotion de la santé, des notions de pouvoir, d’autorité et de rapport de force dans la relation de soin avec un enfant et des parents. Celui-ci permettra d’expérimenter les outils d’écoute active issues de la communication bienveillante.

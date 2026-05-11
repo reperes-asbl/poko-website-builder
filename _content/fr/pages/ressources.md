@@ -17,12 +17,24 @@ Vous souhaitez renforcer vos projets ou approfondir vos pratiques?
 Découvrez nos ressources documentaires et partenaires de terrain actifs dans la promotion de la santé et la formation. Des outils, des recherches, des réseaux: tout ce qu’il faut pour soutenir vos démarches et vos actions.
 {% endpartialWrapper %}
 
-{% wrapper tag="section", class='bleed-bg palette-copper palette-low-contrast layout flow' %}
+{% sectionGrid class="bleed-bg palette-copper palette-low-contrast" %}
+{% sectionHeader  %}
 ## Documentation
+{% endsectionHeader %}
+{% grid type="switcher", widthWrap="2000rem" %}
+{% gridItem class="flow horizontal items-end breakout-clickable" %}
+{% image src="/_images/support-formation-reperes-besoins-analyses-et-perspectives.webp", width=100 %}
 
-- {% link url="/assets/files/note-sesu.pdf", type="file", class="font-bold", target="_blank" %}Support formation: Besoins, analyses et perspectives (PDF){% endlink %}
-- {% link url="/assets/files/definitions-formation.pdf", type="file", class="font-bold", target="_blank" %}Mieux comprendre le contour des pratiques en promotion de la santé (PDF){% endlink %}
-{% endwrapper %}
+{% link url="/assets/files/note-sesu.pdf", type="file", class="font-bold", target="_blank" %}Support formation: Besoins, analyses et perspectives (PDF){% endlink %}
+{% endgridItem %}
+{% gridItem class="flow horizontal items-end breakout-clickable" %}
+{% image src="/_images/mieux-comprendre-les-contours-des-differentes_pratiques_de_formation_continue_en_promotion_de_la_sante.webp", width=100 %}
+
+{% link url="/assets/files/definitions-formation.pdf", type="file", class="font-bold", target="_blank" %}Mieux comprendre le contour des pratiques en promotion de la santé (PDF){% endlink %}
+{% endgridItem %}
+{% endgrid %}
+
+{% endsectionGrid %}
 
 {% wrapper tag="section", class='palette-burnt-umber' %}
 ## Vous recherchez un soutien méthodologique? { .width-body }
@@ -33,7 +45,9 @@ Découvrez nos ressources documentaires et partenaires de terrain actifs dans la
 {% endsectionHeader %}
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
-{% link url="/assets/files/repertoire-sesu.pdf", type="file", target="_blank" %}{% image src="/_images/repertoire-servicessupportpromosantebxl_2026.webp", alt="Couverture du répertoire des SESU, lien vers le fichier PDF", width="300" %}{% endlink %}
+
+{% link url="/assets/files/repertoire-sesu.pdf", type="file", class="font-bold", target="_blank" %}{% image src="/_images/repertoire-servicessupportpromosantebxl_2026.webp", alt="Couverture du répertoire des SESU, lien vers le fichier PDF", width="300" %}{% endlink %}
+
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 ### Les Services Support
@@ -52,9 +66,13 @@ Vous souhaitez renforcer vos connaissances et compétences en promotion de la sa
 {% sectionHeader  %}
 ## En wallonie
 {% endsectionHeader %}
-{% twoColumns fixedSide="fixedLeft" %}
+{% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
-{% link url="https://lesclps.org/", type="external", target="_blank", rel="noopener noreferrer" %}{% image src="/_images/logo-interclps.webp", alt="Logo CLPS, lien vers le répertoire", width="300" %}{% endlink %}
+<a href="https://lesclps.org/" target="_blank" rel="noopener noreferrer">
+
+{% image src="/_images/logo-interclps.webp", alt="Logo CLPS, lien vers le répertoire", width="300" %}
+
+</a>
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 ### Les Centres Locaux de Promotion de la Santé
@@ -64,9 +82,13 @@ Vous souhaitez renforcer vos connaissances et compétences en promotion de la sa
 {% link url="https://lesclps.org/", type="external", class="button", target="_blank", rel="noopener noreferrer" %}Le site des CLPS{% endlink %}
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
-{% twoColumns fixedSide="fixedLeft", class="items-center" %}
+{% twoColumns type="fixedFluid", fixedSide="fixedLeft", class="items-center" %}
 {% twoColumnsItem  %}
-{% link url="https://www.aviq.be/fr/sensibilisation-et-promotion/operateurs-de-promotion-de-la-sante/centres-dexpertises", type="external", target="_blank", rel="noopener noreferrer" %}{% image src="/_images/logo_aviq_officiel.svg", alt="Logo AVIQ, lien vers la liste des centres d'expertise", width="300" %}{% endlink %}
+<a href="https://www.aviq.be/fr/sensibilisation-et-promotion/operateurs-de-promotion-de-la-sante/centres-dexpertises" target="_blank" rel="noopener noreferrer">
+
+{% image src="/_images/logo_aviq_officiel.svg", alt="Logo AVIQ, lien vers la liste des centres d'expertise", width="300" %}
+
+</a>
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 ### Les Centres d’expertise en promotion de la santé
@@ -89,12 +111,20 @@ Les fédérations bruxelloise (FBPSanté) et wallonne (FWPS) rassemblent les org
 - **À Bruxelles**, {% link url="https://www.fbpsante.brussels/", type="external", target="_blank", rel="noopener noreferrer" %}la FBPSanté{% endlink %} valorise et défend la promotion de la santé, représente les associations auprès des pouvoirs publics et soutient un plaidoyer politique commun pour renforcer la place du secteur dans les politiques régionales.
 - **En Wallonie**, {% link url="https://www.fwpsante.be/", type="external", target="_blank", rel="noopener noreferrer" %}la FWPS{% endlink %} réunit les acteurs du secteur pour construire et diffuser une vision partagée, améliorer la qualité des actions, favoriser la concertation et représenter collectivement les opérateurs auprès des autorités.
 {% endsectionHeader %}
-{% grid type="cluster", class="items-center flex cluster v--gap:--step-4" %}
+{% grid type="grid-fluid", class="items-center flex cluster v--gap:--step-4" %}
 {% gridItem  %}
-{% link url="https://www.fbpsante.brussels/", type="external", target="_blank", rel="noopener noreferrer" %}{% image src="/_images/fbps-logo-1.webp", alt="Logo FBPSanté, lien vers leur site web", width="300" %}{% endlink %}
+<a href="https://www.fbpsante.brussels/" target="_blank" rel="noopener noreferrer">
+
+{% image src="/_images/fbps-logo-1.webp", alt="Logo FBPSanté, lien vers leur site web", width="300" %}
+
+</a>
 {% endgridItem %}
 {% gridItem  %}
-{% link url="https://www.fwpsante.be/", type="external", target="_blank", rel="noopener noreferrer" %}{% image src="/_images/fwps-logo-colors-01.webp", alt="Logo FWPS, lien vers leur site web", width="300" %}{% endlink %}
+<a href="https://www.fwpsante.be/" target="_blank" rel="noopener noreferrer">
+
+{% image src="/_images/fwps-logo-colors-01.webp", alt="Logo FWPS, lien vers leur site web", width="300" %}
+
+</a>
 {% endgridItem %}
 {% endgrid %}
 

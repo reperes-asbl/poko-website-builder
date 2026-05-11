@@ -6,6 +6,7 @@ createdAt: 2025-11-14T09:43:00.000Z
 name: Pour qui?
 eleventyNavigation:
   add: Nav
+vars: {}
 ---
 
 {% partialWrapper "page-header.njk", { image: "/_images/pexels-fauxels-3184298.webp", class: "palette-copper" } %}
@@ -34,10 +35,7 @@ Vous travaillez dans le social, la santé ou l’éducation à Bruxelles ou en W
 Exemples de structures où nos participants travaillent souvent: maisons médicales, centres de planning familial, services sociaux, services de santé mentale, hôpitaux, structures jeunesse, CPAS, services d’accompagnement à l’emploi ou d’insertion.
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
-
-
-
-{% twoColumns type="fixedFluid", fixedSide="fixedLeft", tag="article" %}
+{% twoColumns type="fixedFluid", fixedSide="fixedLeft", class="hidden", tag="article" %}
 {% twoColumnsItem  %}
 {% image src="/_images/business-executive-explaining-her-colleagues-whiteboard.webp", aspectRatio=1, width=300, class="rounded-full" %}
 {% endtwoColumnsItem %}
@@ -51,9 +49,6 @@ Vous êtes engagé·e dans une association, collectif citoyen ou initiative loca
 - Rencontrer d’autres relais et bénévoles pour partager expériences et bonnes pratiques.
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
-
-
-
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft", tag="article" %}
 {% twoColumnsItem  %}
 {% image src="/_images/pexels-product-school-1299359-2678468.webp", aspectRatio=1, width=300, class="rounded-full" %}
@@ -68,9 +63,6 @@ Nous accompagnons les structures et collectifs qui souhaitent:
 - Mettre en place des espaces de formation ou de soutien au sein de leur organisation.
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
-
-
-
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft", tag="article" %}
 {% twoColumnsItem  %}
 {% image src="/_images/pexels-mikael-blomkvist-6476783.webp", aspectRatio=1, width=300, class="rounded-full" %}

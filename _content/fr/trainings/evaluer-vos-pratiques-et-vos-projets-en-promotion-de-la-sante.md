@@ -1,11 +1,9 @@
 ---
 translationKey: evaluer-vos-pratiques-et-vos-projets-en-promotion-de-la-sante
+order: null
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
-uuid: 5e70e1eb2f10
-localizationKey: fdee2483b8d4
 name: Évaluer vos pratiques et vos projets en promotion de la santé
-subtitle: ""
 tempo: Dates à convenir
 duration: 7 jours
 price: Gratuit pour les operateur.ice.s concerné.e.s
@@ -14,21 +12,18 @@ nextDate: À venir
 address: À confirmer
 speakers: Manoë Jacquet et Jeanne Reyre
 metadata:
-  title: ""
-  description: ""
   image:
     src: /_images/pexels-moe-magners-7495493.webp
-    alt: ""
-    title: ""
+    title: ''
     width: null
     aspectRatio: null
-    loading: ""
-    imgAttrs: ""
+    loading: ''
+    imgAttrs: ''
+status: inactive
 pageLayout: formation
-vars: null
 ---
 
-Module de formation à destination des PSE - via {% link url="https://www.one.be/public/", text="ONE", linkType="external", target="_blank", rel="noopener noreferrer" %}{% endlink %} {% image src="/_images/logo-one-pos.webp", alt="Logo ONE - Office de la naissance et de l'enfance", width=100, class="vertical-text-bottom m-inline-2" %}
+Module de formation à destination des PSE - via {% link url="https://www.one.be/public/", type="external", target="_blank", rel="noopener noreferrer" %}ONE {% image src="/_images/logo-one-pos.webp", alt="Logo ONE - Office de la naissance et de l'enfance", width=100, class="vertical-text-bottom m-inline-2" %}{% endlink %}
 
 Les services PSE le constatent au quotidien: il est difficile de dégager du temps pour analyser ses pratiques, travailler collectivement sur les projets de service ou penser l’évaluation autrement que comme une obligation administrative. Face à ces réalités, Repères propose une formation de **7 jours**, conçue pour **accompagner une grande équipe PSE ou rassembler deux petites équipes** autour d’un même parcours.
 

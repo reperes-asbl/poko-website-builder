@@ -46,7 +46,7 @@ Avec le soutien de
 
 ::: cluster
 
-{% link url="https://www.francophones.be/", type="external", target="_blank", rel="noopener noreferrer" %}{% image src="/_images/logo-francophones-bruxelles.webp", width="120" %}{% endlink %}
+{% link url="https://ccf.brussels/", type="external", target="_blank", rel="noopener noreferrer" %}{% image src="/_images/logo-francophones-bruxelles.webp", width="120" %}{% endlink %}
 
 {% link url="https://www.aviq.be/", type="external", target="_blank", rel="noopener noreferrer" %}{% image src="/_images/logo_aviq_officiel.svg", width="120" %}{% endlink %}
 

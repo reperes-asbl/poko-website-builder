@@ -2,8 +2,6 @@
 translationKey: pratiques-participatives-avec-des-publics-fragilises
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
-uuid: 606ef02eb472
-localizationKey: 1051fedce533
 name: Pratiques participatives avec des publics fragilisés
 subtitle: ""
 tempo: Prochaine session – rentrée académique 2026

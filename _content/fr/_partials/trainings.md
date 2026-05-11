@@ -1,4 +1,4 @@
-<section class="trainings-list grid-fluid v--columns:3 max-inline-size-[--width-max]">
+<section class="trainings-list grid-fluid v--columns:4 max-inline-size-[--width-max]">
 
 {% set palettes = ['delft-blue', 'copper', 'vermilion', 'orange-peel', 'ylnmn-blue', 'burnt-umber'] %}
 

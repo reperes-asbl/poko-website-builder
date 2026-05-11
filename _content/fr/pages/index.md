@@ -18,6 +18,12 @@ eleventyNavigation:
 {% link url="activites", type="internal", collection="pages" %}Nos dispositifs{% endlink %} (formations et accompagnements) permettent de penser des actions de promotion de la santé selon une approche multifactorielle, de développer des projets structurés et de renforcer une posture professionnelle adaptée aux réalités du terrain.
 {% endpartialWrapper %}
 
+{% sectionCollection  %}
+
+{% collection collection="trainings", filters=[{"by":"tag","value":["featured"]}], sortCriterias=[] %}{% endcollection %}
+
+{% endsectionCollection %}
+
 {% sectionGrid class="width-prose palette-vermilion palette-low-contrast flow v--flow-space:--step-4 bleed-bg v--bleed-bottom:20rem" %}
 {% sectionHeader class="text-center" %}
 ## Notre offre de formations et d’accompagnements
@@ -44,13 +50,13 @@ eleventyNavigation:
 
 {% sectionTwoColumns class="squashed py-0" %}
 
-{% twoColumns type="switcher", class="width-prose gap-0" %}
-{% twoColumnsItem class="prose box flow palette-vermilion palette--contrast rounded-r-0 sm:text-right" %}
+{% twoColumns type="switcher", class="bi-col-as width-prose gap-0" %}
+{% twoColumnsItem class="prose box flow palette-vermilion palette--contrast rounded-0 sm:text-right" %}
 En tant que
 **ORGANISME DE PROMOTION DE LA SANTÉ,**
 nous accompagnons des services, des institutions et des équipes qui interagissent avec les sphères psychomédicosociales.
 {% endtwoColumnsItem %}
-{% twoColumnsItem class="prose box flow palette-burnt-umber palette--contrast rounded-l-0" %}
+{% twoColumnsItem class="prose box flow palette-burnt-umber palette--contrast rounded-0" %}
 En tant que
 **SERVICE SUPPORT,**
 nous apportons notre expertise d’organisme de formation en promotion de la santé à d’autres organismes de formation et aux réseaux de formateurs et formatrices.
@@ -85,6 +91,13 @@ Du soin à la jeunesse, du social à la formation… { .h4 }
 
 blockquote{
 border: none;
+}
+
+.bi-col-as {
+padding-inline: 0;
+--width-prose: min(50rem, 100vw - var(--px-body));
+border-radius: var(--radius-card);
+overflow: clip;
 }
 
 {% endcss %}
