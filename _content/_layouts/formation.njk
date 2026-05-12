@@ -22,7 +22,7 @@
                         <li {{price | io}}>{{ price | safe }}</li>
                         <li {{place | io}}>{{ place }}</li>
                     </ul>
-                    <p>{% button "https://form.jotform.com/230593367445361", text="S'inscrire", class="palette-burnt-umber", target="_blank", rel="noopener noreferrer" %}{% endbutton %}</p>
+                    <p>{% button bookingUrl, text="S'inscrire", class="palette-burnt-umber", target="_blank", rel="noopener noreferrer" %}{% endbutton %}</p>
                 </section>
                 <div class="flow">
                     <hgroup class="flow space:0.5em breathe v--py:--step-3">
@@ -43,7 +43,7 @@
                     </section>
 
                     <div class="">
-                    {% button "https://form.jotform.com/230593367445361", text="S'inscrire", target="_blank", rel="noopener noreferrer" %}{% endbutton %}
+                    {% button bookingUrl, text="S'inscrire", target="_blank", rel="noopener noreferrer" %}{% endbutton %}
                     </div>
                 </div>
             </div>

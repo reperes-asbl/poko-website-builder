@@ -43,6 +43,13 @@ const additionalTrainingFields = [
     type: "string",
     required: false,
   },
+  {
+    name: "bookingUrl",
+    label: "Custom booking URL",
+    hint: "Leave blank to use the default booking link",
+    type: "string",
+    required: false,
+  },
 ];
 const pos = 5; // Just after page name field
 const trainingFields = [

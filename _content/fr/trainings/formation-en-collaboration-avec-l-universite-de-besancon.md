@@ -11,18 +11,20 @@ place: 25000 Besançon (France)
 nextDate: Du lundi 29 juin au 2 juillet 2026
 address: 25000 Besançon (France)
 speakers: Jeanne Reyre et Caroline Lejeune
+bookingUrl: https://agir-bfc.fr/agirbfc/agenda/111/universite-d-ete-francophone-en-sante-publique-de-besancon-edition-2026
 metadata:
   image:
     src: /_images/photo-site-besancon.webp
     alt: photo de la ville de Besançon, lieu où va se dérouler la formation
-    title: ""
+    title: ''
     width: null
     aspectRatio: null
-    loading: ""
-    imgAttrs: ""
+    loading: ''
+    imgAttrs: ''
 tags:
   - featured
 pageLayout: formation
+vars: {}
 ---
 
 Formation avec {% link url="https://agir-bfc.fr/agirbfc/agenda/111/universite-d-ete-francophone-en-sante-publique-de-besancon-edition-2026", type="external" %}l’université d’été de Besançon{% endlink %}

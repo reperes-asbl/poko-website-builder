@@ -15,16 +15,18 @@ nextDate: |-
   Elle sera suivie par 6 ½ journées d'échanges (12/06, 18/09, 09/10, 06/11, 04/12 et une 6ème date sera décidée ultérieurement) de 09h30 à 12h30.
 address: 4000 Liège
 speakers: Manoë Jacquet et Caroline Lejeune
+bookingUrl: https://formations.sites.ama.be/formation/accompagner-des-personnes-sans-abri-en-collectivite-2026/#SECTION_INSCRIPTION
 metadata:
   image:
     src: /_images/photo-fama.webp
     alt: en avant plan différents objectifs sont posés sur une table (notamment des playmobiles et des ciseaux, de la colle, un minion) qui représente une situation clinique travaillée en formation, en arrière plan, les participantes de la formation qui observent la réalisation
-    title: ""
+    title: ''
     width: null
     aspectRatio: null
-    loading: ""
-    imgAttrs: ""
+    loading: ''
+    imgAttrs: ''
 pageLayout: formation
+vars: {}
 ---
 
 Module de formation {% link url="https://formations.sites.ama.be/formation/accompagner-des-personnes-sans-abri-en-collectivite-2026/", type="external", target="_blank", rel="noopener noreferrer" %}AMA {% image src="/_images/ama.webp", alt="Logo AMA - Fédération des maisons d'accueil et des services d'aide aux sans-abri", width=200, class="vertical-text-bottom m-inline-2" %}{% endlink %}
