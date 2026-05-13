@@ -27,7 +27,7 @@ Ensemble, nous mettons nos compétences au service des acteur·rice·s du social
 ### Nos débuts (1998 – 2005)
 
 Repères ASBL voit le jour à la fin des années 1990, dans le prolongement des actions de prévention du VIH/SIDA portées par les centres de planning familial. Dès le départ, une équipe pluridisciplinaire — psychologues, médecins, travailleurs et travailleuses sociaux — conçoit des formations généralistes, centrées sur la santé des personnes et des communautés.
-Ces formations s’adressent à des professionnel·les de tous horizons: institutions généralistes, structures spécialisées, milieux éducatifs ou services sociaux et de soin. Les membres fondateurs — Denise Salquin, Paule Dusquenne, Maggy Richard, Pascal Kayaert, Patricia Piron et Pierre Brasseur — posent les bases de notre association
+Ces formations s’adressent à des professionnel·les de tous horizons: institutions généralistes, structures spécialisées, milieux éducatifs ou services sociaux et de soin. Les membres fondateurs — Denise Salquin, Mady Richard, Pascal Kayaert, Patricia Piron et Pierre Brasseur — posent les bases de notre association.
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 {% image src="/_images/pasted-image-1778228721132.webp", alt="affiche des années 90 qui annonce une formation à la prévention du SIDA. l'ancienne équipe y est représentée dans une photo noir et blanc avec des parapluies de couleur", width=300, class="radius-card" %}
@@ -49,7 +49,7 @@ Cette période marque également la formalisation des références méthodologiq
 - approche participative centrée sur les représentations et pratiques des participant·es.
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
-{% area tagName="area", tagName="areaRaw", type="areaRaw" %}
+{% area tagName="area", tagName="area", tagName="areaRaw", type="areaRaw" %}
 ### De la régionalisation à aujourd’hui (2014 – {{ year }})
 
 La régionalisation de la promotion de la santé à partir de 2014 a transformé le cadre d’action de Repères.
