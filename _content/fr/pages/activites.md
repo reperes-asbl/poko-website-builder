@@ -6,13 +6,11 @@ createdAt: 2025-11-14T09:42:00.000Z
 name: Nos activités
 eleventyNavigation:
   add: Nav
-vars: {}
 localizationKey: f02d808fd7b4
 uuid: f9a647ba18fd
 ---
 
-{% partialWrapper "page-header.njk", { image: "/_images/pasted-image-1778229803017.webp", class: "" } %}
-
+{% partialWrapper "page-header.njk", { image: "/_images/photo-formation-fgenre-accueil.webp", class: "" } %}
 # Nos activités
 
 ## Quels types de dispositifs proposons-nous ?
@@ -88,9 +86,7 @@ La spécificité de nos supervisions est d’être teintée de nos grilles de le
 
 {% sectionTwoColumns class="flow" %}
 {% sectionHeader  %}
-
 ## Repères, c’est aussi…
-
 {% endsectionHeader %}
 {% twoColumns  %}
 {% twoColumnsItem  %}
