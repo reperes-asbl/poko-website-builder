@@ -23,10 +23,7 @@ metadata:
     aspectRatio: null
     loading: ''
     imgAttrs: ''
-tags:
-  - featured
 pageLayout: formation
-vars: {}
 ---
 
 **Repères pour penser, interroger les pratiques professionnelles et concevoir des projets au regard de la promotion de la santé**
