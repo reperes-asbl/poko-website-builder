@@ -20,6 +20,9 @@ nextDate: |-
   Concernant le prix : le coût ne doit pas constituer un frein à la participation. Si cela représente un obstacle, contactez-nous.
 address: Cité des associations - Rue Emile Féron, 153 - 1060 Saint-Gilles
 speakers: FBPS, CBPS et Repères
+metadata:
+  image:
+    src: /_images/pexels-moe-magners-7495555.webp
 tags:
   - featured
 ---
