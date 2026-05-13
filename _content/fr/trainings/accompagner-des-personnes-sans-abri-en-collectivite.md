@@ -8,7 +8,7 @@ subtitle: Soutenir la capacité des personnes à prendre soin d’elles
 tempo: Mars à décembre 2026
 duration: 4 jours et 6 demi-journées
 price: 280€ pour les membres (480€ pour les non-membres)
-place: Liège
+place: 4000 Liège
 nextDate: |-
   Les 4 journées de formations auront lieux les 20/03, 10/04, 24/04 et 29/05 de 09h30 à 16h30.
 
@@ -26,7 +26,6 @@ metadata:
     loading: ''
     imgAttrs: ''
 pageLayout: formation
-vars: {}
 ---
 
 Module de formation {% link url="https://formations.sites.ama.be/formation/accompagner-des-personnes-sans-abri-en-collectivite-2026/", type="external", target="_blank", rel="noopener noreferrer" %}AMA {% image src="/_images/ama.webp", alt="Logo AMA - Fédération des maisons d'accueil et des services d'aide aux sans-abri", width=200, class="vertical-text-bottom m-inline-2" %}{% endlink %}
