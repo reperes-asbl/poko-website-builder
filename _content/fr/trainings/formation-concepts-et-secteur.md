@@ -20,6 +20,8 @@ nextDate: |-
   Concernant le prix : le coût ne doit pas constituer un frein à la participation. Si cela représente un obstacle, contactez-nous.
 address: Cité des associations - Rue Emile Féron, 153 - 1060 Saint-Gilles
 speakers: FBPS, CBPS et Repères
+tags:
+  - featured
 ---
 
 PPS, PSSI, déterminants sociaux de la santé, démarches communautaires en santé, services de supports, conseil consultatif en promotion de la santé… Entre acronymes, concepts, stratégies et cadres institutionnels, pas toujours simple de s'y retrouver dans l'archipel "promotion santé" à Bruxelles.
