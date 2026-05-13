@@ -4,7 +4,7 @@ order: 5
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
 name: Pratiques participatives avec des publics fragilisés
-tempo: Prochaine session – rentrée académique 2026
+tempo: Septembre 2026 à mai 2027
 duration: 4 jours et 6 demi-journées
 price: 250€
 place: 5000 Namur
