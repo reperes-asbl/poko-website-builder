@@ -8,7 +8,7 @@ name: Formation - concepts et secteur
 subtitle: Sensibilisation aux concepts de base en promotion de la santé et présentation du secteur
 tempo: Une fois par an
 duration: Une journée
-price: '15'
+price: 15€
 place: 1000 Bruxelles
 nextDate: |-
   Pour qui?
@@ -23,6 +23,8 @@ speakers: FBPS, CBPS et Repères
 tags:
   - featured
 ---
+
+Un module en collaboration avec la {% link url="https://www.fbpsante.brussels/", type="external" %}FBPSanté{% image src="/_images/fbps-logo-1.webp", alt="Logo  fédération bruxellois de la promotion de la santé", width=200 %}{% endlink %} et le {% link url="https://www.cbps.be/", type="external" %}CBPS{% image src="/_images/logo-cbps-300x300.webp", alt="logo centre bruxellois de la promotion de la snaté", width=200 %}{% endlink %}
 
 PPS, PSSI, déterminants sociaux de la santé, démarches communautaires en santé, services de supports, conseil consultatif en promotion de la santé… Entre acronymes, concepts, stratégies et cadres institutionnels, pas toujours simple de s'y retrouver dans l'archipel "promotion santé" à Bruxelles.
 
