@@ -8,7 +8,7 @@ eleventyNavigation:
   add: Nav
 ---
 
-{% partialWrapper "page-header.njk", { image: "/_images/photo-formation-fgenre-2-dom.webp", class: "palette-delft-blue" } %}
+{% partialWrapper "page-header.njk", { image: "/_images/pasted-image-1778229803017.webp", class: "palette-delft-blue" } %}
 # Qui sommes-nous?
 
 Depuis plus de 25 ans, Repères ASBL propose des formations généralistes en promotion de la santé.
@@ -49,7 +49,7 @@ Cette période marque également la formalisation des références méthodologiq
 - approche participative centrée sur les représentations et pratiques des participant·es.
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
-{% area tagName="areaRaw", type="areaRaw" %}
+{% area tagName="area", tagName="areaRaw", type="areaRaw" %}
 ### De la régionalisation à aujourd’hui (2014 – {{ year }})
 
 La régionalisation de la promotion de la santé à partir de 2014 a transformé le cadre d’action de Repères.
