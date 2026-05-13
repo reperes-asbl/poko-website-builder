@@ -10,18 +10,19 @@ duration: 4 jours
 price: 120€
 place: Lieu à convenir
 nextDate: À venir
-address: 1000 Bruxelles
+address: Bruxelles ou Wallonie
 speakers: À confirmer
 metadata:
   image:
     src: /_images/fgenre-redil.webp
     alt: 6 personnes aux expressions de genre différents, d'âges différents, de couleurs de peau différentes pour représenter la pluralité du genre dans la société
-    title: ""
+    title: ''
     width: null
     aspectRatio: null
-    loading: ""
-    imgAttrs: ""
+    loading: ''
+    imgAttrs: ''
 pageLayout: formation
+vars: {}
 ---
 
 Module en collaboration avec {% link url="https://femmesetsante.be/", type="external", target="_blank", rel="noopener noreferrer" %}Femme & Santé {% image src="/_images/femmes-sante_logo_sans-bords_rvb-09.webp", alt="Logo Femmes & Santé", width=100, class="vertical-text-bottom m-inline-2" %}{% endlink %}
