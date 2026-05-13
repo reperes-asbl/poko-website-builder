@@ -24,8 +24,8 @@ metadata:
 tags:
   - featured
 pageLayout: formation
+vars: {}
 ---
-
 
 Formation avec {% link url="https://agir-bfc.fr/agirbfc/agenda/111/universite-d-ete-francophone-en-sante-publique-de-besancon-edition-2026", type="external" %}l’université d’été de Besançon{% endlink %}
 
@@ -33,7 +33,7 @@ Ce module est proposé dans le cadre de la 23ème Université d’été francoph
 
 Ce module de formation de base en Promotion de la Santé propose un temps de réflexion et d’expérimentation autour des concepts, enjeux et stratégies qui favorisent la santé et le bien-être des publics. Il invite à explorer les déterminants de la santé, l’équité en santé, la participation, la co-construction et l’intersectorialité, tout en questionnant les représentations et la posture professionnelle. Une attention particulière est portée aux enjeux liés à l’implication et au pouvoir d’agir des personnes en situation de vulnérabilité, en tenant compte des réalités sociales et institutionnelles professionnelles.
 
-Le tarif comprend pour 23h30 de formation:
+Le tarif comprend pour 27h30 de formation:
 
 - Module choisi
 - Conférences et temps communs
