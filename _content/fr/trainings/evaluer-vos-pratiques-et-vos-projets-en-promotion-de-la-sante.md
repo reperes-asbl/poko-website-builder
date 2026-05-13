@@ -1,6 +1,6 @@
 ---
 translationKey: evaluer-vos-pratiques-et-vos-projets-en-promotion-de-la-sante
-order: 7
+order: 8
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
 name: Évaluer vos pratiques et vos projets en promotion de la santé
@@ -14,14 +14,16 @@ speakers: Manoë Jacquet et Jeanne Reyre
 metadata:
   image:
     src: /_images/pexels-moe-magners-7495493.webp
-    title: ""
+    title: ''
     width: null
     aspectRatio: null
-    loading: ""
-    imgAttrs: ""
+    loading: ''
+    imgAttrs: ''
 status: inactive
 pageLayout: formation
+vars: {}
 ---
+
 
 Module de formation à destination des PSE - via {% link url="https://www.one.be/public/", type="external", target="_blank", rel="noopener noreferrer" %}ONE {% image src="/_images/logo-one-pos.webp", alt="Logo ONE - Office de la naissance et de l'enfance", width=100, class="vertical-text-bottom m-inline-2" %}{% endlink %}
 
