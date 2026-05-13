@@ -12,6 +12,7 @@ price: 70€
 place: à déterminer
 address: à convenir
 speakers: à confirmer
+status: inactive
 ---
 
 En promotion de la santé comme en santé communautaire, initier un projet ou une action vise avant tout à améliorer la santé et la qualité de vie d’une population. Pour que ces intentions se traduisent en interventions pertinentes, il est essentiel d’ancrer les pistes de travail dans les réalités vécues par les personnes concernées.
