@@ -4,7 +4,7 @@ order: 4
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
 name: La santé, une ressource pour chacun·e et l'affaire de tout·es?
-tempo: Prochaine session – rentrée académique 2026
+tempo: Novembre 2026 à Juin 2027
 duration: 4 jours et 6 demi-journées
 price: 250€
 place: 1000 Bruxelles
