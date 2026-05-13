@@ -6,7 +6,7 @@ createdAt: 2026-03-09T14:22:00.000Z
 name: La santé, une ressource pour chacun·e et l'affaire de tout·es?
 tempo: Prochaine session – rentrée académique 2026
 duration: 4 jours et 6 demi-journées
-price: 220€
+price: 250€
 place: 1000 Bruxelles
 nextDate: |-
   4 journées : 10 novembre, 24 novembre, 1 décembre 2026 et 15 décembre 2026 de 9h30 à 16h30
@@ -18,14 +18,15 @@ metadata:
   image:
     src: /_images/f1.webp
     alt: deux mains ouvertes vers le haut avec un arc-en-ciel de petits logos représentant le brainstorming, le fait d'ouvrir la pensée à une multitude de facteurs autour de la santé
-    title: ""
+    title: ''
     width: null
     aspectRatio: null
-    loading: ""
-    imgAttrs: ""
-pageLayout: formation
+    loading: ''
+    imgAttrs: ''
 tags:
   - featured
+pageLayout: formation
+vars: {}
 ---
 
 **Repères pour penser, interroger les pratiques professionnelles et concevoir des projets au regard de la promotion de la santé**
