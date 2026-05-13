@@ -7,7 +7,7 @@ name: Penser les questions de genre pour promouvoir la santé
 subtitle: Comment mieux comprendre ce que recouvrent les notions liées au genre (l’hétéronormativité, le ciscentrisme, l’intersectionnalité et bien d’autres) et expérimenter en quoi le genre est un déterminant de santé transversal.
 tempo: Prochaine session – à convenir
 duration: 4 jours
-price: 120€
+price: 140€
 place: Lieu à convenir
 nextDate: À venir
 address: Bruxelles ou Wallonie
@@ -22,7 +22,6 @@ metadata:
     loading: ''
     imgAttrs: ''
 pageLayout: formation
-vars: {}
 ---
 
 Module en collaboration avec {% link url="https://femmesetsante.be/", type="external", target="_blank", rel="noopener noreferrer" %}Femme & Santé {% image src="/_images/femmes-sante_logo_sans-bords_rvb-09.webp", alt="Logo Femmes & Santé", width=100, class="vertical-text-bottom m-inline-2" %}{% endlink %}
