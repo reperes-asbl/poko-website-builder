@@ -28,7 +28,9 @@ metadata:
 pageLayout: formation
 ---
 
-Module de formation {% link url="https://formations.sites.ama.be/formation/accompagner-des-personnes-sans-abri-en-collectivite-2026/", type="external", target="_blank", rel="noopener noreferrer" %}AMA {% image src="/_images/ama.webp", alt="Logo AMA - Fédération des maisons d'accueil et des services d'aide aux sans-abri", width=200, class="vertical-text-bottom m-inline-2" %}{% endlink %}
+Module de formation {% link url="https://formations.sites.ama.be/formation/accompagner-des-personnes-sans-abri-en-collectivite-2026/", type="external", target="_blank", rel="noopener noreferrer" %}AMA{% endlink %}.
+
+{% link url="https://formations.sites.ama.be/formation/accompagner-des-personnes-sans-abri-en-collectivite-2026/", type="external", target="_blank", rel="noopener noreferrer" %}{% image src="/_images/ama.webp", alt="Logo AMA - Fédération des maisons d'accueil et des services d'aide aux sans-abri", width=200 %}{% endlink %}
 
 L’accompagnement de personnes en décrochage social, en errance, en situation de crise, invite à travailler au carrefour de multiples réalités, imbriquées de manière complexe. L’accompagnement quotidien de personnes en grande précarité dans des lieux de vie confronte souvent les travailleur∙euse∙s aux difficultés du vivre ensemble mais, également, aux questions de la négligence de soi et des autres. Dans ces contextes de réalités de vies complexes, certain∙e∙s s’interrogent quant à la pertinence de s’appuyer sur des pratiques communautaires et/ou collective au sein de lieux de vie. L’approche globale proposée envisage d’interroger de manière multifactorielle l’ensemble des ressources qui contribuent à la qualité de vie des personnes et des communautés.
 

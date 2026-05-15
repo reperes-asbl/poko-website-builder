@@ -22,9 +22,12 @@ metadata:
     loading: ''
     imgAttrs: ''
 pageLayout: formation
+vars: {}
 ---
 
-Module en collaboration avec {% link url="https://femmesetsante.be/", type="external", target="_blank", rel="noopener noreferrer" %}Femme & Santé {% image src="/_images/femmes-sante_logo_sans-bords_rvb-09.webp", alt="Logo Femmes & Santé", width=100, class="vertical-text-bottom m-inline-2" %}{% endlink %}
+Module en collaboration avec {% link url="https://femmesetsante.be/", type="external", target="_blank", rel="noopener noreferrer" %}Femme & Santé{% endlink %}.
+
+{% link url="https://femmesetsante.be/", type="external", target="_blank", rel="noopener noreferrer" %}{% image src="/_images/femmes-sante_logo_sans-bords_rvb-09.webp", alt="Logo Femmes & Santé", width=100 %}{% endlink %}
 
 Ces 4 journées de formation permettent de construire ou de renforcer les connaissances autour des concepts de genre et de promotion de la santé, de réfléchir à la manière dont des représentations liées au genre nous habitent et ainsi de mesurer comment ces représentations influencent nos projets et nos pratiques.
 

@@ -18,10 +18,17 @@ metadata:
     src: /_images/pexels-moe-magners-7495555.webp
 tags:
   - featured
-vars: {}
 ---
 
-Une journée en collaboration avec la {% link url="https://www.fbpsante.brussels/", type="external" %}FBPSanté{% image src="/_images/fbps-logo-1.webp", alt="Logo  fédération bruxellois de la promotion de la santé", width=200 %}{% endlink %} et le {% link url="https://www.cbps.be/", type="external" %}CBPS{% image src="/_images/logo-cbps-300x300.webp", alt="logo centre bruxellois de la promotion de la snaté", width=200 %}{% endlink %}
+Une journée en collaboration avec la {% link url="https://www.fbpsante.brussels/", type="external" %}FBPSanté{% endlink %} et le {% link url="https://www.cbps.be/", type="external" %}CBPS{% endlink %}.
+
+::: cluster
+
+{% link url="https://www.fbpsante.brussels/", type="external" %} {% image src="/_images/fbps-logo-1.webp", alt="Logo  fédération bruxellois de la promotion de la santé", width=100 %}{% endlink %} 
+
+{% link url="https://www.cbps.be/", type="external" %} {% image src="/_images/logo-cbps-300x300.webp", alt="logo centre bruxellois de la promotion de la snaté", width=100 %}{% endlink %}
+
+:::
 
 PPS, PSSI, déterminants sociaux de la santé, démarches communautaires en santé, services de supports, conseil consultatif en promotion de la santé… Entre acronymes, concepts, stratégies et cadres institutionnels, pas toujours simple de s'y retrouver dans l'archipel "promotion santé" à Bruxelles.
 
