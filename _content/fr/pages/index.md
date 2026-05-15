@@ -24,7 +24,7 @@ eleventyNavigation:
 {% endsectionHeader %}
 {% collection collection="trainings", filters=[{"by":"tag","value":["featured"]}], sortCriterias=[], type="grid-fluid", columns=3, itemPartial="training" %}{% endcollection %}
 {% sectionFooter  %}
-{% link url="formations", type="internal", collection="pages" %}Voir toutes nos formations{% endlink %}
+{% link url="formations", type="internal", collection="pages", class="button palette--tone" %}Voir toutes nos formations{% endlink %}
 {% endsectionFooter %}
 {% endsectionCollection %}
 
