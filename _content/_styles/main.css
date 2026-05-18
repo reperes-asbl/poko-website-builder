@@ -102,6 +102,7 @@
   /* --color-border: var(); */
   /* --color-outline: var(); */
   /* --color-text-decoration: var(); */
+  /* --color-accent: var(--color-pop-theme); */
   /* --color-text-emphasis: var(); */
   /* --color-shadow has to be used manually in box-shadow definitions */
   /*--color-shadow: var();*/
@@ -127,7 +128,7 @@
   /*--color-text__button: var();*/
   /*--color-bg__button: var();*/
   /*--color-border__button: var();*/
-  /*--color-text__button--hover: var();*/
+  --color-text__button--hover: var(--color-pop-theme);
   /*--color-bg__button--hover: var();*/
   /*--color-border__button--hover: var();*/
   /* --color-text__button--disabled: var(); */
@@ -207,7 +208,10 @@ input,
 textarea {
   border-radius: var(--radius-card);
   border: 1px solid currentColor;
+  padding-inline: var(--step--3);
   background-color: var(--white);
+  /* color: var(--color-tone); */
+  color: currentColor;
 }
 
 :where(
