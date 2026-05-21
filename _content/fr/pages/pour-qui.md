@@ -48,7 +48,7 @@ Vous êtes engagé·e dans une association, collectif citoyen ou initiative loca
 {% endtwoColumns %}
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft", tag="article" %}
 {% twoColumnsItem  %}
-{% image src="/_images/pexels-rethaferguson-3810788.webp", aspectRatio=1, width=300, class="rounded-full" %}
+{% image src="/_images/photo-pour-qui-equipe.webp", aspectRatio=1, width=300, class="rounded-full" %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 ## Vous faites partie d’une équipe ou d’une institution?
