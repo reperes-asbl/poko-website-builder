@@ -292,7 +292,7 @@ html:focus-within {
 
 /* Try an nuke browser extensions added at the end of the body */
 /* TODO: Find a better way */
-body > footer ~ div {
+body > footer ~ div:not([class*="poko"]) {
   all: revert;
   margin: 0;
   padding: 0;
@@ -368,7 +368,7 @@ body > footer ~ div {
 
 :where(button, input, textarea),
 ::scroll-button(*) {
-  background: inherit;
+  /* background: inherit; */
   padding-inline: 0.3em;
   transition:
     background-color var(--animation-duration, 0.1s) linear,

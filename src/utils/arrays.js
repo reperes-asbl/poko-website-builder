@@ -18,6 +18,17 @@ export function filterCollection(collection, filtersRaw, exclusions = false) {
   const filteredCollection = filters.reduce((acc, { by, value } = {}) => {
     switch (by) {
       // NOTE: Match some special keywords first
+      case "name": {
+        const needles = toArrayOfStrings(value)
+          .map((v) => v.trim().toLowerCase())
+          .filter(Boolean);
+        if (needles.length === 0) return acc;
+        return filterAcc(acc, (item) => {
+          const name = toString(item.data?.name).toLowerCase();
+          if (!name) return false;
+          return needles.some((n) => name.includes(n));
+        });
+      }
       case "last":
         return acc.slice(-toInt(value));
       case "first":
@@ -97,15 +108,26 @@ const sortCb = (collectionItem, by) => {
   return typeof value === "string" ? value.toLowerCase() : value;
 };
 
-export function sortCollection(collection, sortCriteriasRaw) {
+export function sortCollection(collection, sortCriteriasRaw = []) {
   let sortCriterias = Array.isArray(sortCriteriasRaw)
-    ? sortCriteriasRaw
+    ? [...sortCriteriasRaw]
     : [sortCriteriasRaw];
 
+  sortCriterias = sortCriterias.filter((sc) => sc);
   sortCriterias =
     sortCriterias.length === 0
       ? [{ direction: "asc", by: "order" }]
       : sortCriterias;
+
+  // If any criteria requests randomization, shuffle and short-circuit.
+  if (sortCriterias.some((sc) => sc?.by === "random")) {
+    const shuffled = [...collection];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  }
 
   const sortedCollection = sort(collection).by(
     sortCriterias

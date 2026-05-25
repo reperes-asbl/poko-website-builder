@@ -36,7 +36,17 @@ const njkAttrsStringFromObj = (obj) =>
     .join(", ");
 
 const njkAttrsStringFromSectionAreaData = (areaData) => {
-  const { content, attributes, ...isolatedAttrs } = areaData || {};
+  // `type` is a CMS-side discriminator for the sectionBuilder areas list
+  // (e.g. "areaRaw", "area"). It must NOT be serialized onto the tag.
+  // `tagName` is an internal helper produced when parsing existing markup
+  // and must also not be serialized.
+  const {
+    content,
+    attributes,
+    type: _type,
+    tagName: _tagName,
+    ...isolatedAttrs
+  } = areaData || {};
   const constructedAttrs = njkAttrsStringFromObj(isolatedAttrs);
   const attrs = [constructedAttrs, attributes || ""].filter(Boolean).join(", ");
 
@@ -907,6 +917,7 @@ const sectionWrapperField = {
   widget: "object",
   required: false,
   collapsed: true,
+  i18n: true,
   fields: [
     {
       name: "class",
@@ -914,12 +925,14 @@ const sectionWrapperField = {
       widget: "string",
       hint: "Class names added to the outer section element (e.g. 'my-class another-class')",
       required: false,
+      i18n: "duplicate",
     },
     {
       name: "attributes",
       label: "Section Raw Attributes",
       widget: "string",
       required: false,
+      i18n: "duplicate",
     },
   ],
 };
@@ -1041,26 +1054,30 @@ const sectionHeaderField = {
   label: "Section Header",
   widget: "object",
   required: false,
-  summary: "{{content | truncate(50)}}",
   // collapsed: true,
+  i18n: true,
+  summary: "{{content | truncate(50)}}",
   fields: [
     {
       name: "content",
       label: "Header Content",
       widget: "markdown",
       required: false,
+      i18n: true,
     },
     {
       name: "class",
       label: "Header Classes",
       widget: "string",
       required: false,
+      i18n: true,
     },
     {
       name: "attributes",
       label: "Header Raw Attributes",
       widget: "hidden",
       required: false,
+      i18n: true,
     },
   ],
 };
@@ -1069,26 +1086,30 @@ const sectionFooterField = {
   label: "Section Footer",
   widget: "object",
   required: false,
-  summary: "{{content | truncate(50)}}",
   // collapsed: true,
+  i18n: true,
+  summary: "{{content | truncate(50)}}",
   fields: [
     {
       name: "content",
       label: "Footer Content",
       widget: "markdown",
       required: false,
+      i18n: true,
     },
     {
       name: "class",
       label: "Footer Classes",
       widget: "string",
       required: false,
+      i18n: true,
     },
     {
       name: "attributes",
       label: "Footer Raw Attributes",
       widget: "hidden",
       required: false,
+      i18n: true,
     },
   ],
 };
@@ -1258,6 +1279,7 @@ export const link = {
       label: "Link Type",
       widget: "object",
       required: true,
+      i18n: true,
       types: [
         {
           name: "pages",
@@ -1333,30 +1355,35 @@ export const link = {
               label: "Advanced options",
               widget: "object",
               required: false,
+              i18n: true,
               fields: [
                 {
                   name: "cc",
                   label: "CC",
                   widget: "string",
                   required: false,
+                  i18n: true,
                 },
                 {
                   name: "bcc",
                   label: "BCC",
                   widget: "string",
                   required: false,
+                  i18n: true,
                 },
                 {
                   name: "subject",
                   label: "Email subject",
                   widget: "string",
                   required: false,
+                  i18n: true,
                 },
                 {
                   name: "body",
                   label: "Body",
                   widget: "text",
                   required: false,
+                  i18n: true,
                 },
               ],
             },
@@ -1547,6 +1574,7 @@ export const icon = {
       widget: "object",
       required: true,
       collapsed: true,
+      i18n: true,
       summary:
         "{{iconLib.type}} : {{iconLib.iconName}}  {{size}} {{class}} {{otherAttrs}}",
       hint: "Choose between [Simple Icons](https://simpleicons.org/) or [Tabler Icons](https://tabler.io/icons)",
@@ -1557,6 +1585,7 @@ export const icon = {
           widget: "object",
           required: true,
           collapsed: false,
+          i18n: true,
           // summary:
           //   "'{{name}}' ({{type}}): {{weights}} {{styles}} {{subsets}}",
           hint: "Choose between ",
@@ -1567,6 +1596,7 @@ export const icon = {
               widget: "object",
               required: true,
               collapsed: true,
+              i18n: true,
               fields: [
                 {
                   name: "iconName",
@@ -1678,6 +1708,7 @@ export const imageShortcode = {
       widget: "object",
       required: true,
       collapsed: true,
+      i18n: true,
       summary: "{{alt}}",
       fields: [
         {
@@ -1708,6 +1739,7 @@ export const imageShortcode = {
           widget: "object",
           required: false,
           collapsed: true,
+          i18n: true,
           fields: [
             {
               name: "class",
@@ -2624,6 +2656,7 @@ export const sectionFlow = {
       widget: "object",
       required: false,
       collapsed: true,
+      i18n: true,
       types: [
         {
           name: "gap",
@@ -2757,6 +2790,7 @@ export const sectionGrid = {
       widget: "object",
       required: false,
       collapsed: true,
+      i18n: true,
       types: [layoutTypeSwitcher, layoutTypeGridFluid, layoutTypeCluster],
     },
     {
@@ -2852,6 +2886,7 @@ export const sectionTwoColumns = {
       label: "Column Left",
       widget: "object",
       required: true,
+      i18n: true,
       summary: "{{content | truncate(50)}}",
       // collapsed: true,
       fields: [
@@ -2880,6 +2915,7 @@ export const sectionTwoColumns = {
       label: "Column Right",
       widget: "object",
       required: true,
+      i18n: true,
       summary: "{{content | truncate(50)}}",
       // collapsed: true,
       fields: [
@@ -2910,6 +2946,7 @@ export const sectionTwoColumns = {
       widget: "object",
       required: false,
       collapsed: true,
+      i18n: true,
       types: [layoutTypeSwitcher, layoutTypeFixedFluid],
     },
     {
@@ -3031,6 +3068,7 @@ export const sectionReel = {
       widget: "object",
       required: false,
       collapsed: true,
+      i18n: true,
       types: [layoutTypeReel],
     },
     {
@@ -3133,6 +3171,7 @@ export const sectionCollection = {
       label_singular: "Sort & Filter Option",
       widget: "object",
       required: false,
+      i18n: true,
       fields: [
         {
           name: "sortCriterias",
@@ -3178,6 +3217,12 @@ export const sectionCollection = {
                   ],
                 },
               ],
+            },
+            {
+              name: "random",
+              label: "Randomize",
+              collapsed: true,
+              fields: [],
             },
             // {
             //   name: "direction",
@@ -3237,6 +3282,25 @@ export const sectionCollection = {
               ],
             },
             {
+              name: "name",
+              label: "Filter by Name",
+              fields: [
+                {
+                  name: "value",
+                  label: "Name matches",
+                  hint: "Case-insensitive, partial match. Provide one or more values; an item matches if any value is found in its name.",
+                  widget: "list",
+                  allow_add: true,
+                  required: true,
+                  field: {
+                    name: "value",
+                    label: "Value",
+                    widget: "string",
+                  },
+                },
+              ],
+            },
+            {
               name: "first",
               label: "First",
               fields: [
@@ -3284,6 +3348,7 @@ export const sectionCollection = {
       widget: "object",
       required: false,
       collapsed: true,
+      i18n: true,
       types: [
         layoutTypeSwitcher,
         layoutTypeGridFluid,
@@ -3408,6 +3473,7 @@ export const sectionBuilder = {
               label: "Column Left",
               widget: "object",
               required: true,
+              i18n: true,
               summary: "{{content | truncate(50)}}",
               // collapsed: true,
               fields: [
@@ -3436,6 +3502,7 @@ export const sectionBuilder = {
               label: "Column Right",
               widget: "object",
               required: true,
+              i18n: true,
               summary: "{{content | truncate(50)}}",
               // collapsed: true,
               fields: [
@@ -3472,6 +3539,7 @@ export const sectionBuilder = {
               widget: "object",
               required: false,
               collapsed: true,
+              i18n: true,
               types: [layoutTypeSwitcher, layoutTypeFixedFluid],
             },
             {
@@ -3529,6 +3597,7 @@ export const sectionBuilder = {
               widget: "object",
               required: false,
               collapsed: true,
+              i18n: true,
               types: [
                 layoutTypeSwitcher,
                 layoutTypeGridFluid,
@@ -3570,6 +3639,7 @@ export const sectionBuilder = {
               label_singular: "Sort & Filter Option",
               widget: "object",
               required: false,
+              i18n: true,
               fields: [
                 {
                   name: "sortCriterias",
@@ -3646,6 +3716,25 @@ export const sectionBuilder = {
                       ],
                     },
                     {
+                      name: "name",
+                      label: "Filter by Name",
+                      fields: [
+                        {
+                          name: "value",
+                          label: "Name matches",
+                          hint: "Case-insensitive, partial match. Provide one or more values; an item matches if any value is found in its name.",
+                          widget: "list",
+                          allow_add: true,
+                          required: true,
+                          field: {
+                            name: "value",
+                            label: "Value",
+                            widget: "string",
+                          },
+                        },
+                      ],
+                    },
+                    {
                       name: "first",
                       label: "First",
                       fields: [
@@ -3699,11 +3788,21 @@ export const sectionBuilder = {
               widget: "object",
               required: false,
               collapsed: true,
+              i18n: true,
               types: [
                 layoutTypeSwitcher,
                 layoutTypeGridFluid,
                 layoutTypeCluster,
               ],
+            },
+            {
+              name: "itemPartial",
+              label: "Item Partial",
+              hint: "Select a custom partial to be used to display items",
+              widget: "relation",
+              collection: "htmlPartials",
+              required: false,
+              value_field: "{{slug}}",
             },
             {
               name: "attributes",
@@ -3760,6 +3859,7 @@ export const sectionBuilder = {
               widget: "object",
               required: false,
               collapsed: true,
+              i18n: true,
               types: [layoutTypeFlow],
             },
             {
@@ -3817,6 +3917,7 @@ export const sectionBuilder = {
               widget: "object",
               required: false,
               collapsed: true,
+              i18n: true,
               types: [layoutTypeReel],
             },
             {
@@ -3832,6 +3933,7 @@ export const sectionBuilder = {
         //   label: "Cover: Fixed height section with optional padding",
         //   widget: "object",
         //   required: false,
+        //   i18n: true,
         //   fields: [
         //     {
         //       name: "minHeight",
@@ -3867,6 +3969,7 @@ export const sectionBuilder = {
         //   label: "Custom: Use your own Section Layout",
         //   widget: "object",
         //   required: false,
+        //   i18n: true,
         //   fields: [],
         // },
       ],
@@ -3902,7 +4005,7 @@ export const sectionBuilder = {
           attributes: area.attributes,
           content: area.content,
         });
-        console.log({ area, parsed });
+
         return {
           type: "twoColumns",
           class: area.class || parsed?.class,
@@ -3937,6 +4040,7 @@ export const sectionBuilder = {
           attributes: parsed?.attributes,
           collection: parsed?.collection,
           sortAndFilterOptions: parsed?.sortAndFilterOptions,
+          itemPartial: parsed?.itemPartial,
         };
       }
       if (area.tagName === "flow") {
@@ -3961,6 +4065,16 @@ export const sectionBuilder = {
           layoutOptions: parsed?.layoutOptions || {},
           attributes: parsed?.attributes,
           items: parsed?.items || [],
+        };
+      }
+      // `area` and `areaRaw`: map `tagName` (parser output) onto `type`
+      // (the sectionBuilder areas-list discriminator expected by Decap).
+      if (area.tagName === "area" || area.tagName === "areaRaw") {
+        return {
+          type: area.tagName,
+          class: area.class || undefined,
+          attributes: area.attributes || undefined,
+          content: area.content,
         };
       }
       return area;
@@ -4007,6 +4121,7 @@ export const sectionBuilder = {
                   class: area.class,
                   layoutOptions: area.layoutOptions,
                   attributes: area.attributes,
+                  itemPartial: area.itemPartial,
                 });
 
               case "flow":
