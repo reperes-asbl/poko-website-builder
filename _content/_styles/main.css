@@ -128,7 +128,7 @@
   /*--color-text__button: var();*/
   /*--color-bg__button: var();*/
   /*--color-border__button: var();*/
-  --color-text__button--hover: var(--color-pop-theme);
+  /* --color-text__button--hover: var(--color-pop-theme); */
   /*--color-bg__button--hover: var();*/
   /*--color-border__button--hover: var();*/
   /* --color-text__button--disabled: var(); */
