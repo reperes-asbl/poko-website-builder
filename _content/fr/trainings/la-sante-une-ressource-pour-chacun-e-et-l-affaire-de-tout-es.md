@@ -24,32 +24,33 @@ metadata:
     loading: ''
     imgAttrs: ''
 pageLayout: formation
+vars: {}
 ---
 
-**Repères pour penser, interroger les pratiques professionnelles et concevoir des projets au regard de la promotion de la santé**
+**Repères pour interroger vos pratiques professionnelles et concevoir des projets au regard de la promotion de la santé**
 
-La promotion de la santé regroupe un ensemble de pratiques intersectorielles visant à augmenter la capacité d’agir des individus et des communautés sur leur santé et leur bien-être. Elle s’inscrit dans une approche globale et positive de la santé, qui va au-delà de la prévention ou du traitement des maladies. La santé ne dépend pas seulement des soins et des services médicaux, mais aussi d’un ensemble de facteurs interconnectés. Elle nous concerne toutes et tous.
+La promotion de la santé regroupe un ensemble de pratiques intersectorielles visant à augmenter la capacité d’agir des individus et des communautés sur leur santé et leur qualité de vie. Elle s’inscrit dans une approche globale et positive de la santé, qui va au-delà de la prévention ou du traitement des maladies. La santé ne dépend pas seulement des soins et des services médicaux, mais aussi d’un ensemble de facteurs interconnectés. Elle nous concerne toutes et tous !
 
-Ce module se décline en 4 journées de formation et 6 demi-journées d’ateliers d’échange de pratiques.
+Ce module de formation de base en Promotion de la Santé vous propose d’explorer les concepts, enjeux et stratégies qui renforcent la santé et le bien-être des publics. Il s’agit aussi d’expérimenter des concepts spécifiques : les déterminants de la santé, l’approche positive, globale et multifactorielle de la santé, l’équité en santé, la participation, la co-construction et l’intersectorialité.
 
-## Les 4 journées de formation permettent:
+Cette formation se compose de 4 journée de formations et 6 ateliers d’échanges de pratiques. 
 
-- De découvrir les concepts et les fondements de la Promotion de la Santé;
-- De comprendre les facteurs qui influencent la santé et les leviers pour l’améliorer;
-- De découvrir et d’expérimenter des supports méthodologiques pour concevoir, accompagner et évaluer des projets en Promotion de la santé;
-- De développer une analyse de situation en lien avec votre contexte professionnel;
-- D’apprendre à formuler des objectifs cohérents et adaptés à vos réalités de terrain;
-- D’intégrer la Promotion de la Santé dans vos pratiques;
-- D’analyser et de prendre du recul sur les enjeux institutionnels et sociopolitiques qui traversent vos projets ou accompagnements.
+## Les 4 journées de formation permettent de:
 
-## Les 6 demi-journées d'ateliers d'échange de pratiques permettent:
+- Découvrir les concept et les fondements de la Promotion de la Santé ; 
+- Mieux comprendre les facteurs qui influencent la santé et les leviers pour l’améliorer ;
+- Vous initier à des supports méthodologiques pour concevoir, accompagner et évaluer des projets en Promotion de la santé ; 
+- Apprendre à formuler des objectifs cohérents et adaptés aux réalités de terrain ;
+- Intégrer les concepts de Promotion de la Santé dans vos pratiques ; 
+- Identifier et prendre du recul sur les enjeux institutionnels et sociopolitiques qui traversent vos projets ou accompagnements.
 
-- De construire une évaluation participative;
-- De revisiter vos pratiques professionnelles à la lumière des fondements de la Promotion de la Santé, des support méthodologiques et des concepts élaborés durant les 4 journées;
-- De partager vos questionnements et difficultés dans la mise en œuvre concrète;
-- De découvrir les pratiques des autres participant.e.s, rechercher de nouvelles pistes de travail;
-- D’expérimenter l’échange intersectoriel et l’intelligence collective;
-- D’approfondir des notions spécifiques en lien avec vos réalités de terrain.
+## Les 6 demi-journées d'ateliers d'échange de pratiques permettent de:
+
+- Construire une évaluation participative;
+- Revisiter vos pratiques professionnelles à la lumière des fondements de la Promotion de la Santé, des support méthodologiques et des concepts élaborés durant les 4 journées;
+- Partager vos questionnements et difficultés dans la mise en œuvre concrète;
+- Découvrir les pratiques des autres participant·es, rechercher de nouvelles piste de travail et vous ressourcer au travers des échanges ;
+- Expérimenter l’échange intersectoriel et l’intelligence collective.
 
 ## Pour qui?
 
