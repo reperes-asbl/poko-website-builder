@@ -23,38 +23,41 @@ metadata:
     loading: ''
     imgAttrs: ''
 pageLayout: formation
+vars: {}
 ---
 
-Cette formation offre un temps de réflexion et d’expérimentation. Elle aborde les représentations, la posture professionnelle et les enjeux liés à la participation des personnes en situation de précarité et/ou de vulnérabilité. Vous y explorez les conditions qui favorisent l’expression, l’implication et le pouvoir d’agir des personnes. Le tout en tenant compte des réalités sociales et institutionnelles de vos pratiques.
+La participation est aujourd’hui un terme employé partout : dans les discours, les projets, les dispositifs. Mais derrière ce mot, les réalités sont multiples — et parfois floues. Participer, oui… mais à quoi, comment, et avec qui ? Et surtout, avec quel objectif ?
 
-Ce module se décline en 4 journées de formation et 6 demi-journées d’atelier d’analyse de la pratique.
+Cette formation propose de prendre le temps de questionner la participation et ce qu’elle implique à la lumière des principes de la Promotion de la Santé. Elle invite à explorer concrètement les démarches participatives à travers des temps de réflexion et de mise en pratique. Une attention particulière est portée aux contextes de précarité et de vulnérabilité, où les enjeux de participation prennent une dimension spécifique.
 
-## Ces 4 journées de formation permettent :
+Au fil du module, vous serez amené·e à interroger vos représentations, ajuster votre posture professionnelle et identifier les leviers qui permettent de soutenir l’expression, l’implication et le pouvoir d’agir des personnes. La formation partira de vos réalités de terrain, en tenant compte des contraintes institutionnelles et sociales qui traversent vos pratiques.
 
-- De découvrir et d’expérimenter les concepts liées à la participation et à l’approche globale de la santé des personnes ;
-- De mieux comprendre les facteurs qui influencent la capacité à prendre soin de soi ;
-- D’interroger ses représentations sur les notions de vulnérabilité et de participation;
-- D’expérimenter des processus et des démarches d’intervention participatives ;
-- D’identifier les « ingrédients » qui favorisent la co-construction et l’implication des public ;
-- D’acquérir des repères méthodologiques pour développer des projets participatifs;
-- D’analyser et de prendre du recul sur les enjeux institutionnels et sociopolitiques qui traversent vos projets ou accompagnements.
+Cette formation se compose de 4 journée de formations et 6 ateliers d’échanges de pratiques. 
+
+## Ces 4 journées de formation permettent de :
+
+- Vous familiariser avec des concepts liées à la participation et à la promotion de la santé ; 
+- Mieux comprendre les facteurs qui influencent la capacité à prendre soin de soi ;
+- Interroger ses représentations sur les notions de vulnérabilité et de participation ;
+- Expérimenter des processus et des démarches d’intervention participatives ;
+- Identifier les « ingrédients » qui favorisent la co-construction et l’implication des publics ;
+- Acquérir des repères méthodologiques pour développer des projets participatifs ;
+- Identifier et prendre du recul sur les enjeux institutionnels et sociopolitiques qui traversent vos projets ou accompagnements.
 
 ## Ces 6 demi-jours d’ateliers d’échanges de pratique permettent :
 
-- De construire une évaluation participative ;
-- De revisiter vos pratiques professionnelles à la lumière des concepts élaborés durant les 4 journées ;
-- De réfléchir aux freins et leviers rencontrés dans la mise en pratique des concepts et enjeux de la participation ;
-- De découvrir les pratiques des autres participant·es et rechercher de nouvelles piste de travail ;
-- D’interroger votre posture, partager vos expériences et vos questionnements;
-- D’expérimenter l’échange intersectoriel et l’intelligence collective ;
-- D’approfondir des notions spécifiques en lien avec vos réalités de terrain.
+- Construire une évaluation participative ;
+- Revisiter vos pratiques professionnelles à la lumière des concepts élaborés durant les 4 journées ;
+- Réfléchir aux freins et leviers rencontrés dans la mise en pratique des concepts et enjeux de la participation ;
+- Découvrir les pratiques des autres participant·es, rechercher de nouvelles piste de travail et vous ressourcer au travers des échanges ;
+- Interroger votre posture, partager vos expériences et vos questionnements, découvrir d’autres pratiques ;
+- Expérimenter l’échange intersectoriel et l’intelligence collective.
 
 ## Pour qui?
 
-- Tout·e acteur·ice dans les secteurs psycho-médico-sociaux
-- Les professionnel·les impliqué·es dans des démarches de Promotion de la Santé
-- Celles et ceux qui travaillent sur les questions d’inégalités sociales de santé et de
-  participation des publics.
+- Toute personne travaillant dans le champ social, de la santé ou de l’accompagnement ;
+- Les professionnel·les en contact avec des publics dits « fragilisés » ou en situation de précarité ;
+- Les équipes qui souhaitent renforcer les pratiques participatives dans leurs projets ou services/
 
 ## Démarche pédagogique
 
