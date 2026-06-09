@@ -1,6 +1,6 @@
 ---
 translationKey: penser-les-questions-de-genre-pour-promouvoir-la-sante
-order: 6
+order: 7
 lang: fr
 createdAt: 2026-02-05T14:22:00.000Z
 name: Penser les questions de genre pour promouvoir la santé
@@ -22,8 +22,8 @@ metadata:
     loading: ''
     imgAttrs: ''
 pageLayout: formation
-vars: {}
 ---
+
 
 Module en collaboration avec {% link url="https://femmesetsante.be/", type="external", target="_blank", rel="noopener noreferrer" %}Femme & Santé{% endlink %}.
 

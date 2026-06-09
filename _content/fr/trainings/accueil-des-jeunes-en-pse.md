@@ -1,6 +1,6 @@
 ---
 translationKey: accueil-des-jeunes-en-pse
-order: 7
+order: 8
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
 name: 'Accueil des jeunes en PSE: quelle posture? Quels outils?'
@@ -21,8 +21,8 @@ metadata:
     imgAttrs: ''
 status: inactive
 pageLayout: formation
-vars: {}
 ---
+
 
 
 Module de formation à destination des PSE - via {% link url="https://www.one.be/public/", type="external", target="_blank", rel="noopener noreferrer" %}ONE {% image src="/_images/logo-one-pos.webp", alt="Logo ONE - Office de la naissance et de l'enfance", width=100, class="vertical-text-bottom m-inline-2" %}{% endlink %}

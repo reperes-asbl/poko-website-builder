@@ -1,6 +1,6 @@
 ---
 translationKey: demarrer-une-evaluation-4-jours-pour-passer-de-l-idee-a-l-action
-order: 9
+order: 5
 lang: fr
 createdAt: 2026-06-09T08:15:00.000Z
 ldType: WebPage

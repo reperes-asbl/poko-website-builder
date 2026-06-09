@@ -1,6 +1,6 @@
 ---
 translationKey: l-arbre-a-problemes
-order: 8
+order: 9
 lang: fr
 createdAt: 2026-05-13T07:49:00.000Z
 ldType: WebPage
@@ -13,7 +13,9 @@ place: à déterminer
 address: à convenir
 speakers: à confirmer
 status: inactive
+vars: {}
 ---
+
 
 En promotion de la santé comme en santé communautaire, initier un projet ou une action vise avant tout à améliorer la santé et la qualité de vie d’une population. Pour que ces intentions se traduisent en interventions pertinentes, il est essentiel d’ancrer les pistes de travail dans les réalités vécues par les personnes concernées.
 

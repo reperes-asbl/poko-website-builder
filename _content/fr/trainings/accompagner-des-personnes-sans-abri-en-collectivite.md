@@ -1,6 +1,6 @@
 ---
 translationKey: accompagner-des-personnes-sans-abri-en-collectivite
-order: 1
+order: 6
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
 name: Accompagner des personnes sans-abri en collectivité
@@ -26,7 +26,9 @@ metadata:
     loading: ''
     imgAttrs: ''
 pageLayout: formation
+vars: {}
 ---
+
 
 Module de formation {% link url="https://formations.sites.ama.be/formation/accompagner-des-personnes-sans-abri-en-collectivite-2026/", type="external", target="_blank", rel="noopener noreferrer" %}AMA{% endlink %}.
 
