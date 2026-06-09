@@ -7,7 +7,7 @@ ldType: WebPage
 name: 'Démarrer une évaluation : 4 jours pour passer de l’idée à l’action'
 tempo: Novembre 2026
 duration: 4 jours
-price: 140€
+price: 145€
 place: Bruxelles
 nextDate: 10, 17 et 24 novembre 2026 et 15 décembre 2026, de 9h à 16h30
 address: Bruxelles - à confirmer
