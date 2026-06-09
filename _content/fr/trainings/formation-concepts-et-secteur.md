@@ -13,6 +13,7 @@ place: 1000 Bruxelles
 nextDate: Le mardi 22 septembre de 8h45 à 16h
 address: Cité des associations - Rue Emile Féron, 153 - 1060 Saint-Gilles
 speakers: FBPS, CBPS et Repères
+bookingUrl: https://www.fbpsante.brussels/contactez-nous/
 metadata:
   image:
     src: /_images/pexels-moe-magners-7495555.webp
@@ -42,6 +43,4 @@ Cette journée est une occasion de vous sensibiliser aux concepts de la promotio
 - Nouvelle institution dans le secteur
 - 2 personnes maximum par institution
 
-Plus d'infos et inscription à venir!
-
-Concernant le prix : le coût ne doit pas constituer un frein à la participation. Si cela représente un obstacle, contactez-nous.
+Plus d'infos et inscriptions auprès de la FBPS.  Cliquez sur le lien ci-dessous et vous serez rediriger vers le formulaire de contact de la fédération.
