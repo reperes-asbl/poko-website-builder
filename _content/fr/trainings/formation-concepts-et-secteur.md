@@ -58,7 +58,7 @@ Cette journée est une occasion de vous sensibiliser aux concepts de la promotio
 
 15h - 16h : Présentation des Services de Support
 
-16h - 16h30 Clôture avec ressources et calendrier
+16h - 16h30 : Clôture avec ressources et calendrier
 
 ## Pour qui?
 
