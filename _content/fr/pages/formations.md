@@ -9,13 +9,16 @@ eleventyNavigation:
 ---
 
 {% partialWrapper "page-header.njk", { image: "", class: "palette-burnt-umber" } %}
-
 # Formations
 
 Des espaces pour apprendre, réfléchir et agir ensemble.
 Repères conçoit des formations qui soutiennent les professionnel·les du social et de la santé dans l’évolution de leurs pratiques et la construction d’environnements favorables à la santé.
 
 Découvrez ci-dessous nos modules de formation: des temps pour penser, expérimenter et faire évoluer les pratiques, au croisement du social et de la santé.
+
+Nos formations reposent sur une pédagogie participative et fondée sur la co‑construction. La présence active et l’engagement de chacun·e sont essentiels pour nourrir les échanges et la qualité du travail collectif. Une participation aux frais de la formation est demandée, aussi comme une preuve de l’engagement du/de la participant-e à l’ensemble du dispositif. Ce prix ne doit pas constituer un frein ; des agencements sont possibles (prix préférentiel, étalement).
+
+{% link url="/_images/conditions-de-participation-final.pdf", type="file", class="button" %}Consultez nos conditions de participation{% endlink %}
 {% endpartialWrapper %}
 
 {% sectionCollection  %}
