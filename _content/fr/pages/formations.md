@@ -16,9 +16,9 @@ Repères conçoit des formations qui soutiennent les professionnel·les du socia
 
 Découvrez ci-dessous nos modules de formation: des temps pour penser, expérimenter et faire évoluer les pratiques, au croisement du social et de la santé.
 
-Nos formations reposent sur une pédagogie participative et fondée sur la co‑construction. La présence active et l’engagement de chacun·e sont essentiels pour nourrir les échanges et la qualité du travail collectif. Une participation aux frais de la formation est demandée, aussi comme une preuve de l’engagement du/de la participant-e à l’ensemble du dispositif. Ce prix ne doit pas constituer un frein ; des agencements sont possibles (prix préférentiel, étalement).
+_Nos formations reposent sur une pédagogie participative et fondée sur la co‑construction. La présence active et l’engagement de chacun·e sont essentiels pour nourrir les échanges et la qualité du travail collectif. Une participation aux frais de la formation est demandée, aussi comme une preuve de l’engagement du/de la participant-e à l’ensemble du dispositif. Ce prix ne doit pas constituer un frein ; des agencements sont possibles (prix préférentiel, étalement)._
 
-{% link url="/_images/conditions-de-participation-final.pdf", type="file", class="button" %}Consultez nos conditions de participation{% endlink %}
+{% link url="/assets/files/conditions-de-participation-final.pdf", type="file", class="button" %}Consultez nos conditions de participation{% endlink %}
 {% endpartialWrapper %}
 
 {% sectionCollection  %}
