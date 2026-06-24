@@ -20,7 +20,7 @@ Découvrez ci-dessous nos modules de formation: des temps pour penser, expérime
 {% wrapper tag="section", class="layout flow palette-copper box prose text-center border-3" %}
 _Nos formations reposent sur une pédagogie participative et fondée sur la co‑construction. La présence active et l’engagement de chacun·e sont essentiels pour nourrir les échanges et la qualité du travail collectif. Une participation aux frais de la formation est demandée, aussi comme une preuve de l’engagement du/de la participant-e à l’ensemble du dispositif. Ce prix ne doit pas constituer un frein ; des agencements sont possibles (prix préférentiel, étalement)._
 
-{% link url="/assets/files/conditions-de-participation-final.pdf", type="file", class="button font-bold" %}Consultez nos conditions de participation{% endlink %}
+{% link url="/assets/files/conditions-de-participation-final.pdf", type="file", target="_blank", class="button font-bold" %}Consultez nos conditions de participation{% endlink %}
 {% endwrapper %}
 
 {% sectionCollection  %}
