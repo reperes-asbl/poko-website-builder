@@ -5,13 +5,14 @@ lang: fr
 createdAt: 2026-02-05T14:22:00.000Z
 name: Penser les questions de genre pour promouvoir la santé
 subtitle: Comment mieux comprendre ce que recouvrent les notions liées au genre (l’hétéronormativité, le ciscentrisme, l’intersectionnalité et bien d’autres) et expérimenter en quoi le genre est un déterminant de santé transversal.
-tempo: Prochaine session – à convenir
+tempo: Novembre 2026
 duration: 4 jours
 price: 140€
-place: Lieu à convenir
-nextDate: À venir
-address: Bruxelles ou Wallonie
-speakers: À confirmer
+place: 1000 Bruxelles
+nextDate: 26 novembre, 1, 8 et 10 décembre 2026
+address: Boulevard de Waterloo, 99 à 1000 Bruxelles
+speakers: Julia De Clerck et Manoë Jacquet
+bookingUrl: https://form.jotform.com/230593367445361
 metadata:
   image:
     src: /_images/fgenre-redil.webp
@@ -24,21 +25,18 @@ metadata:
 pageLayout: formation
 ---
 
-
 Module en collaboration avec {% link url="https://femmesetsante.be/", type="external", target="_blank", rel="noopener noreferrer" %}Femme & Santé{% endlink %}.
 
 {% link url="https://femmesetsante.be/", type="external", target="_blank", rel="noopener noreferrer" %}{% image src="/_images/femmes-sante_logo_sans-bords_rvb-09.webp", alt="Logo Femmes & Santé", width=100 %}{% endlink %}
 
-Ces 4 journées de formation permettent de construire ou de renforcer les connaissances autour des concepts de genre et de promotion de la santé, de réfléchir à la manière dont des représentations liées au genre nous habitent et ainsi de mesurer comment ces représentations influencent nos projets et nos pratiques.
+Réfléchissons ensemble aux représentations de genre qui nous habitent et identifions comment celles-ci traversent les questions de santé!
 
-## Cette formation permet de
+## Les objectifs de ces 4 journées de formation sont :
 
-- De prendre le temps d'appréhender ce qui est en jeu dans les questions de genre en Promotion de la santé ;
-- D’interroger les rapports de pouvoir, de domination et les privilèges qui sont en jeu dans les relations ;
-- D’interroger les raisons pour lesquelles les personnes prennent ou ne prennent pas soin d'elles ;
-- D’identifier ce qui fait support à la création collective ;
-- De renforcer nos capacités à développer des pratiques plus équitables/égalitaires/ inclusives ;
-- De réfléchir aux enjeux de transmission et aux effets démultiplicateurs de ces réflexions dans les institutions et vers les publics.
+- Comprendre les enjeux du genre en promotion de la santé ;
+- Questionner les rapports de pouvoir, de domination et les privilèges ;
+- Renforcer nos capacités à développer des pratiques plus équitables, égalitaires et inclusives ;
+- Prendre du recul sur nos pratiques et leurs effets dans les institutions et vers les publics.
 
 ## Pour qui?
 
