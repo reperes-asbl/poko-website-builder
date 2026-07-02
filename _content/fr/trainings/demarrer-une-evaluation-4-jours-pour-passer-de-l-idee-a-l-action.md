@@ -17,6 +17,7 @@ metadata:
   image:
     src: /_images/business-executive-explaining-her-colleagues-whiteboard.webp
     alt: groupe de personnes devant un fleepchart qui collent des post-it évoquant le travail collectif lors d'une formation
+vars: {}
 ---
 
 Module en collaboration avec RESO{% link url="https://www.uclouvain.be/fr/instituts-recherche/irss/reso", type="external" %}{% image src="/_images/logo_uclouvain_reso.webp" %}{% endlink %}
@@ -31,8 +32,8 @@ Cette formation propose un cadre accessible, progressif et concret pour avancer 
 
 À l’issue de la formation, vous serez en mesure de :
 
-- Clarifier vos intentions d’évaluer (questions évaluatives, enjeux institutionnels et personnels, finalité de la démarche) ;
-- Définir le projet à évaluer au regard des concepts et outils de gestion de projet  ;
+- Identifier ce que vous souhaitez évaluer et pourquoi ;
+- Clarifier le projet à évaluer au regard des concepts et outils de gestion de projet  ;
 - Construire une stratégie d’évaluation cohérente, réaliste et adaptée à votre contexte professionnel ;
 - Mobiliser l’équipe autour de la démarche d’évaluation.
 
