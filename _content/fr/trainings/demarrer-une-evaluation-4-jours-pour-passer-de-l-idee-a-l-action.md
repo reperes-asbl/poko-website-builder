@@ -17,7 +17,6 @@ metadata:
   image:
     src: /_images/business-executive-explaining-her-colleagues-whiteboard.webp
     alt: groupe de personnes devant un fleepchart qui collent des post-it évoquant le travail collectif lors d'une formation
-vars: {}
 ---
 
 Module en collaboration avec RESO{% link url="https://www.uclouvain.be/fr/instituts-recherche/irss/reso", type="external" %}{% image src="/_images/uclouvain_reso_ucl_logo_png_rvb.webp" %}{% endlink %}
@@ -26,7 +25,7 @@ Dans le quotidien des équipes du social santé, l’évaluation des projets app
 
 Pourtant, prendre un moment pour clarifier son projet, préciser ce que l’on souhaite comprendre ou améliorer, contribue à soutenir la qualité des actions menées. L’évaluation devient alors un espace pour structurer sa réflexion, adopter un regard neuf sur ses pratiques et nourrir une dynamique collective au sein de l’équipe.
 
-Cette formation propose un cadre accessible, progressif et concret pour avancer pas à pas : partir de l’idée ou du besoin d’évaluer, identifier ce qu’il est pertinent d’examiner, clarifier le projet à évaluer,  élaborer un plan d’évaluation cohérent et réaliste, et s’appuyer sur les échanges avec les autres participant·es pour enrichir sa propre démarche.
+Cette formation propose un cadre accessible, progressif et concret pour avancer pas à pas : partir de l’idée ou du besoin d’évaluer, identifier ce qu’il est pertinent d’examiner, clarifier le projet à évaluer,  élaborer une stratégie d’évaluation cohérente et réaliste, et s’appuyer sur les échanges avec les autres participant·es pour enrichir sa propre démarche.
 
 # Objectifs 
 
