@@ -20,7 +20,7 @@ metadata:
 vars: {}
 ---
 
-Module en collaboration avec RESO{% link url="https://www.uclouvain.be/fr/instituts-recherche/irss/reso", type="external" %}{% image src="/_images/logo_uclouvain_reso.webp" %}{% endlink %}
+Module en collaboration avec RESO{% link url="https://www.uclouvain.be/fr/instituts-recherche/irss/reso", type="external" %}{% image src="/_images/uclouvain_reso_ucl_logo_png_rvb.webp" %}{% endlink %}
 
 Dans le quotidien des équipes du social santé, l’évaluation des projets apparaît souvent comme une étape difficile à aborder. Les professionnel·les expriment régulièrement un manque de temps, des difficultés à mobiliser l’équipe autour d’une démarche d’évaluation commune, un manque d’outils pour analyser leurs actions, et une confusion entre évaluation et rapportage aux pouvoirs subsidiants. L’évaluation est alors perçue comme une exigence extérieure plutôt que comme un soutien au travail.
 
