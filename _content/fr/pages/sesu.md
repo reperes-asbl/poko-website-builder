@@ -6,6 +6,7 @@ createdAt: 2025-11-14T09:44:00.000Z
 name: SESU
 eleventyNavigation:
   add: Nav
+vars: {}
 ---
 
 {% partialWrapper "page-header.njk", { image: "/_images/photo-equipe-dos.webp", class: "palette-delft-blue" } %}
@@ -97,7 +98,7 @@ Vous pouvez faire appel au service d’accompagnement CBPS et aux 8 autres SESU 
 {% link url="https://www.observatoire-sidasexualites.be/", type="external", target="_blank", rel="noopener noreferrer" %}{% image src="/_images/observatoire-sidasexualites.webp", alt="Logo Observatoire Sida et Sexualités et lien vers le site web", aspectRatio=1 %}{% endlink %}
 {% endgridItem %}
 {% gridItem  %}
-{% link url="https://www.uclouvain.be/fr/instituts-recherche/irss/reso", type="external", target="_blank", rel="noopener noreferrer" %}{% image src="/_images/logo_uclouvain_reso.webp", alt="Logo UCLouvain RESO et lien vers le site web", aspectRatio=1 %}{% endlink %}
+{% link url="https://www.uclouvain.be/fr/instituts-recherche/irss/reso", type="external", target="_blank", rel="noopener noreferrer" %}{% image src="/_images/uclouvain_reso_ucl_logo_png_rvb.webp", alt="Logo UCLouvain RESO et lien vers le site web", aspectRatio=1 %}{% endlink %}
 {% endgridItem %}
 {% gridItem  %}
 {% link url="https://www.lespissenlits.be/", type="external", target="_blank", rel="noopener noreferrer" %}{% image src="/_images/les-pissenlits.webp", alt="Logo Les pissenlits et lien vers le site web", aspectRatio=1 %}{% endlink %}
