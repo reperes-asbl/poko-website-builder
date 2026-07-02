@@ -33,7 +33,7 @@ Cette formation propose un cadre accessible, progressif et concret pour avancer 
 
 - Identifier ce que vous souhaitez évaluer et pourquoi ;
 - Clarifier le projet à évaluer au regard des concepts et outils de gestion de projet  ;
-- Construire une stratégie d’évaluation cohérente, réaliste et adaptée à votre contexte professionnel ;
+- Construire une stratégie d’évaluation cohérente, réaliste et adaptée à votre contexte professionnel (objectifs, indicateurs, méthodes, planification); 
 - Mobiliser l’équipe autour de la démarche d’évaluation.
 
 Ce module a été pensé pour que vous puissiez terminer les quatre journées de formation avec une stratégie d’évaluation cohérente et une feuille de route concrète, que vous serez en mesure de mettre en œuvre. 
