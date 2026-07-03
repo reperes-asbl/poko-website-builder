@@ -10,13 +10,14 @@ duration: 4 jours
 price: 145€
 place: Bruxelles
 nextDate: 10, 17 et 24 novembre 2026 et 15 décembre 2026, de 9h à 16h30
-address: Bruxelles - à confirmer
+address: Au RESO, Clos Chapelle-aux-Champs 30, 1200 Woluwe-Saint-Lambert
 speakers: Laura Gimenez et Ségolène Malengreaux (RESO), Manoë Jacquet et Dominique Werbrouck (Repères asbl)
 bookingUrl: https://form.jotform.com/230593367445361
 metadata:
   image:
     src: /_images/business-executive-explaining-her-colleagues-whiteboard.webp
     alt: groupe de personnes devant un fleepchart qui collent des post-it évoquant le travail collectif lors d'une formation
+vars: {}
 ---
 
 Module en collaboration avec RESO{% link url="https://www.uclouvain.be/fr/instituts-recherche/irss/reso", type="external" %}{% image src="/_images/uclouvain_reso_ucl_logo_png_rvb.webp" %}{% endlink %}
