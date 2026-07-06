@@ -6,6 +6,7 @@ createdAt: 2025-11-14T09:41:00.000Z
 name: Qui sommes-nous?
 eleventyNavigation:
   add: Nav
+vars: {}
 ---
 
 {% partialWrapper "page-header.njk", { image: "/_images/pasted-image-1778229803017.webp", class: "palette-delft-blue" } %}
