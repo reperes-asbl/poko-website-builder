@@ -35,7 +35,7 @@ Découvrez nos ressources documentaires et partenaires de terrain actifs dans la
 {% gridItem class="flow horizontal items-end breakout-clickable" %}
 {% image src="/_images/2026-glossaire-dossierdocsess.webp", width=100 %}
 
-{% link url="/assets/files/2026_MaJFaireleTourPromotionSante_m-res.pdf", type="file", class="font-bold", target="_blank" %}Faire le tour de la promotion de la santé… en 180 minutes (ou presque) – Glossaire documenté (PDF){% endlink %}
+{% link url="/assets/files/2026_majfaireletourpromotionsante_m-res.pdf", type="file", class="font-bold", target="_blank" %}Faire le tour de la promotion de la santé… en 180 minutes (ou presque) – Glossaire documenté (PDF){% endlink %}
 {% endgridItem %}
 {% endgrid %}
 
