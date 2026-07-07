@@ -32,6 +32,11 @@ Découvrez nos ressources documentaires et partenaires de terrain actifs dans la
 
 {% link url="/assets/files/definitions-formation.pdf", type="file", class="font-bold", target="_blank" %}Mieux comprendre le contour des pratiques en promotion de la santé (PDF){% endlink %}
 {% endgridItem %}
+{% gridItem class="flow horizontal items-end breakout-clickable" %}
+{% image src="/_images/2026-glossaire-dossierdocsess.webp", width=100 %}
+
+{% link url="/assets/files/2026_MaJFaireleTourPromotionSante_m-res.pdf", type="file", class="font-bold", target="_blank" %}Faire le tour de la promotion de la santé… en 180 minutes (ou presque) – Glossaire documenté (PDF){% endlink %}
+{% endgridItem %}
 {% endgrid %}
 
 {% endsectionGrid %}
@@ -45,9 +50,7 @@ Découvrez nos ressources documentaires et partenaires de terrain actifs dans la
 {% endsectionHeader %}
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
-
 {% link url="/assets/files/repertoire-sesu.pdf", type="file", class="font-bold", target="_blank" %}{% image src="/_images/repertoire-servicessupportpromosantebxl_2026.webp", alt="Couverture du répertoire des SESU, lien vers le fichier PDF", width="300" %}{% endlink %}
-
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 ### Les Services Support
