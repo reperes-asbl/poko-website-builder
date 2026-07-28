@@ -21,11 +21,9 @@ metadata:
     aspectRatio: null
     loading: ''
     imgAttrs: ''
-tags:
-  - featured
+status: inactive
 pageLayout: formation
 ---
-
 
 Formation avec {% link url="https://agir-bfc.fr/agirbfc/agenda/111/universite-d-ete-francophone-en-sante-publique-de-besancon-edition-2026", type="external" %}l’université d’été de Besançon{% endlink %}
 
