@@ -19,7 +19,6 @@ metadata:
     src: /_images/pexels-moe-magners-7495555.webp
 tags:
   - featured
-vars: {}
 ---
 
 Une journée en collaboration avec la {% link url="https://www.fbpsante.brussels/", type="external" %}FBPSanté{% endlink %} et le {% link url="https://www.cbps.be/", type="external" %}CBPS{% endlink %}.
@@ -62,7 +61,6 @@ Cette journée est une occasion de vous sensibiliser aux concepts de la promotio
 
 ## Pour qui?
 
-- **Nouveaux·elles travailleur·euse·**s en promotion de la santé
-- Nouvelle institution dans le secteur
+**Nouveaux·elles travailleur·euse· et n**ouvelles institutions affiliées à la Fédération bruxelloise de promotion de la santé 
 
-2 personnes maximum par institution
+_2 personnes maximum par institution_
