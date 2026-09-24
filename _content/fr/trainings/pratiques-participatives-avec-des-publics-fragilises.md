@@ -22,12 +22,8 @@ metadata:
     aspectRatio: null
     loading: ''
     imgAttrs: ''
-tags:
-  - featured
 pageLayout: formation
-vars: {}
 ---
-
 
 La participation est aujourd’hui un terme employé partout : dans les discours, les projets, les dispositifs. Mais derrière ce mot, les réalités sont multiples — et parfois floues. Participer, oui… mais à quoi, comment, et avec qui ? Et surtout, avec quel objectif ?
 
