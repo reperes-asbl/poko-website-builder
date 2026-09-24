@@ -22,10 +22,10 @@ metadata:
     aspectRatio: null
     loading: ''
     imgAttrs: ''
+tags:
+  - featured
 pageLayout: formation
-vars: {}
 ---
-
 
 Module en collaboration avec {% link url="https://femmesetsante.be/", type="external", target="_blank", rel="noopener noreferrer" %}Femme & Santé{% endlink %}.
 
