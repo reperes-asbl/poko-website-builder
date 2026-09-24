@@ -17,8 +17,6 @@ bookingUrl: https://docs.google.com/forms/d/e/1FAIpQLSfbNP4_XFFd25kNkp5w-he_XtKT
 metadata:
   image:
     src: /_images/pexels-moe-magners-7495555.webp
-tags:
-  - featured
 ---
 
 Une journée en collaboration avec la {% link url="https://www.fbpsante.brussels/", type="external" %}FBPSanté{% endlink %} et le {% link url="https://www.cbps.be/", type="external" %}CBPS{% endlink %}.
