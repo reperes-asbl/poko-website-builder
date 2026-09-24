@@ -6,7 +6,7 @@ createdAt: 2026-03-09T14:22:00.000Z
 name: Formation en collaboration avec l’Université de Besançon
 tempo: Juillet 2026
 duration: 4 jours
-price: 600 à 800 euro (selon conditions de l’Université)
+price: 600 à 800 euro
 place: 25000 Besançon (France)
 nextDate: Du lundi 29 juin au 2 juillet 2026
 address: 25000 Besançon (France)
