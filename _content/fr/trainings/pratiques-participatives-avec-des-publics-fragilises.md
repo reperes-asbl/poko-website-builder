@@ -4,6 +4,7 @@ order: 1
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
 name: Pratiques participatives avec des publics fragilisés
+subtitle: Soutenir la capacité des personnes à prendre soin d'elles
 tempo: Septembre 2026 à mai 2027
 duration: 4 jours et 6 demi-journées
 price: 250€
@@ -23,6 +24,7 @@ metadata:
     loading: ''
     imgAttrs: ''
 pageLayout: formation
+vars: {}
 ---
 
 La participation est aujourd’hui un terme employé partout : dans les discours, les projets, les dispositifs. Mais derrière ce mot, les réalités sont multiples — et parfois floues. Participer, oui… mais à quoi, comment, et avec qui ? Et surtout, avec quel objectif ?
