@@ -9,11 +9,11 @@ duration: 4 jours et 6 demi-journées
 price: 250€
 place: 5000 Namur
 nextDate: |-
-  4 journées : 29 septembre, 6 octobre, 3 novembre et 17 novembre 2026
+  4 journées : 29 septembre, 6 octobre, 3 novembre et 17 novembre 2026 de 9h30 à 12h30 (accueil à partir de 9H)
 
-  6 demies-journées : 8 décembre 2026, 12 janvier, 2 février, 9 mars, 6 avril et 11 mai 2027 de 9h30 à 12h30
-address: 5000 Namur
-speakers: Caroline Lejeune et Jeanne Reyre
+  6 demi-journées : 8 décembre 2026, 12 janvier, 2 février, 9 mars, 6 avril et 11 mai 2027 de 9h30 à 12h30
+address: Salle Clin d'oeil, 154 Rue de Bomel à 5000 Namur
+speakers: Caroline Lejeune et Manoë Jacquet
 metadata:
   image:
     src: /_images/photo-formation-fgenre-2-dom.webp
