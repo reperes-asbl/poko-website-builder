@@ -4,13 +4,13 @@ order: 7
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
 name: Formation en collaboration avec l’Université de Besançon
-tempo: Juillet 2026
+tempo: Juillet 2027
 duration: 4 jours
 price: 600 à 800 euro
 place: 25000 Besançon (France)
-nextDate: Du lundi 29 juin au 2 juillet 2026
+nextDate: à confirmer
 address: 25000 Besançon (France)
-speakers: Jeanne Reyre et Caroline Lejeune
+speakers: à confirmer
 bookingUrl: https://agir-bfc.fr/agirbfc/agenda/111/universite-d-ete-francophone-en-sante-publique-de-besancon-edition-2026
 metadata:
   image:
@@ -21,13 +21,13 @@ metadata:
     aspectRatio: null
     loading: ''
     imgAttrs: ''
-status: inactive
+status: published
 pageLayout: formation
 ---
 
 Formation avec {% link url="https://agir-bfc.fr/agirbfc/agenda/111/universite-d-ete-francophone-en-sante-publique-de-besancon-edition-2026", type="external" %}l’université d’été de Besançon{% endlink %}
 
-Ce module est proposé dans le cadre de la 23ème Université d’été francophone en santé publique aura lieu à Besançon du 29 juin au 2 juillet 2026.
+**Ce module a été proposé dans le cadre de la 23ème Université d’été francophone en santé publique. Prochaine session possible en juillet 2027**
 
 Ce module de formation de base en Promotion de la Santé propose un temps de réflexion et d’expérimentation autour des concepts, enjeux et stratégies qui favorisent la santé et le bien-être des publics. Il invite à explorer les déterminants de la santé, l’équité en santé, la participation, la co-construction et l’intersectorialité, tout en questionnant les représentations et la posture professionnelle. Une attention particulière est portée aux enjeux liés à l’implication et au pouvoir d’agir des personnes en situation de vulnérabilité, en tenant compte des réalités sociales et institutionnelles professionnelles.
 
