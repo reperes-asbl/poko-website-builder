@@ -4,14 +4,16 @@ order: 4
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
 name: La santé, une ressource pour chacun·e et l'affaire de tout·es?
-tempo: Novembre 2026 à Juin 2027
+tempo: ATTENTION formation reportée à 2027!
 duration: 4 jours et 6 demi-journées
 price: 250€
 place: 1000 Bruxelles
 nextDate: |-
-  4 journées : 10 novembre, 24 novembre, 1 décembre 2026 et 15 décembre 2026 de 9h30 à 16h30
+  ~~4 journées : 10 novembre, 24 novembre, 1 décembre 2026 et 15 décembre 2026 de 9h30 à 16h30~~
 
-  6 demies-journées : 14 janvier, 9 février, 16 mars, 13 avril, 18 mai et 8 juin 2027 de 9h30 à 12h30
+  ~~6 demies-journées : 14 janvier, 9 février, 16 mars, 13 avril, 18 mai et 8 juin 2027 de 9h30 à 12h30~~
+
+  De nouvelles dates seront communiquées bientôt.
 address: 1000 Bruxelles
 speakers: Caroline Lejeune et Jeanne Reyre
 metadata:
@@ -24,7 +26,6 @@ metadata:
     loading: ''
     imgAttrs: ''
 pageLayout: formation
-vars: {}
 ---
 
 **Repères pour interroger vos pratiques professionnelles et concevoir des projets au regard de la promotion de la santé**
