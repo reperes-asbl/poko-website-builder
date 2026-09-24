@@ -5,16 +5,13 @@ lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
 name: Accompagner des personnes sans-abri en collectivité
 subtitle: Soutenir la capacité des personnes à prendre soin d’elles
-tempo: Mars à décembre 2026
-duration: 4 jours et 6 demi-journées
-price: 280€ pour les membres (400€ pour les non-membres)
-place: 4000 Liège
-nextDate: |-
-  Les 4 journées de formations auront lieux les 20/03, 10/04, 24/04 et 29/05 de 09h30 à 16h30.
-
-  Elle sera suivie par 6 ½ journées d'échanges (12/06, 18/09, 09/10, 06/11, 04/12 et une 6ème date sera décidée ultérieurement) de 09h30 à 12h30.
-address: 4000 Liège
-speakers: Manoë Jacquet et Caroline Lejeune
+tempo: Prochaine session en 2027
+duration: 4 journées
+price: à déterminer
+place: Région bruxelloise
+nextDate: Dates à venir.
+address: 1000 Bruxelles
+speakers: à déterminer
 bookingUrl: https://formations.sites.ama.be/formation/accompagner-des-personnes-sans-abri-en-collectivite-2026/#SECTION_INSCRIPTION
 metadata:
   image:
@@ -25,9 +22,9 @@ metadata:
     aspectRatio: null
     loading: ''
     imgAttrs: ''
+status: published
 pageLayout: formation
 ---
-
 
 Module de formation {% link url="https://formations.sites.ama.be/formation/accompagner-des-personnes-sans-abri-en-collectivite-2026/", type="external", target="_blank", rel="noopener noreferrer" %}AMA{% endlink %}.
 
