@@ -14,7 +14,7 @@ nextDate: |-
 
   5 demi-journées : 16 mars, 13 avril, 18 mai, 8 juin et 22 juin 2027 de 9h30 à 12h30
 address: 1000 Bruxelles
-speakers: à déterminer
+speakers: Caroline Lejeune et Manoë Jacquet
 metadata:
   image:
     src: /_images/f1.webp
@@ -25,6 +25,7 @@ metadata:
     loading: ''
     imgAttrs: ''
 pageLayout: formation
+vars: {}
 ---
 
 **Repères pour interroger vos pratiques professionnelles et concevoir des projets au regard de la promotion de la santé**
