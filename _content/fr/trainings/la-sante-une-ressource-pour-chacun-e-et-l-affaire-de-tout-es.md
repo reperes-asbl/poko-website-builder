@@ -6,13 +6,13 @@ createdAt: 2026-03-09T14:22:00.000Z
 name: La santé, une ressource pour chacun·e et l'affaire de tout·es?
 subtitle: Formation aux concepts de base de promotion de la santé
 tempo: Janvier-Juin 2027
-duration: 4 jours et 6 demi-journées
+duration: 4 jours et 5 demi-journées
 price: 250€
 place: 1000 Bruxelles
 nextDate: |-
   4 journées : 14 et 26 janvier, 9 et 16 février de 9h30 à 16h30
 
-  5 demi-journées : 16 mars, 13 avril, 18 mai, 8 juin et 22 juin 2027 de 9h30 à 12h30
+  5 demi-journées : 16 mars, 13 avril, 18 mai, 8 juin et 22 juin 2027 de 9h30 à 12h30. Une sixième demi-journée pourra être programmée avec le groupe.
 address: 1000 Bruxelles
 speakers: Caroline Lejeune et Manoë Jacquet
 metadata:
@@ -25,7 +25,6 @@ metadata:
     loading: ''
     imgAttrs: ''
 pageLayout: formation
-vars: {}
 ---
 
 **Repères pour interroger vos pratiques professionnelles et concevoir des projets au regard de la promotion de la santé**
@@ -45,7 +44,7 @@ Cette formation se compose de 4 journée de formations et 6 ateliers d’échang
 - Intégrer les concepts de Promotion de la Santé dans vos pratiques ; 
 - Identifier et prendre du recul sur les enjeux institutionnels et sociopolitiques qui traversent vos projets ou accompagnements.
 
-## Les 6 demi-journées d'ateliers d'échange de pratiques permettent de:
+## Les 5 demi-journées d'ateliers d'échange de pratiques permettent de:
 
 - Construire une évaluation participative;
 - Revisiter vos pratiques professionnelles à la lumière des fondements de la Promotion de la Santé, des support méthodologiques et des concepts élaborés durant les 4 journées;
