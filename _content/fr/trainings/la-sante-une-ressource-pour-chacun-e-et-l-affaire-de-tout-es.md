@@ -24,6 +24,8 @@ metadata:
     aspectRatio: null
     loading: ''
     imgAttrs: ''
+tags:
+  - featured
 pageLayout: formation
 ---
 
