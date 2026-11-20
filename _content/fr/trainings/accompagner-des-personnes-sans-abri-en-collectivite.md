@@ -5,14 +5,14 @@ lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
 name: Accompagner des personnes sans-abri en collectivité
 subtitle: Soutenir la capacité des personnes à prendre soin d’elles
-tempo: Prochaine session en 2027
+tempo: Mai/juin 2027
 duration: 4 journées
-price: à déterminer
-place: Région bruxelloise
+price: à venir
+place: Bruxelles
 nextDate: 'Les jeudi : 20 et 27 mai , ainsi que 03 et 17 juin 2027 de 9H30 à 16H30'
 address: 1000 Bruxelles
 speakers: à déterminer
-bookingUrl: https://formations.sites.ama.be/formation/accompagner-des-personnes-sans-abri-en-collectivite-2026/#SECTION_INSCRIPTION
+bookingUrl: https://formations.sites.ama.be/
 metadata:
   image:
     src: /_images/photo-fama.webp
