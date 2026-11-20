@@ -25,13 +25,14 @@ metadata:
 tags:
   - featured
 pageLayout: formation
+vars: {}
 ---
 
 Module en collaboration avec {% link url="https://femmesetsante.be/", type="external", target="_blank", rel="noopener noreferrer" %}Femme & Santé{% endlink %}.
 
 {% link url="https://femmesetsante.be/", type="external", target="_blank", rel="noopener noreferrer" %}{% image src="/_images/femmes-sante_logo_sans-bords_rvb-09.webp", alt="Logo Femmes & Santé", width=100 %}{% endlink %}
 
-Réfléchissons ensemble aux représentations de genre qui nous habitent et identifions comment celles-ci traversent les questions de santé!
+Le genre influence la manière dont nous pensons la santé, dont nous accueillons les publics et dont nos institutions fonctionnent. Il traverse les parcours de soins, les modes de prévention, l’accès aux services, la manière dont on écoute, oriente ou accompagne les personnes. Pourtant, il reste souvent impensé dans nos pratiques professionnelles, alors qu’il est un déterminant de santé transversal, qui s’articule avec d’autres rapports sociaux comme la classe, l’origine, l’âge ou le handicap.
 
 ## Les objectifs de ces 4 journées de formation sont :
 
