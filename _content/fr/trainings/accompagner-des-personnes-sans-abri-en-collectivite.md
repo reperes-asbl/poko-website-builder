@@ -9,7 +9,7 @@ tempo: Prochaine session en 2027
 duration: 4 journées
 price: à déterminer
 place: Région bruxelloise
-nextDate: Dates à venir.
+nextDate: 'Les jeudi : 20 et 27 mai , ainsi que 03 et 17 juin 2027 de 9H30 à 16H30'
 address: 1000 Bruxelles
 speakers: à déterminer
 bookingUrl: https://formations.sites.ama.be/formation/accompagner-des-personnes-sans-abri-en-collectivite-2026/#SECTION_INSCRIPTION
@@ -22,11 +22,11 @@ metadata:
     aspectRatio: null
     loading: ''
     imgAttrs: ''
+tags:
+  - featured
 status: published
 pageLayout: formation
-vars: {}
 ---
-
 
 Module de formation {% link url="https://formations.sites.ama.be/formation/accompagner-des-personnes-sans-abri-en-collectivite-2026/", type="external", target="_blank", rel="noopener noreferrer" %}AMA{% endlink %}.
 
