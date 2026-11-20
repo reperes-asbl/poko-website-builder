@@ -1,6 +1,6 @@
 ---
 translationKey: formation-en-collaboration-avec-l-universite-de-besancon
-order: 7
+order: 4
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
 name: Formation en collaboration avec l’Université de Besançon
@@ -23,7 +23,9 @@ metadata:
     imgAttrs: ''
 status: published
 pageLayout: formation
+vars: {}
 ---
+
 
 Formation avec {% link url="https://agir-bfc.fr/agirbfc/agenda/111/universite-d-ete-francophone-en-sante-publique-de-besancon-edition-2026", type="external" %}l’université d’été de Besançon{% endlink %}
 

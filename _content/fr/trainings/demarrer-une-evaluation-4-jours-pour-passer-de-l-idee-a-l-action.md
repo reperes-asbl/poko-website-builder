@@ -1,6 +1,6 @@
 ---
 translationKey: demarrer-une-evaluation-4-jours-pour-passer-de-l-idee-a-l-action
-order: 2
+order: 7
 lang: fr
 createdAt: 2026-06-09T08:15:00.000Z
 ldType: WebPage
@@ -19,8 +19,8 @@ metadata:
     alt: groupe de personnes devant un fleepchart qui collent des post-it évoquant le travail collectif lors d'une formation
 tags:
   - featured
-vars: {}
 ---
+
 
 Module en collaboration avec RESO{% link url="https://www.uclouvain.be/fr/instituts-recherche/irss/reso", type="external" %}{% image src="/_images/uclouvain_reso_ucl_logo_png_rvb.webp" %}{% endlink %}
 

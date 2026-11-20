@@ -1,6 +1,6 @@
 ---
 translationKey: formation-concepts-et-secteur
-order: 6
+order: 5
 lang: fr
 createdAt: 2026-05-13T06:28:00.000Z
 ldType: WebPage
@@ -18,7 +18,9 @@ metadata:
   image:
     src: /_images/pexels-moe-magners-7495555.webp
 status: published
+vars: {}
 ---
+
 
 Une journée en collaboration avec la {% link url="https://www.fbpsante.brussels/", type="external" %}FBPSanté{% endlink %} et le {% link url="https://www.cbps.be/", type="external" %}CBPS{% endlink %}.
 
