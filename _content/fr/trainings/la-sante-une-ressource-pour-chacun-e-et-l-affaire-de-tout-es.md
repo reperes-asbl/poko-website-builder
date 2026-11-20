@@ -27,6 +27,7 @@ metadata:
 tags:
   - featured
 pageLayout: formation
+vars: {}
 ---
 
 La promotion de la santé regroupe un ensemble de pratiques intersectorielles visant à augmenter la capacité d’agir des individus et des communautés sur leur santé et leur qualité de vie. Elle s’inscrit dans une approche globale et positive de la santé, qui va au-delà de la prévention ou du traitement des maladies. La santé ne dépend pas seulement des soins et des services médicaux, mais aussi d’un ensemble de facteurs interconnectés. Elle nous concerne toutes et tous !
