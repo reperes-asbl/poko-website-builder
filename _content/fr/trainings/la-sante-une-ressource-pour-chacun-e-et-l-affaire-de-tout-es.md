@@ -3,8 +3,8 @@ translationKey: la-sante-une-ressource-pour-chacun-e-et-l-affaire-de-tout-es
 order: 1
 lang: fr
 createdAt: 2026-03-09T14:22:00.000Z
-name: La santé, une ressource pour chacun·e et l'affaire de tout·es?
-subtitle: Formation aux concepts de base de promotion de la santé
+name: Formation aux concepts de base de promotion de la santé
+subtitle: Repères pour interroger vos pratiques professionnelles et concevoir des projets au regard de la promotion de la santé
 tempo: Janvier-Juin 2027
 duration: 4 jours et 5 demi-journées
 price: 250€
@@ -28,8 +28,6 @@ tags:
   - featured
 pageLayout: formation
 ---
-
-**Repères pour interroger vos pratiques professionnelles et concevoir des projets au regard de la promotion de la santé**
 
 La promotion de la santé regroupe un ensemble de pratiques intersectorielles visant à augmenter la capacité d’agir des individus et des communautés sur leur santé et leur qualité de vie. Elle s’inscrit dans une approche globale et positive de la santé, qui va au-delà de la prévention ou du traitement des maladies. La santé ne dépend pas seulement des soins et des services médicaux, mais aussi d’un ensemble de facteurs interconnectés. Elle nous concerne toutes et tous !
 
