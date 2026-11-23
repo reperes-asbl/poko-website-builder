@@ -9,7 +9,7 @@ tempo: Novembre 2026
 duration: 4 jours
 price: 140€
 place: 1000 Bruxelles
-nextDate: 26 novembre, 1, 8 et 10 décembre 2026
+nextDate: 26 novembre, 1, 8 et 10 décembre 2026 de 9H30 à 16H00
 address: Boulevard de Waterloo, 99 à 1000 Bruxelles
 speakers: Julia De Clerck et Manoë Jacquet
 bookingUrl: https://form.jotform.com/230593367445361
@@ -25,7 +25,6 @@ metadata:
 tags:
   - featured
 pageLayout: formation
-vars: {}
 ---
 
 Module en collaboration avec {% link url="https://femmesetsante.be/", type="external", target="_blank", rel="noopener noreferrer" %}Femme & Santé{% endlink %}.
