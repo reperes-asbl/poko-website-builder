@@ -8,11 +8,10 @@ preview:
   description: Formatrice
   image:
     src: /_images/photo-jeanne.webp
+status: draft
 generatePage: previewOnly
-vars: {}
 localizationKey: gbe864fd5d42
 uuid: a3b0a3fff5d7
 ---
-
 
 Formatrice
