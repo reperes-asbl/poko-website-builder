@@ -6,6 +6,7 @@ createdAt: 2025-11-14T09:43:00.000Z
 name: Formations
 eleventyNavigation:
   add: Nav
+vars: {}
 ---
 
 {% partialWrapper "page-header.njk", { image: "", class: "palette-burnt-umber" } %}
