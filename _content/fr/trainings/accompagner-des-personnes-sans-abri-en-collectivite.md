@@ -32,27 +32,19 @@ Module de formation {% link url="https://formations.sites.ama.be/formation/accom
 
 {% link url="https://formations.sites.ama.be/formation/accompagner-des-personnes-sans-abri-en-collectivite-2026/", type="external", target="_blank", rel="noopener noreferrer" %}{% image src="/_images/ama.webp", alt="Logo AMA - Fédération des maisons d'accueil et des services d'aide aux sans-abri", width=200 %}{% endlink %}
 
-L’accompagnement de personnes en décrochage social, en errance, en situation de crise, invite à travailler au carrefour de multiples réalités, imbriquées de manière complexe. L’accompagnement quotidien de personnes en grande précarité dans des lieux de vie confronte souvent les travailleur∙euse∙s aux difficultés du vivre ensemble mais, également, aux questions de la négligence de soi et des autres. Dans ces contextes de réalités de vies complexes, certain∙e∙s s’interrogent quant à la pertinence de s’appuyer sur des pratiques communautaires et/ou collective au sein de lieux de vie. L’approche globale proposée envisage d’interroger de manière multifactorielle l’ensemble des ressources qui contribuent à la qualité de vie des personnes et des communautés.
+Accompagner des personnes en situation de décrochage social, d’errance ou de crise, c’est intervenir au croisement de réalités multiples et étroitement liées. Dans les lieux de vie, le quotidien confronte souvent les professionnel·les aux difficultés du vivre-ensemble, ainsi qu’aux questions du soin de soi et des autres. Dans ces contextes complexes, comment soutenir les ressources des personnes et la dynamique collective ? Quelle place donner aux pratiques communautaires au sein des lieux de vie ? Cette formation propose une approche globale de la promotion de la santé pour explorer les différents facteurs qui contribuent à la qualité de vie des personnes et des communautés.
 
 ## Ces 4 journées de formation permettent:
 
-- D’identifier et de comprendre l’approche globale des différents facteurs qui influencent la capacité de la personne à « prendre soin de soi »;
-- Repérer des éléments susceptibles d’influencer favorablement la mobilisation des ressources des personnes;
-- D’acquérir des repères méthodologiques pour élaborer, accompagner et évaluer des projets individuels, collectifs ou communautaires, et les intégrer dans ses pratiques.
-
-## Ces 6 demi-journées d’ateliers d’échanges de pratique permettent:
-
-- De mettre en pratique les acquis de la formation, notamment les concepts de la promotion de la santé, des pratiques communautaires, de mobilisation et de participation des publics;
-- De réfléchir à partir des questionnements émanant des pratiques professionnelles;
-- D’échanger à propos de l’évolution des pratiques au sein des institutions respectives;
-- De réfléchir à la manière de transmettre et partager les logiques appréhendées en formation avec les collègues et dans l’institution;
-- D’acquérir par la pratique en groupe, une expérience d’échange et de recherche commune de pistes d’actions.
-- De consolider les liens avec d’autres acteur∙rice∙s de terrain.
+- comprendre les facteurs, individuels et collectifs, qui influencent la capacité à prendre soin de soi ;
+- repérer les leviers susceptibles de favoriser la mobilisation des ressources des personnes ;
+- s’approprier des repères méthodologiques pour concevoir, accompagner et évaluer des projets individuels, collectifs ou communautaires ; 
+- réfléchir à la manière d’intégrer ces repères dans leurs pratiques professionnelles.
 
 ## Pour qui?
 
-- Travailleur·euse·s du secteur sans abri
+Travailleur·euse·s du secteur sans abri
 
 ## Démarche pédagogique
 
-Les formateur·rice·s proposent aux participant·e·s un travail réflexif à propos de leurs pratiques professionnelles, les invitant à se mettre au travail et à s’impliquer activement dans la dynamique de la formation. La formation est un processus expérientiel qui se base sur la dynamique du groupe et s’élabore au travers de travaux en sous-groupes, de jeux de rôle et de mises en situation fictives, ou de situations professionnelles amenées par les participant·e·s. A partir des réflexions et des discussions, les points d’appui théoriques sont élaborés en commun.
+La formation s’appuie sur les expériences et les questionnements des participant·es. Elle propose une démarche active et réflexive, alternant travaux en sous-groupes, jeux de rôle, mises en situation et échanges autour de situations professionnelles. Les apports théoriques sont construits en lien avec les réflexions du groupe. Les participant·es sont invité·es à mettre en perspective leurs pratiques, à partager leurs expériences et à rechercher collectivement des pistes d’action transférables dans leur contexte de travail.
